@@ -17,14 +17,14 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
     public static WebDriver driver;
-    public Properties prop = new Properties();
+    public static Properties prop = new Properties();
 
     public WebDriver initializeDriver() throws IOException {
         prop = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\FramworksCombined\\src\\main\\java\\browserData.properties");
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\browserData.properties");
         prop.load(fileInputStream);
         String browserName = prop.getProperty("browser");
-
+        System.out.println(prop.getProperty("browser"));
         //check for browser
         if (browserName.equals("chrome")) {
             //excecute test for chrome

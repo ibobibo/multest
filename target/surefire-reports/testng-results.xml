@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-20T14:17:20 MESZ" name="Suite" finished-at="2019-08-20T14:17:38 MESZ" duration-ms="18548">
+  <suite started-at="2019-08-20T14:55:23 MESZ" name="Suite" finished-at="2019-08-20T14:55:44 MESZ" duration-ms="20269">
     <groups>
     </groups>
-    <test started-at="2019-08-20T14:17:20 MESZ" name="Test" finished-at="2019-08-20T14:17:24 MESZ" duration-ms="4705">
+    <test started-at="2019-08-20T14:55:23 MESZ" name="Test" finished-at="2019-08-20T14:55:30 MESZ" duration-ms="6445">
       <class name="MulLogin">
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:17:20 MESZ" name="initializeBrowser" finished-at="2019-08-20T14:17:23 MESZ" duration-ms="3715" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:55:23 MESZ" name="initializeBrowser" finished-at="2019-08-20T14:55:27 MESZ" duration-ms="3422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:17:23 MESZ" name="login" data-provider="getData" finished-at="2019-08-20T14:17:24 MESZ" duration-ms="266" status="PASS">
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:55:27 MESZ" name="login" data-provider="getData" finished-at="2019-08-20T14:55:27 MESZ" duration-ms="366" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:17:24 MESZ" name="login" data-provider="getData" finished-at="2019-08-20T14:17:24 MESZ" duration-ms="298" status="PASS">
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:55:27 MESZ" name="login" data-provider="getData" finished-at="2019-08-20T14:55:28 MESZ" duration-ms="301" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:17:24 MESZ" name="login" data-provider="getData" finished-at="2019-08-20T14:17:24 MESZ" duration-ms="289" status="PASS">
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:55:28 MESZ" name="login" data-provider="getData" finished-at="2019-08-20T14:55:28 MESZ" duration-ms="231" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,19 +59,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:17:24 MESZ" name="closeBrowser" finished-at="2019-08-20T14:17:24 MESZ" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:MulLogin@4f6f416f]" started-at="2019-08-20T14:55:28 MESZ" name="closeBrowser" finished-at="2019-08-20T14:55:30 MESZ" duration-ms="2073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- MulLogin -->
     </test> <!-- Test -->
-    <test started-at="2019-08-20T14:17:25 MESZ" name="Failure Test" finished-at="2019-08-20T14:17:38 MESZ" duration-ms="13745">
+    <test started-at="2019-08-20T14:55:30 MESZ" name="Failure Test" finished-at="2019-08-20T14:55:44 MESZ" duration-ms="13750">
       <class name="FailureTestForScreenshot">
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:FailureTestForScreenshot@59cba5a]" started-at="2019-08-20T14:17:25 MESZ" name="initializeBrowser" finished-at="2019-08-20T14:17:28 MESZ" duration-ms="2999" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:FailureTestForScreenshot@59cba5a]" started-at="2019-08-20T14:55:30 MESZ" name="initializeBrowser" finished-at="2019-08-20T14:55:33 MESZ" duration-ms="2926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="findNotExistingElem()[pri:0, instance:FailureTestForScreenshot@59cba5a]" started-at="2019-08-20T14:17:28 MESZ" name="findNotExistingElem" finished-at="2019-08-20T14:17:38 MESZ" duration-ms="10044" status="FAIL">
+        <test-method signature="findNotExistingElem()[pri:0, instance:FailureTestForScreenshot@59cba5a]" started-at="2019-08-20T14:55:33 MESZ" name="findNotExistingElem" finished-at="2019-08-20T14:55:43 MESZ" duration-ms="10031" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#not\-existing"}
@@ -80,8 +80,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-THL8LSI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\ibobi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2385f5680eb9734463f1469b4304f6ec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\ibobi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c84dcbac72603f794892e0eeefc9a557
 *** Element info: {Using=id, value=not-existing}]]>
             </message>
             <full-stacktrace>
@@ -91,8 +91,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-THL8LSI', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\ibobi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2385f5680eb9734463f1469b4304f6ec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\ibobi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c84dcbac72603f794892e0eeefc9a557
 *** Element info: {Using=id, value=not-existing}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -151,7 +151,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findNotExistingElem -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:FailureTestForScreenshot@59cba5a]" started-at="2019-08-20T14:17:38 MESZ" name="closeBrowser" finished-at="2019-08-20T14:17:38 MESZ" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:FailureTestForScreenshot@59cba5a]" started-at="2019-08-20T14:55:44 MESZ" name="closeBrowser" finished-at="2019-08-20T14:55:44 MESZ" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
