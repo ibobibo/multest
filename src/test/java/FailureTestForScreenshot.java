@@ -31,6 +31,4 @@ public class FailureTestForScreenshot extends BaseClass {
         driver.close();
         driver = null;
     }
-
-
 }
