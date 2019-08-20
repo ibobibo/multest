@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite">
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+        <listener class-name="Listeners"/>
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="MulLogin"/>
+        </classes>
+    </test>
+    <test name="Failure Test">
+        <classes>
+            <class name="FailureTestForScreenshot"/>
+        </classes>
+    </test>
+</suite>
