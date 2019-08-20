@@ -1,3 +1,5 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -7,9 +9,6 @@ import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 
 public class MulLogin extends BaseClass {
 
@@ -37,12 +36,12 @@ public class MulLogin extends BaseClass {
     @AfterTest
     public void closeBrowser() {
         driver.close();
-        driver=null;
+        driver = null;
     }
 
     @DataProvider
     public Object[][] getData() {
-        Object[][] data = new Object[3][2];
+        Object[][] data = new Object[2][2];
         //0th row
         data[0][0] = "a@a.a";
         data[0][1] = "aaaaa";
@@ -50,10 +49,6 @@ public class MulLogin extends BaseClass {
         //1st row
         data[1][0] = "b@b.b";
         data[1][1] = "bbbbb";
-
-        //2nd row
-        data[2][0] = "c@c.c";
-        data[2][1] = "ccccc";
 
         return data;
     }
