@@ -24,21 +24,21 @@ public class BaseClass {
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\browserData.properties");
         prop.load(fileInputStream);
         String browserName = prop.getProperty("browser");
-        System.out.println(prop.getProperty("browser"));
+
         //check for browser
         if (browserName.equals("chrome")) {
             //excecute test for chrome
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\ibobi\\Downloads\\chromedriver_win32\\chromedriver.exe");
+            System.setProperty(prop.getProperty("chromeDriver"),prop.getProperty("chromeDriverPath"));
             driver = new ChromeDriver();
 
         } else if (browserName.equals("firefox")) {
             //excecute test for firefox
-            System.setProperty("webdriver.gecko.driver", "C:\\Users\\ibobi\\Downloads\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+            System.setProperty(prop.getProperty("firefoxDriver"),prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
 
         } else if (browserName.equals("edge")) {
             //excecute test for edge
-            System.setProperty("webdriver.ie.driver", "C:\\Users\\ibobi\\Downloads\\edgedriver_win64\\edgedriver.exe");
+            System.setProperty(prop.getProperty("edgeDriver"),prop.getProperty("edgeDriverPath"));
             driver = new InternetExplorerDriver();
 
         }
