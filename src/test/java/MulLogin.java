@@ -19,7 +19,7 @@ public class MulLogin extends BaseClass {
     public void initializeBrowser() throws IOException {
         driver = initializeDriver();
         log.info("Driver is initialized");
-        driver.get(prop.getProperty("url"));
+        driver.get(prop.getProperty("urlFromHomeNetwork"));
         log.info("Navigated to Homepage of MUL");
     }
 
