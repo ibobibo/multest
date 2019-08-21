@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-
 public class BaseClass {
     public static WebDriver driver;
     public static Properties prop = new Properties();
@@ -28,19 +27,18 @@ public class BaseClass {
         //check for browser
         if (browserName.equals("chrome")) {
             //excecute test for chrome
-            System.setProperty(prop.getProperty("chromeDriver"),prop.getProperty("chromeDriverPath"));
+            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
             driver = new ChromeDriver();
 
         } else if (browserName.equals("firefox")) {
             //excecute test for firefox
-            System.setProperty(prop.getProperty("firefoxDriver"),prop.getProperty("firefoxDriverPath"));
+            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
 
         } else if (browserName.equals("edge")) {
             //excecute test for edge
-            System.setProperty(prop.getProperty("edgeDriver"),prop.getProperty("edgeDriverPath"));
+            System.setProperty(prop.getProperty("edgeDriver"), prop.getProperty("edgeDriverPath"));
             driver = new InternetExplorerDriver();
-
         }
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -51,5 +49,10 @@ public class BaseClass {
     public void getScreenshot(String name) throws IOException {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(src, new File("C:\\Users\\ibobi\\OneDrive\\Desktop\\screenShots\\" + name + "screenshot.png"));
+    }
+
+    public void initializeBrowser() throws IOException {
+        driver = initializeDriver();
+        driver.get(prop.getProperty("urlFromHomeNetwork"));
     }
 }
