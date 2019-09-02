@@ -18,8 +18,15 @@ public class AmbulantOrganisationPage {
     @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
     WebElement addAmbulantDepartment;
 
+    //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")
     WebElement ambulantDepartmentName;
+    @FindBy(id = "organisationType")
+    WebElement ambulantDepartmentOrganisationType;
+    @FindBy(id = "confession")
+    WebElement ambulantDepartmentConfession;
+    @FindBy(xpath = "//section[@class='Input  select     empty']//label[@class='Checkbox ']")
+    WebElement ambulantDepartmentAccept;
     @FindBy(id = "address.streetAddress")
     WebElement ambulantDepartmentStreetAddress;
     @FindBy(id = "address.streetNumber")
@@ -33,7 +40,7 @@ public class AmbulantOrganisationPage {
     @FindBy(id = "availability")
     WebElement ambulantDepartmentAvailable;
 
-
+    //GETTER allgemeine Angaben zur Einrichtung
     public WebElement addDepartment() {
         return addDepartment;
     }
@@ -44,6 +51,18 @@ public class AmbulantOrganisationPage {
 
     public WebElement ambulantDepartmentName() {
         return ambulantDepartmentName;
+    }
+
+    public WebElement ambulantDepartmentOrganisationType() {
+        return ambulantDepartmentOrganisationType;
+    }
+
+    public WebElement ambulantDepartmentConfession() {
+        return ambulantDepartmentConfession;
+    }
+
+    public WebElement ambulantDepartmentAccept() {
+        return ambulantDepartmentAccept;
     }
 
     public WebElement ambulantDepartmentStreetAddress() {
@@ -69,4 +88,47 @@ public class AmbulantOrganisationPage {
     public WebElement ambulantDepartmentAvailable() {
         return ambulantDepartmentAvailable;
     }
+
+    //ansprechpartner
+    @FindBy(id = "contact.salutation")
+    WebElement ambulantDepartmentContactSalutation;
+    @FindBy(id = "contact.firstName")
+    WebElement ambulantDepartmentContactFirstName;
+    @FindBy(id = "contact.lastName")
+    WebElement ambulantDepartmentContactLastName;
+    @FindBy(id = "contact.title")
+    WebElement ambulantDepartmentContactTitle;
+    @FindBy(id = "contact.email")
+    WebElement ambulantDepartmentContactEmail;
+    @FindBy(id = "contact.phone")
+    WebElement ambulantDepartmentContactPhone;
+
+    //GETTER ansprechpartner
+    public WebElement ambulantDepartmentContactSalutation() {
+        return ambulantDepartmentContactSalutation;
+    }
+
+    public WebElement ambulantDepartmentContactFirstName() {
+        return ambulantDepartmentContactFirstName;
+    }
+
+    public WebElement ambulantDepartmentContactLastName() {
+        return ambulantDepartmentContactLastName;
+    }
+
+    public WebElement ambulantDepartmentContactTitle() {
+        return ambulantDepartmentContactTitle;
+    }
+
+    public WebElement ambulantDepartmentContactEmail() {
+        return ambulantDepartmentContactEmail;
+    }
+
+    public WebElement ambulantDepartmentContactPhone() {
+        return ambulantDepartmentContactPhone;
+    }
+
+    //sprechzeiten
+
+    //GETTER sprechzeiten
 }
