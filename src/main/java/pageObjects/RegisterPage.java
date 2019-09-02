@@ -37,7 +37,7 @@ public class RegisterPage {
     WebElement accept;
     @FindBy(id = "register-submit")
     WebElement registerSubmit;
-    @FindBy(xpath = "//section[@id='app-header']//a[href='#/register']")
+    @FindBy(id = "register-submit")
     WebElement registerButton;
 
     public WebElement siteName() {

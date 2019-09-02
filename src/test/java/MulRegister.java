@@ -38,7 +38,6 @@ public class MulRegister extends BaseClass {
         registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
         registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
         registerPage.accept().click();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         registerPage.registerSubmit().click();
         //HANDLEDYNAMIC DROPDOWN !!!! VIDEO 47
 
