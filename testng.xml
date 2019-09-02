@@ -5,11 +5,11 @@
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="Listeners"/>
     </listeners>
-    <test name="Test">
-        <classes>
-            <class name="MulLogin"/>
-        </classes>
-    </test>
+    <!--<test name="Test">-->
+        <!--<classes>-->
+            <!--<class name="MulLogin"/>-->
+        <!--</classes>-->
+    <!--</test>-->
     <test name="Registration Test">
         <classes>
             <class name="MulRegister"/>

@@ -19,9 +19,7 @@ public class BaseClass {
     public static Properties prop = new Properties();
 
     public WebDriver initializeDriver() throws IOException {
-        prop = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\browserData.properties");
-        prop.load(fileInputStream);
+        loadProps();
         String browserName = prop.getProperty("browser");
 
         //check for browser
@@ -54,5 +52,11 @@ public class BaseClass {
     public void initializeBrowser() throws IOException {
         driver = initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
+    }
+
+    public void loadProps() throws IOException {
+        prop = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\browserData.properties");
+        prop.load(fileInputStream);
     }
 }

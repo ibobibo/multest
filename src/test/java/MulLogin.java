@@ -43,10 +43,6 @@ public class MulLogin extends BaseClass {
         data[0][0] = "a@a.a";
         data[0][1] = "aaaaa";
 
-        //1st row
-        data[1][0] = "b@b.b";
-        data[1][1] = "bbbbb";
-
         return data;
     }
 }

@@ -7,13 +7,11 @@ import pageObjects.RegisterPage;
 import resources.BaseClass;
 
 import java.io.IOException;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class MulRegister extends BaseClass {
 
     public static Logger log = LogManager.getLogger(BaseClass.class.getName());
-    public static Properties prop = new Properties();
 
     @BeforeTest
     public void initialize() throws IOException {
@@ -21,15 +19,23 @@ public class MulRegister extends BaseClass {
     }
 
     @Test
-    public void register() {
+    public void register() throws IOException {
+        loadProps();
+
         RegisterPage registerPage = new RegisterPage(driver);
 
-        registerPage.registerButton().click();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        registerPage.registerButtonHomepage().click();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
         registerPage.siteName().sendKeys(prop.getProperty("registerSiteName"));
+
+
         registerPage.umbrellaOrganisation().click();
+        registerPage.umbrellaOrganisationChosen().click();
 
         registerPage.contactSalutation().click();
+        registerPage.contactSalutationMale().click();
+
         registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName"));
         registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName"));
         registerPage.contactEmail().sendKeys(prop.getProperty("contactEmail"));
@@ -38,12 +44,11 @@ public class MulRegister extends BaseClass {
         registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
         registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
         registerPage.accept().click();
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         registerPage.registerSubmit().click();
-        //HANDLEDYNAMIC DROPDOWN !!!! VIDEO 47
 
         log.info("Successfully Register for a mul account");
 
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     @AfterTest

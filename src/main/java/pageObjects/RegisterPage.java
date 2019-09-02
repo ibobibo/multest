@@ -13,12 +13,18 @@ public class RegisterPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = "//section[@id='app-header']//a[@href='#/register']")
+    WebElement registerButtonHomepage;
     @FindBy(id = "site.name")
     WebElement siteName;
     @FindBy(id = "site.umbrellaOrganisation.id")
     WebElement umbrellaOrganisation;
+    @FindBy(xpath = "//option[. = 'Stiftung Liebenau']")
+    WebElement umbrellaOrganisationChosen;
     @FindBy(xpath = "//section[@class='Input  select    required empty']//select[@id='contact.salutation']")
     WebElement contactSalutation;
+    @FindBy(xpath = "//option[. = 'Herr']")
+    WebElement contactSalutationMale;
     @FindBy(id = "contact.firstName")
     WebElement contactFirstName;
     @FindBy(id = "contact.lastName")
@@ -33,12 +39,14 @@ public class RegisterPage {
     WebElement accountSecondPassword;
     @FindBy(id = "account.premiumCode")
     WebElement accountPremiumCode;
-    @FindBy(xpath = "//label[@class='Checkbox']//input[@id='accept']")
+    @FindBy(xpath = "//section[@class='Register']//label[@class='Checkbox ']")
     WebElement accept;
-    @FindBy(id = "accept")
-    WebElement registerSubmit;
     @FindBy(id = "register-submit")
-    WebElement registerButton;
+    WebElement registerSubmit;
+
+    public WebElement registerButtonHomepage() {
+        return registerButtonHomepage;
+    }
 
     public WebElement siteName() {
         return siteName;
@@ -48,8 +56,16 @@ public class RegisterPage {
         return umbrellaOrganisation;
     }
 
+    public WebElement umbrellaOrganisationChosen() {
+        return umbrellaOrganisationChosen;
+    }
+
     public WebElement contactSalutation() {
         return contactSalutation;
+    }
+
+    public WebElement contactSalutationMale() {
+        return contactSalutationMale;
     }
 
     public WebElement contactFirstName() {
@@ -86,9 +102,5 @@ public class RegisterPage {
 
     public WebElement registerSubmit() {
         return registerSubmit;
-    }
-
-    public WebElement registerButton() {
-        return registerButton;
     }
 }
