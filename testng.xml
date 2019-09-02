@@ -10,4 +10,14 @@
             <class name="MulLogin"/>
         </classes>
     </test>
+    <test name="Registration Test">
+        <classes>
+            <class name="MulRegister"/>
+        </classes>
+    </test>
+    <!--<test name="Failure Test">-->
+        <!--<classes>-->
+            <!--<class name="FailureTestForScreenshot"/>-->
+        <!--</classes>-->
+    <!--</test>-->
 </suite>
