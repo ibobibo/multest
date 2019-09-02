@@ -28,6 +28,7 @@ public class MulRegister extends BaseClass {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         registerPage.siteName().sendKeys(prop.getProperty("registerSiteName"));
         registerPage.umbrellaOrganisation().click();
+
         registerPage.contactSalutation().click();
         registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName"));
         registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName"));
