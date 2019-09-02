@@ -2,8 +2,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import resources.BaseClass;
 
@@ -19,11 +17,10 @@ public class MulLogin extends BaseClass {
         initializeBrowser();
     }
 
-    @Test(dataProvider = "getData")
-    public void login(String username, String password) {
+    public void login() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.username().sendKeys(username);
-        loginPage.password().sendKeys(password);
+        loginPage.username().sendKeys(prop.getProperty("loginUsername"));
+        loginPage.password().sendKeys(prop.getProperty("loginPassword"));
         loginPage.anmelden().click();
         log.info("Successfully Log in with a mul account");
 
@@ -34,15 +31,5 @@ public class MulLogin extends BaseClass {
     public void closeBrowser() {
         driver.close();
         driver = null;
-    }
-
-    @DataProvider
-    public Object[][] getData() {
-        Object[][] data = new Object[2][2];
-        //0th row
-        data[0][0] = "a@a.a";
-        data[0][1] = "aaaaa";
-
-        return data;
     }
 }

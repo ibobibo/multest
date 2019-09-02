@@ -6,18 +6,23 @@
         <listener class-name="Listeners"/>
     </listeners>
     <!--<test name="Test">-->
-        <!--<classes>-->
-            <!--<class name="MulLogin"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="MulLogin"/>-->
+    <!--</classes>-->
     <!--</test>-->
-    <test name="Registration Test">
+    <!--<test name="Registration Test">-->
+    <!--<classes>-->
+    <!--<class name="MulRegister"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Failure Test">-->
+    <!--<classes>-->
+    <!--<class name="FailureTestForScreenshot"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="Creating Help Oraganisation">
         <classes>
-            <class name="MulRegister"/>
+            <class name="CreateAmbulantOrganisation"/>
         </classes>
     </test>
-    <!--<test name="Failure Test">-->
-        <!--<classes>-->
-            <!--<class name="FailureTestForScreenshot"/>-->
-        <!--</classes>-->
-    <!--</test>-->
 </suite>

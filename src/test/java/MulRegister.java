@@ -20,35 +20,35 @@ public class MulRegister extends BaseClass {
 
     @Test
     public void register() throws IOException {
-        loadProps();
+        for (int i = 0; i < 1000; i++) {
+            loadProps();
 
-        RegisterPage registerPage = new RegisterPage(driver);
+            RegisterPage registerPage = new RegisterPage(driver);
 
-        registerPage.registerButtonHomepage().click();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+            registerPage.registerButtonHomepage().click();
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
-        registerPage.siteName().sendKeys(prop.getProperty("registerSiteName"));
+            registerPage.siteName().sendKeys(prop.getProperty("registerSiteName")+i);
 
+            registerPage.umbrellaOrganisation().click();
+            registerPage.umbrellaOrganisationChosen().click();
 
-        registerPage.umbrellaOrganisation().click();
-        registerPage.umbrellaOrganisationChosen().click();
+            registerPage.contactSalutation().click();
+            registerPage.contactSalutationMale().click();
 
-        registerPage.contactSalutation().click();
-        registerPage.contactSalutationMale().click();
+            registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName")+i);
+            registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName")+i);
+            registerPage.contactEmail().sendKeys(prop.getProperty("contactEmail")+i);
+            registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone")+i);
+            registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword")+i);
+            registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword")+i);
+            registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
+            registerPage.accept().click();
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+            registerPage.registerSubmit().click();
 
-        registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName"));
-        registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName"));
-        registerPage.contactEmail().sendKeys(prop.getProperty("contactEmail"));
-        registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone"));
-        registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword"));
-        registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
-        registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
-        registerPage.accept().click();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        registerPage.registerSubmit().click();
-
+        }
         log.info("Successfully Register for a mul account");
-
     }
 
     @AfterTest
