@@ -35,7 +35,7 @@ public class RegisterPage {
     WebElement accountPremiumCode;
     @FindBy(xpath = "//label[@class='Checkbox']//input[@id='accept']")
     WebElement accept;
-    @FindBy(id = "register-submit")
+    @FindBy(id = "accept")
     WebElement registerSubmit;
     @FindBy(id = "register-submit")
     WebElement registerButton;
