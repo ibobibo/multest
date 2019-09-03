@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AmbulantOrganisationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AmbulantOrganisationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/ambulantDepartmentData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/ambulantDepartmentData.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/AmbulantOrganisationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/AmbulantOrganisationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -91,14 +85,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="6503" />
+          <entry key="java" value="6549" />
           <entry key="properties" value="674" />
           <entry key="xml" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6503" />
+          <entry key="JAVA" value="6549" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="674" />
           <entry key="XML" value="73" />
@@ -108,7 +102,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/ambulantDepartmentData.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
@@ -120,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/AmbulantOrganisationPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="106" column="50" lean-forward="true" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+            <state relative-caret-position="118">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1821#1822#0" expanded="true" />
@@ -305,12 +299,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            <state relative-caret-position="119">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#813#814#0" expanded="true" />
                 <element signature="e#842#843#0" expanded="true" />
               </folding>
@@ -459,7 +454,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567519781567" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567520391608" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -536,23 +531,11 @@
       <workItem from="1566303381775" duration="7033000" />
       <workItem from="1566382045770" duration="9452000" />
       <workItem from="1567415132200" duration="20055000" />
-      <workItem from="1567502274740" duration="16632000" />
+      <workItem from="1567502274740" duration="17248000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 01m 02s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 01m 24s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 04m 16s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 04m 36s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 04m 52s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -571,9 +554,21 @@
     <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 08m 58s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 11m 04s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 16m 25s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 19m 15s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.03 at 16h 19m 58s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94415000" />
+    <option name="totallyTimeSpent" value="95031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -807,21 +802,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/ambulantDepartmentData.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-          <folding>
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="544">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/AmbulantOrganisationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="106" column="50" lean-forward="true" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+        <state relative-caret-position="118">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1821#1822#0" expanded="true" />
@@ -1004,10 +995,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/ambulantDepartmentData.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="119">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -14,7 +14,7 @@ public class CreateAmbulantOrganisation extends MulLogin {
     }
 
     @Test
-    public void createOrganisation() throws IOException, InterruptedException {
+    public void createOrganisation() throws IOException {
         loadProps();
         loadPropsForAmbulantDepartment();
         AmbulantOrganisationPage ambulantOrganisationPage = new AmbulantOrganisationPage(driver);
