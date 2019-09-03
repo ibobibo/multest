@@ -502,4 +502,79 @@ public class AmbulantOrganisationPage {
     public WebElement hollydayCare() {
         return hollydayCare;
     }
+
+    //bediente PLZ
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.operatedZipCodes']")
+    WebElement servedAreas;
+
+    //GETTER bediente PLZ
+    public WebElement servedAreas() {
+        return servedAreas;
+    }
+
+    //weitere sprachen
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.languages.ENGLISH']")
+    WebElement english;
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.languages.TURKISH']")
+    WebElement turkish;
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.languages.FRENCH']")
+    WebElement french;
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.languages.RUSSIAN']")
+    WebElement russian;
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.languages.SPANISH']")
+    WebElement spanish;
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.languages.POLISH']")
+    WebElement polish;
+
+    //GETTER weitere Sprachen
+    public WebElement english() {
+        return english;
+    }
+
+    public WebElement turkish() {
+        return turkish;
+    }
+
+    public WebElement french() {
+        return french;
+    }
+
+    public WebElement russian() {
+        return russian;
+    }
+
+    public WebElement spanish() {
+        return spanish;
+    }
+
+    public WebElement polish() {
+        return polish;
+    }
+
+    //Siegel
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.certificateCategories.5d10da2b9a3dec00013e10b6']")
+    WebElement certificat;
+
+    //GETTER Siegel
+    public WebElement certificat() {
+        return certificat;
+    }
+
+    //youtube video
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='youtubeURL']")
+    WebElement youTubeVideo;
+
+    //GETTER youtube video
+    public WebElement youTubeVideo() {
+        return youTubeVideo;
+    }
+
+    //ambulante Einrichtung speichern
+    @FindBy(id = "publish-department")
+    WebElement saveAmbulantDepartment;
+
+    //GETTER ambulante Einrichtung speichern
+    public WebElement saveAmbulantDepartment() {
+        return saveAmbulantDepartment;
+    }
 }

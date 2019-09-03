@@ -59,4 +59,10 @@ public class BaseClass {
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\browserData.properties");
         prop.load(fileInputStream);
     }
+
+    public void loadPropsForAmbulantDepartment() throws IOException {
+        prop = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\ambulantDepartmentData.properties");
+        prop.load(fileInputStream);
+    }
 }
