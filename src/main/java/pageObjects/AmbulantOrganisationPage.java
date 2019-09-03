@@ -128,7 +128,278 @@ public class AmbulantOrganisationPage {
         return ambulantDepartmentContactPhone;
     }
 
-    //sprechzeiten
+    //sprechzeiten Montag
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.startHour']")
+    WebElement mondayHourBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.startMinute']")
+    WebElement mondayMinuteBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.endHour']")
+    WebElement mondayHourEnd;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.endMinute']")
+    WebElement mondayMinuteEnd;
 
-    //GETTER sprechzeiten
+    //GETTER sprechzeiten Montag
+    public WebElement mondayHourBegin() {
+        return mondayHourBegin;
+    }
+
+    public WebElement mondayMinuteBegin() {
+        return mondayMinuteBegin;
+    }
+
+    public WebElement mondayHourEnd() {
+        return mondayHourEnd;
+    }
+
+    public WebElement mondayMinuteEnd() {
+        return mondayMinuteEnd;
+    }
+
+    //sprechzeiten Dienstag
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.startHour']")
+    WebElement tuesdayHourBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.startMinute']")
+    WebElement tuesdayMinuteBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.endHour']")
+    WebElement tuesdayHourEnd;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.endMinute']")
+    WebElement tuesdayMinuteEnd;
+
+    //GETTER sprechzeiten Dienstag
+    public WebElement tuesdayHourBegin() {
+        return tuesdayHourBegin;
+    }
+
+    public WebElement tuesdayMinuteBegin() {
+        return tuesdayMinuteBegin;
+    }
+
+    public WebElement tuesdayHourEnd() {
+        return tuesdayHourEnd;
+    }
+
+    public WebElement tuesdayMinuteEnd() {
+        return tuesdayMinuteEnd;
+    }
+
+    //sprechzeiten Mittwoch
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.startHour']")
+    WebElement wednesdayHourBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.startMinute']")
+    WebElement wednesdayMinuteBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.endHour']")
+    WebElement wednesdayHourEnd;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.endMinute']")
+    WebElement wednesdayMinuteEnd;
+
+    //GETTER sprechzeiten Mittwoch
+    public WebElement wednesdayHourBegin() {
+        return wednesdayHourBegin;
+    }
+
+    public WebElement wednesdayMinuteBegin() {
+        return wednesdayMinuteBegin;
+    }
+
+    public WebElement wednesdayHourEnd() {
+        return wednesdayHourEnd;
+    }
+
+    public WebElement wednesdayMinuteEnd() {
+        return wednesdayMinuteEnd;
+    }
+
+    //sprechzeiten Donnerstag
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.startHour']")
+    WebElement thursdayHourBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.startMinute']")
+    WebElement thursdayMinuteBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.endHour']")
+    WebElement thursdayHourEnd;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.endMinute']")
+    WebElement thursdayMinuteEnd;
+
+    //GETTER sprechzeiten Donnerstag
+    public WebElement thursdayHourBegin() {
+        return thursdayHourBegin;
+    }
+
+    public WebElement thursdayMinuteBegin() {
+        return thursdayMinuteBegin;
+    }
+
+    public WebElement thursdayHourEnd() {
+        return thursdayHourEnd;
+    }
+
+    public WebElement thursdayMinuteEnd() {
+        return thursdayMinuteEnd;
+    }
+
+    //sprechzeiten Freitag
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.startHour']")
+    WebElement fridayHourBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.startMinute']")
+    WebElement fridayMinuteBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.endHour']")
+    WebElement fridayHourEnd;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.endMinute']")
+    WebElement fridayMinuteEnd;
+
+    //GETTER sprechzeiten Freitag
+    public WebElement fridayHourBegin() {
+        return fridayHourBegin;
+    }
+
+    public WebElement fridayMinuteBegin() {
+        return fridayMinuteBegin;
+    }
+
+    public WebElement fridayHourEnd() {
+        return fridayHourEnd;
+    }
+
+    public WebElement fridayMinuteEnd() {
+        return fridayMinuteEnd;
+    }
+
+    //sprechzeiten Samstag
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.startHour']")
+    WebElement saturdayHourBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.startMinute']")
+    WebElement saturdayMinuteBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.endHour']")
+    WebElement saturdayHourEnd;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.endMinute']")
+    WebElement saturdayMinuteEnd;
+
+    //GETTER sprechzeiten Samstag
+    public WebElement saturdayHourBegin() {
+        return saturdayHourBegin;
+    }
+
+    public WebElement saturdayMinuteBegin() {
+        return saturdayMinuteBegin;
+    }
+
+    public WebElement saturdayHourEnd() {
+        return saturdayHourEnd;
+    }
+
+    public WebElement saturdayMinuteEnd() {
+        return saturdayMinuteEnd;
+    }
+
+    //sprechzeiten Sonntag
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.startHour']")
+    WebElement sundayHourBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.startMinute']")
+    WebElement sundayMinuteBegin;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.endHour']")
+    WebElement sundayHourEnd;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.endMinute']")
+    WebElement sundayMinuteEnd;
+
+    //GETTER sprechzeiten Sonntag
+    public WebElement sundayHourBegin() {
+        return sundayHourBegin;
+    }
+
+    public WebElement sundayMinuteBegin() {
+        return sundayMinuteBegin;
+    }
+
+    public WebElement sundayHourEnd() {
+        return sundayHourEnd;
+    }
+
+    public WebElement sundayMinuteEnd() {
+        return sundayMinuteEnd;
+    }
+
+    //Allgemeine Beschreibung
+    @FindBy(xpath = "//section[@class='Input textarea required empty invalid']//textarea[@id='description']")
+    WebElement presentationOfDepartment;
+    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.0']")
+    WebElement particularityZero;
+    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.1']")
+    WebElement particularityOne;
+    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.2']")
+    WebElement particularityTwo;
+    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.3']")
+    WebElement particularityThree;
+    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.4']")
+    WebElement particularityFour;
+
+    //GETTER allgemeine Beschreibung
+    public WebElement presentationOfDepartment() {
+        return presentationOfDepartment;
+    }
+
+    public WebElement particularityZero() {
+        return particularityZero;
+    }
+
+    public WebElement particularityOne() {
+        return particularityOne;
+    }
+
+    public WebElement particularityTwo() {
+        return particularityTwo;
+    }
+
+    public WebElement particularityThree() {
+        return particularityThree;
+    }
+
+    public WebElement particularityFour() {
+        return particularityFour;
+    }
+
+    //Personal
+    @FindBy(xpath = "//section[@class='Input  select     empty']//select[@id='staffRange']")
+    WebElement staffRange;
+
+    //GETTER Personal
+    public WebElement staffRange() {
+        return staffRange;
+    }
+
+    //Pflegegrad
+    @FindBy(xpath = "//section[@class='DepartmentOffers']//input[@id='tmp.offers.careLevel.1']")
+    WebElement careLevelOne;
+    @FindBy(xpath = "//section[@class='DepartmentOffers']//input[@id='tmp.offers.careLevel.2']")
+    WebElement careLevelTwo;
+    @FindBy(xpath = "//section[@class='DepartmentOffers']//input[@id='tmp.offers.careLevel.3']")
+    WebElement careLevelThree;
+    @FindBy(xpath = "//section[@class='DepartmentOffers']//input[@id='tmp.offers.careLevel.4']")
+    WebElement careLevelFour;
+    @FindBy(xpath = "//section[@class='DepartmentOffers']//input[@id='tmp.offers.careLevel.5']")
+    WebElement careLevelFive;
+
+    //GETTER Pflegegrad
+    public WebElement careLevelOne() {
+        return careLevelOne;
+    }
+
+    public WebElement careLevelTwo() {
+        return careLevelTwo;
+    }
+
+    public WebElement careLevelThree() {
+        return careLevelThree;
+    }
+
+    public WebElement careLevelFour() {
+        return careLevelFour;
+    }
+
+    public WebElement careLevelFive() {
+        return careLevelFive;
+    }
+
+    //Leistungen
+
+
+    //GETTER Leistungen
 }
