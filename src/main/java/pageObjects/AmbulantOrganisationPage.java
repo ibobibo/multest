@@ -399,7 +399,107 @@ public class AmbulantOrganisationPage {
     }
 
     //Leistungen
-
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1094']")
+    WebElement foodOnWheels;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1095']")
+    WebElement homeHelp;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1096']")
+    WebElement domesticCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1097']")
+    WebElement ambulantHospice;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1098']")
+    WebElement treatmentCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1099']")
+    WebElement mentallyRetardet;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109a']")
+    WebElement physicallyDisabled;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109b']")
+    WebElement dayCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109c']")
+    WebElement nightCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109d']")
+    WebElement intensivCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109e']")
+    WebElement preventionCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109f']")
+    WebElement reliefCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a0']")
+    WebElement dementiaCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a1']")
+    WebElement intensivCareVegetativeState;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a2']")
+    WebElement ventilatorCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a3']")
+    WebElement hospiceWork;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a4']")
+    WebElement hollydayCare;
 
     //GETTER Leistungen
+    public WebElement foodOnWheels() {
+        return foodOnWheels;
+    }
+
+    public WebElement homeHelp() {
+        return homeHelp;
+    }
+
+    public WebElement domesticCare() {
+        return domesticCare;
+    }
+
+    public WebElement ambulantHospice() {
+        return ambulantHospice;
+    }
+
+    public WebElement treatmentCare() {
+        return treatmentCare;
+    }
+
+    public WebElement mentallyRetardet() {
+        return mentallyRetardet;
+    }
+
+    public WebElement physicallyDisabled() {
+        return physicallyDisabled;
+    }
+
+    public WebElement dayCare() {
+        return dayCare;
+    }
+
+    public WebElement nightCare() {
+        return nightCare;
+    }
+
+    public WebElement intensivCare() {
+        return intensivCare;
+    }
+
+    public WebElement preventionCare() {
+        return preventionCare;
+    }
+
+    public WebElement reliefCare() {
+        return reliefCare;
+    }
+
+    public WebElement dementiaCare() {
+        return dementiaCare;
+    }
+
+    public WebElement intensivCareVegetativeState() {
+        return intensivCareVegetativeState;
+    }
+
+    public WebElement ventilatorCare() {
+        return ventilatorCare;
+    }
+
+    public WebElement hospiceWork() {
+        return hospiceWork;
+    }
+
+    public WebElement hollydayCare() {
+        return hollydayCare;
+    }
 }
