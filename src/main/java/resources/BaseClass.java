@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseClass {
     public static WebDriver driver;
     public static Properties prop = new Properties();
+    public static Properties propAmbulant = new Properties();
 
     public WebDriver initializeDriver() throws IOException {
         loadProps();
@@ -61,8 +62,8 @@ public class BaseClass {
     }
 
     public void loadPropsForAmbulantDepartment() throws IOException {
-        prop = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\ambulantDepartmentData.properties");
-        prop.load(fileInputStream);
+        propAmbulant = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\resources\\ambulantDepartmentData.properties");
+        propAmbulant.load(fileInputStream);
     }
 }

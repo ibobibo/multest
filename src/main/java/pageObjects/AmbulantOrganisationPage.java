@@ -23,6 +23,8 @@ public class AmbulantOrganisationPage {
     WebElement ambulantDepartmentName;
     @FindBy(id = "organisationType")
     WebElement ambulantDepartmentOrganisationType;
+    @FindBy(xpath = "//option[. = 'Privat']")
+    WebElement ambulantDepartmentOrganisationTypeChosen;
     @FindBy(id = "confession")
     WebElement ambulantDepartmentConfession;
     @FindBy(xpath = "//section[@class='Input  select     empty']//label[@class='Checkbox ']")
@@ -37,8 +39,10 @@ public class AmbulantOrganisationPage {
     WebElement ambulantDepartmentAddressCity;
     @FindBy(id = "website")
     WebElement ambulantDepartmentWebsite;
-    @FindBy(id = "availability")
+    @FindBy(xpath = "//section[@class='Input  select    required empty']//select[@name='availability']")
     WebElement ambulantDepartmentAvailable;
+    @FindBy(xpath = "//option[. = 'Auf Anfrage']")
+    WebElement ambulantDepartmentAvailableChosen;
 
     //GETTER allgemeine Angaben zur Einrichtung
     public WebElement addDepartment() {
@@ -55,6 +59,10 @@ public class AmbulantOrganisationPage {
 
     public WebElement ambulantDepartmentOrganisationType() {
         return ambulantDepartmentOrganisationType;
+    }
+
+    public WebElement ambulantDepartmentOrganisationTypeChosen() {
+        return ambulantDepartmentOrganisationTypeChosen;
     }
 
     public WebElement ambulantDepartmentConfession() {
@@ -89,9 +97,15 @@ public class AmbulantOrganisationPage {
         return ambulantDepartmentAvailable;
     }
 
+    public WebElement ambulantDepartmentAvailableChosen() {
+        return ambulantDepartmentAvailableChosen;
+    }
+
     //ansprechpartner
     @FindBy(id = "contact.salutation")
     WebElement ambulantDepartmentContactSalutation;
+    @FindBy(xpath = "//option[. = 'ohne Anrede']")
+    WebElement ambulantDepartmentContactSalutationChosen;
     @FindBy(id = "contact.firstName")
     WebElement ambulantDepartmentContactFirstName;
     @FindBy(id = "contact.lastName")
@@ -106,6 +120,10 @@ public class AmbulantOrganisationPage {
     //GETTER ansprechpartner
     public WebElement ambulantDepartmentContactSalutation() {
         return ambulantDepartmentContactSalutation;
+    }
+
+    public WebElement ambulantDepartmentContactSalutationChosen() {
+        return ambulantDepartmentContactSalutationChosen;
     }
 
     public WebElement ambulantDepartmentContactFirstName() {
@@ -318,17 +336,17 @@ public class AmbulantOrganisationPage {
     }
 
     //Allgemeine Beschreibung
-    @FindBy(xpath = "//section[@class='Input textarea required empty invalid']//textarea[@id='description']")
+    @FindBy(id = "description")
     WebElement presentationOfDepartment;
-    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.0']")
+    @FindBy(id = "usps.0")
     WebElement particularityZero;
-    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.1']")
+    @FindBy(id = "usps.1")
     WebElement particularityOne;
-    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.2']")
+    @FindBy(id = "usps.2")
     WebElement particularityTwo;
-    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.3']")
+    @FindBy(id = "usps.3")
     WebElement particularityThree;
-    @FindBy(xpath = "//section[@class='Input uspTextarea textarea required empty invalid']//textarea[@id='usps.4']")
+    @FindBy(id = "usps.4")
     WebElement particularityFour;
 
     //GETTER allgemeine Beschreibung
