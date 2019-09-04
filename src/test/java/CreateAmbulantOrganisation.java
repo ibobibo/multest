@@ -1,3 +1,6 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,7 +17,7 @@ public class CreateAmbulantOrganisation extends MulLogin {
     }
 
     @Test
-    public void createOrganisation() throws IOException {
+    public void createOrganisation() throws IOException, InterruptedException {
         loadProps();
         loadPropsForAmbulantDepartment();
         AmbulantOrganisationPage ambulantOrganisationPage = new AmbulantOrganisationPage(driver);
@@ -33,16 +36,21 @@ public class CreateAmbulantOrganisation extends MulLogin {
         ambulantOrganisationPage.ambulantDepartmentPostalCode().sendKeys(propAmbulant.getProperty("ambulantDepartmentPostalCode"));
         ambulantOrganisationPage.ambulantDepartmentAddressCity().sendKeys(propAmbulant.getProperty("ambulantDepartmentAddressCity"));
         ambulantOrganisationPage.ambulantDepartmentWebsite().sendKeys(propAmbulant.getProperty("ambulantDepartmentWebsite"));
-        ambulantOrganisationPage.ambulantDepartmentAvailable().click();
-        ambulantOrganisationPage.ambulantDepartmentAvailableChosen().click();
 
-        ambulantOrganisationPage.ambulantDepartmentContactSalutation().click();
-        ambulantOrganisationPage.ambulantDepartmentContactSalutationChosen().click();
         ambulantOrganisationPage.ambulantDepartmentContactFirstName().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactFirstName"));
         ambulantOrganisationPage.ambulantDepartmentContactLastName().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactLastName"));
         ambulantOrganisationPage.ambulantDepartmentContactTitle().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactTitle"));
         ambulantOrganisationPage.ambulantDepartmentContactEmail().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactEmail"));
         ambulantOrganisationPage.ambulantDepartmentContactPhone().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactPhone"));
+
+        //funktioniert!!!!
+        WebElement element = driver.findElement(By.id("availability"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().build().perform();
+        ambulantOrganisationPage.ambulantDepartmentAvailableChosen().click();
+
+        ambulantOrganisationPage.ambulantDepartmentContactSalutation().click();
+        ambulantOrganisationPage.ambulantDepartmentContactSalutationChosen().click();
 
         ambulantOrganisationPage.mondayHourBegin().sendKeys(propAmbulant.getProperty("mondayHourBegin"));
         ambulantOrganisationPage.mondayMinuteBegin().sendKeys(propAmbulant.getProperty("mondayMinuteBegin"));
