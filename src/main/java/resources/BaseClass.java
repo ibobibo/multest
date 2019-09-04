@@ -57,13 +57,13 @@ public class BaseClass {
 
     public void loadProps() throws IOException {
         prop = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\browserData.properties");
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\browserData.properties");
         prop.load(fileInputStream);
     }
 
     public void loadPropsForAmbulantDepartment() throws IOException {
         propAmbulant = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\resources\\ambulantDepartmentData.properties");
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\ambulantDepartmentData.properties");
         propAmbulant.load(fileInputStream);
     }
 }

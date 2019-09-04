@@ -10,11 +10,11 @@
     <!--<class name="MulLogin"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <!--<test name="Registration Test">-->
-    <!--<classes>-->
-    <!--<class name="MulRegister"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <!--&lt;!&ndash;<test name="Registration Test">&ndash;&gt;-->
+    <!--&lt;!&ndash;<classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;<class name="MulRegister"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</classes>&ndash;&gt;-->
+    <!--&lt;!&ndash;</test>&ndash;&gt;-->
     <!--<test name="Failure Test">-->
     <!--<classes>-->
     <!--<class name="FailureTestForScreenshot"/>-->

@@ -34,11 +34,9 @@ public class CreateAmbulantOrganisation extends MulLogin {
         ambulantOrganisationPage.ambulantDepartmentAddressCity().sendKeys(propAmbulant.getProperty("ambulantDepartmentAddressCity"));
         ambulantOrganisationPage.ambulantDepartmentWebsite().sendKeys(propAmbulant.getProperty("ambulantDepartmentWebsite"));
         ambulantOrganisationPage.ambulantDepartmentAvailable().click();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         ambulantOrganisationPage.ambulantDepartmentAvailableChosen().click();
 
         ambulantOrganisationPage.ambulantDepartmentContactSalutation().click();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         ambulantOrganisationPage.ambulantDepartmentContactSalutationChosen().click();
         ambulantOrganisationPage.ambulantDepartmentContactFirstName().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactFirstName"));
         ambulantOrganisationPage.ambulantDepartmentContactLastName().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactLastName"));

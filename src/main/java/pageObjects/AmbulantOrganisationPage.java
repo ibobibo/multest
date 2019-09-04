@@ -39,6 +39,8 @@ public class AmbulantOrganisationPage {
     WebElement ambulantDepartmentAddressCity;
     @FindBy(id = "website")
     WebElement ambulantDepartmentWebsite;
+    @FindBy(css = "#contact\\.firstName")
+    WebElement clickHeader;
     @FindBy(xpath = "//section[@class='Input  select    required empty']//select[@name='availability']")
     WebElement ambulantDepartmentAvailable;
     @FindBy(xpath = "//option[. = 'Auf Anfrage']")
@@ -91,6 +93,10 @@ public class AmbulantOrganisationPage {
 
     public WebElement ambulantDepartmentWebsite() {
         return ambulantDepartmentWebsite;
+    }
+
+    public WebElement clickHeader() {
+        return clickHeader;
     }
 
     public WebElement ambulantDepartmentAvailable() {
