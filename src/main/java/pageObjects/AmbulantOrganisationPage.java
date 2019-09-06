@@ -39,7 +39,7 @@ public class AmbulantOrganisationPage {
     WebElement ambulantDepartmentAddressCity;
     @FindBy(id = "website")
     WebElement ambulantDepartmentWebsite;
-    @FindBy(css = "#availability")
+    @FindBy(id = "#availability")
     WebElement ambulantDepartmentAvailable;
     @FindBy(xpath = "//option[. = 'Auf Anfrage']")
     WebElement ambulantDepartmentAvailableChosen;
