@@ -20,9 +20,14 @@
     <!--<class name="FailureTestForScreenshot"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <test name="Creating Help Oraganisation">
+    <!--<test name="Creating Help Oraganisation">-->
+        <!--<classes>-->
+            <!--<class name="CreateAmbulantOrganisation"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="Deleting Oragnisations">
         <classes>
-            <class name="CreateAmbulantOrganisation"/>
+            <class name="DeleteOrganisation"/>
         </classes>
     </test>
 </suite>
