@@ -5,151 +5,151 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AmbulantOrganisationPage {
+public class StationaryOrganisationPage {
     WebDriver driver;
 
-    public AmbulantOrganisationPage(WebDriver driver) {
+    public StationaryOrganisationPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//section[@class='Department']//a[@id='add-department']")
     WebElement addDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
-    WebElement addAmbulantDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
-    WebElement addFirstAmbulantDepartment;
+    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='STATIONARY card']//a[@class='create']")
+    WebElement addStationaryDepartment;
+    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='STATIONARY card']//a[@class='create']")
+    WebElement addFirstStationaryDepartment;
 
     //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")
-    WebElement ambulantDepartmentName;
+    WebElement stationaryDepartmentName;
     @FindBy(id = "organisationType")
-    WebElement ambulantDepartmentOrganisationType;
+    WebElement stationaryDepartmentOrganisationType;
     @FindBy(xpath = "//option[. = 'Privat']")
-    WebElement ambulantDepartmentOrganisationTypeChosen;
+    WebElement stationaryDepartmentOrganisationTypeChosen;
     @FindBy(id = "confession")
-    WebElement ambulantDepartmentConfession;
+    WebElement stationaryDepartmentConfession;
     @FindBy(xpath = "//section[@class='Input  select     empty']//label[@class='Checkbox ']")
-    WebElement ambulantDepartmentAccept;
+    WebElement stationaryDepartmentAccept;
     @FindBy(id = "address.streetAddress")
-    WebElement ambulantDepartmentStreetAddress;
+    WebElement stationaryDepartmentStreetAddress;
     @FindBy(id = "address.streetNumber")
-    WebElement ambulantDepartmentStreetNumber;
+    WebElement stationaryDepartmentStreetNumber;
     @FindBy(id = "address.postalCode")
-    WebElement ambulantDepartmentPostalCode;
+    WebElement stationaryDepartmentPostalCode;
     @FindBy(id = "address.city")
-    WebElement ambulantDepartmentAddressCity;
+    WebElement stationaryDepartmentAddressCity;
     @FindBy(id = "website")
-    WebElement ambulantDepartmentWebsite;
+    WebElement stationaryDepartmentWebsite;
     @FindBy(id = "#availability")
-    WebElement ambulantDepartmentAvailable;
+    WebElement stationaryDepartmentAvailable;
     @FindBy(xpath = "//option[. = 'Auf Anfrage']")
-    WebElement ambulantDepartmentAvailableChosen;
+    WebElement stationaryDepartmentAvailableChosen;
 
     //GETTER allgemeine Angaben zur Einrichtung
     public WebElement addDepartment() {
         return addDepartment;
     }
 
-    public WebElement addAmbulantDepartment() {
-        return addAmbulantDepartment;
+    public WebElement addStationaryDepartment() {
+        return addStationaryDepartment;
     }
 
-    public WebElement addFirstAmbulantDepartment() {
-        return addFirstAmbulantDepartment;
+    public WebElement addFirstStationaryDepartment() {
+        return addFirstStationaryDepartment;
     }
 
-    public WebElement ambulantDepartmentName() {
-        return ambulantDepartmentName;
+    public WebElement stationaryDepartmentName() {
+        return stationaryDepartmentName;
     }
 
-    public WebElement ambulantDepartmentOrganisationType() {
-        return ambulantDepartmentOrganisationType;
+    public WebElement stationaryDepartmentOrganisationType() {
+        return stationaryDepartmentOrganisationType;
     }
 
-    public WebElement ambulantDepartmentOrganisationTypeChosen() {
-        return ambulantDepartmentOrganisationTypeChosen;
+    public WebElement stationaryDepartmentOrganisationTypeChosen() {
+        return stationaryDepartmentOrganisationTypeChosen;
     }
 
-    public WebElement ambulantDepartmentConfession() {
-        return ambulantDepartmentConfession;
+    public WebElement stationaryDepartmentConfession() {
+        return stationaryDepartmentConfession;
     }
 
-    public WebElement ambulantDepartmentAccept() {
-        return ambulantDepartmentAccept;
+    public WebElement stationaryDepartmentAccept() {
+        return stationaryDepartmentAccept;
     }
 
-    public WebElement ambulantDepartmentStreetAddress() {
-        return ambulantDepartmentStreetAddress;
+    public WebElement stationaryDepartmentStreetAddress() {
+        return stationaryDepartmentStreetAddress;
     }
 
-    public WebElement ambulantDepartmentStreetNumber() {
-        return ambulantDepartmentStreetNumber;
+    public WebElement stationaryDepartmentStreetNumber() {
+        return stationaryDepartmentStreetNumber;
     }
 
-    public WebElement ambulantDepartmentPostalCode() {
-        return ambulantDepartmentPostalCode;
+    public WebElement stationaryDepartmentPostalCode() {
+        return stationaryDepartmentPostalCode;
     }
 
-    public WebElement ambulantDepartmentAddressCity() {
-        return ambulantDepartmentAddressCity;
+    public WebElement stationaryDepartmentAddressCity() {
+        return stationaryDepartmentAddressCity;
     }
 
-    public WebElement ambulantDepartmentWebsite() {
-        return ambulantDepartmentWebsite;
+    public WebElement stationaryDepartmentWebsite() {
+        return stationaryDepartmentWebsite;
     }
 
-    public WebElement ambulantDepartmentAvailable() {
-        return ambulantDepartmentAvailable;
+    public WebElement stationaryDepartmentAvailable() {
+        return stationaryDepartmentAvailable;
     }
 
-    public WebElement ambulantDepartmentAvailableChosen() {
-        return ambulantDepartmentAvailableChosen;
+    public WebElement stationaryDepartmentAvailableChosen() {
+        return stationaryDepartmentAvailableChosen;
     }
 
     //ansprechpartner
     @FindBy(id = "contact.salutation")
-    WebElement ambulantDepartmentContactSalutation;
+    WebElement stationaryDepartmentContactSalutation;
     @FindBy(xpath = "//option[. = 'ohne Anrede']")
-    WebElement ambulantDepartmentContactSalutationChosen;
+    WebElement stationaryDepartmentContactSalutationChosen;
     @FindBy(id = "contact.firstName")
-    WebElement ambulantDepartmentContactFirstName;
+    WebElement stationaryDepartmentContactFirstName;
     @FindBy(id = "contact.lastName")
-    WebElement ambulantDepartmentContactLastName;
+    WebElement stationaryDepartmentContactLastName;
     @FindBy(id = "contact.title")
-    WebElement ambulantDepartmentContactTitle;
+    WebElement stationaryDepartmentContactTitle;
     @FindBy(id = "contact.email")
-    WebElement ambulantDepartmentContactEmail;
+    WebElement stationaryDepartmentContactEmail;
     @FindBy(id = "contact.phone")
-    WebElement ambulantDepartmentContactPhone;
+    WebElement stationaryDepartmentContactPhone;
 
     //GETTER ansprechpartner
-    public WebElement ambulantDepartmentContactSalutation() {
-        return ambulantDepartmentContactSalutation;
+    public WebElement stationaryDepartmentContactSalutation() {
+        return stationaryDepartmentContactSalutation;
     }
 
-    public WebElement ambulantDepartmentContactSalutationChosen() {
-        return ambulantDepartmentContactSalutationChosen;
+    public WebElement stationaryDepartmentContactSalutationChosen() {
+        return stationaryDepartmentContactSalutationChosen;
     }
 
-    public WebElement ambulantDepartmentContactFirstName() {
-        return ambulantDepartmentContactFirstName;
+    public WebElement stationaryDepartmentContactFirstName() {
+        return stationaryDepartmentContactFirstName;
     }
 
-    public WebElement ambulantDepartmentContactLastName() {
-        return ambulantDepartmentContactLastName;
+    public WebElement stationaryDepartmentContactLastName() {
+        return stationaryDepartmentContactLastName;
     }
 
-    public WebElement ambulantDepartmentContactTitle() {
-        return ambulantDepartmentContactTitle;
+    public WebElement stationaryDepartmentContactTitle() {
+        return stationaryDepartmentContactTitle;
     }
 
-    public WebElement ambulantDepartmentContactEmail() {
-        return ambulantDepartmentContactEmail;
+    public WebElement stationaryDepartmentContactEmail() {
+        return stationaryDepartmentContactEmail;
     }
 
-    public WebElement ambulantDepartmentContactPhone() {
-        return ambulantDepartmentContactPhone;
+    public WebElement stationaryDepartmentContactPhone() {
+        return stationaryDepartmentContactPhone;
     }
 
     //sprechzeiten Montag
@@ -354,6 +354,24 @@ public class AmbulantOrganisationPage {
     WebElement particularityThree;
     @FindBy(id = "usps.4")
     WebElement particularityFour;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.yearOfConstruction']")
+    WebElement constructionYear;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.yearOfLastRefurbishment']")
+    WebElement refurbishmentYear;
+    @FindBy(xpath = "//section[@class='DepartmentRealEstate']//label[@class='Checkbox ']")
+    WebElement elevator;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.numberOfRooms']")
+    WebElement numberOfRooms;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.roomSizeMin']")
+    WebElement roomSizeMin;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.roomSizeMax']")
+    WebElement roomSizeMax;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.numberOfBeds']")
+    WebElement numberOfBeds;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.numberOfCommonRooms']")
+    WebElement numberOfCommonRooms;
+    @FindBy(xpath = "//section[@class='Input  number     empty']//input[@id='realEstate.environmentInfo']")
+    WebElement enviromentInfo;
 
     //GETTER allgemeine Beschreibung
     public WebElement presentationOfDepartment() {
@@ -380,6 +398,42 @@ public class AmbulantOrganisationPage {
         return particularityFour;
     }
 
+    public WebElement constructionYear() {
+        return constructionYear;
+    }
+
+    public WebElement refurbishmentYear() {
+        return refurbishmentYear;
+    }
+
+    public WebElement elevator() {
+        return elevator;
+    }
+
+    public WebElement numberOfRooms() {
+        return numberOfRooms;
+    }
+
+    public WebElement roomSizeMin() {
+        return roomSizeMin;
+    }
+
+    public WebElement roomSizeMax() {
+        return roomSizeMax;
+    }
+
+    public WebElement numberOfBeds() {
+        return numberOfBeds;
+    }
+
+    public WebElement numberOfCommonRooms() {
+        return numberOfCommonRooms;
+    }
+
+    public WebElement enviromentInfo() {
+        return enviromentInfo;
+    }
+
     //Personal
     @FindBy(xpath = "//section[@class='Input  select     empty']//select[@id='staffRange']")
     WebElement staffRange;
@@ -389,118 +443,130 @@ public class AmbulantOrganisationPage {
         return staffRange;
     }
 
-    //Leistungen
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1094']")
-    WebElement foodOnWheels;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1095']")
-    WebElement homeHelp;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1096']")
-    WebElement domesticCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1097']")
-    WebElement ambulantHospice;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1098']")
-    WebElement treatmentCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1099']")
-    WebElement mentallyRetardet;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109a']")
-    WebElement physicallyDisabled;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109b']")
-    WebElement dayCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109c']")
-    WebElement nightCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109d']")
-    WebElement intensivCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109e']")
-    WebElement preventionCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109f']")
-    WebElement reliefCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a0']")
-    WebElement dementiaCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a1']")
-    WebElement intensivCareVegetativeState;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a2']")
-    WebElement ventilatorCare;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a3']")
-    WebElement hospiceWork;
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a4']")
-    WebElement hollydayCare;
+    //Pflegegrad der Betreut wird
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.offers.minPrice.1']")
+    WebElement careLevelOne;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.offers.minPrice.2']")
+    WebElement careLevelTwo;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.offers.minPrice.3']")
+    WebElement careLevelThree;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.offers.minPrice.4']")
+    WebElement careLevelFour;
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.offers.minPrice.5']")
+    WebElement careLevelFive;
 
-    //GETTER Leistungen
-    public WebElement foodOnWheels() {
-        return foodOnWheels;
+    //GETTER Pflegegrad der Betreut wird
+    public WebElement careLevelOne() {
+        return careLevelOne;
     }
 
-    public WebElement homeHelp() {
-        return homeHelp;
+    public WebElement careLevelTwo() {
+        return careLevelTwo;
     }
 
-    public WebElement domesticCare() {
-        return domesticCare;
+    public WebElement careLevelThree() {
+        return careLevelThree;
     }
 
-    public WebElement ambulantHospice() {
-        return ambulantHospice;
+    public WebElement careLevelFour() {
+        return careLevelFour;
     }
 
-    public WebElement treatmentCare() {
-        return treatmentCare;
+    public WebElement careLevelFive() {
+        return careLevelFive;
     }
 
-    public WebElement mentallyRetardet() {
-        return mentallyRetardet;
+    //Leistungen - Pflege
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e106b']")
+    WebElement bath;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e106c']")
+    WebElement balkon;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e106d']")
+    WebElement kapelle;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e106e']")
+    WebElement church;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e106f']")
+    WebElement fitness;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1070']")
+    WebElement spa;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1071']")
+    WebElement swimhall;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1072']")
+    WebElement libary;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1073']")
+    WebElement roomForAll;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1074']")
+    WebElement kegelGame;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1075']")
+    WebElement busStation;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1076']")
+    WebElement busShuttle;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1077']")
+    WebElement resturant;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1078']")
+    WebElement cafe;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1079']")
+    WebElement pets;
+
+    //GETTER Leistungen - Pflege
+    public WebElement bath() {
+        return bath;
     }
 
-    public WebElement physicallyDisabled() {
-        return physicallyDisabled;
+    public WebElement balkon() {
+        return balkon;
     }
 
-    public WebElement dayCare() {
-        return dayCare;
+    public WebElement kapelle() {
+        return kapelle;
     }
 
-    public WebElement nightCare() {
-        return nightCare;
+    public WebElement church() {
+        return church;
     }
 
-    public WebElement intensivCare() {
-        return intensivCare;
+    public WebElement fitness() {
+        return fitness;
     }
 
-    public WebElement preventionCare() {
-        return preventionCare;
+    public WebElement spa() {
+        return spa;
     }
 
-    public WebElement reliefCare() {
-        return reliefCare;
+    public WebElement swimhall() {
+        return swimhall;
     }
 
-    public WebElement dementiaCare() {
-        return dementiaCare;
+    public WebElement libary() {
+        return libary;
     }
 
-    public WebElement intensivCareVegetativeState() {
-        return intensivCareVegetativeState;
+    public WebElement roomForAll() {
+        return roomForAll;
     }
 
-    public WebElement ventilatorCare() {
-        return ventilatorCare;
+    public WebElement kegelGame() {
+        return kegelGame;
     }
 
-    public WebElement hospiceWork() {
-        return hospiceWork;
+    public WebElement busStation() {
+        return busStation;
     }
 
-    public WebElement hollydayCare() {
-        return hollydayCare;
+    public WebElement busShuttle() {
+        return busShuttle;
     }
 
-    //bediente PLZ
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.operatedZipCodes']")
-    WebElement servedAreas;
+    public WebElement resturant() {
+        return resturant;
+    }
 
-    //GETTER bediente PLZ
-    public WebElement servedAreas() {
-        return servedAreas;
+    public WebElement cafe() {
+        return cafe;
+    }
+
+    public WebElement pets() {
+        return pets;
     }
 
     //weitere sprachen
@@ -542,30 +608,35 @@ public class AmbulantOrganisationPage {
         return polish;
     }
 
-    //Siegel
-    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.certificateCategories.5d10da2b9a3dec00013e10b6']")
-    WebElement certificat;
+    //Verkehrsanbindung
 
-    //GETTER Siegel
-    public WebElement certificat() {
-        return certificat;
-    }
 
-    //youtube video
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='youtubeURL']")
-    WebElement youTubeVideo;
+    //GETTER Verkehrsanbindung
 
-    //GETTER youtube video
-    public WebElement youTubeVideo() {
-        return youTubeVideo;
-    }
-
-    //ambulante Einrichtung speichern
-    @FindBy(id = "publish-department")
-    WebElement saveAmbulantDepartment;
-
-    //GETTER ambulante Einrichtung speichern
-    public WebElement saveAmbulantDepartment() {
-        return saveAmbulantDepartment;
-    }
+//    //Siegel
+//    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.certificateCategories.5d10da2b9a3dec00013e10b6']")
+//    WebElement certificat;
+//
+//    //GETTER Siegel
+//    public WebElement certificat() {
+//        return certificat;
+//    }
+//
+//    //youtube video
+//    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='youtubeURL']")
+//    WebElement youTubeVideo;
+//
+//    //GETTER youtube video
+//    public WebElement youTubeVideo() {
+//        return youTubeVideo;
+//    }
+//
+//    //ambulante Einrichtung speichern
+//    @FindBy(id = "publish-department")
+//    WebElement saveAmbulantDepartment;
+//
+//    //GETTER ambulante Einrichtung speichern
+//    public WebElement saveAmbulantDepartment() {
+//        return saveAmbulantDepartment;
+//    }
 }

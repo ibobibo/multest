@@ -42,6 +42,7 @@ public class CreateAmbulantOrganisation extends MulLogin {
                 System.out.println("Es existiert schon ein erstes Department");
             }
 
+            //allgemeine Angaben
             ambulantOrganisationPage.ambulantDepartmentName().sendKeys(propAmbulant.getProperty("ambulantDepartmentName"));
             ambulantOrganisationPage.ambulantDepartmentOrganisationType().click();
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -52,6 +53,7 @@ public class CreateAmbulantOrganisation extends MulLogin {
             ambulantOrganisationPage.ambulantDepartmentAddressCity().sendKeys(propAmbulant.getProperty("ambulantDepartmentAddressCity"));
             ambulantOrganisationPage.ambulantDepartmentWebsite().sendKeys(propAmbulant.getProperty("ambulantDepartmentWebsite"));
 
+            //angaben zur Person
             ambulantOrganisationPage.ambulantDepartmentContactFirstName().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactFirstName"));
             ambulantOrganisationPage.ambulantDepartmentContactLastName().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactLastName"));
             ambulantOrganisationPage.ambulantDepartmentContactTitle().sendKeys(propAmbulant.getProperty("ambulantDepartmentContactTitle"));
@@ -66,6 +68,7 @@ public class CreateAmbulantOrganisation extends MulLogin {
             actions.moveToElement(contactSalutation).click().build().perform();
             ambulantOrganisationPage.ambulantDepartmentContactSalutationChosen().click();
 
+            //sprechzeiten
             ambulantOrganisationPage.mondayHourBegin().sendKeys(propAmbulant.getProperty("mondayHourBegin"));
             ambulantOrganisationPage.mondayMinuteBegin().sendKeys(propAmbulant.getProperty("mondayMinuteBegin"));
             ambulantOrganisationPage.mondayHourEnd().sendKeys(propAmbulant.getProperty("mondayHourEnd"));
@@ -81,6 +84,7 @@ public class CreateAmbulantOrganisation extends MulLogin {
             ambulantOrganisationPage.fridayHourEnd().sendKeys(propAmbulant.getProperty("fridayHourEnd"));
             ambulantOrganisationPage.fridayMinuteEnd().sendKeys(propAmbulant.getProperty("fridayMinuteEnd"));
 
+            //Beschreibung
             ambulantOrganisationPage.presentationOfDepartment().sendKeys(propAmbulant.getProperty("presentationOfDepartment"));
             ambulantOrganisationPage.particularityZero().sendKeys(propAmbulant.getProperty("particularityZero"));
             ambulantOrganisationPage.particularityOne().sendKeys(propAmbulant.getProperty("particularityOne"));
