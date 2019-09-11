@@ -609,9 +609,185 @@ public class StationaryOrganisationPage {
     }
 
     //Verkehrsanbindung
-
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.transportConnections.BUS']")
+    WebElement trafficBusStation;
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.transportConnections.TRAIN']")
+    WebElement trafficTrainStation;
+    @FindBy(xpath = "//section[@class='DepartmentBasicServices']//input[@id='tmp.transportConnections.PARKING']")
+    WebElement trafficParkStation;
 
     //GETTER Verkehrsanbindung
+    public WebElement trafficBusStation() {
+        return trafficBusStation;
+    }
+
+    public WebElement trafficTrainStation() {
+        return trafficTrainStation;
+    }
+
+    public WebElement trafficParkStation() {
+        return trafficParkStation;
+    }
+
+    //Sonstige Ausstattungen
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e107a']")
+    WebElement testLiving;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e107b']")
+    WebElement guestLiving;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e107c']")
+    WebElement ownFurniture;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e107d']")
+    WebElement treatmentCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e107e']")
+    WebElement mentalCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e107f']")
+    WebElement physicallyCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1080']")
+    WebElement fullTime;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1081']")
+    WebElement dayTime;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1082']")
+    WebElement nightTime;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1083']")
+    WebElement smallTime;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1084']")
+    WebElement intensivCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1085']")
+    WebElement respiteCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1086']")
+    WebElement littleRespiteCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1087']")
+    WebElement dementStation;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1088']")
+    WebElement dementVilleClosed;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1089']")
+    WebElement dementVilleOpen;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e108a']")
+    WebElement dementCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e108b']")
+    WebElement comaCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e108c']")
+    WebElement breatheCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e108d']")
+    WebElement dementCareWithAccommodation;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e108e']")
+    WebElement specialMentalCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e108f']")
+    WebElement hospiceWork;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1090']")
+    WebElement forHandicapped;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1091']")
+    WebElement doctorVisit;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1092']")
+    WebElement specialDoctorVisit;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1093']")
+    WebElement hollydayCare;
+
+
+    //GETTER Sonstige Ausstattungen
+    public WebElement testLiving() {
+        return testLiving;
+    }
+
+    public WebElement guestLiving() {
+        return guestLiving;
+    }
+
+    public WebElement ownFurniture() {
+        return ownFurniture;
+    }
+
+    public WebElement treatmentCare() {
+        return treatmentCare;
+    }
+
+    public WebElement mentalCare() {
+        return mentalCare;
+    }
+
+    public WebElement physicallyCare() {
+        return physicallyCare;
+    }
+
+    public WebElement fullTime() {
+        return fullTime;
+    }
+
+    public WebElement dayTime() {
+        return dayTime;
+    }
+
+    public WebElement nightTime() {
+        return nightTime;
+    }
+
+    public WebElement smallTime() {
+        return smallTime;
+    }
+
+    public WebElement intensivCare() {
+        return intensivCare;
+    }
+
+    public WebElement respiteCare() {
+        return respiteCare;
+    }
+
+    public WebElement littleRespiteCare() {
+        return littleRespiteCare;
+    }
+
+    public WebElement dementStation() {
+        return dementStation;
+    }
+
+    public WebElement dementVilleClosed() {
+        return dementVilleClosed;
+    }
+
+    public WebElement dementVilleOpen() {
+        return dementVilleOpen;
+    }
+
+    public WebElement dementCare() {
+        return dementCare;
+    }
+
+    public WebElement comaCare() {
+        return comaCare;
+    }
+
+    public WebElement breatheCare() {
+        return breatheCare;
+    }
+
+    public WebElement dementCareWithAccommodation() {
+        return dementCareWithAccommodation;
+    }
+
+    public WebElement specialMentalCare() {
+        return specialMentalCare;
+    }
+
+    public WebElement hospiceWork() {
+        return hospiceWork;
+    }
+
+    public WebElement forHandicapped() {
+        return forHandicapped;
+    }
+
+    public WebElement doctorVisit() {
+        return doctorVisit;
+    }
+
+    public WebElement specialDoctorVisit() {
+        return specialDoctorVisit;
+    }
+
+    public WebElement hollydayCare() {
+        return hollydayCare;
+    }
 
 //    //Siegel
 //    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.certificateCategories.5d10da2b9a3dec00013e10b6']")
