@@ -17,6 +17,8 @@ public class AmbulantOrganisationPage {
     WebElement addDepartment;
     @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
     WebElement addAmbulantDepartment;
+    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
+    WebElement addFirstAmbulantDepartment;
 
     //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")
@@ -51,6 +53,10 @@ public class AmbulantOrganisationPage {
 
     public WebElement addAmbulantDepartment() {
         return addAmbulantDepartment;
+    }
+
+    public WebElement addFirstAmbulantDepartment() {
+        return addFirstAmbulantDepartment;
     }
 
     public WebElement ambulantDepartmentName() {

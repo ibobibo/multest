@@ -21,9 +21,9 @@
     <!--</classes>-->
     <!--</test>-->
     <!--<test name="Creating Help Oraganisation">-->
-        <!--<classes>-->
-            <!--<class name="CreateAmbulantOrganisation"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="CreateAmbulantOrganisation"/>-->
+    <!--</classes>-->
     <!--</test>-->
     <test name="Deleting Oragnisations">
         <classes>

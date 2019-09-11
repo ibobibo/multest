@@ -29,8 +29,18 @@ public class CreateAmbulantOrganisation extends MulLogin {
             loadPropsForAmbulantDepartment();
             AmbulantOrganisationPage ambulantOrganisationPage = new AmbulantOrganisationPage(driver);
 
-            ambulantOrganisationPage.addDepartment().click();
-            ambulantOrganisationPage.addAmbulantDepartment().click();
+            try {
+                ambulantOrganisationPage.addDepartment().click();
+                ambulantOrganisationPage.addAmbulantDepartment().click();
+            } catch (Exception e) {
+                System.out.println("Es wurde noch kein Department angelegt.");
+            }
+
+            try {
+                ambulantOrganisationPage.addFirstAmbulantDepartment().click();
+            } catch (Exception e) {
+                System.out.println("Es existiert schon ein erstes Department");
+            }
 
             ambulantOrganisationPage.ambulantDepartmentName().sendKeys(propAmbulant.getProperty("ambulantDepartmentName"));
             ambulantOrganisationPage.ambulantDepartmentOrganisationType().click();

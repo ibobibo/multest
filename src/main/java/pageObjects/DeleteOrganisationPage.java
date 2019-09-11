@@ -19,4 +19,12 @@ public class DeleteOrganisationPage {
     public WebElement deleteClick() {
         return deleteClick;
     }
+
+    @FindBy(xpath = "//*[@class='cancel']")
+    WebElement cancelClick;
+
+    public WebElement cancelClick() {
+        return cancelClick;
+    }
+
 }
