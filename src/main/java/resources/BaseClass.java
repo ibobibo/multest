@@ -20,6 +20,7 @@ public class BaseClass {
     public static Properties propAmbulant = new Properties();
     public static Properties propStationary = new Properties();
     public static Properties propDayNightCare = new Properties();
+    public static Properties propFairHouseOffer = new Properties();
 
 
     public WebDriver initializeDriver() throws IOException {
@@ -80,5 +81,11 @@ public class BaseClass {
         propDayNightCare = new Properties();
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\dayNightCareDepartment.properties");
         propDayNightCare.load(fileInputStream);
+    }
+
+    public void loadPropsForFairHouseOfferDepartment() throws IOException {
+        propFairHouseOffer = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\fairHouseOfferDepartment.properties");
+        propFairHouseOffer.load(fileInputStream);
     }
 }
