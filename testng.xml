@@ -20,14 +20,24 @@
     <!--<class name="FailureTestForScreenshot"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <!--<test name="Creating Help Oraganisation">-->
+    <!--<test name="Creating an ambulant Organisation">-->
     <!--<classes>-->
     <!--<class name="CreateAmbulantOrganisation"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <test name="Deleting Oragnisations">
+    <!--<test name="Creating a stationary Organisation">-->
+    <!--<classes>-->
+    <!--<class name="CreateStationaryOrganisation"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="Creating a day-night-care Organisation">
         <classes>
-            <class name="DeleteOrganisation"/>
+            <class name="CreateDayNightCareOrganisation"/>
         </classes>
     </test>
+    <!--<test name="Deleting Organisations">-->
+    <!--<classes>-->
+    <!--<class name="DeleteOrganisation"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 </suite>

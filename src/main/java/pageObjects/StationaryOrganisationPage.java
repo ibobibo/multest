@@ -789,30 +789,57 @@ public class StationaryOrganisationPage {
         return hollydayCare;
     }
 
-//    //Siegel
-//    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.certificateCategories.5d10da2b9a3dec00013e10b6']")
-//    WebElement certificat;
-//
-//    //GETTER Siegel
-//    public WebElement certificat() {
-//        return certificat;
-//    }
-//
-//    //youtube video
-//    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='youtubeURL']")
-//    WebElement youTubeVideo;
-//
-//    //GETTER youtube video
-//    public WebElement youTubeVideo() {
-//        return youTubeVideo;
-//    }
-//
-//    //ambulante Einrichtung speichern
-//    @FindBy(id = "publish-department")
-//    WebElement saveAmbulantDepartment;
-//
-//    //GETTER ambulante Einrichtung speichern
-//    public WebElement saveAmbulantDepartment() {
-//        return saveAmbulantDepartment;
-//    }
+    //Leistungen - Räumlichkeiten
+    @FindBy(xpath = "//section[@class='DepartmentRoomServices']//input[@id='tmp.realEstate.roomTypes.SINGLE']")
+    WebElement singleBed;
+    @FindBy(xpath = "//section[@class='DepartmentRoomServices']//input[@id='tmp.realEstate.roomTypes.DOUBLE']")
+    WebElement doubleBed;
+    @FindBy(xpath = "//section[@class='DepartmentRoomServices']//input[@id='tmp.realEstate.bathRoomTypes.SINGLE']")
+    WebElement singleToilet;
+    @FindBy(xpath = "//section[@class='DepartmentRoomServices']//input[@id='tmp.realEstate.bathRoomTypes.DOUBLE']")
+    WebElement doubleToilet;
+
+    //GETTER Leistungen - Räumlichkeiten
+    public WebElement singleBed() {
+        return singleBed;
+    }
+
+    public WebElement doubleBed() {
+        return doubleBed;
+    }
+
+    public WebElement singleToilet() {
+        return singleToilet;
+    }
+
+    public WebElement doubleToilet() {
+        return doubleToilet;
+    }
+
+    //Siegel
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.certificateCategories.5d12030e9a3dec00013e10d8']")
+    WebElement certificat;
+
+    //GETTER Siegel
+    public WebElement certificat() {
+        return certificat;
+    }
+
+    //youtube video
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='youtubeURL']")
+    WebElement youTubeVideo;
+
+    //GETTER youtube video
+    public WebElement youTubeVideo() {
+        return youTubeVideo;
+    }
+
+    //stationäre Einrichtung speichern
+    @FindBy(id = "publish-department")
+    WebElement saveStationaryDepartment;
+
+    //GETTER stationäre Einrichtung speichern
+    public WebElement saveStationaryDepartment() {
+        return saveStationaryDepartment;
+    }
 }

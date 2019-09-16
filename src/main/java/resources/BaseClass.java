@@ -18,6 +18,9 @@ public class BaseClass {
     public static WebDriver driver;
     public static Properties prop = new Properties();
     public static Properties propAmbulant = new Properties();
+    public static Properties propStationary = new Properties();
+    public static Properties propDayNightCare = new Properties();
+
 
     public WebDriver initializeDriver() throws IOException {
         loadProps();
@@ -65,5 +68,17 @@ public class BaseClass {
         propAmbulant = new Properties();
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\ambulantDepartmentData.properties");
         propAmbulant.load(fileInputStream);
+    }
+
+    public void loadPropsForStationaryDepartment() throws IOException {
+        propStationary = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\stationaryDepartmentData.properties");
+        propStationary.load(fileInputStream);
+    }
+
+    public void loadPropsForDayNightCareDepartment() throws IOException {
+        propDayNightCare = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\dayNightCareDepartment.properties");
+        propDayNightCare.load(fileInputStream);
     }
 }
