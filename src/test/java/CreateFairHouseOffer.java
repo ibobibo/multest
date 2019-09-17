@@ -16,13 +16,14 @@ public class CreateFairHouseOffer extends MulLogin {
     }
 
     @Test
-    public void createOrganisation() throws IOException, InterruptedException {
+    public void createOrganisation() throws IOException {
         login();
 
         //because we have to move explicit to our select fields
         Actions actions = new Actions(driver);
 
         loadProps();
+        loadPropsForDepartment();
         loadPropsForFairHouseOfferDepartment();
         FairHouseOfferPage fairHouseOfferPage = new FairHouseOfferPage(driver);
 
@@ -53,39 +54,39 @@ public class CreateFairHouseOffer extends MulLogin {
         }
 
         //allgemeine Angaben
-        fairHouseOfferPage.fairHouseOfferDepartmentName().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentName"));
-        fairHouseOfferPage.fairHouseOfferDepartmentStreetAddress().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentStreetAddress"));
-        fairHouseOfferPage.fairHouseOfferDepartmentStreetNumber().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentStreetNumber"));
-        fairHouseOfferPage.fairHouseOfferDepartmentPostalCode().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentPostalCode"));
-        fairHouseOfferPage.fairHouseOfferDepartmentAddressCity().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentAddressCity"));
-        fairHouseOfferPage.fairHouseOfferDepartmentWebsite().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentWebsite"));
+        fairHouseOfferPage.fairHouseOfferDepartmentName().sendKeys(propDepartment.getProperty("fairHouseOfferDepartmentName"));
+        fairHouseOfferPage.fairHouseOfferDepartmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+        fairHouseOfferPage.fairHouseOfferDepartmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+        fairHouseOfferPage.fairHouseOfferDepartmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+        fairHouseOfferPage.fairHouseOfferDepartmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+        fairHouseOfferPage.fairHouseOfferDepartmentWebsite().sendKeys(propDepartment.getProperty("website"));
 
         //angaben zur Person
-        fairHouseOfferPage.fairHouseOfferDepartmentContactFirstName().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentContactFirstName"));
-        fairHouseOfferPage.fairHouseOfferDepartmentContactLastName().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentContactLastName"));
-        fairHouseOfferPage.fairHouseOfferDepartmentContactTitle().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentContactTitle"));
-        fairHouseOfferPage.fairHouseOfferDepartmentContactEmail().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentContactEmail"));
-        fairHouseOfferPage.fairHouseOfferDepartmentContactPhone().sendKeys(propFairHouseOffer.getProperty("fairHouseOfferDepartmentContactPhone"));
+        fairHouseOfferPage.fairHouseOfferDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+        fairHouseOfferPage.fairHouseOfferDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+        fairHouseOfferPage.fairHouseOfferDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+        fairHouseOfferPage.fairHouseOfferDepartmentContactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
+        fairHouseOfferPage.fairHouseOfferDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
         WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));
         actions.moveToElement(contactSalutation).click().build().perform();
         fairHouseOfferPage.fairHouseOfferDepartmentContactSalutationChosen().click();
 
         //sprechzeiten
-        fairHouseOfferPage.mondayHourBegin().sendKeys(propFairHouseOffer.getProperty("mondayHourBegin"));
-        fairHouseOfferPage.mondayMinuteBegin().sendKeys(propFairHouseOffer.getProperty("mondayMinuteBegin"));
-        fairHouseOfferPage.mondayHourEnd().sendKeys(propFairHouseOffer.getProperty("mondayHourEnd"));
-        fairHouseOfferPage.mondayMinuteEnd().sendKeys(propFairHouseOffer.getProperty("mondayMinuteEnd"));
+        fairHouseOfferPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
+        fairHouseOfferPage.mondayMinuteBegin().sendKeys(propDepartment.getProperty("mondayMinuteBegin"));
+        fairHouseOfferPage.mondayHourEnd().sendKeys(propDepartment.getProperty("mondayHourEnd"));
+        fairHouseOfferPage.mondayMinuteEnd().sendKeys(propDepartment.getProperty("mondayMinuteEnd"));
 
-        fairHouseOfferPage.wednesdayHourBegin().sendKeys(propFairHouseOffer.getProperty("wednesdayHourBegin"));
-        fairHouseOfferPage.wednesdayMinuteBegin().sendKeys(propFairHouseOffer.getProperty("wednesdayMinuteBegin"));
-        fairHouseOfferPage.wednesdayHourEnd().sendKeys(propFairHouseOffer.getProperty("wednesdayHourEnd"));
-        fairHouseOfferPage.wednesdayMinuteEnd().sendKeys(propFairHouseOffer.getProperty("wednesdayMinuteEnd"));
+        fairHouseOfferPage.wednesdayHourBegin().sendKeys(propDepartment.getProperty("wednesdayHourBegin"));
+        fairHouseOfferPage.wednesdayMinuteBegin().sendKeys(propDepartment.getProperty("wednesdayMinuteBegin"));
+        fairHouseOfferPage.wednesdayHourEnd().sendKeys(propDepartment.getProperty("wednesdayHourEnd"));
+        fairHouseOfferPage.wednesdayMinuteEnd().sendKeys(propDepartment.getProperty("wednesdayMinuteEnd"));
 
-        fairHouseOfferPage.fridayHourBegin().sendKeys(propFairHouseOffer.getProperty("fridayHourBegin"));
-        fairHouseOfferPage.fridayMinuteBegin().sendKeys(propFairHouseOffer.getProperty("fridayMinuteBegin"));
-        fairHouseOfferPage.fridayHourEnd().sendKeys(propFairHouseOffer.getProperty("fridayHourEnd"));
-        fairHouseOfferPage.fridayMinuteEnd().sendKeys(propFairHouseOffer.getProperty("fridayMinuteEnd"));
+        fairHouseOfferPage.fridayHourBegin().sendKeys(propDepartment.getProperty("fridayHourBegin"));
+        fairHouseOfferPage.fridayMinuteBegin().sendKeys(propDepartment.getProperty("fridayMinuteBegin"));
+        fairHouseOfferPage.fridayHourEnd().sendKeys(propDepartment.getProperty("fridayHourEnd"));
+        fairHouseOfferPage.fridayMinuteEnd().sendKeys(propDepartment.getProperty("fridayMinuteEnd"));
 
         //Allgemeine Beschreibung des Wohnprojekts
         fairHouseOfferPage.descriptionOfApartment().sendKeys(propFairHouseOffer.getProperty("descriptionOfApartment"));
@@ -133,7 +134,7 @@ public class CreateFairHouseOffer extends MulLogin {
         fairHouseOfferPage.numberOfCommonRooms().sendKeys(propFairHouseOffer.getProperty("numberOfCommonRooms"));
 
         //Youtube
-        fairHouseOfferPage.youTubeVideo().sendKeys(propFairHouseOffer.getProperty("youTubeVideo"));
+        fairHouseOfferPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
 
         //save
         fairHouseOfferPage.saveDepartment().click();

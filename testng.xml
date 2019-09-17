@@ -20,29 +20,29 @@
     <!--<class name="FailureTestForScreenshot"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <test name="Creating an ambulant Organisation">
-        <classes>
-            <class name="CreateAmbulantOrganisation"/>
-        </classes>
-    </test>
-    <test name="Creating a stationary Organisation">
-        <classes>
-            <class name="CreateStationaryOrganisation"/>
-        </classes>
-    </test>
-    <test name="Creating a day-night-care Organisation">
-        <classes>
-            <class name="CreateDayNightCareOrganisation"/>
-        </classes>
-    </test>
+    <!--<test name="Creating an ambulant Organisation">-->
+        <!--<classes>-->
+            <!--<class name="CreateAmbulantOrganisation"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Creating a stationary Organisation">-->
+        <!--<classes>-->
+            <!--<class name="CreateStationaryOrganisation"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Creating a day-night-care Organisation">-->
+        <!--<classes>-->
+            <!--<class name="CreateDayNightCareOrganisation"/>-->
+        <!--</classes>-->
+    <!--</test>-->
     <test name="Creating a Fair House Offer Organisation">
         <classes>
             <class name="CreateFairHouseOffer"/>
         </classes>
     </test>
-    <test name="Deleting Organisations">
-        <classes>
-            <class name="DeleteOrganisation"/>
-        </classes>
-    </test>
+    <!--<test name="Deleting Organisations">-->
+    <!--<classes>-->
+    <!--<class name="DeleteOrganisation"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 </suite>

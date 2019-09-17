@@ -23,7 +23,7 @@ public class CreateDayNightCareOrganisation extends MulLogin {
         Actions actions = new Actions(driver);
 
         loadProps();
-        loadPropsForDayNightCareDepartment();
+        loadPropsForDepartment();
         DayNightCareOrganisationPage dayNightCareOrganisationPage = new DayNightCareOrganisationPage(driver);
 
         try {
@@ -40,21 +40,21 @@ public class CreateDayNightCareOrganisation extends MulLogin {
         }
 
         //allgemeine Angaben
-        dayNightCareOrganisationPage.dayNightCareDepartmentName().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentName"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
         dayNightCareOrganisationPage.dayNightCareDepartmentOrganisationType().click();
         dayNightCareOrganisationPage.dayNightCareDepartmentOrganisationTypeChosen().click();
-        dayNightCareOrganisationPage.dayNightCareDepartmentStreetAddress().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentStreetAddress"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentStreetNumber().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentStreetNumber"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentPostalCode().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentPostalCode"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentAddressCity().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentAddressCity"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentWebsite().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentWebsite"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentWebsite().sendKeys(propDepartment.getProperty("website"));
 
         //angaben zur Person
-        dayNightCareOrganisationPage.dayNightCareDepartmentContactFirstName().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentContactFirstName"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentContactLastName().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentContactLastName"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentContactTitle().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentContactTitle"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentContactEmail().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentContactEmail"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentContactPhone().sendKeys(propDayNightCare.getProperty("dayNightCareDepartmentContactPhone"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentContactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
+        dayNightCareOrganisationPage.dayNightCareDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
         WebElement availability = driver.findElement(By.id("availability"));
         actions.moveToElement(availability).click().build().perform();
@@ -65,29 +65,29 @@ public class CreateDayNightCareOrganisation extends MulLogin {
         dayNightCareOrganisationPage.dayNightCareDepartmentContactSalutationChosen().click();
 
         //sprechzeiten
-        dayNightCareOrganisationPage.mondayHourBegin().sendKeys(propDayNightCare.getProperty("mondayHourBegin"));
-        dayNightCareOrganisationPage.mondayMinuteBegin().sendKeys(propDayNightCare.getProperty("mondayMinuteBegin"));
-        dayNightCareOrganisationPage.mondayHourEnd().sendKeys(propDayNightCare.getProperty("mondayHourEnd"));
-        dayNightCareOrganisationPage.mondayMinuteEnd().sendKeys(propDayNightCare.getProperty("mondayMinuteEnd"));
+        dayNightCareOrganisationPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
+        dayNightCareOrganisationPage.mondayMinuteBegin().sendKeys(propDepartment.getProperty("mondayMinuteBegin"));
+        dayNightCareOrganisationPage.mondayHourEnd().sendKeys(propDepartment.getProperty("mondayHourEnd"));
+        dayNightCareOrganisationPage.mondayMinuteEnd().sendKeys(propDepartment.getProperty("mondayMinuteEnd"));
 
-        dayNightCareOrganisationPage.wednesdayHourBegin().sendKeys(propDayNightCare.getProperty("wednesdayHourBegin"));
-        dayNightCareOrganisationPage.wednesdayMinuteBegin().sendKeys(propDayNightCare.getProperty("wednesdayMinuteBegin"));
-        dayNightCareOrganisationPage.wednesdayHourEnd().sendKeys(propDayNightCare.getProperty("wednesdayHourEnd"));
-        dayNightCareOrganisationPage.wednesdayMinuteEnd().sendKeys(propDayNightCare.getProperty("wednesdayMinuteEnd"));
+        dayNightCareOrganisationPage.wednesdayHourBegin().sendKeys(propDepartment.getProperty("wednesdayHourBegin"));
+        dayNightCareOrganisationPage.wednesdayMinuteBegin().sendKeys(propDepartment.getProperty("wednesdayMinuteBegin"));
+        dayNightCareOrganisationPage.wednesdayHourEnd().sendKeys(propDepartment.getProperty("wednesdayHourEnd"));
+        dayNightCareOrganisationPage.wednesdayMinuteEnd().sendKeys(propDepartment.getProperty("wednesdayMinuteEnd"));
 
-        dayNightCareOrganisationPage.fridayHourBegin().sendKeys(propDayNightCare.getProperty("fridayHourBegin"));
-        dayNightCareOrganisationPage.fridayMinuteBegin().sendKeys(propDayNightCare.getProperty("fridayMinuteBegin"));
-        dayNightCareOrganisationPage.fridayHourEnd().sendKeys(propDayNightCare.getProperty("fridayHourEnd"));
-        dayNightCareOrganisationPage.fridayMinuteEnd().sendKeys(propDayNightCare.getProperty("fridayMinuteEnd"));
+        dayNightCareOrganisationPage.fridayHourBegin().sendKeys(propDepartment.getProperty("fridayHourBegin"));
+        dayNightCareOrganisationPage.fridayMinuteBegin().sendKeys(propDepartment.getProperty("fridayMinuteBegin"));
+        dayNightCareOrganisationPage.fridayHourEnd().sendKeys(propDepartment.getProperty("fridayHourEnd"));
+        dayNightCareOrganisationPage.fridayMinuteEnd().sendKeys(propDepartment.getProperty("fridayMinuteEnd"));
 
         //Beschreibung
-        dayNightCareOrganisationPage.presentationOfDepartment().sendKeys(propDayNightCare.getProperty("presentationOfDepartment"));
-        dayNightCareOrganisationPage.particularityZero().sendKeys(propDayNightCare.getProperty("particularityZero"));
-        dayNightCareOrganisationPage.particularityOne().sendKeys(propDayNightCare.getProperty("particularityOne"));
-        dayNightCareOrganisationPage.particularityTwo().sendKeys(propDayNightCare.getProperty("particularityTwo"));
+        dayNightCareOrganisationPage.presentationOfDepartment().sendKeys(propDepartment.getProperty("presentationOfDepartment"));
+        dayNightCareOrganisationPage.particularityZero().sendKeys(propDepartment.getProperty("particularityZero"));
+        dayNightCareOrganisationPage.particularityOne().sendKeys(propDepartment.getProperty("particularityOne"));
+        dayNightCareOrganisationPage.particularityTwo().sendKeys(propDepartment.getProperty("particularityTwo"));
 
         //youtube
-        dayNightCareOrganisationPage.youTubeVideo().sendKeys(propDayNightCare.getProperty("youTubeVideo"));
+        dayNightCareOrganisationPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
 
         //speichern
         dayNightCareOrganisationPage.saveDepartment().click();

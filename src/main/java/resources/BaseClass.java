@@ -16,10 +16,8 @@ import java.util.Properties;
 public class BaseClass {
     public static WebDriver driver;
     public static Properties prop = new Properties();
-    public static Properties propAmbulant = new Properties();
-    public static Properties propStationary = new Properties();
-    public static Properties propDayNightCare = new Properties();
     public static Properties propFairHouseOffer = new Properties();
+    public static Properties propDepartment = new Properties();
 
 
     public WebDriver initializeDriver() throws IOException {
@@ -62,27 +60,15 @@ public class BaseClass {
         prop.load(fileInputStream);
     }
 
-    public void loadPropsForAmbulantDepartment() throws IOException {
-        propAmbulant = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\ambulantDepartmentData.properties");
-        propAmbulant.load(fileInputStream);
-    }
-
-    public void loadPropsForStationaryDepartment() throws IOException {
-        propStationary = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\stationaryDepartmentData.properties");
-        propStationary.load(fileInputStream);
-    }
-
-    public void loadPropsForDayNightCareDepartment() throws IOException {
-        propDayNightCare = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\dayNightCareDepartment.properties");
-        propDayNightCare.load(fileInputStream);
-    }
-
     public void loadPropsForFairHouseOfferDepartment() throws IOException {
         propFairHouseOffer = new Properties();
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\fairHouseOfferDepartment.properties");
         propFairHouseOffer.load(fileInputStream);
+    }
+
+    public void loadPropsForDepartment() throws IOException {
+        propDepartment = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\departmentPage.properties");
+        propDepartment.load(fileInputStream);
     }
 }
