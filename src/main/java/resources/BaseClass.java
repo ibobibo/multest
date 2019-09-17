@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
     public static WebDriver driver;
@@ -43,8 +42,6 @@ public class BaseClass {
             System.setProperty(prop.getProperty("edgeDriver"), prop.getProperty("edgeDriverPath"));
             driver = new InternetExplorerDriver();
         }
-
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         return driver;
     }

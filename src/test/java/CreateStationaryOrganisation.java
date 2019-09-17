@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import pageObjects.StationaryOrganisationPage;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class CreateStationaryOrganisation extends MulLogin {
 
@@ -19,8 +18,6 @@ public class CreateStationaryOrganisation extends MulLogin {
     @Test
     public void createOrganisation() throws IOException {
         login();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
 
         //because we have to move explicit to our select fields
         Actions actions = new Actions(driver);
@@ -45,7 +42,7 @@ public class CreateStationaryOrganisation extends MulLogin {
         //Allgemeine Angaben
         stationaryOrganisationPage.stationaryDepartmentName().sendKeys(propStationary.getProperty("stationaryDepartmentName"));
         stationaryOrganisationPage.stationaryDepartmentOrganisationType().click();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
         stationaryOrganisationPage.stationaryDepartmentOrganisationTypeChosen().click();
         stationaryOrganisationPage.stationaryDepartmentStreetAddress().sendKeys(propStationary.getProperty("stationaryDepartmentStreetAddress"));
         stationaryOrganisationPage.stationaryDepartmentStreetNumber().sendKeys(propStationary.getProperty("stationaryDepartmentStreetNumber"));

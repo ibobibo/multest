@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import pageObjects.FairHouseOfferPage;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class CreateFairHouseOffer extends MulLogin {
 
@@ -19,7 +18,6 @@ public class CreateFairHouseOffer extends MulLogin {
     @Test
     public void createOrganisation() throws IOException, InterruptedException {
         login();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
         //because we have to move explicit to our select fields
         Actions actions = new Actions(driver);
