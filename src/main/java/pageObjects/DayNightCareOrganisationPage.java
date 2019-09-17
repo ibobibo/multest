@@ -457,10 +457,10 @@ public class DayNightCareOrganisationPage {
 
     //Einrichtung speichern
     @FindBy(id = "publish-department")
-    WebElement saveDayNightCareDepartment;
+    WebElement saveDepartment;
 
     //GETTER Einrichtung speichern
-    public WebElement saveDayNightCareDepartment() {
-        return saveDayNightCareDepartment;
+    public WebElement saveDepartment() {
+        return saveDepartment;
     }
 }

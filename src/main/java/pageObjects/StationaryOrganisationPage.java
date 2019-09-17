@@ -834,12 +834,12 @@ public class StationaryOrganisationPage {
         return youTubeVideo;
     }
 
-    //stationäre Einrichtung speichern
+    //Einrichtung speichern
     @FindBy(id = "publish-department")
-    WebElement saveStationaryDepartment;
+    WebElement saveDepartment;
 
-    //GETTER stationäre Einrichtung speichern
-    public WebElement saveStationaryDepartment() {
-        return saveStationaryDepartment;
+    //GETTER Einrichtung speichern
+    public WebElement saveDepartment() {
+        return saveDepartment;
     }
 }

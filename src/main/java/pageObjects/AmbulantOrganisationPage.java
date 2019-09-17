@@ -560,12 +560,12 @@ public class AmbulantOrganisationPage {
         return youTubeVideo;
     }
 
-    //ambulante Einrichtung speichern
+    // Einrichtung speichern
     @FindBy(id = "publish-department")
-    WebElement saveAmbulantDepartment;
+    WebElement saveDepartment;
 
     //GETTER ambulante Einrichtung speichern
-    public WebElement saveAmbulantDepartment() {
-        return saveAmbulantDepartment;
+    public WebElement saveDepartment() {
+        return saveDepartment;
     }
 }

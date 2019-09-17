@@ -89,9 +89,11 @@ public class CreateDayNightCareOrganisation extends MulLogin {
         dayNightCareOrganisationPage.particularityOne().sendKeys(propDayNightCare.getProperty("particularityOne"));
         dayNightCareOrganisationPage.particularityTwo().sendKeys(propDayNightCare.getProperty("particularityTwo"));
 
+        //youtube
         dayNightCareOrganisationPage.youTubeVideo().sendKeys(propDayNightCare.getProperty("youTubeVideo"));
 
-        dayNightCareOrganisationPage.saveDayNightCareDepartment().click();
+        //speichern
+        dayNightCareOrganisationPage.saveDepartment().click();
 
     }
 

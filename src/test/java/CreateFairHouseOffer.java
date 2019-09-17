@@ -88,11 +88,63 @@ public class CreateFairHouseOffer extends MulLogin {
         fairHouseOfferPage.fridayMinuteBegin().sendKeys(propFairHouseOffer.getProperty("fridayMinuteBegin"));
         fairHouseOfferPage.fridayHourEnd().sendKeys(propFairHouseOffer.getProperty("fridayHourEnd"));
         fairHouseOfferPage.fridayMinuteEnd().sendKeys(propFairHouseOffer.getProperty("fridayMinuteEnd"));
+
+        //Allgemeine Beschreibung des Wohnprojekts
+        fairHouseOfferPage.descriptionOfApartment().sendKeys(propFairHouseOffer.getProperty("descriptionOfApartment"));
+
+        WebElement apartmentType = driver.findElement(By.id("residentialProperty.type"));
+        actions.moveToElement(apartmentType).click().build().perform();
+        fairHouseOfferPage.apartmentTypeChosen().click();
+
+        WebElement apartmentProperty = driver.findElement(By.id("residentialProperty.condominiumType"));
+        actions.moveToElement(apartmentProperty).click().build().perform();
+        fairHouseOfferPage.apartmentPropertyChosen().click();
+
+        fairHouseOfferPage.provider().sendKeys(propFairHouseOffer.getProperty("provider"));
+
+        WebElement providerType = driver.findElement(By.id("residentialProperty.provider.type"));
+        actions.moveToElement(providerType).click().build().perform();
+        fairHouseOfferPage.providerTypeChosen().click();
+
+        fairHouseOfferPage.operator().sendKeys(propFairHouseOffer.getProperty("operator"));
+        fairHouseOfferPage.operatorDescription().sendKeys(propFairHouseOffer.getProperty("operatorDescription"));
+        fairHouseOfferPage.rental().sendKeys(propFairHouseOffer.getProperty("rental"));
+        fairHouseOfferPage.otherCosts().sendKeys(propFairHouseOffer.getProperty("otherCosts"));
+        fairHouseOfferPage.apartmentPrice().sendKeys(propFairHouseOffer.getProperty("apartmentPrice"));
+        fairHouseOfferPage.commonCharge().sendKeys(propFairHouseOffer.getProperty("commonCharge"));
+        fairHouseOfferPage.additionalPurchasePrice().sendKeys(propFairHouseOffer.getProperty("additionalPurchasePrice"));
+        fairHouseOfferPage.commission().sendKeys(propFairHouseOffer.getProperty("commission"));
+        fairHouseOfferPage.available().sendKeys(propFairHouseOffer.getProperty("available"));
+
+        WebElement floor = driver.findElement(By.id("residentialProperty.floor"));
+        actions.moveToElement(floor).click().build().perform();
+        fairHouseOfferPage.floorChosen().click();
+
+        fairHouseOfferPage.numberOfRooms().sendKeys(propFairHouseOffer.getProperty("numberOfRooms"));
+        fairHouseOfferPage.livingSpace().sendKeys(propFairHouseOffer.getProperty("livingSpace"));
+
+        WebElement energyCertificate = driver.findElement(By.id("residentialProperty.energyCertificate"));
+        actions.moveToElement(energyCertificate).click().build().perform();
+        fairHouseOfferPage.energyCertificateChosen().click();
+
+        fairHouseOfferPage.energyDemand().sendKeys(propFairHouseOffer.getProperty("energyDemand"));
+
+        //Beschreibungen örtliche Gegebenheiten
+        fairHouseOfferPage.yearOfConstruction().sendKeys(propFairHouseOffer.getProperty("yearOfConstruction"));
+        fairHouseOfferPage.yearOfLastRefurbishment().sendKeys(propFairHouseOffer.getProperty("yearOfLastRefurbishment"));
+        fairHouseOfferPage.numberOfCommonRooms().sendKeys(propFairHouseOffer.getProperty("numberOfCommonRooms"));
+
+        //Youtube
+        fairHouseOfferPage.youTubeVideo().sendKeys(propFairHouseOffer.getProperty("youTubeVideo"));
+
+        //save
+        fairHouseOfferPage.saveDepartment().click();
+
     }
 
     @AfterTest
     public void closeBrowser() {
-        //driver.close();
+        driver.close();
         driver = null;
     }
 }

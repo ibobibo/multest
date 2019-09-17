@@ -358,4 +358,177 @@ public class FairHouseOfferPage {
         return sundayMinuteEnd;
     }
 
+    //Allgemeine Beschreibung des Wohnprojekts
+    @FindBy(id = "residentialProperty.description")
+    WebElement descriptionOfApartment;
+    @FindBy(xpath = "//option[. = 'eigene Wohnung']")
+    WebElement apartmentTypeChosen;
+    @FindBy(xpath = "//option[. = 'Quartier']")
+    WebElement apartmentPropertyChosen;
+    @FindBy(id = "residentialProperty.provider.text")
+    WebElement provider;
+    @FindBy(xpath = "//option[. = 'Eigentümer']")
+    WebElement providerTypeChosen;
+    @FindBy(id = "residentialProperty.operator.text")
+    WebElement operator;
+    @FindBy(id = "residentialProperty.operator.description")
+    WebElement operatorDescription;
+    @FindBy(id = "residentialProperty.minRentalFee")
+    WebElement rental;
+    @FindBy(id = "residentialProperty.ancillaryCosts")
+    WebElement otherCosts;
+    @FindBy(id = "residentialProperty.ancillaryCostsIncluded")
+    WebElement otherCostsInRenalCheckbox;
+    @FindBy(id = "residentialProperty.minPurchasePrice")
+    WebElement apartmentPrice;
+    @FindBy(id = "residentialProperty.commonCharge")
+    WebElement commonCharge;
+    @FindBy(id = "residentialProperty.additionalPurchasePrice")
+    WebElement additionalPurchasePrice;
+    @FindBy(id = "residentialProperty.commission")
+    WebElement commission;
+    @FindBy(id = "residentialProperty.available")
+    WebElement available;
+    @FindBy(xpath = "//option[. = 'Erdgeschoss']")
+    WebElement floorChosen;
+    @FindBy(id = "residentialProperty.numberOfRooms")
+    WebElement numberOfRooms;
+    @FindBy(id = "residentialProperty.livingSpace")
+    WebElement livingSpace;
+    @FindBy(id = "residentialProperty.subsidizedHousing")
+    WebElement subsidizedHousingCheckbox;
+    @FindBy(xpath = "//option[. = 'Bedarfsausweis']")
+    WebElement energyCertificateChosen;
+    @FindBy(id = "residentialProperty.energyDemand")
+    WebElement energyDemand;
+
+    //GETTER Allgemeine Beschreibung des Wohnprojekts
+    public WebElement descriptionOfApartment() {
+        return descriptionOfApartment;
+    }
+
+    public WebElement apartmentTypeChosen() {
+        return apartmentTypeChosen;
+    }
+
+    public WebElement apartmentPropertyChosen() {
+        return apartmentPropertyChosen;
+    }
+
+    public WebElement provider() {
+        return provider;
+    }
+
+    public WebElement providerTypeChosen() {
+        return providerTypeChosen;
+    }
+
+    public WebElement operator() {
+        return operator;
+    }
+
+    public WebElement operatorDescription() {
+        return operatorDescription;
+    }
+
+    public WebElement rental() {
+        return rental;
+    }
+
+    public WebElement otherCosts() {
+        return otherCosts;
+    }
+
+    public WebElement otherCostsInRenalCheckbox() {
+        return otherCostsInRenalCheckbox;
+    }
+
+    public WebElement apartmentPrice() {
+        return apartmentPrice;
+    }
+
+    public WebElement commonCharge() {
+        return commonCharge;
+    }
+
+    public WebElement additionalPurchasePrice() {
+        return additionalPurchasePrice;
+    }
+
+    public WebElement commission() {
+        return commission;
+    }
+
+    public WebElement available() {
+        return available;
+    }
+
+    public WebElement floorChosen() {
+        return floorChosen;
+    }
+
+    public WebElement numberOfRooms() {
+        return numberOfRooms;
+    }
+
+    public WebElement livingSpace() {
+        return livingSpace;
+    }
+
+    public WebElement subsidizedHousingCheckbox() {
+        return subsidizedHousingCheckbox;
+    }
+
+    public WebElement energyCertificateChosen() {
+        return energyCertificateChosen;
+    }
+
+    public WebElement energyDemand() {
+        return energyDemand;
+    }
+
+    //Beschreibungen örtliche Gegebenheiten
+    @FindBy(id = "realEstate.yearOfConstruction")
+    WebElement yearOfConstruction;
+    @FindBy(id = "realEstate.yearOfLastRefurbishment")
+    WebElement yearOfLastRefurbishment;
+    @FindBy(id = "realEstate.numberOfCommonRooms")
+    WebElement numberOfCommonRooms;
+
+    //GETTER Beschreibungen örtliche Gegebenheiten
+    public WebElement yearOfConstruction() {
+        return yearOfConstruction;
+    }
+
+    public WebElement yearOfLastRefurbishment() {
+        return yearOfLastRefurbishment;
+    }
+
+    public WebElement numberOfCommonRooms() {
+        return numberOfCommonRooms;
+    }
+
+    //leistungen Pflege
+    //sonsigte Ausstatungen
+    //soziale Umgebung
+    //freizeit und Umgebung
+
+    //youtube video
+    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='youtubeURL']")
+    WebElement youTubeVideo;
+
+    //GETTER youtube video
+    public WebElement youTubeVideo() {
+        return youTubeVideo;
+    }
+
+    //Einrichtung speichern
+    @FindBy(id = "publish-department")
+    WebElement saveDepartment;
+
+    //GETTER Einrichtung speichern
+    public WebElement saveDepartment() {
+        return saveDepartment;
+    }
+
 }
