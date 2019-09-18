@@ -91,7 +91,6 @@ public class CreateDayNightCareOrganisation extends MulLogin {
 
         //speichern
         dayNightCareOrganisationPage.saveDepartment().click();
-
     }
 
     @AfterTest

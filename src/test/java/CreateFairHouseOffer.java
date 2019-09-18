@@ -138,7 +138,6 @@ public class CreateFairHouseOffer extends MulLogin {
 
         //save
         fairHouseOfferPage.saveDepartment().click();
-
     }
 
     @AfterTest

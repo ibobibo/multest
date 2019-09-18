@@ -5,11 +5,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.DeleteOrganisationPage;
+import pageObjects.EditOrganisationPage;
 
 import java.io.IOException;
 
-public class DeleteOrganisation extends MulLogin {
+public class EditOrganisation extends MulLogin {
 
     @Override
     public int getCount() {
@@ -19,20 +19,25 @@ public class DeleteOrganisation extends MulLogin {
     @BeforeTest
     public void initialize() throws IOException {
         initializeBrowser();
+        loadPropsForDepartment();
     }
 
     @Test()
     public void deleteAllOrganisation() {
-        DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
+        EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
         login();
         WebDriverWait wait = new WebDriverWait(driver, 20);
 
-        while (getCount() != 0) {
-            String xpath = "//tr[" + 1 + "]/td[5]//div[1]//a[2]";
+        int i = 1;
+        while (getCount() >= i) {
+            String xpath = "//tr[" + i + "]/td[5]//div[1]//a[1]";
             WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
             findTr.click();
-            WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
+            editOrganisationPage.changeName().clear();
+            editOrganisationPage.changeName().sendKeys(propDepartment.getProperty("editDepartmentName"));
+            WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(editOrganisationPage.saveClick()));
             findElem.click();
+            i++;
         }
     }
 

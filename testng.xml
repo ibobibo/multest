@@ -21,23 +21,28 @@
     <!--</classes>-->
     <!--</test>-->
     <!--<test name="Creating an ambulant Organisation">-->
-        <!--<classes>-->
-            <!--<class name="CreateAmbulantOrganisation"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="CreateAmbulantOrganisation"/>-->
+    <!--</classes>-->
     <!--</test>-->
     <!--<test name="Creating a stationary Organisation">-->
-        <!--<classes>-->
-            <!--<class name="CreateStationaryOrganisation"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="CreateStationaryOrganisation"/>-->
+    <!--</classes>-->
     <!--</test>-->
     <!--<test name="Creating a day-night-care Organisation">-->
-        <!--<classes>-->
-            <!--<class name="CreateDayNightCareOrganisation"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="CreateDayNightCareOrganisation"/>-->
+    <!--</classes>-->
     <!--</test>-->
-    <test name="Creating a Fair House Offer Organisation">
+    <!--<test name="Creating a Fair House Offer Organisation">-->
+    <!--<classes>-->
+    <!--<class name="CreateFairHouseOffer"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="Editing Departments">
         <classes>
-            <class name="CreateFairHouseOffer"/>
+            <class name="EditOrganisation"/>
         </classes>
     </test>
     <!--<test name="Deleting Organisations">-->

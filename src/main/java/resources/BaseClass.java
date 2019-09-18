@@ -1,9 +1,7 @@
 package resources;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -71,4 +69,16 @@ public class BaseClass {
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\departmentPage.properties");
         propDepartment.load(fileInputStream);
     }
+
+    public int getCount() {
+        try {
+            WebElement x = driver.findElement(By.xpath("//section[@class='Department']//tbody//tr"));
+            int count = x.findElements(By.xpath("//section[@class='Department']//tbody//tr")).size();
+            System.out.println(count);
+            return count;
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
 }

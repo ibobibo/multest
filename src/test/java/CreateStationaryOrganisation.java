@@ -92,7 +92,6 @@ public class CreateStationaryOrganisation extends MulLogin {
 
         //speichern
         stationaryOrganisationPage.saveDepartment().click();
-
     }
 
     @AfterTest

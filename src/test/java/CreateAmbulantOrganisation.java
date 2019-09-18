@@ -91,7 +91,6 @@ public class CreateAmbulantOrganisation extends MulLogin {
 
         //speichern
         ambulantOrganisationPage.saveDepartment().click();
-
     }
 
     @AfterTest
