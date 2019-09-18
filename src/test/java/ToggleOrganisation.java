@@ -5,11 +5,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.EditOrganisationPage;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
-public class EditOrganisation extends MulLogin {
+public class ToggleOrganisation extends MulLogin {
 
     @Override
     public int getCount() {
@@ -19,24 +19,21 @@ public class EditOrganisation extends MulLogin {
     @BeforeTest
     public void initialize() throws IOException {
         initializeBrowser();
-        loadPropsForDepartment();
     }
 
     @Test()
-    public void editAllOrganisation() {
-        EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
+    public void toggleAllOrganisation() throws InterruptedException {
         login();
         WebDriverWait wait = new WebDriverWait(driver, 20);
 
         int i = 1;
         while (getCount() >= i) {
-            String xpath = "//tr[" + i + "]/td[5]//div[1]//a[1]";
+            TimeUnit.SECONDS.sleep(5);
+            String xpath = "//tr[" + i + "]//td[1]//label[1]";
             WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-            findTr.click();
-            editOrganisationPage.changeName().clear();
-            editOrganisationPage.changeName().sendKeys(propDepartment.getProperty("editDepartmentName"));
-            WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(editOrganisationPage.saveClick()));
-            findElem.click();
+            if (findTr.isDisplayed()) {
+                findTr.click();
+            }
             i++;
         }
     }
@@ -47,3 +44,4 @@ public class EditOrganisation extends MulLogin {
         driver = null;
     }
 }
+

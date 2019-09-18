@@ -40,9 +40,14 @@
     <!--<class name="CreateFairHouseOffer"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <test name="Editing Departments">
+    <!--<test name="Editing Departments">-->
+        <!--<classes>-->
+            <!--<class name="EditOrganisation"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="Make public Departments">
         <classes>
-            <class name="EditOrganisation"/>
+            <class name="ToggleOrganisation"/>
         </classes>
     </test>
     <!--<test name="Deleting Organisations">-->
