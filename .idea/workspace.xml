@@ -4,7 +4,8 @@
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EditOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
@@ -59,16 +60,16 @@
     <session id="1897827847">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,8 +77,8 @@
           <entry key="aufgaben" value="1" />
           <entry key="class" value="5" />
           <entry key="html" value="2" />
-          <entry key="java" value="183" />
-          <entry key="properties" value="44" />
+          <entry key="java" value="185" />
+          <entry key="properties" value="47" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
@@ -85,9 +86,9 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="183" />
+          <entry key="JAVA" value="185" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="44" />
+          <entry key="Properties" value="47" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -95,16 +96,16 @@
         <counts>
           <entry key="aufgaben" value="226" />
           <entry key="dummy" value="22" />
-          <entry key="java" value="16380" />
-          <entry key="properties" value="1195" />
+          <entry key="java" value="16412" />
+          <entry key="properties" value="1210" />
           <entry key="xml" value="263" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16380" />
+          <entry key="JAVA" value="16412" />
           <entry key="PLAIN_TEXT" value="248" />
-          <entry key="Properties" value="1195" />
+          <entry key="Properties" value="1210" />
           <entry key="XML" value="263" />
         </counts>
       </usages-collector>
@@ -115,20 +116,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="391">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ToggleOrganisation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ToggleOrganisation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/properties/browserData.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="18" selection-start-line="2" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -208,11 +230,12 @@
         <option value="$PROJECT_DIR$/src/test/java/CreateFairHouseOffer.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/EditOrganisationPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/DeleteOrganisation.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/EditOrganisation.java" />
         <option value="$PROJECT_DIR$/src/test/java/ToggleOrganisation.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/properties/browserData.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" />
       </list>
     </option>
   </component>
@@ -234,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,14 +281,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MulTesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MulTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pageObjects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MulTesting" type="b2602c69:ProjectViewProjectNode" />
@@ -314,12 +328,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568802248882" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568806746505" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -463,29 +478,13 @@
       <workItem from="1568622562276" duration="18770000" />
       <workItem from="1568713384141" duration="11093000" />
       <workItem from="1568727624262" duration="3929000" />
-      <workItem from="1568792135545" duration="9873000" />
+      <workItem from="1568792135545" duration="12415000" />
+      <workItem from="1568889418207" duration="900000" />
+      <workItem from="1568902330540" duration="441000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 04m 07s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 06m 00s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 07m 07s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 07m 50s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 09m 01s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 12m 27s.xml">
-      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 13m 20s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -498,9 +497,27 @@
     <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 23m 52s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 12h 26m 34s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.18 at 13h 14m 40s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.19 at 12h 39m 02s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.19 at 12h 48m 15s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.19 at 12h 49m 16s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.19 at 12h 50m 30s.xml">
+      <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193735000" />
+    <option name="totallyTimeSpent" value="197618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,7 +532,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -524,7 +541,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -938,23 +955,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/properties/fairHouseOfferDepartment.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/properties/browserData.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RessourceLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1062,13 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/EditOrganisation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1081,20 +1074,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ToggleOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ToggleOrganisation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/properties/browserData.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RessourceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

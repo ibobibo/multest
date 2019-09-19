@@ -44,7 +44,7 @@ public class BaseClass {
 
     public void getScreenshot(String name) throws IOException {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("C:\\Users\\ibobi\\OneDrive\\Desktop\\screenShots\\" + name + "screenshot.png"));
+        FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "screenshot.png"));
     }
 
     public void initializeBrowser() throws IOException {
@@ -54,19 +54,19 @@ public class BaseClass {
 
     public void loadProps() throws IOException {
         prop = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\browserData.properties");
+        FileInputStream fileInputStream = new FileInputStream("src/main/java/properties/browserData.properties");
         prop.load(fileInputStream);
     }
 
     public void loadPropsForFairHouseOfferDepartment() throws IOException {
         propFairHouseOffer = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\fairHouseOfferDepartment.properties");
+        FileInputStream fileInputStream = new FileInputStream("src/main/java/properties/fairHouseOfferDepartment.properties");
         propFairHouseOffer.load(fileInputStream);
     }
 
     public void loadPropsForDepartment() throws IOException {
         propDepartment = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ibobi\\OneDrive\\Dokumente\\Automatisierung\\MulTesting\\src\\main\\java\\properties\\departmentPage.properties");
+        FileInputStream fileInputStream = new FileInputStream("src/main/java/properties/departmentPage.properties");
         propDepartment.load(fileInputStream);
     }
 
