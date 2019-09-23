@@ -4,7 +4,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.AmbulantOrganisationPage;
+import pageObjects.departments.AmbulantOrganisationPage;
 
 import java.io.IOException;
 
@@ -53,7 +53,6 @@ public class CreateAmbulantOrganisation extends MulLogin {
         ambulantOrganisationPage.ambulantDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
         ambulantOrganisationPage.ambulantDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
         ambulantOrganisationPage.ambulantDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-        ambulantOrganisationPage.ambulantDepartmentContactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
         ambulantOrganisationPage.ambulantDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
         WebElement availability = driver.findElement(By.id("availability"));

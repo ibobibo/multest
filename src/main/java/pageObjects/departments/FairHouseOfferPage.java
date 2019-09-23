@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.departments;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -139,8 +139,6 @@ public class FairHouseOfferPage {
     WebElement fairHouseOfferDepartmentContactLastName;
     @FindBy(id = "contact.title")
     WebElement fairHouseOfferDepartmentContactTitle;
-    @FindBy(id = "contact.email")
-    WebElement fairHouseOfferDepartmentContactEmail;
     @FindBy(id = "contact.phone")
     WebElement fairHouseOfferDepartmentContactPhone;
 
@@ -159,10 +157,6 @@ public class FairHouseOfferPage {
 
     public WebElement fairHouseOfferDepartmentContactTitle() {
         return fairHouseOfferDepartmentContactTitle;
-    }
-
-    public WebElement fairHouseOfferDepartmentContactEmail() {
-        return fairHouseOfferDepartmentContactEmail;
     }
 
     public WebElement fairHouseOfferDepartmentContactPhone() {

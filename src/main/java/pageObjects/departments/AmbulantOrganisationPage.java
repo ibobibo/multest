@@ -1,155 +1,149 @@
-package pageObjects;
+package pageObjects.departments;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DayNightCareOrganisationPage {
+public class AmbulantOrganisationPage {
     WebDriver driver;
 
-    public DayNightCareOrganisationPage(WebDriver driver) {
+    public AmbulantOrganisationPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//section[@class='Department']//a[@id='add-department']")
     WebElement addDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='DAYCARE card']//a[@class='create']")
-    WebElement addDayNightCareDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='DAYCARE card']//a[@class='create']")
-    WebElement addFirstDayNightCareDepartment;
+    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
+    WebElement addAmbulantDepartment;
+    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
+    WebElement addFirstAmbulantDepartment;
 
     //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")
-    WebElement dayNightCareDepartmentName;
+    WebElement ambulantDepartmentName;
     @FindBy(id = "organisationType")
-    WebElement dayNightCareDepartmentOrganisationType;
+    WebElement ambulantDepartmentOrganisationType;
     @FindBy(xpath = "//option[. = 'Privat']")
-    WebElement dayNightCareDepartmentOrganisationTypeChosen;
+    WebElement ambulantDepartmentOrganisationTypeChosen;
     @FindBy(id = "confession")
-    WebElement dayNightCareDepartmentConfession;
+    WebElement ambulantDepartmentConfession;
     @FindBy(xpath = "//section[@class='Input  select     empty']//label[@class='Checkbox ']")
-    WebElement dayNightCareDepartmentAccept;
+    WebElement ambulantDepartmentAccept;
     @FindBy(id = "address.streetAddress")
-    WebElement dayNightCareDepartmentStreetAddress;
+    WebElement ambulantDepartmentStreetAddress;
     @FindBy(id = "address.streetNumber")
-    WebElement dayNightCareDepartmentStreetNumber;
+    WebElement ambulantDepartmentStreetNumber;
     @FindBy(id = "address.postalCode")
-    WebElement dayNightCareDepartmentPostalCode;
+    WebElement ambulantDepartmentPostalCode;
     @FindBy(id = "address.city")
-    WebElement dayNightCareDepartmentAddressCity;
+    WebElement ambulantDepartmentAddressCity;
     @FindBy(id = "website")
-    WebElement dayNightCareDepartmentWebsite;
+    WebElement ambulantDepartmentWebsite;
     @FindBy(id = "#availability")
-    WebElement dayNightCareDepartmentAvailable;
+    WebElement ambulantDepartmentAvailable;
     @FindBy(xpath = "//option[. = 'Auf Anfrage']")
-    WebElement dayNightCareDepartmentAvailableChosen;
+    WebElement ambulantDepartmentAvailableChosen;
 
     //GETTER allgemeine Angaben zur Einrichtung
     public WebElement addDepartment() {
         return addDepartment;
     }
 
-    public WebElement addDayNightCareDepartment() {
-        return addDayNightCareDepartment;
+    public WebElement addAmbulantDepartment() {
+        return addAmbulantDepartment;
     }
 
-    public WebElement addFirstDayNightCareDepartment() {
-        return addFirstDayNightCareDepartment;
+    public WebElement addFirstAmbulantDepartment() {
+        return addFirstAmbulantDepartment;
     }
 
-    public WebElement dayNightCareDepartmentName() {
-        return dayNightCareDepartmentName;
+    public WebElement ambulantDepartmentName() {
+        return ambulantDepartmentName;
     }
 
-    public WebElement dayNightCareDepartmentOrganisationType() {
-        return dayNightCareDepartmentOrganisationType;
+    public WebElement ambulantDepartmentOrganisationType() {
+        return ambulantDepartmentOrganisationType;
     }
 
-    public WebElement dayNightCareDepartmentOrganisationTypeChosen() {
-        return dayNightCareDepartmentOrganisationTypeChosen;
+    public WebElement ambulantDepartmentOrganisationTypeChosen() {
+        return ambulantDepartmentOrganisationTypeChosen;
     }
 
-    public WebElement dayNightCareDepartmentConfession() {
-        return dayNightCareDepartmentConfession;
+    public WebElement ambulantDepartmentConfession() {
+        return ambulantDepartmentConfession;
     }
 
-    public WebElement dayNightCareDepartmentAccept() {
-        return dayNightCareDepartmentAccept;
+    public WebElement ambulantDepartmentAccept() {
+        return ambulantDepartmentAccept;
     }
 
-    public WebElement dayNightCareDepartmentStreetAddress() {
-        return dayNightCareDepartmentStreetAddress;
+    public WebElement ambulantDepartmentStreetAddress() {
+        return ambulantDepartmentStreetAddress;
     }
 
-    public WebElement dayNightCareDepartmentStreetNumber() {
-        return dayNightCareDepartmentStreetNumber;
+    public WebElement ambulantDepartmentStreetNumber() {
+        return ambulantDepartmentStreetNumber;
     }
 
-    public WebElement dayNightCareDepartmentPostalCode() {
-        return dayNightCareDepartmentPostalCode;
+    public WebElement ambulantDepartmentPostalCode() {
+        return ambulantDepartmentPostalCode;
     }
 
-    public WebElement dayNightCareDepartmentAddressCity() {
-        return dayNightCareDepartmentAddressCity;
+    public WebElement ambulantDepartmentAddressCity() {
+        return ambulantDepartmentAddressCity;
     }
 
-    public WebElement dayNightCareDepartmentWebsite() {
-        return dayNightCareDepartmentWebsite;
+    public WebElement ambulantDepartmentWebsite() {
+        return ambulantDepartmentWebsite;
     }
 
-    public WebElement dayNightCareDepartmentAvailable() {
-        return dayNightCareDepartmentAvailable;
+    public WebElement ambulantDepartmentAvailable() {
+        return ambulantDepartmentAvailable;
     }
 
-    public WebElement dayNightCareDepartmentAvailableChosen() {
-        return dayNightCareDepartmentAvailableChosen;
+    public WebElement ambulantDepartmentAvailableChosen() {
+        return ambulantDepartmentAvailableChosen;
     }
 
     //ansprechpartner
     @FindBy(id = "contact.salutation")
-    WebElement dayNightCareDepartmentContactSalutation;
+    WebElement ambulantDepartmentContactSalutation;
     @FindBy(xpath = "//option[. = 'ohne Anrede']")
-    WebElement dayNightCareDepartmentContactSalutationChosen;
+    WebElement ambulantDepartmentContactSalutationChosen;
     @FindBy(id = "contact.firstName")
-    WebElement dayNightCareDepartmentContactFirstName;
+    WebElement ambulantDepartmentContactFirstName;
     @FindBy(id = "contact.lastName")
-    WebElement dayNightCareDepartmentContactLastName;
+    WebElement ambulantDepartmentContactLastName;
     @FindBy(id = "contact.title")
-    WebElement dayNightCareDepartmentContactTitle;
-    @FindBy(id = "contact.email")
-    WebElement dayNightCareDepartmentContactEmail;
+    WebElement ambulantDepartmentContactTitle;
     @FindBy(id = "contact.phone")
-    WebElement dayNightCareDepartmentContactPhone;
+    WebElement ambulantDepartmentContactPhone;
 
     //GETTER ansprechpartner
-    public WebElement dayNightCareDepartmentContactSalutation() {
-        return dayNightCareDepartmentContactSalutation;
+    public WebElement ambulantDepartmentContactSalutation() {
+        return ambulantDepartmentContactSalutation;
     }
 
-    public WebElement dayNightCareDepartmentContactSalutationChosen() {
-        return dayNightCareDepartmentContactSalutationChosen;
+    public WebElement ambulantDepartmentContactSalutationChosen() {
+        return ambulantDepartmentContactSalutationChosen;
     }
 
-    public WebElement dayNightCareDepartmentContactFirstName() {
-        return dayNightCareDepartmentContactFirstName;
+    public WebElement ambulantDepartmentContactFirstName() {
+        return ambulantDepartmentContactFirstName;
     }
 
-    public WebElement dayNightCareDepartmentContactLastName() {
-        return dayNightCareDepartmentContactLastName;
+    public WebElement ambulantDepartmentContactLastName() {
+        return ambulantDepartmentContactLastName;
     }
 
-    public WebElement dayNightCareDepartmentContactTitle() {
-        return dayNightCareDepartmentContactTitle;
+    public WebElement ambulantDepartmentContactTitle() {
+        return ambulantDepartmentContactTitle;
     }
 
-    public WebElement dayNightCareDepartmentContactEmail() {
-        return dayNightCareDepartmentContactEmail;
-    }
-
-    public WebElement dayNightCareDepartmentContactPhone() {
-        return dayNightCareDepartmentContactPhone;
+    public WebElement ambulantDepartmentContactPhone() {
+        return ambulantDepartmentContactPhone;
     }
 
     //sprechzeiten Montag
@@ -389,6 +383,111 @@ public class DayNightCareOrganisationPage {
         return staffRange;
     }
 
+    //Leistungen
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1094']")
+    WebElement foodOnWheels;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1095']")
+    WebElement homeHelp;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1096']")
+    WebElement domesticCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1097']")
+    WebElement ambulantHospice;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1098']")
+    WebElement treatmentCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e1099']")
+    WebElement mentallyRetardet;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109a']")
+    WebElement physicallyDisabled;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109b']")
+    WebElement dayCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109c']")
+    WebElement nightCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109d']")
+    WebElement intensivCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109e']")
+    WebElement preventionCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e109f']")
+    WebElement reliefCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a0']")
+    WebElement dementiaCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a1']")
+    WebElement intensivCareVegetativeState;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a2']")
+    WebElement ventilatorCare;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a3']")
+    WebElement hospiceWork;
+    @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.careCategories.5d109c239a3dec00013e10a4']")
+    WebElement hollydayCare;
+
+    //GETTER Leistungen
+    public WebElement foodOnWheels() {
+        return foodOnWheels;
+    }
+
+    public WebElement homeHelp() {
+        return homeHelp;
+    }
+
+    public WebElement domesticCare() {
+        return domesticCare;
+    }
+
+    public WebElement ambulantHospice() {
+        return ambulantHospice;
+    }
+
+    public WebElement treatmentCare() {
+        return treatmentCare;
+    }
+
+    public WebElement mentallyRetardet() {
+        return mentallyRetardet;
+    }
+
+    public WebElement physicallyDisabled() {
+        return physicallyDisabled;
+    }
+
+    public WebElement dayCare() {
+        return dayCare;
+    }
+
+    public WebElement nightCare() {
+        return nightCare;
+    }
+
+    public WebElement intensivCare() {
+        return intensivCare;
+    }
+
+    public WebElement preventionCare() {
+        return preventionCare;
+    }
+
+    public WebElement reliefCare() {
+        return reliefCare;
+    }
+
+    public WebElement dementiaCare() {
+        return dementiaCare;
+    }
+
+    public WebElement intensivCareVegetativeState() {
+        return intensivCareVegetativeState;
+    }
+
+    public WebElement ventilatorCare() {
+        return ventilatorCare;
+    }
+
+    public WebElement hospiceWork() {
+        return hospiceWork;
+    }
+
+    public WebElement hollydayCare() {
+        return hollydayCare;
+    }
+
     //bediente PLZ
     @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.operatedZipCodes']")
     WebElement servedAreas;
@@ -455,11 +554,11 @@ public class DayNightCareOrganisationPage {
         return youTubeVideo;
     }
 
-    //Einrichtung speichern
+    // Einrichtung speichern
     @FindBy(id = "publish-department")
     WebElement saveDepartment;
 
-    //GETTER Einrichtung speichern
+    //GETTER ambulante Einrichtung speichern
     public WebElement saveDepartment() {
         return saveDepartment;
     }

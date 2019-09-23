@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.departments;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -118,8 +118,6 @@ public class StationaryOrganisationPage {
     WebElement stationaryDepartmentContactLastName;
     @FindBy(id = "contact.title")
     WebElement stationaryDepartmentContactTitle;
-    @FindBy(id = "contact.email")
-    WebElement stationaryDepartmentContactEmail;
     @FindBy(id = "contact.phone")
     WebElement stationaryDepartmentContactPhone;
 
@@ -142,10 +140,6 @@ public class StationaryOrganisationPage {
 
     public WebElement stationaryDepartmentContactTitle() {
         return stationaryDepartmentContactTitle;
-    }
-
-    public WebElement stationaryDepartmentContactEmail() {
-        return stationaryDepartmentContactEmail;
     }
 
     public WebElement stationaryDepartmentContactPhone() {

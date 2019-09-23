@@ -4,7 +4,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.FairHouseOfferPage;
+import pageObjects.departments.FairHouseOfferPage;
 
 import java.io.IOException;
 
@@ -65,7 +65,6 @@ public class CreateFairHouseOffer extends MulLogin {
         fairHouseOfferPage.fairHouseOfferDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
         fairHouseOfferPage.fairHouseOfferDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
         fairHouseOfferPage.fairHouseOfferDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-        fairHouseOfferPage.fairHouseOfferDepartmentContactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
         fairHouseOfferPage.fairHouseOfferDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
         WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));

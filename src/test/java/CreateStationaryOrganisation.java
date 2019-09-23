@@ -4,7 +4,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.StationaryOrganisationPage;
+import pageObjects.departments.StationaryOrganisationPage;
 
 import java.io.IOException;
 
@@ -54,7 +54,6 @@ public class CreateStationaryOrganisation extends MulLogin {
         stationaryOrganisationPage.stationaryDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
         stationaryOrganisationPage.stationaryDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
         stationaryOrganisationPage.stationaryDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-        stationaryOrganisationPage.stationaryDepartmentContactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
         stationaryOrganisationPage.stationaryDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
         WebElement availability = driver.findElement(By.id("availability"));

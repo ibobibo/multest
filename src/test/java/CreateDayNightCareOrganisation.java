@@ -4,7 +4,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.DayNightCareOrganisationPage;
+import pageObjects.departments.DayNightCareOrganisationPage;
 
 import java.io.IOException;
 
@@ -53,7 +53,6 @@ public class CreateDayNightCareOrganisation extends MulLogin {
         dayNightCareOrganisationPage.dayNightCareDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
         dayNightCareOrganisationPage.dayNightCareDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
         dayNightCareOrganisationPage.dayNightCareDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-        dayNightCareOrganisationPage.dayNightCareDepartmentContactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
         dayNightCareOrganisationPage.dayNightCareDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
         WebElement availability = driver.findElement(By.id("availability"));

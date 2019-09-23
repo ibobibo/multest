@@ -20,7 +20,7 @@ public class MulRegister extends BaseClass {
 
     @Test
     public void register() throws IOException {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 20; i++) {
             loadProps();
 
             RegisterPage registerPage = new RegisterPage(driver);

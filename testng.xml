@@ -5,54 +5,54 @@
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="Listeners"/>
     </listeners>
-    <!--<test name="Test">-->
-    <!--<classes>-->
-    <!--<class name="MulLogin"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--&lt;!&ndash;<test name="Registration Test">&ndash;&gt;-->
-    <!--&lt;!&ndash;<classes>&ndash;&gt;-->
-    <!--&lt;!&ndash;<class name="MulRegister"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;</classes>&ndash;&gt;-->
-    <!--&lt;!&ndash;</test>&ndash;&gt;-->
-    <!--<test name="Failure Test">-->
-    <!--<classes>-->
-    <!--<class name="FailureTestForScreenshot"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Test">
+        <classes>
+            <class name="MulLogin"/>
+        </classes>
+    </test>
+    <test name="Registration Test">
+        <classes>
+            <class name="MulRegister"/>
+        </classes>
+    </test>
+    <test name="Failure Test">
+        <classes>
+            <class name="FailureTestForScreenshot"/>
+        </classes>
+    </test>
 
     <test name="Creating an ambulant Organisation">
         <classes>
             <class name="CreateAmbulantOrganisation"/>
         </classes>
     </test>
-    <!--<test name="Creating a stationary Organisation">-->
-    <!--<classes>-->
-    <!--<class name="CreateStationaryOrganisation"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Creating a day-night-care Organisation">-->
-    <!--<classes>-->
-    <!--<class name="CreateDayNightCareOrganisation"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="Creating a Fair House Offer Organisation">-->
-    <!--<classes>-->
-    <!--<class name="CreateFairHouseOffer"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Creating a stationary Organisation">
+        <classes>
+            <class name="CreateStationaryOrganisation"/>
+        </classes>
+    </test>
+    <test name="Creating a day-night-care Organisation">
+        <classes>
+            <class name="CreateDayNightCareOrganisation"/>
+        </classes>
+    </test>
+    <test name="Creating a Fair House Offer Organisation">
+        <classes>
+            <class name="CreateFairHouseOffer"/>
+        </classes>
+    </test>
 
-    <!--<test name="Editing Departments">-->
-    <!--<classes>-->
-    <!--<class name="EditOrganisation"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Editing Departments">
+        <classes>
+            <class name="EditOrganisation"/>
+        </classes>
+    </test>
 
-    <!--<test name="Make public Departments">-->
-    <!--<classes>-->
-    <!--<class name="ToggleOrganisation"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Make public Departments">
+        <classes>
+            <class name="ToggleOrganisation"/>
+        </classes>
+    </test>
 
     <!--<test name="Deleting Organisations">-->
     <!--<classes>-->
