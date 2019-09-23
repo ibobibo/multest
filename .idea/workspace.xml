@@ -245,9 +245,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -384,7 +385,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FramworksCombined" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
@@ -394,27 +395,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateStationaryOrganisation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateStationaryOrganisation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FramworksCombined" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CreateStationaryOrganisation" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteOrganisation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteOrganisation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FramworksCombined" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DeleteOrganisation" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteOrganisationPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteOrganisationPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FramworksCombined" />
       <extension name="coverage">
         <pattern>
@@ -424,6 +427,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pageObjects" />
       <option name="MAIN_CLASS_NAME" value="pageObjects.DeleteOrganisationPage" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -431,8 +435,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" />
       <item itemvalue="Application.RessourceLoader" />
+      <item itemvalue="TestNG.C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" />
       <item itemvalue="TestNG.DeleteOrganisationPage" />
       <item itemvalue="TestNG.DeleteOrganisation" />
       <item itemvalue="TestNG.CreateStationaryOrganisation" />
@@ -674,7 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/jdk-11.0.1_windows-x64_bin/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Class.java">
+    <entry file="jar://$PROJECT_DIR$/../jdk-11.0.1_windows-x64_bin/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1392">
           <caret line="2710" column="15" selection-start-line="2710" selection-start-column="15" selection-end-line="2710" selection-end-column="15" />
@@ -739,7 +743,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/jdk-11.0.1_windows-x64_bin/jdk-11.0.1/lib/src.zip!/java.base/java/util/Properties.java">
+    <entry file="jar://$PROJECT_DIR$/../jdk-11.0.1_windows-x64_bin/jdk-11.0.1/lib/src.zip!/java.base/java/util/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="1102" column="18" selection-start-line="1102" selection-start-column="18" selection-end-line="1102" selection-end-column="18" />

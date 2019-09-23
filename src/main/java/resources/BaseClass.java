@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BaseClass {
+    //hello
     public static WebDriver driver;
     public static Properties prop = new Properties();
     public static Properties propFairHouseOffer = new Properties();
