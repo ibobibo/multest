@@ -17,6 +17,7 @@ public class BaseClass {
     public static Properties prop = new Properties();
     public static Properties propFairHouseOffer = new Properties();
     public static Properties propDepartment = new Properties();
+    public static Properties propNewPlacement = new Properties();
 
 
     public WebDriver initializeDriver() throws IOException {
@@ -69,6 +70,12 @@ public class BaseClass {
         propDepartment = new Properties();
         FileInputStream fileInputStream = new FileInputStream("src/main/java/properties/departmentPage.properties");
         propDepartment.load(fileInputStream);
+    }
+
+    public void loadPropsForPlacement() throws IOException {
+        propNewPlacement = new Properties();
+        FileInputStream fileInputStream = new FileInputStream("src/main/java/properties/newPlacement.properties");
+        propNewPlacement.load(fileInputStream);
     }
 
     public int getCount() {
