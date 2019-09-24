@@ -7,7 +7,7 @@
     </listeners>
     <!--<test name="Test">-->
     <!--<classes>-->
-    <!--<class name="MulLogin"/>-->
+    <!--<class name="resources.MulLogin"/>-->
     <!--</classes>-->
     <!--</test>-->
     <!--<test name="Registration Test">-->
@@ -23,60 +23,60 @@
 
     <!--<test name="Create new Placement">-->
     <!--<classes>-->
-    <!--<class name="CreateNewPlacement"/>-->
+    <!--<class name="placements.CreateNewPlacement"/>-->
     <!--</classes>-->
     <!--</test>-->
 
     <!--<test name="Delete Placement">-->
     <!--<classes>-->
-    <!--<class name="DeletePlacement"/>-->
+    <!--<class name="placements.DeletePlacement"/>-->
     <!--</classes>-->
     <!--</test>-->
 
     <!--<test name="Creating an ambulant Organisation">-->
     <!--<classes>-->
-    <!--<class name="CreateAmbulantOrganisation"/>-->
+    <!--<class name="departments.CreateAmbulantOrganisation"/>-->
     <!--</classes>-->
     <!--</test>-->
     <!--<test name="Creating a stationary Organisation">-->
     <!--<classes>-->
-    <!--<class name="CreateStationaryOrganisation"/>-->
+    <!--<class name="departments.CreateStationaryOrganisation"/>-->
     <!--</classes>-->
     <!--</test>-->
     <!--<test name="Creating a day-night-care Organisation">-->
     <!--<classes>-->
-    <!--<class name="CreateDayNightCareOrganisation"/>-->
+    <!--<class name="departments.CreateDayNightCareOrganisation"/>-->
     <!--</classes>-->
     <!--</test>-->
     <!--<test name="Creating a Fair House Offer Organisation">-->
     <!--<classes>-->
-    <!--<class name="CreateFairHouseOffer"/>-->
+    <!--<class name="departments.CreateFairHouseOffer"/>-->
     <!--</classes>-->
     <!--</test>-->
 
-    <!--<test name="Creating a Contact Person">-->
-    <!--<classes>-->
-    <!--<class name="CreateContactPerson"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-
-    <test name="Editing Departments">
+    <test name="Creating a Contact Person">
         <classes>
-            <class name="EditOrganisation"/>
+            <class name="contactPerson.CreateContactPerson"/>
         </classes>
     </test>
 
+    <!--<test name="Editing Departments">-->
+    <!--<classes>-->
+    <!--<class name="departments.EditOrganisation"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
     <!--<test name="Make public Departments">-->
     <!--<classes>-->
-    <!--<class name="ToggleOrganisation"/>-->
+    <!--<class name="departments.ToggleOrganisation"/>-->
     <!--</classes>-->
     <!--</test>-->
 
 
     <!--<test name="Deleting Organisations">-->
-        <!--<classes>-->
-            <!--<class name="DeleteOrganisation"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="departments.DeleteOrganisation"/>-->
+    <!--</classes>-->
     <!--</test>-->
 
 </suite>

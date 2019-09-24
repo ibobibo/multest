@@ -4,26 +4,37 @@
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RessourceLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/EditOrganisationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/EditOrganisationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ContactPersonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/ContactPersonPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/DeleteOrganisationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DeleteOrganisationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/DepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/EditOrganisationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/EditOrganisationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createOrganisationscreenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createOrganisationscreenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/findNotExistingElemscreenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CreateNewPlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateNewPlacement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeleteOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DeletePlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeletePlacement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EditOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RessourceLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/placements/DeletePlacementPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/placements/DeletePlacementPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateNewPlacement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CreateNewPlacement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DeleteOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DeletePlacement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DeletePlacement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Listeners.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateNewPlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placements/CreateNewPlacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeletePlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MulLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ToggleOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ContactPersonPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/DeleteOrganisationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/DepartmentPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/EditOrganisationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateAmbulantOrganisation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateContactPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateDayNightCareOrganisation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateFairHouseOffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateNewPlacement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateStationaryOrganisation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DeleteOrganisation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DeletePlacement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/EditOrganisation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MulLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ToggleOrganisation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
@@ -40,31 +51,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+            <state relative-caret-position="234">
+              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/EditOrganisation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/properties/departmentPage.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="142">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/BaseClass.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+            <state relative-caret-position="315">
+              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,8 +103,8 @@
       <find>impli</find>
       <find>implicit</find>
       <find>propAmbul</find>
-      <find>emai</find>
       <find>actions</find>
+      <find>emai</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -106,6 +112,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/pageObjects</dir>
+      <dir>$PROJECT_DIR$/src/test/java</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -114,9 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Listeners.java" />
-        <option value="$PROJECT_DIR$/src/test/java/FailureTestForScreenshot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/mulreg.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/RegisterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/MulLogin.java" />
@@ -156,15 +160,18 @@
         <option value="$PROJECT_DIR$/src/main/java/properties/browserData.properties" />
         <option value="$PROJECT_DIR$/src/test/java/CreateNewPlacement.java" />
         <option value="$PROJECT_DIR$/src/test/java/DeletePlacement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ContactPersonPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/CreateContactPerson.java" />
         <option value="$PROJECT_DIR$/src/test/java/DeleteOrganisation.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/Listeners.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/EditOrganisationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/EditOrganisation.java" />
         <option value="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/MulLogin.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" />
       </list>
     </option>
   </component>
@@ -220,29 +227,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pageObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="departments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MulTesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MulTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MulTesting" type="b2602c69:ProjectViewProjectNode" />
               <item name="MulTesting" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MulTesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MulTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -251,6 +241,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MulTesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MulTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="contactPerson" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MulTesting" type="b2602c69:ProjectViewProjectNode" />
@@ -268,7 +266,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569333126591" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569334869541" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -342,7 +340,7 @@
     <configuration name="DeleteOrganisation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FramworksCombined" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeleteOrganisation" />
+      <option name="MAIN_CLASS_NAME" value="departments.DeleteOrganisation" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -359,7 +357,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pageObjects" />
-      <option name="MAIN_CLASS_NAME" value="pageObjects.DeleteOrganisationPage" />
+      <option name="MAIN_CLASS_NAME" value="pageObjects.departments.DeleteOrganisationPage" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -482,44 +480,44 @@
       <workItem from="1568902330540" duration="441000" />
       <workItem from="1569232187013" duration="1961000" />
       <workItem from="1569234837782" duration="480000" />
-      <workItem from="1569237273460" duration="18620000" />
+      <workItem from="1569237273460" duration="20333000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 19m 46s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 06m 26s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 21m 28s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 08m 17s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 23m 33s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 11m 04s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 24m 41s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 11m 38s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 25m 22s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 12m 38s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 26m 24s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 13m 07s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 34m 31s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 15m 04s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 35m 18s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 16m 31s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 50m 46s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 19m 35s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 15h 51m 31s.xml">
+    <history-entry file="C__Users_ibobi_OneDrive_Dokumente_Automatisierung_FramworksCombined_testng_xml - 2019.09.24 at 16h 20m 21s.xml">
       <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218679000" />
+    <option name="totallyTimeSpent" value="220392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,7 +546,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32097003" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3195435" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3266762" />
@@ -745,13 +743,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/screenShots/createOrganisationscreenshot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/DepartmentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105">
@@ -766,40 +757,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreateAmbulantOrganisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FailureTestForScreenshot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MulLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreateStationaryOrganisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -816,26 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreateDayNightCareOrganisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="21" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ToggleOrganisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="30" column="21" selection-start-line="30" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/placements/NewPlacementPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -846,42 +787,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/properties/departmentPage.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/properties/browserData.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ContactPersonPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1595#1596#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,36 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/DeleteOrganisationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DeletePlacement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreateFairHouseOffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="81" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/Listeners.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -942,54 +821,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/screenShots/findNotExistingElemscreenshot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreateNewPlacement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DeleteOrganisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreateContactPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="28" column="13" selection-start-line="28" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/EditOrganisationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MulRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-390">
@@ -1000,29 +831,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EditOrganisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="1245">
+          <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/departments/DeleteOrganisationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/departments/EditOrganisationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/ContactPersonPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/MulLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/placements/CreateNewPlacement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/properties/departmentPage.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
