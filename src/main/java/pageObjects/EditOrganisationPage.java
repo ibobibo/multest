@@ -19,7 +19,7 @@ public class EditOrganisationPage {
     WebElement previewClick;
     @FindBy(xpath = "//button[@class='back']")
     WebElement backClick;
-    @FindBy(id = "name")
+    @FindBy(xpath = "//input[@id='name']")
     WebElement changeName;
 
     public WebElement saveClick() {

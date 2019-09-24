@@ -30,9 +30,10 @@ public class EditOrganisation extends MulLogin {
 
         int i = 1;
         while (getCount() >= i) {
-            String xpath = "//tr[" + i + "]/td[5]//div[1]//a[1]";
+            String xpath = "//section[@class='Department']//tr[" + i + "]//td[3]//a[1]";
             WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
             findTr.click();
+
             editOrganisationPage.changeName().clear();
             editOrganisationPage.changeName().sendKeys(propDepartment.getProperty("editDepartmentName"));
             WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(editOrganisationPage.saveClick()));
@@ -44,6 +45,6 @@ public class EditOrganisation extends MulLogin {
     @AfterTest
     public void closeBrowser() {
         driver.close();
-        driver = null;
+        driver=null;
     }
 }

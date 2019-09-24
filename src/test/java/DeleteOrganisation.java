@@ -28,7 +28,7 @@ public class DeleteOrganisation extends MulLogin {
         WebDriverWait wait = new WebDriverWait(driver, 20);
 
         while (getCount() != 0) {
-            String xpath = "//tr[" + 1 + "]/td[5]//div[1]//a[2]";
+            String xpath = "//tr[" + 1 + "]/td[6]//div[1]//a[2]";
             WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
             findTr.click();
             WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));

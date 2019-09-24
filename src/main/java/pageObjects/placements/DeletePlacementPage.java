@@ -15,8 +15,20 @@ public class DeletePlacementPage {
 
     @FindBy(xpath = "//section[@class='SiteDashboardHeader']//a[@class='edit']")
     WebElement editPlacement;
+    @FindBy(xpath = "//button[@class='delete-button']")
+    WebElement deletePlacement;
+    @FindBy(id = "mul-confirm-delete-category")
+    WebElement acceptDelete;
 
     public WebElement editPlacement() {
         return editPlacement;
+    }
+
+    public WebElement deletePlacement() {
+        return deletePlacement;
+    }
+
+    public WebElement acceptDelete() {
+        return acceptDelete;
     }
 }

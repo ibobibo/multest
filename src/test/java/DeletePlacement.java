@@ -13,14 +13,17 @@ public class DeletePlacement extends MulLogin {
     }
 
     @Test
-    public void createOrganisation() throws IOException {
+    public void deletePlacement() throws IOException {
         login();
 
         loadProps();
         DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);
 
+//        while (deletePlacementPage.editPlacement().isDisplayed()) {
         deletePlacementPage.editPlacement().click();
-
+        deletePlacementPage.deletePlacement().click();
+        deletePlacementPage.acceptDelete().click();
+//        }
     }
 
     @AfterTest

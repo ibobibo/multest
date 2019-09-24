@@ -3,7 +3,7 @@
 <suite name="Suite">
     <listeners>
         <listener class-name="resources.ExtentReporterNG"/>
-        <listener class-name="Listeners"/>
+        <listener class-name="resources.Listeners"/>
     </listeners>
     <!--<test name="Test">-->
     <!--<classes>-->
@@ -22,16 +22,16 @@
     <!--</test>-->
 
     <!--<test name="Create new Placement">-->
-        <!--<classes>-->
-            <!--<class name="CreateNewPlacement"/>-->
-        <!--</classes>-->
+    <!--<classes>-->
+    <!--<class name="CreateNewPlacement"/>-->
+    <!--</classes>-->
     <!--</test>-->
 
-    <test name="Delete Placement">
-        <classes>
-            <class name="DeletePlacement"/>
-        </classes>
-    </test>
+    <!--<test name="Delete Placement">-->
+    <!--<classes>-->
+    <!--<class name="DeletePlacement"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 
     <!--<test name="Creating an ambulant Organisation">-->
     <!--<classes>-->
@@ -54,11 +54,17 @@
     <!--</classes>-->
     <!--</test>-->
 
-    <!--<test name="Editing Departments">-->
+    <!--<test name="Creating a Contact Person">-->
     <!--<classes>-->
-    <!--<class name="EditOrganisation"/>-->
+    <!--<class name="CreateContactPerson"/>-->
     <!--</classes>-->
     <!--</test>-->
+
+    <test name="Editing Departments">
+        <classes>
+            <class name="EditOrganisation"/>
+        </classes>
+    </test>
 
     <!--<test name="Make public Departments">-->
     <!--<classes>-->
@@ -68,10 +74,9 @@
 
 
     <!--<test name="Deleting Organisations">-->
-    <!--<classes>-->
-    <!--<class name="DeleteOrganisation"/>-->
-    <!--</classes>-->
+        <!--<classes>-->
+            <!--<class name="DeleteOrganisation"/>-->
+        <!--</classes>-->
     <!--</test>-->
-
 
 </suite>

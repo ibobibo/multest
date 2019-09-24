@@ -13,7 +13,7 @@ public class CreateNewPlacement extends MulLogin {
     }
 
     @Test
-    public void createOrganisation() throws IOException {
+    public void createNewPlacement() throws IOException {
         login();
 
         loadProps();

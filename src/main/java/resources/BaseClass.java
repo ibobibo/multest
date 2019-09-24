@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BaseClass {
-    //hello
     public static WebDriver driver;
     public static Properties prop = new Properties();
     public static Properties propFairHouseOffer = new Properties();
@@ -82,7 +81,7 @@ public class BaseClass {
         try {
             WebElement x = driver.findElement(By.xpath("//section[@class='Department']//tbody//tr"));
             int count = x.findElements(By.xpath("//section[@class='Department']//tbody//tr")).size();
-            System.out.println(count);
+
             return count;
         } catch (Exception e) {
             return 0;
