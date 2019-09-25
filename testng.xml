@@ -5,6 +5,13 @@
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="resources.Listeners"/>
     </listeners>
+
+    <!--<test name="Failure Test">-->
+    <!--<classes>-->
+    <!--<class name="FailureTestForScreenshot"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
     <!--<test name="Test">-->
     <!--<classes>-->
     <!--<class name="resources.MulLogin"/>-->
@@ -15,11 +22,7 @@
     <!--<class name="MulRegister"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <!--<test name="Failure Test">-->
-    <!--<classes>-->
-    <!--<class name="FailureTestForScreenshot"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+
 
     <!--<test name="Create new Placement">-->
     <!--<classes>-->
@@ -54,18 +57,6 @@
     <!--</classes>-->
     <!--</test>-->
 
-    <!--<test name="Creating a Contact Person">-->
-    <!--<classes>-->
-    <!--<class name="contactPerson.CreateContactPerson"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-    <test name="Edit a Contact Person">
-        <classes>
-            <class name="contactPerson.EditContactPerson"/>
-        </classes>
-    </test>
-
-
     <!--<test name="Editing Departments">-->
     <!--<classes>-->
     <!--<class name="departments.EditOrganisation"/>-->
@@ -78,11 +69,36 @@
     <!--</classes>-->
     <!--</test>-->
 
-
     <!--<test name="Deleting Organisations">-->
     <!--<classes>-->
     <!--<class name="departments.DeleteOrganisation"/>-->
     <!--</classes>-->
     <!--</test>-->
+
+    <!--<test name="Creating a Contact Person">-->
+    <!--<classes>-->
+    <!--<class name="contactPerson.CreateContactPerson"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Edit a Contact Person">-->
+    <!--<classes>-->
+    <!--<class name="contactPerson.EditContactPerson"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Invite a Contact Person">-->
+    <!--<classes>-->
+    <!--<class name="contactPerson.InviteContactPerson"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Delete a Contact Person">-->
+    <!--<classes>-->
+    <!--<class name="contactPerson.DeleteContactPerson"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="Contact Person gets Department">
+        <classes>
+            <class name="contactPerson.ContactPersonGetDepartment"/>
+        </classes>
+    </test>
 
 </suite>
