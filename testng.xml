@@ -54,11 +54,17 @@
     <!--</classes>-->
     <!--</test>-->
 
-    <test name="Creating a Contact Person">
+    <!--<test name="Creating a Contact Person">-->
+    <!--<classes>-->
+    <!--<class name="contactPerson.CreateContactPerson"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="Edit a Contact Person">
         <classes>
-            <class name="contactPerson.CreateContactPerson"/>
+            <class name="contactPerson.EditContactPerson"/>
         </classes>
     </test>
+
 
     <!--<test name="Editing Departments">-->
     <!--<classes>-->

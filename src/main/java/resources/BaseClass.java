@@ -88,4 +88,15 @@ public class BaseClass {
         }
     }
 
+    public int getCountContactPerson() {
+        try {
+            WebElement x = driver.findElement(By.xpath("//section[@class='Userdata']//tbody//tr"));
+            int count = x.findElements(By.xpath("//section[@class='Userdata']//tbody//tr")).size();
+
+            return count;
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
 }
