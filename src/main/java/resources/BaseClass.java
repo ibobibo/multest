@@ -53,6 +53,11 @@ public class BaseClass {
         driver.get(prop.getProperty("urlFromHomeNetwork"));
     }
 
+    public void initializeMailServer() throws IOException {
+        driver = initializeDriver();
+        driver.get(prop.getProperty("urlFromMailServer"));
+    }
+
     public void loadProps() throws IOException {
         prop = new Properties();
         FileInputStream fileInputStream = new FileInputStream("src/main/java/properties/browserData.properties");

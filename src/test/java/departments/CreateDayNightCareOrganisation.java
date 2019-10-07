@@ -43,6 +43,9 @@ public class CreateDayNightCareOrganisation extends MulLogin {
         }
 
         //allgemeine Angaben
+        WebElement findName = driver.findElement(By.id("name"));
+        actions.moveToElement(findName).click().build().perform();
+
         dayNightCareOrganisationPage.dayNightCareDepartmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
         dayNightCareOrganisationPage.dayNightCareDepartmentOrganisationType().click();
         dayNightCareOrganisationPage.dayNightCareDepartmentOrganisationTypeChosen().click();

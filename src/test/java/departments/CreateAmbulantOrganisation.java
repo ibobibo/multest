@@ -43,6 +43,9 @@ public class CreateAmbulantOrganisation extends MulLogin {
         }
 
         //allgemeine Angaben
+        WebElement findName = driver.findElement(By.id("name"));
+        actions.moveToElement(findName).click().build().perform();
+
         ambulantOrganisationPage.ambulantDepartmentName().sendKeys(propDepartment.getProperty("ambulantDepartmentName"));
         ambulantOrganisationPage.ambulantDepartmentOrganisationType().click();
         ambulantOrganisationPage.ambulantDepartmentOrganisationTypeChosen().click();

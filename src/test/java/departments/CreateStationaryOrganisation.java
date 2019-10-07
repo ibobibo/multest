@@ -43,9 +43,11 @@ public class CreateStationaryOrganisation extends MulLogin {
         }
 
         //Allgemeine Angaben
+        WebElement findName = driver.findElement(By.id("name"));
+        actions.moveToElement(findName).click().build().perform();
+
         stationaryOrganisationPage.stationaryDepartmentName().sendKeys(propDepartment.getProperty("stationaryDepartmentName"));
         stationaryOrganisationPage.stationaryDepartmentOrganisationType().click();
-
         stationaryOrganisationPage.stationaryDepartmentOrganisationTypeChosen().click();
         stationaryOrganisationPage.stationaryDepartmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
         stationaryOrganisationPage.stationaryDepartmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));

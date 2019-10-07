@@ -17,11 +17,11 @@
     <!--<class name="resources.MulLogin"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <!--<test name="Registration Test">-->
-    <!--<classes>-->
-    <!--<class name="MulRegister"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Registration Test">
+        <classes>
+            <class name="MulRegister"/>
+        </classes>
+    </test>
 
 
     <!--<test name="Create new Placement">-->
@@ -95,10 +95,10 @@
     <!--<class name="contactPerson.DeleteContactPerson"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <test name="Contact Person gets Department">
-        <classes>
-            <class name="contactPerson.ContactPersonGetDepartment"/>
-        </classes>
-    </test>
+    <!--<test name="Contact Person gets Department">-->
+    <!--<classes>-->
+    <!--<class name="contactPerson.ContactPersonGetDepartment"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 
 </suite>

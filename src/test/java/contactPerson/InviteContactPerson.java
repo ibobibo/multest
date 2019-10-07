@@ -26,7 +26,12 @@ public class InviteContactPerson extends MulLogin {
         int i = 1;
         while (getCountContactPerson() >= i) {
             String xpath = "//section[@class='Userdata']//tr[" + i + "]//button[@class='invite']";
-            WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+            WebElement findTr = null;
+            try {
+                findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+            } catch (Exception e) {
+                System.out.println("not displayed");
+            }
             if (findTr.isDisplayed()) {
                 findTr.click();
             }

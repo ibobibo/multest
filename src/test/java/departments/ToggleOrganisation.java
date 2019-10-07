@@ -32,6 +32,7 @@ public class ToggleOrganisation extends MulLogin {
         int i = 1;
         while (getCount() >= i) {
             TimeUnit.SECONDS.sleep(5);
+
             String xpath = "//tr[" + i + "]//td[1]//label[1]";
             WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
             if (findTr.isDisplayed()) {
