@@ -18,16 +18,16 @@
     <!--</classes>-->
     <!--</test>-->
 
-    <test name="Registration Test">
-        <classes>
-            <class name="MulRegister"/>
-        </classes>
-    </test>
-    <!--<test name="Verify Test">-->
+    <!--<test name="Registration Test">-->
     <!--<classes>-->
-    <!--<class name="Verify"/>-->
+    <!--<class name="MulRegister"/>-->
     <!--</classes>-->
     <!--</test>-->
+    <test name="Verify Test">
+        <classes>
+            <class name="Verify"/>
+        </classes>
+    </test>
 
 
     <!--<test name="Create new Placement">-->
