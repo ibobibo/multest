@@ -13,12 +13,18 @@ public class VerifyPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id = "username")
-    WebElement username;
+    @FindBy(xpath = "//ul[@class='email-list']//span[contains(text(),'test2@test.test0')]")
+    WebElement emailToVerify;
 
+    @FindBy(xpath = "/html/body/p[3]")
+    WebElement emailActivate;
 
-    public WebElement username() {
-        return username;
+    public WebElement emailToVerify() {
+        return emailToVerify;
+    }
+
+    public WebElement emailActivate() {
+        return emailActivate;
     }
 
 }
