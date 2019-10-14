@@ -19,7 +19,7 @@ public class Verify extends BaseClass {
     public void verifyRegisteredUser() {
         Actions actions = new Actions(driver);
 
-        WebElement findEmail = driver.findElement(By.xpath("//ul[@class='email-list']//span[contains(text(),'test2@test.test0')]"));
+        WebElement findEmail = driver.findElement(By.xpath("//ul[@class='email-list']//span[contains(text(),'test3@test.test0')]"));
         actions.moveToElement(findEmail).click().build().perform();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
