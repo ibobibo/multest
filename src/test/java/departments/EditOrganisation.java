@@ -8,11 +8,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.EditOrganisationPage;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 
-public class EditOrganisation extends MulLogin {
+public class EditOrganisation extends MulLoginLogout {
 
     @Override
     public int getCount() {
@@ -26,7 +26,7 @@ public class EditOrganisation extends MulLogin {
     }
 
     @Test()
-    public void editAllOrganisation() {
+    public void editAllOrganisation() throws InterruptedException {
         EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
         login();
         WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -43,6 +43,8 @@ public class EditOrganisation extends MulLogin {
             findElem.click();
             i++;
         }
+
+        logout();
     }
 
     @AfterTest

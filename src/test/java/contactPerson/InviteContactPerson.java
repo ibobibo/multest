@@ -7,11 +7,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 
-public class InviteContactPerson extends MulLogin {
+public class InviteContactPerson extends MulLoginLogout {
 
     @BeforeTest
     public void initialize() throws IOException {
@@ -19,7 +19,7 @@ public class InviteContactPerson extends MulLogin {
     }
 
     @Test()
-    public void inviteContactPerson() {
+    public void inviteContactPerson() throws InterruptedException {
         login();
         WebDriverWait wait = new WebDriverWait(driver, 5);
 
@@ -38,6 +38,8 @@ public class InviteContactPerson extends MulLogin {
 
             i++;
         }
+
+        logout();
     }
 
     @AfterTest

@@ -7,12 +7,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.contactPerson.ContactPersonPage;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class CreateContactPerson extends MulLogin {
+public class CreateContactPerson extends MulLoginLogout {
 
     @BeforeTest
     public void initialize() throws IOException {
@@ -39,6 +39,7 @@ public class CreateContactPerson extends MulLogin {
         contactPersonPage.contactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
         contactPersonPage.submit().click();
 
+        logout();
     }
 
     @AfterTest

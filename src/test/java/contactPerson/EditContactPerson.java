@@ -9,11 +9,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.contactPerson.EditContactPersonPage;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 
-public class EditContactPerson extends MulLogin {
+public class EditContactPerson extends MulLoginLogout {
 
     @BeforeTest
     public void initialize() throws IOException {
@@ -21,7 +21,7 @@ public class EditContactPerson extends MulLogin {
     }
 
     @Test()
-    public void editContactPerson() throws IOException {
+    public void editContactPerson() throws IOException, InterruptedException {
         EditContactPersonPage editContactPersonPage = new EditContactPersonPage(driver);
         Actions actions = new Actions(driver);
         login();
@@ -55,6 +55,8 @@ public class EditContactPerson extends MulLogin {
 
             i++;
         }
+
+        logout();
     }
 
     @AfterTest

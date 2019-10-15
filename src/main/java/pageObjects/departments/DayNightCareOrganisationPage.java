@@ -23,8 +23,6 @@ public class DayNightCareOrganisationPage {
     //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")
     WebElement dayNightCareDepartmentName;
-    @FindBy(id = "organisationType")
-    WebElement dayNightCareDepartmentOrganisationType;
     @FindBy(xpath = "//option[. = 'Privat']")
     WebElement dayNightCareDepartmentOrganisationTypeChosen;
     @FindBy(id = "confession")
@@ -61,10 +59,6 @@ public class DayNightCareOrganisationPage {
 
     public WebElement dayNightCareDepartmentName() {
         return dayNightCareDepartmentName;
-    }
-
-    public WebElement dayNightCareDepartmentOrganisationType() {
-        return dayNightCareDepartmentOrganisationType;
     }
 
     public WebElement dayNightCareDepartmentOrganisationTypeChosen() {

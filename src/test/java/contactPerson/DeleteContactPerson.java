@@ -8,11 +8,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.contactPerson.DeleteContactPersonPage;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 
-public class DeleteContactPerson extends MulLogin {
+public class DeleteContactPerson extends MulLoginLogout {
 
     @BeforeTest
     public void initialize() throws IOException {
@@ -20,7 +20,7 @@ public class DeleteContactPerson extends MulLogin {
     }
 
     @Test()
-    public void deleteContactPerson() {
+    public void deleteContactPerson() throws InterruptedException {
         DeleteContactPersonPage deleteContactPersonPage = new DeleteContactPersonPage(driver);
         login();
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -33,6 +33,8 @@ public class DeleteContactPerson extends MulLogin {
                 deleteContactPersonPage.delete().click();
             }
         }
+
+        logout();
     }
 
     @AfterTest

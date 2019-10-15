@@ -8,11 +8,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.DeleteOrganisationPage;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 
-public class DeleteOrganisation extends MulLogin {
+public class DeleteOrganisation extends MulLoginLogout {
 
     @Override
     public int getCount() {
@@ -25,7 +25,7 @@ public class DeleteOrganisation extends MulLogin {
     }
 
     @Test()
-    public void deleteAllOrganisation() {
+    public void deleteAllOrganisation() throws InterruptedException {
         DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
         login();
         WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -37,6 +37,8 @@ public class DeleteOrganisation extends MulLogin {
             WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
             findElem.click();
         }
+
+        logout();
     }
 
     @AfterTest

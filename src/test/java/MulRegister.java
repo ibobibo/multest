@@ -20,8 +20,8 @@ public class MulRegister extends BaseClass {
 
     @Test
     public void register() throws IOException {
-        for (int i = 0; i < 1; i++) {
-            loadProps();
+        loadProps();
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
             RegisterPage registerPage = new RegisterPage(driver);
 
@@ -39,9 +39,9 @@ public class MulRegister extends BaseClass {
             registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName") + i);
             registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName") + i);
             registerPage.contactEmail().sendKeys(prop.getProperty("contactEmail") + i);
-            registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone") + i);
-            registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword") + i);
-            registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword") + i);
+            registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone"));
+            registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword"));
+            registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
             registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
             registerPage.accept().click();
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);

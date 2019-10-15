@@ -23,8 +23,6 @@ public class AmbulantOrganisationPage {
     //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")
     WebElement ambulantDepartmentName;
-    @FindBy(id = "organisationType")
-    WebElement ambulantDepartmentOrganisationType;
     @FindBy(xpath = "//option[. = 'Privat']")
     WebElement ambulantDepartmentOrganisationTypeChosen;
     @FindBy(id = "confession")
@@ -61,10 +59,6 @@ public class AmbulantOrganisationPage {
 
     public WebElement ambulantDepartmentName() {
         return ambulantDepartmentName;
-    }
-
-    public WebElement ambulantDepartmentOrganisationType() {
-        return ambulantDepartmentOrganisationType;
     }
 
     public WebElement ambulantDepartmentOrganisationTypeChosen() {

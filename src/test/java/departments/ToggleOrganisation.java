@@ -7,12 +7,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class ToggleOrganisation extends MulLogin {
+public class ToggleOrganisation extends MulLoginLogout {
 
     @Override
     public int getCount() {
@@ -40,6 +40,8 @@ public class ToggleOrganisation extends MulLogin {
             }
             i++;
         }
+
+        logout();
     }
 
     @AfterTest

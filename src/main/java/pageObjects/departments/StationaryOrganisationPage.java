@@ -23,8 +23,6 @@ public class StationaryOrganisationPage {
     //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")
     WebElement stationaryDepartmentName;
-    @FindBy(id = "organisationType")
-    WebElement stationaryDepartmentOrganisationType;
     @FindBy(xpath = "//option[. = 'Privat']")
     WebElement stationaryDepartmentOrganisationTypeChosen;
     @FindBy(id = "confession")
@@ -61,10 +59,6 @@ public class StationaryOrganisationPage {
 
     public WebElement stationaryDepartmentName() {
         return stationaryDepartmentName;
-    }
-
-    public WebElement stationaryDepartmentOrganisationType() {
-        return stationaryDepartmentOrganisationType;
     }
 
     public WebElement stationaryDepartmentOrganisationTypeChosen() {

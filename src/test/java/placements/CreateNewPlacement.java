@@ -4,11 +4,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.placements.NewPlacementPage;
-import resources.MulLogin;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 
-public class CreateNewPlacement extends MulLogin {
+public class CreateNewPlacement extends MulLoginLogout {
 
     @BeforeTest
     public void initialize() throws IOException {
@@ -16,7 +16,7 @@ public class CreateNewPlacement extends MulLogin {
     }
 
     @Test
-    public void createNewPlacement() throws IOException {
+    public void createNewPlacement() throws IOException, InterruptedException {
         login();
 
         loadProps();
@@ -30,6 +30,8 @@ public class CreateNewPlacement extends MulLogin {
             newPlacementPage.organisationChosen().click();
             newPlacementPage.submit().click();
         }
+
+        logout();
     }
 
     @AfterTest

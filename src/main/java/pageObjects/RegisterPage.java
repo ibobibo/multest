@@ -39,7 +39,7 @@ public class RegisterPage {
     WebElement accountSecondPassword;
     @FindBy(id = "account.premiumCode")
     WebElement accountPremiumCode;
-    @FindBy(xpath = "//section[@class='Register']//label[@class='Checkbox ']")
+    @FindBy(xpath = "//section[@class='Register']//label[@class='Checkbox ']//span[contains(text(),'Ich habe die Erklärung zum ')]")
     WebElement accept;
     @FindBy(id = "register-submit")
     WebElement registerSubmit;

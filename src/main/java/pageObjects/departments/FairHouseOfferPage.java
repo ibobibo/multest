@@ -359,6 +359,7 @@ public class FairHouseOfferPage {
     WebElement apartmentTypeChosen;
     @FindBy(xpath = "//option[. = 'Quartier']")
     WebElement apartmentPropertyChosen;
+    //muss anbieter und eigentümer checken für firefox !!!
     @FindBy(id = "residentialProperty.provider.text")
     WebElement provider;
     @FindBy(xpath = "//option[. = 'Eigentümer']")
