@@ -14,7 +14,7 @@ public class MulLoginLogout extends BaseClass {
     public static Logger log = LogManager.getLogger(BaseClass.class.getName());
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
     }
 

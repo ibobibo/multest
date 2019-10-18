@@ -20,28 +20,33 @@ public class ToggleOrganisation extends MulLoginLogout {
     }
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies();
+        TimeUnit.SECONDS.sleep(1);
     }
 
     @Test()
     public void toggleAllOrganisation() throws InterruptedException {
-        login();
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            loginLoop(i);
+            WebDriverWait wait = new WebDriverWait(driver, 20);
 
-        int i = 1;
-        while (getCount() >= i) {
-            TimeUnit.SECONDS.sleep(5);
+            int x = 1;
+            while (getCount() >= x) {
+                TimeUnit.SECONDS.sleep(5);
 
-            String xpath = "//tr[" + i + "]//td[1]//label[1]";
-            WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-            if (findTr.isDisplayed()) {
-                findTr.click();
+                String xpath = "//tr[" + x + "]//td[1]//label[1]";
+                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                if (findTr.isDisplayed()) {
+                    findTr.click();
+                }
+                x++;
             }
-            i++;
+            TimeUnit.SECONDS.sleep(6);
+            logout();
+            TimeUnit.SECONDS.sleep(2);
         }
-
-        logout();
     }
 
     @AfterTest

@@ -15,8 +15,10 @@ import java.util.concurrent.TimeUnit;
 public class CreateFairHouseOffer extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies();
+        TimeUnit.SECONDS.sleep(1);
     }
 
     @Test
@@ -52,6 +54,7 @@ public class CreateFairHouseOffer extends MulLoginLogout {
             fairHouseOfferPage.accessibilityApartmentArea().click();
             fairHouseOfferPage.accessibility().click();
             fairHouseOfferPage.conformation().click();
+            TimeUnit.SECONDS.sleep(4);
             try {
                 //Submit Button hat Fehler
                 fairHouseOfferPage.submitButton().click();
@@ -62,7 +65,7 @@ public class CreateFairHouseOffer extends MulLoginLogout {
             }
 
             //allgemeine Angaben
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
 
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
@@ -153,14 +156,14 @@ public class CreateFairHouseOffer extends MulLoginLogout {
 
             TimeUnit.SECONDS.sleep(6);
             logout();
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
 
         }
     }
 
     @AfterTest
     public void closeBrowser() {
-//        driver.close();
-//        driver = null;
+        driver.close();
+        driver = null;
     }
 }

@@ -14,8 +14,9 @@ public class MulRegister extends BaseClass {
     public static Logger log = LogManager.getLogger(BaseClass.class.getName());
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies();
     }
 
     @Test
@@ -25,9 +26,15 @@ public class MulRegister extends BaseClass {
 
             RegisterPage registerPage = new RegisterPage(driver);
 
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             registerPage.registerButtonHomepage().click();
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
+            registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany") + i);
+            registerPage.streetAddress().sendKeys(prop.getProperty("streetAddress"));
+            registerPage.streetNumber().sendKeys(prop.getProperty("streetNumber"));
+            registerPage.postalCode().sendKeys(prop.getProperty("postalCode"));
+            registerPage.city().sendKeys(prop.getProperty("city"));
             registerPage.siteName().sendKeys(prop.getProperty("registerSiteName") + i);
 
             registerPage.umbrellaOrganisation().click();

@@ -11,8 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Verify extends BaseClass {
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeMailServer();
+        accessAllCookies();
     }
 
     @Test

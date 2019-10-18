@@ -15,8 +15,10 @@ import java.util.concurrent.TimeUnit;
 public class CreateDayNightCareOrganisation extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies();
+        TimeUnit.SECONDS.sleep(1);
     }
 
     @Test

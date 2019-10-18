@@ -51,11 +51,11 @@
     <!--</classes>-->
     <!--</test>-->
 
-    <!--<test name="Make public Departments">-->
-    <!--<classes>-->
-    <!--<class name="departments.ToggleOrganisation"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Make public Departments">
+        <classes>
+            <class name="departments.ToggleOrganisation"/>
+        </classes>
+    </test>
 
     <!--<test name="Deleting Organisations">-->
     <!--<classes>-->

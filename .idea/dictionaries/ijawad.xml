@@ -3,6 +3,7 @@
     <words>
       <w>abteilung</w>
       <w>achtung</w>
+      <w>aktzeptiert</w>
       <w>anmelden</w>
       <w>arbeit</w>
       <w>ausblick</w>
@@ -10,6 +11,8 @@
       <w>besteht</w>
       <w>chii</w>
       <w>chromedriver</w>
+      <w>cookiebot</w>
+      <w>cybot</w>
       <w>einen</w>
       <w>einrichtung</w>
       <w>geckodriver</w>
@@ -25,6 +28,7 @@
       <w>namen</w>
       <w>pflege</w>
       <w>saniert</w>
+      <w>schon</w>
       <w>seit</w>
       <w>soziale</w>
       <w>sprylab</w>
@@ -33,6 +37,7 @@
       <w>trägt</w>
       <w>unsere</w>
       <w>wurde</w>
+      <w>wurden</w>
     </words>
   </dictionary>
 </component>

@@ -5,11 +5,13 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
     public static WebDriver driver;
@@ -101,4 +103,30 @@ public class BaseClass {
         }
     }
 
+    //access Cookies
+    public void accessCookies() {
+        try {
+            Actions actions = new Actions(driver);
+            WebElement accessCookies = driver.findElement(By.id("//a[@id='CybotCookiebotDialogBodyButtonDecline']"));
+            actions.moveToElement(accessCookies).click().build().perform();
+        } catch (Exception e) {
+            System.out.println("Cookies wurden schon aktzeptiert.");
+        }
+    }
+
+    public void accessAllCookies() throws InterruptedException {
+        try {
+            Actions actions = new Actions(driver);
+            WebElement accessAllCookies = driver.findElement(By.xpath("//html//body//div[@id='CybotCookiebotDialog']//div[@id='CybotCookiebotDialogBody']//a[@id='CybotCookiebotDialogBodyButtonAccept']"));
+            while (true) {
+                if (accessAllCookies.isDisplayed()) {
+                    actions.moveToElement(accessAllCookies).click().build().perform();
+                    break;
+                } else {
+                    TimeUnit.SECONDS.sleep(5);
+                }
+            }
+        } catch (Exception e) {
+        }
+    }
 }

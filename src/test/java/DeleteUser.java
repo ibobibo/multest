@@ -10,8 +10,9 @@ import java.util.concurrent.TimeUnit;
 public class DeleteUser extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies();
     }
 
     @Test

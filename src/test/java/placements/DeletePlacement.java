@@ -12,8 +12,10 @@ import java.util.concurrent.TimeUnit;
 public class DeletePlacement extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies();
+        TimeUnit.SECONDS.sleep(1);
     }
 
     @Test
@@ -24,6 +26,7 @@ public class DeletePlacement extends MulLoginLogout {
             loginLoop(i);
             DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);
 
+            TimeUnit.SECONDS.sleep(2);
             deletePlacementPage.editPlacement().click();
             deletePlacementPage.deletePlacement().click();
             deletePlacementPage.acceptDelete().click();
