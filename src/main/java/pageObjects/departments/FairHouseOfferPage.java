@@ -49,7 +49,7 @@ public class FairHouseOfferPage {
     WebElement mobilityOffer;
     @FindBy(xpath = "//span[contains(text(),'technische Assistenzsysteme')]")
     WebElement technicalAssistanceSystems;
-    @FindBy(xpath = "//div[@class='confirmation']//label[contains(@class,'Checkbox')]")
+    @FindBy(xpath = "//span[contains(text(),'Ich bestätige')]")
     WebElement conformation;
     @FindBy(xpath = "//div[@class='modal-footer']//button[@type='submit']")
     WebElement submitButton;
@@ -359,7 +359,6 @@ public class FairHouseOfferPage {
     WebElement apartmentTypeChosen;
     @FindBy(xpath = "//option[. = 'Quartier']")
     WebElement apartmentPropertyChosen;
-    //muss anbieter und eigentümer checken für firefox !!!
     @FindBy(id = "residentialProperty.provider.text")
     WebElement provider;
     @FindBy(xpath = "//option[. = 'Eigentümer']")
