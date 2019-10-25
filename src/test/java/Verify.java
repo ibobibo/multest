@@ -1,6 +1,5 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -17,28 +16,21 @@ public class Verify extends BaseClass {
     }
 
     @Test
-    public void verifyRegisteredUser() throws IOException {
+    public void verifyRegisteredUser() throws IOException, InterruptedException {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            Actions actions = new Actions(driver);
+            WebElement inputField = driver.findElement(By.xpath("//div[@class='search-container']//input[@placeholder='Search']"));
             String x = "//ul[@class='email-list']//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + i + "')]";
+            inputField.clear();
+            inputField.sendKeys(prop.getProperty("contactEmail").toLowerCase() + i);
 
-            try {
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                WebElement findEmail = driver.findElement(By.xpath(x));
-                actions.moveToElement(findEmail).click().build().perform();
-            } catch (Exception e) {
-                System.out.println("shit 1");
-            }
+            WebElement findEmail = driver.findElement(By.xpath(x));
+            findEmail.click();
 
-            try {
-                driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='preview-iframe panel-html']")));
-                driver.findElement(By.xpath("/html/body/p[3]/a")).click();
-                driver.switchTo().defaultContent();
-                TimeUnit.SECONDS.sleep(5);
-            } catch (Exception e) {
-                System.out.println("shit 2");
-            }
+            driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='preview-iframe panel-html']")));
+            driver.findElement(By.xpath("/html/body/p[3]/a")).click();
+            driver.switchTo().defaultContent();
+            TimeUnit.SECONDS.sleep(5);
         }
     }
 

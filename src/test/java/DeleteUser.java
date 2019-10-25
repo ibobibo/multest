@@ -18,6 +18,7 @@ public class DeleteUser extends MulLoginLogout {
     @Test
     public void deleteUser() throws IOException, InterruptedException {
         loadProps();
+        TimeUnit.SECONDS.sleep(2);
         loginAdmin();
         TimeUnit.SECONDS.sleep(2);
         DeleteUserPage deleteUserPage = new DeleteUserPage(driver);

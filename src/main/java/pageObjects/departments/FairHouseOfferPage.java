@@ -353,7 +353,7 @@ public class FairHouseOfferPage {
     }
 
     //Allgemeine Beschreibung des Wohnprojekts
-    @FindBy(id = "residentialProperty.description")
+    @FindBy(xpath = "//textarea[@id='residentialProperty.description']")
     WebElement descriptionOfApartment;
     @FindBy(xpath = "//option[. = 'eigene Wohnung']")
     WebElement apartmentTypeChosen;

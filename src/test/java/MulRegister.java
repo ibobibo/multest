@@ -20,15 +20,15 @@ public class MulRegister extends BaseClass {
     }
 
     @Test
-    public void register() throws IOException {
+    public void register() throws IOException, InterruptedException {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
             RegisterPage registerPage = new RegisterPage(driver);
 
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            TimeUnit.SECONDS.sleep(2);
             registerPage.registerButtonHomepage().click();
-            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+            TimeUnit.SECONDS.sleep(2);
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany") + i);
             registerPage.streetAddress().sendKeys(prop.getProperty("streetAddress"));

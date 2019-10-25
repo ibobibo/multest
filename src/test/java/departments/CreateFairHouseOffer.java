@@ -106,7 +106,7 @@ public class CreateFairHouseOffer extends MulLoginLogout {
             //Allgemeine Beschreibung des Wohnprojekts
             fairHouseOfferPage.descriptionOfApartment().sendKeys(propFairHouseOffer.getProperty("descriptionOfApartment"));
 
-            WebElement apartmentType = driver.findElement(By.id("residentialProperty.type"));
+            WebElement apartmentType = driver.findElement(By.xpath("//label[contains(text(),'Wohnungstyp')]"));
             actions.moveToElement(apartmentType).click().build().perform();
             fairHouseOfferPage.apartmentTypeChosen().click();
 
@@ -163,7 +163,6 @@ public class CreateFairHouseOffer extends MulLoginLogout {
 
     @AfterTest
     public void closeBrowser() {
-        driver.close();
-        driver = null;
+
     }
 }
