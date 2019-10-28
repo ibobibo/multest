@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.departments.FairHouseOfferPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -33,7 +33,7 @@ public class CreateFairHouseOffer extends MulLoginLogout {
 
             loadPropsForDepartment();
             loadPropsForFairHouseOfferDepartment();
-            FairHouseOfferPage fairHouseOfferPage = new FairHouseOfferPage(driver);
+            DepartmentPage fairHouseOfferPage = new DepartmentPage(driver);
 
             try {
                 fairHouseOfferPage.addDepartment().click();
@@ -70,22 +70,22 @@ public class CreateFairHouseOffer extends MulLoginLogout {
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
-            fairHouseOfferPage.fairHouseOfferDepartmentName().sendKeys(propDepartment.getProperty("fairHouseOfferDepartmentName"));
-            fairHouseOfferPage.fairHouseOfferDepartmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
-            fairHouseOfferPage.fairHouseOfferDepartmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
-            fairHouseOfferPage.fairHouseOfferDepartmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
-            fairHouseOfferPage.fairHouseOfferDepartmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
-            fairHouseOfferPage.fairHouseOfferDepartmentWebsite().sendKeys(propDepartment.getProperty("website"));
+            fairHouseOfferPage.departmentName().sendKeys(propDepartment.getProperty("fairHouseOfferDepartmentName"));
+            fairHouseOfferPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+            fairHouseOfferPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+            fairHouseOfferPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+            fairHouseOfferPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+            fairHouseOfferPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
 
             //angaben zur Person
-            fairHouseOfferPage.fairHouseOfferDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
-            fairHouseOfferPage.fairHouseOfferDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
-            fairHouseOfferPage.fairHouseOfferDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-            fairHouseOfferPage.fairHouseOfferDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+            fairHouseOfferPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+            fairHouseOfferPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+            fairHouseOfferPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+            fairHouseOfferPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
             WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));
             actions.moveToElement(contactSalutation).click().build().perform();
-            fairHouseOfferPage.fairHouseOfferDepartmentContactSalutationChosen().click();
+            fairHouseOfferPage.departmentContactSalutationChosen().click();
 
             //sprechzeiten
             fairHouseOfferPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
@@ -156,8 +156,8 @@ public class CreateFairHouseOffer extends MulLoginLogout {
             fairHouseOfferPage.energyDemand().sendKeys(propFairHouseOffer.getProperty("energyDemand"));
 
             //Beschreibungen örtliche Gegebenheiten
-            fairHouseOfferPage.yearOfConstruction().sendKeys(propFairHouseOffer.getProperty("yearOfConstruction"));
-            fairHouseOfferPage.yearOfLastRefurbishment().sendKeys(propFairHouseOffer.getProperty("yearOfLastRefurbishment"));
+            fairHouseOfferPage.constructionYear().sendKeys(propFairHouseOffer.getProperty("yearOfConstruction"));
+            fairHouseOfferPage.refurbishmentYear().sendKeys(propFairHouseOffer.getProperty("yearOfLastRefurbishment"));
             fairHouseOfferPage.numberOfCommonRooms().sendKeys(propFairHouseOffer.getProperty("numberOfCommonRooms"));
 
             //Youtube

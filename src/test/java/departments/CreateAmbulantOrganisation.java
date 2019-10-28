@@ -6,9 +6,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.departments.AmbulantOrganisationPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
+import java.awt.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -22,7 +23,7 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
     }
 
     @Test
-    public void createAmbulantOrganisation() throws IOException, InterruptedException {
+    public void createAmbulantOrganisation() throws IOException, InterruptedException, AWTException {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
@@ -32,7 +33,7 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
             Actions actions = new Actions(driver);
 
             loadPropsForDepartment();
-            AmbulantOrganisationPage ambulantOrganisationPage = new AmbulantOrganisationPage(driver);
+            DepartmentPage ambulantOrganisationPage = new DepartmentPage(driver);
 
             try {
                 ambulantOrganisationPage.addDepartment().click();
@@ -57,31 +58,31 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
-            ambulantOrganisationPage.ambulantDepartmentName().sendKeys(propDepartment.getProperty("ambulantDepartmentName"));
+            ambulantOrganisationPage.departmentName().sendKeys(propDepartment.getProperty("ambulantDepartmentName"));
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
-            ambulantOrganisationPage.ambulantDepartmentOrganisationTypeChosen().click();
+            ambulantOrganisationPage.departmentOrganisationTypeChosen().click();
 
-            ambulantOrganisationPage.ambulantDepartmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
-            ambulantOrganisationPage.ambulantDepartmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
-            ambulantOrganisationPage.ambulantDepartmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
-            ambulantOrganisationPage.ambulantDepartmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
-            ambulantOrganisationPage.ambulantDepartmentWebsite().sendKeys(propDepartment.getProperty("website"));
+            ambulantOrganisationPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+            ambulantOrganisationPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+            ambulantOrganisationPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+            ambulantOrganisationPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+            ambulantOrganisationPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
 
             //angaben zur Person
-            ambulantOrganisationPage.ambulantDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
-            ambulantOrganisationPage.ambulantDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
-            ambulantOrganisationPage.ambulantDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-            ambulantOrganisationPage.ambulantDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+            ambulantOrganisationPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+            ambulantOrganisationPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+            ambulantOrganisationPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+            ambulantOrganisationPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
             WebElement availability = driver.findElement(By.id("availability"));
             actions.moveToElement(availability).click().build().perform();
-            ambulantOrganisationPage.ambulantDepartmentAvailableChosen().click();
+            ambulantOrganisationPage.departmentAvailableChosen().click();
 
             WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));
             actions.moveToElement(contactSalutation).click().build().perform();
-            ambulantOrganisationPage.ambulantDepartmentContactSalutationChosen().click();
+            ambulantOrganisationPage.departmentContactSalutationChosen().click();
 
             //sprechzeiten
             ambulantOrganisationPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
@@ -107,6 +108,7 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
 
             //youtube
             ambulantOrganisationPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
+            TimeUnit.SECONDS.sleep(3);
 
             //speichern
             ambulantOrganisationPage.saveDepartment().click();

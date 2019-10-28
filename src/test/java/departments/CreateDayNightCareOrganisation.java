@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.departments.DayNightCareOrganisationPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class CreateDayNightCareOrganisation extends MulLoginLogout {
             Actions actions = new Actions(driver);
 
             loadPropsForDepartment();
-            DayNightCareOrganisationPage dayNightCareOrganisationPage = new DayNightCareOrganisationPage(driver);
+            DepartmentPage dayNightCareOrganisationPage = new DepartmentPage(driver);
 
             try {
                 dayNightCareOrganisationPage.addDepartment().click();
@@ -55,31 +55,31 @@ public class CreateDayNightCareOrganisation extends MulLoginLogout {
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
-            dayNightCareOrganisationPage.dayNightCareDepartmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
+            dayNightCareOrganisationPage.departmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
-            dayNightCareOrganisationPage.dayNightCareDepartmentOrganisationTypeChosen().click();
+            dayNightCareOrganisationPage.departmentOrganisationTypeChosen().click();
 
-            dayNightCareOrganisationPage.dayNightCareDepartmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
-            dayNightCareOrganisationPage.dayNightCareDepartmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
-            dayNightCareOrganisationPage.dayNightCareDepartmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
-            dayNightCareOrganisationPage.dayNightCareDepartmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
-            dayNightCareOrganisationPage.dayNightCareDepartmentWebsite().sendKeys(propDepartment.getProperty("website"));
+            dayNightCareOrganisationPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+            dayNightCareOrganisationPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+            dayNightCareOrganisationPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+            dayNightCareOrganisationPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+            dayNightCareOrganisationPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
 
             //angaben zur Person
-            dayNightCareOrganisationPage.dayNightCareDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
-            dayNightCareOrganisationPage.dayNightCareDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
-            dayNightCareOrganisationPage.dayNightCareDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-            dayNightCareOrganisationPage.dayNightCareDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+            dayNightCareOrganisationPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+            dayNightCareOrganisationPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+            dayNightCareOrganisationPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+            dayNightCareOrganisationPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
             WebElement availability = driver.findElement(By.id("availability"));
             actions.moveToElement(availability).click().build().perform();
-            dayNightCareOrganisationPage.dayNightCareDepartmentAvailableChosen().click();
+            dayNightCareOrganisationPage.departmentAvailableChosen().click();
 
             WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));
             actions.moveToElement(contactSalutation).click().build().perform();
-            dayNightCareOrganisationPage.dayNightCareDepartmentContactSalutationChosen().click();
+            dayNightCareOrganisationPage.departmentContactSalutationChosen().click();
 
             //sprechzeiten
             dayNightCareOrganisationPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));

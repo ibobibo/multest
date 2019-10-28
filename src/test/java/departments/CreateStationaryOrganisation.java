@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.departments.StationaryOrganisationPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class CreateStationaryOrganisation extends MulLoginLogout {
             Actions actions = new Actions(driver);
 
             loadPropsForDepartment();
-            StationaryOrganisationPage stationaryOrganisationPage = new StationaryOrganisationPage(driver);
+            DepartmentPage stationaryOrganisationPage = new DepartmentPage(driver);
 
             try {
                 stationaryOrganisationPage.addDepartment().click();
@@ -55,31 +55,31 @@ public class CreateStationaryOrganisation extends MulLoginLogout {
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
-            stationaryOrganisationPage.stationaryDepartmentName().sendKeys(propDepartment.getProperty("stationaryDepartmentName"));
+            stationaryOrganisationPage.departmentName().sendKeys(propDepartment.getProperty("stationaryDepartmentName"));
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
-            stationaryOrganisationPage.stationaryDepartmentOrganisationTypeChosen().click();
+            stationaryOrganisationPage.departmentOrganisationTypeChosen().click();
 
-            stationaryOrganisationPage.stationaryDepartmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
-            stationaryOrganisationPage.stationaryDepartmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
-            stationaryOrganisationPage.stationaryDepartmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
-            stationaryOrganisationPage.stationaryDepartmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
-            stationaryOrganisationPage.stationaryDepartmentWebsite().sendKeys(propDepartment.getProperty("website"));
+            stationaryOrganisationPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+            stationaryOrganisationPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+            stationaryOrganisationPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+            stationaryOrganisationPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+            stationaryOrganisationPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
 
             //angaben zur Person
-            stationaryOrganisationPage.stationaryDepartmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
-            stationaryOrganisationPage.stationaryDepartmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
-            stationaryOrganisationPage.stationaryDepartmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-            stationaryOrganisationPage.stationaryDepartmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+            stationaryOrganisationPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+            stationaryOrganisationPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+            stationaryOrganisationPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+            stationaryOrganisationPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
             WebElement availability = driver.findElement(By.id("availability"));
             actions.moveToElement(availability).click().build().perform();
-            stationaryOrganisationPage.stationaryDepartmentAvailableChosen().click();
+            stationaryOrganisationPage.departmentAvailableChosen().click();
 
             WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));
             actions.moveToElement(contactSalutation).click().build().perform();
-            stationaryOrganisationPage.stationaryDepartmentContactSalutationChosen().click();
+            stationaryOrganisationPage.departmentContactSalutationChosen().click();
 
             //sprechzeiten
             stationaryOrganisationPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));

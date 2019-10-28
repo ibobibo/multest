@@ -3,13 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/FairHouseOfferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/FairHouseOfferPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AmbulantOrganisationPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DayNightCareOrganisationPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/FairHouseOfferPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/StationaryOrganisationPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createFairHouseOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createFairHouseOrganisation_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/toggleAllOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/toggleAllOrganisation_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/FairHouseOfferPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/FairHouseOfferPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/AmbulantOrganisationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/DayNightCareOrganisationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/FairHouseOfferPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/StationaryOrganisationPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +69,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="pageObjects" />
@@ -73,25 +95,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml">
-    <configuration name="ExtentReportsTestNG.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MulTesting/FramworksCombined/test-output/ExtentReportsTestNG.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml">
     <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FramworksCombined" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateStationaryOrganisation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FramworksCombined" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="createDepartment.CreateStationaryOrganisation" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -120,20 +128,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngDelete.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.ExtentReportsTestNG.html" />
       <item itemvalue="TestNG.C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" />
-      <item itemvalue="TestNG.CreateStationaryOrganisation" />
       <item itemvalue="TestNG.Verify" />
       <item itemvalue="TestNG.FailureTestForScreenshot" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" />
         <item itemvalue="TestNG.C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" />
         <item itemvalue="TestNG.FailureTestForScreenshot" />
         <item itemvalue="TestNG.Verify" />
-        <item itemvalue="JavaScript Debug.ExtentReportsTestNG.html" />
-        <item itemvalue="TestNG.CreateStationaryOrganisation" />
       </list>
     </recent_temporary>
   </component>
@@ -179,18 +207,9 @@
       <workItem from="1570635837581" duration="67000" />
       <workItem from="1570636051798" duration="1384000" />
       <workItem from="1571048885133" duration="149000" />
-      <workItem from="1571049249944" duration="53755000" />
+      <workItem from="1571049249944" duration="67713000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
