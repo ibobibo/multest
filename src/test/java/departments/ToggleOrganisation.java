@@ -30,6 +30,7 @@ public class ToggleOrganisation extends MulLoginLogout {
     public void toggleAllOrganisation() throws InterruptedException {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
+            TimeUnit.SECONDS.sleep(2);
             WebDriverWait wait = new WebDriverWait(driver, 20);
 
             int x = 1;

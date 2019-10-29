@@ -4,31 +4,33 @@
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AmbulantOrganisationPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DayNightCareOrganisationPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/FairHouseOfferPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/StationaryOrganisationPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/toggleAllOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/toggleAllOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/AmbulantOrganisationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/DayNightCareOrganisationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/FairHouseOfferPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/StationaryOrganisationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/DeleteContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/DeleteContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/EditContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/EditContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/InviteContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/InviteContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DeleteUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Verify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verify.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/InviteContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/InviteContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testngContactPersonStuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngContactPersonStuff.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml">
     <configuration name="C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FramworksCombined" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -106,22 +108,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FailureTestForScreenshot" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FailureTestForScreenshot" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Verify" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FramworksCombined" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Verify" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngContactPersonStuff.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -131,6 +121,16 @@
     <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngDelete.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngDepartmentStuffCreateEditToggleDelete.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -150,18 +150,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" />
-      <item itemvalue="TestNG.Verify" />
-      <item itemvalue="TestNG.FailureTestForScreenshot" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" />
         <item itemvalue="TestNG.C:/Users/ibobi/OneDrive/Dokumente/Automatisierung/FramworksCombined/testng.xml" />
-        <item itemvalue="TestNG.FailureTestForScreenshot" />
-        <item itemvalue="TestNG.Verify" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +207,9 @@
       <workItem from="1570635837581" duration="67000" />
       <workItem from="1570636051798" duration="1384000" />
       <workItem from="1571048885133" duration="149000" />
-      <workItem from="1571049249944" duration="67713000" />
+      <workItem from="1571049249944" duration="76317000" />
+      <workItem from="1572347297752" duration="16000" />
+      <workItem from="1572347682932" duration="738000" />
     </task>
     <servers />
   </component>

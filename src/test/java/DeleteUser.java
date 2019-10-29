@@ -12,15 +12,15 @@ public class DeleteUser extends MulLoginLogout {
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        TimeUnit.SECONDS.sleep(4);
         accessAllCookies();
+        TimeUnit.SECONDS.sleep(4);
     }
 
     @Test
     public void deleteUser() throws IOException, InterruptedException {
         loadProps();
-        TimeUnit.SECONDS.sleep(2);
         loginAdmin();
-        TimeUnit.SECONDS.sleep(2);
         DeleteUserPage deleteUserPage = new DeleteUserPage(driver);
         deleteUserPage.masterManaging().click();
 

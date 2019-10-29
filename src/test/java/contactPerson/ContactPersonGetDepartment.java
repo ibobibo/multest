@@ -16,33 +16,39 @@ import java.util.concurrent.TimeUnit;
 public class ContactPersonGetDepartment extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies();
     }
 
     @Test()
-    public void addContactPerson() throws InterruptedException {
+    public void contactPersonGetDepartment() throws InterruptedException {
         ContactPersonGetDepartmentPage contactPersonGetDepartmentPage = new ContactPersonGetDepartmentPage(driver);
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        login();
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            loginLoop(i);
+            TimeUnit.SECONDS.sleep(2);
 
-        if (contactPersonGetDepartmentPage.contactUserDisplayed().isDisplayed()) {
-            int i = 1;
-            while (getCount() >= i) {
-                TimeUnit.SECONDS.sleep(5);
-                String xpath = "//tr[" + i + "]//td[6]//div[1]//button[1]";
-                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-                if (findTr.isDisplayed()) {
-                    findTr.click();
+            if (contactPersonGetDepartmentPage.contactUserDisplayed().isDisplayed()) {
+                int x = 0;
+                int y= 1;
+                while (getCount() >= y) {
+                    TimeUnit.SECONDS.sleep(5);
+                    String xpath = "//tr[" + y + "]//button[@id='company-button-" + x + "']";
+                    WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                    if (findTr.isDisplayed()) {
+                        findTr.click();
+                    }
+                    contactPersonGetDepartmentPage.choseContactPerson().click();
+                    contactPersonGetDepartmentPage.submit().click();
+                    x++;
+                    y++;
                 }
-                contactPersonGetDepartmentPage.choseContactPerson().click();
-                contactPersonGetDepartmentPage.submit().click();
-                i++;
             }
+            TimeUnit.SECONDS.sleep(2);
         }
-
         logout();
-
     }
 
     @AfterTest

@@ -15,30 +15,37 @@ import java.util.concurrent.TimeUnit;
 public class CreateContactPerson extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies();
     }
 
     @Test()
     public void addContactPerson() throws IOException, InterruptedException {
         ContactPersonPage contactPersonPage = new ContactPersonPage(driver);
         Actions actions = new Actions(driver);
-        login();
-        loadPropsForDepartment();
-
         TimeUnit.SECONDS.sleep(1);
 
-        contactPersonPage.addContactPerson().click();
-        TimeUnit.SECONDS.sleep(1);
-        WebElement availability = driver.findElement(By.id("salutation"));
-        actions.moveToElement(availability).click().build().perform();
-        contactPersonPage.contactSalutationChosen().click();
-        contactPersonPage.contactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
-        contactPersonPage.contactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
-        contactPersonPage.contactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
-        contactPersonPage.contactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
-        contactPersonPage.submit().click();
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
+            loginLoop(i);
+            loadPropsForDepartment();
+
+            TimeUnit.SECONDS.sleep(1);
+
+            contactPersonPage.addContactPerson().click();
+            TimeUnit.SECONDS.sleep(1);
+            WebElement availability = driver.findElement(By.id("salutation"));
+            actions.moveToElement(availability).click().build().perform();
+            contactPersonPage.contactSalutationChosen().click();
+            contactPersonPage.contactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+            contactPersonPage.contactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+            contactPersonPage.contactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
+            contactPersonPage.contactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+            contactPersonPage.submit().click();
+        }
+        TimeUnit.SECONDS.sleep(1);
         logout();
     }
 

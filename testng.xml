@@ -12,16 +12,16 @@
     <!--</classes>-->
     <!--</test>-->
 
-        <test name="Registration Test">
-            <classes>
-                <class name="MulRegister"/>
-            </classes>
-        </test>
-        <test name="Verify Test">
-            <classes>
-                <class name="Verify"/>
-            </classes>
-        </test>
+    <test name="Registration Test">
+        <classes>
+            <class name="MulRegister"/>
+        </classes>
+    </test>
+    <test name="Verify Test">
+        <classes>
+            <class name="Verify"/>
+        </classes>
+    </test>
 
     <test name="Creating an ambulant Organisation">
         <classes>
@@ -50,11 +50,11 @@
     <!--</classes>-->
     <!--</test>-->
 
-<!--    <test name="Make public Departments">-->
-<!--        <classes>-->
-<!--            <class name="departments.ToggleOrganisation"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <!--    <test name="Make public Departments">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.ToggleOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <!--<test name="Deleting Organisations">-->
     <!--<classes>-->
@@ -105,5 +105,4 @@
             <class name="DeleteUser"/>
         </classes>
     </test>
-
 </suite>

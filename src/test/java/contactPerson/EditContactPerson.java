@@ -12,50 +12,57 @@ import pageObjects.contactPerson.EditContactPersonPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class EditContactPerson extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies();
     }
 
     @Test()
     public void editContactPerson() throws IOException, InterruptedException {
         EditContactPersonPage editContactPersonPage = new EditContactPersonPage(driver);
         Actions actions = new Actions(driver);
-        login();
-        loadPropsForDepartment();
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
-        int i = 1;
-        while (getCountContactPerson() >= i) {
-            String xpath = "//section[@class='Userdata']//tr[" + i + "]//a[@class='edit']";
-            WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-            if (findTr.isDisplayed()) {
-                findTr.click();
+            loginLoop(i);
+            TimeUnit.SECONDS.sleep(1);
+            loadPropsForDepartment();
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+
+            int x = 1;
+            while (getCountContactPerson() >= x) {
+                String xpath = "//section[@class='Userdata']//tr[" + x + "]//a[@class='edit']";
+                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                if (findTr.isDisplayed()) {
+                    findTr.click();
+                }
+                WebElement availability = driver.findElement(By.id("salutation"));
+                actions.moveToElement(availability).click().build().perform();
+                editContactPersonPage.contactSalutationChosen().click();
+
+                editContactPersonPage.contactFirstName().clear();
+                editContactPersonPage.contactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+
+                editContactPersonPage.contactLastName().clear();
+                editContactPersonPage.contactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+
+                editContactPersonPage.contactEmail().clear();
+                editContactPersonPage.contactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
+
+                editContactPersonPage.contactPhone().clear();
+                editContactPersonPage.contactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+
+                editContactPersonPage.back().click();
+
+                x++;
             }
-            WebElement availability = driver.findElement(By.id("salutation"));
-            actions.moveToElement(availability).click().build().perform();
-            editContactPersonPage.contactSalutationChosen().click();
-
-            editContactPersonPage.contactFirstName().clear();
-            editContactPersonPage.contactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
-
-            editContactPersonPage.contactLastName().clear();
-            editContactPersonPage.contactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
-
-            editContactPersonPage.contactEmail().clear();
-            editContactPersonPage.contactEmail().sendKeys(propDepartment.getProperty("contactEmail"));
-
-            editContactPersonPage.contactPhone().clear();
-            editContactPersonPage.contactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
-
-            editContactPersonPage.back().click();
-
-            i++;
+            TimeUnit.SECONDS.sleep(2);
         }
-
         logout();
     }
 

@@ -11,6 +11,7 @@ import pageObjects.departments.EditOrganisationPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class EditOrganisation extends MulLoginLogout {
 
@@ -20,36 +21,41 @@ public class EditOrganisation extends MulLoginLogout {
     }
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
-        loadPropsForDepartment();
+        accessAllCookies();
+        TimeUnit.SECONDS.sleep(1);
     }
 
     @Test()
     public void editAllOrganisation() throws InterruptedException {
-        EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
-        login();
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
+            loginLoop(i);
+            WebDriverWait wait = new WebDriverWait(driver, 20);
 
-        int i = 1;
-        while (getCount() >= i) {
-            String xpath = "//section[@class='Department']//tr[" + i + "]//td[3]//a[1]";
-            WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-            findTr.click();
+            int x = 1;
+            while (getCount() >= x) {
+                TimeUnit.SECONDS.sleep(2);
+                String xpath = "//section[@class='Department']//tr[" + x + "]//td[@class='actions']//a[@class='edit']";
+                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                findTr.click();
+                TimeUnit.SECONDS.sleep(2);
 
-            editOrganisationPage.changeName().clear();
-            editOrganisationPage.changeName().sendKeys(propDepartment.getProperty("editDepartmentName"));
-            WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(editOrganisationPage.saveClick()));
-            findElem.click();
-            i++;
+                editOrganisationPage.changeName().clear();
+                editOrganisationPage.changeName().sendKeys(propDepartment.getProperty("editDepartmentName"));
+                WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(editOrganisationPage.saveClick()));
+                findElem.click();
+                x++;
+            }
+            TimeUnit.SECONDS.sleep(2);
         }
-
         logout();
     }
 
     @AfterTest
     public void closeBrowser() {
         driver.close();
-        driver =null;
+        driver = null;
     }
 }

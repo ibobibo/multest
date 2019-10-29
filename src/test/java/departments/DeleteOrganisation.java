@@ -11,6 +11,7 @@ import pageObjects.departments.DeleteOrganisationPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class DeleteOrganisation extends MulLoginLogout {
 
@@ -20,24 +21,28 @@ public class DeleteOrganisation extends MulLoginLogout {
     }
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies();
+        TimeUnit.SECONDS.sleep(1);
     }
 
     @Test()
     public void deleteAllOrganisation() throws InterruptedException {
-        DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
-        login();
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
+            loginLoop(i);
+            WebDriverWait wait = new WebDriverWait(driver, 20);
 
-        while (getCount() != 0) {
-            String xpath = "//section[@class='MulTable withoutSearch withTopElements']//tr[1]//a[@class='delete']";
-            WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-            findTr.click();
-            WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
-            findElem.click();
+            while (getCount() != 0) {
+                String xpath = "//section[@class='MulTable withoutSearch withoutTopElements']//tr[1]//a[@class='delete']";
+                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                findTr.click();
+                WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
+                findElem.click();
+            }
+            TimeUnit.SECONDS.sleep(2);
         }
-
         logout();
     }
 
