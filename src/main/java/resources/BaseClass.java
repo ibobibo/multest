@@ -53,6 +53,11 @@ public class BaseClass {
         driver.get(prop.getProperty("urlFromHomeNetwork"));
     }
 
+    public void initializeBrowserForMarketplace() throws IOException {
+        driver = initializeDriver();
+        driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
+    }
+
     public void initializeMailServer() throws IOException {
         driver = initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));

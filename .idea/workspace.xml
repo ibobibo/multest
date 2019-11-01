@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/DigitalConsultationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/DigitalConsultationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/digitalConsultation/DigitalConsultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/digitalConsultation/DigitalConsultation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/DigitalConsultationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/DigitalConsultationPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/digitalConsultation/DigitalConsultation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/digitalConsultation/DigitalConsultation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,21 +49,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="pageObjects" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ibobi\OneDrive\Dokumente\Automatisierung\MulTesting\src\main\java\properties" />
       <recent name="C:\Users\ibobi\OneDrive\Dokumente\Automatisierung\MulTesting\src\main\java" />
       <recent name="C:\Users\ibobi\OneDrive\Dokumente\Automatisierung\FramworksCombined\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/ressources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="pageObjects" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,9 +106,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngDelete.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngCreateDepartments.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -129,19 +137,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" />
       <item itemvalue="TestNG.DigitalConsultation" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.DigitalConsultation" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDelete.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +197,7 @@
       <workItem from="1571048885133" duration="149000" />
       <workItem from="1571049249944" duration="76317000" />
       <workItem from="1572347297752" duration="16000" />
-      <workItem from="1572347682932" duration="4235000" />
+      <workItem from="1572347682932" duration="17593000" />
     </task>
     <servers />
   </component>
