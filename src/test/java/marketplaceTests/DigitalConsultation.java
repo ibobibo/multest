@@ -1,4 +1,4 @@
-package digitalConsultation;
+package marketplaceTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.DigitalConsultationPage;
+import pageObjectsMarketplace.DigitalConsultationPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;

@@ -1,3 +1,4 @@
+package marketplaceTests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
@@ -9,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class Verify extends BaseClass {
+public class VerifyMarketplaceUser extends BaseClass {
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
         initializeMailServer();
@@ -22,10 +23,10 @@ public class Verify extends BaseClass {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             WebElement inputField = driver.findElement(By.xpath("//div[@class='search-container']//input[@placeholder='Search']"));
-            String x = "//ul[@class='email-list']//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + i + "')]";
+            String x = "//ul[@class='email-list']//span[contains(text(),'" + prop.getProperty("marketPlaceEmail").toLowerCase() + i + "')]";
             inputField.clear();
             TimeUnit.SECONDS.sleep(1);
-            inputField.sendKeys(prop.getProperty("contactEmail").toLowerCase() + i);
+            inputField.sendKeys(prop.getProperty("marketPlaceEmail").toLowerCase() + i);
             TimeUnit.SECONDS.sleep(1);
 
             WebElement findEmail = driver.findElement(By.xpath(x));
@@ -53,3 +54,4 @@ public class Verify extends BaseClass {
         driver = null;
     }
 }
+

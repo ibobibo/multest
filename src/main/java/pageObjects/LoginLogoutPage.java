@@ -14,12 +14,18 @@ public class LoginLogoutPage {
     }
 
     //LOGIN
+    @FindBy(xpath = "//section[@id='app-header']//a[@href='#/login']")
+    WebElement anmeldenButton;
     @FindBy(id = "username")
     WebElement username;
     @FindBy(id = "password")
     WebElement password;
     @FindBy(id = "login-submit")
     WebElement anmelden;
+
+    public WebElement anmeldenButton() {
+        return anmeldenButton;
+    }
 
     public WebElement username() {
         return username;

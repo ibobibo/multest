@@ -23,26 +23,26 @@
         </classes>
     </test>
 
-    <test name="Creating an ambulant Organisation">
-        <classes>
-            <class name="departments.CreateAmbulantOrganisation"/>
-        </classes>
-    </test>
-    <test name="Creating a stationary Organisation">
-        <classes>
-            <class name="departments.CreateStationaryOrganisation"/>
-        </classes>
-    </test>
-    <test name="Creating a day-night-care Organisation">
-        <classes>
-            <class name="departments.CreateDayNightCareOrganisation"/>
-        </classes>
-    </test>
-    <test name="Creating a Fair House Offer Organisation">
-        <classes>
-            <class name="departments.CreateFairHouseOffer"/>
-        </classes>
-    </test>
+    <!--    <test name="Creating an ambulant Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="Creating a stationary Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CreateStationaryOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="Creating a day-night-care Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="Creating a Fair House Offer Organisation">-->
+    <!--        <classes>-->
+    <!--                <class name="departments.CreateFairHouseOffer"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
 
     <!--<test name="Editing Departments">-->
     <!--<classes>-->

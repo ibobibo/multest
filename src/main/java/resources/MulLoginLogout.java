@@ -39,6 +39,22 @@ public class MulLoginLogout extends BaseClass {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
+    public void loginLoopMarketplace(int i) throws InterruptedException {
+        LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
+        try {
+            loginLogoutPage.anmeldenButton().click();
+        } catch (Exception e) {
+            System.out.println("dont need it");
+        }
+        loginLogoutPage.username().sendKeys(prop.getProperty("marketPlaceEmail") + i);
+        loginLogoutPage.password().sendKeys(prop.getProperty("marketPlacePassword"));
+        TimeUnit.SECONDS.sleep(1);
+        loginLogoutPage.anmelden().click();
+
+        TimeUnit.SECONDS.sleep(1);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
+
     public void loginAdmin() throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.username().sendKeys(prop.getProperty("adminName"));

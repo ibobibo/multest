@@ -20,7 +20,7 @@
 
     <test name="Digital Consultation">
         <classes>
-            <class name="digitalConsultation.DigitalConsultation"/>
+            <class name="marketplaceTests.DigitalConsultation"/>
         </classes>
     </test>
 </suite>
