@@ -28,6 +28,16 @@ public class MulLoginLogout extends BaseClass {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
+    public void login(String anfrageNameEmail,String anfrageNamePassword) throws InterruptedException {
+        LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
+        loginLogoutPage.username().sendKeys(anfrageNameEmail);
+        loginLogoutPage.password().sendKeys(anfrageNamePassword);
+        loginLogoutPage.anmelden().click();
+
+        TimeUnit.SECONDS.sleep(1);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
+
     public void loginLoop(int i) throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail") + i);
@@ -48,10 +58,10 @@ public class MulLoginLogout extends BaseClass {
         }
         loginLogoutPage.username().sendKeys(prop.getProperty("marketPlaceEmail") + i);
         loginLogoutPage.password().sendKeys(prop.getProperty("marketPlacePassword"));
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.anmelden().click();
 
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 

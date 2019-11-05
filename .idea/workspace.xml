@@ -5,25 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/DigitalConsultationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/DigitalConsultationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Verify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/digitalConsultation/DigitalConsultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/DigitalConsultation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/DigitalConsultationPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/LoginLogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginLogoutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/registerOnMarketplace_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/registerOnMarketplace_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/DigitalConsultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/DigitalConsultation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Verify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Verify.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/digitalConsultation/DigitalConsultation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/DigitalConsultation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/DigitalConsultation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-partner-tests/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngContactPersonStuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-partner-tests/testngContactPersonStuff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngCreateDepartments.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-partner-tests/testngCreateDepartments.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngDepartmentStuffCreateEditToggleDelete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-partner-tests/testngDepartmentStuffCreateEditToggleDelete.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngDigitalConsultation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngDigitalConsultation.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570635716092" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -65,9 +55,12 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageObjects.departments" />
+      <recent name="departments" />
       <recent name="" />
       <recent name="pageObjects" />
     </key>
@@ -91,34 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceRegister.xml">
-    <configuration name="DigitalConsultation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="marketplaceTests.digitalConsultation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="digitalConsultation" />
-      <option name="MAIN_CLASS_NAME" value="marketplaceTests.digitalConsultation.DigitalConsultation" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngCreateDepartments.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml">
     <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMarketPlaceRegister.xml" />
@@ -129,9 +95,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -149,20 +115,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-partner-tests/testngCreateDepartments.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngDepartmentStuffCreateEditToggleDelete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-partner-tests/testngDepartmentStuffCreateEditToggleDelete.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
-      <item itemvalue="TestNG.DigitalConsultation" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceRegister.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngDepartmentStuffCreateEditToggleDelete.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngDepartmentStuffCreateEditToggleDelete.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceRegister.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testng.xml" />
-        <item itemvalue="TestNG.DigitalConsultation" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +198,7 @@
       <workItem from="1572347297752" duration="16000" />
       <workItem from="1572347682932" duration="19074000" />
       <workItem from="1572869141948" duration="21000" />
-      <workItem from="1572869223585" duration="9770000" />
+      <workItem from="1572869223585" duration="31953000" />
     </task>
     <servers />
   </component>

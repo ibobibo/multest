@@ -310,7 +310,6 @@ public class DigitalConsultation extends MulLoginLogout {
             digitalConsultationPage.nextPage().click();
         }
         TimeUnit.SECONDS.sleep(1);
-
     }
 
     @AfterTest
