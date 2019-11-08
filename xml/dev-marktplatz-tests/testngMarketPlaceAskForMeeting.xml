@@ -18,24 +18,35 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    <test name="Ask for Meeting">-->
+    <!--    <test name="Ask for Meeting as User">-->
     <!--        <classes>-->
     <!--            <class name="marketplaceTests.AskForMeeting"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    <test name="Accept Meeting">-->
+    <!--    <test name="Accept Meeting as Provider">-->
     <!--        <classes>-->
     <!--            <class name="departments.AcceptMeeting"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 
-    <test name="Discard Meeting">
+    <!--    <test name="Accept Meeting as User">-->
+    <!--        <classes>-->
+    <!--            <class name="marketplaceTests.AcceptMeetingAsMarketplaceUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="Discard Meeting as User">
         <classes>
-            <class name="departments.DeleteMeeting"/>
+            <class name="marketplaceTests.DiscardMeetingAsMarketplaceUser"/>
         </classes>
     </test>
 
+    <!--    <test name="Discard Meeting as Provider">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.DeleteMeeting"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <!--    <test name="Delete Marketplace User">-->
     <!--        <classes>-->

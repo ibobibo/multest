@@ -14,7 +14,7 @@ public class MarketplaceRegister extends BaseClass {
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         accessAllCookies();
         TimeUnit.SECONDS.sleep(1);
     }

@@ -28,7 +28,7 @@ public class AskForMeeting extends MulLoginLogout {
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoopMarketplace(i);
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(2);
             askForMeetingPage.searchDepartmentTitle().click();
             askForMeetingPage.departmentName().sendKeys(prop.getProperty("departmentName"));
             TimeUnit.SECONDS.sleep(2);
