@@ -4,16 +4,12 @@
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/registerOnMarketplace_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/registerOnMarketplace_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteAllOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteAllOrganisation_screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/AskForMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/AskForMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/MarketplaceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/MarketplaceRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/AskForMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/AskForMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/MarketplaceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/MarketplaceRegister.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngDigitalConsultation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngDigitalConsultation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,10 +56,10 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="departments" />
+      <recent name="pageObjects.departments" />
       <recent name="marketplaceTests" />
       <recent name="pageObjectsMarketplace" />
-      <recent name="pageObjects.departments" />
-      <recent name="departments" />
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -86,10 +82,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml">
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceCheckIfDeletedUserRequest.xml">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMarketPlaceRegister.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -97,9 +93,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceCheckIfDeletedUserRequest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceCheckIfDeletedUserRequest.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -138,19 +134,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceRegister.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngDepartmentStuffCreateEditToggleDelete.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceCheckIfDeletedUserRequest.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceCheckIfDeletedUserRequest.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngDepartmentStuffCreateEditToggleDelete.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceRegister.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +196,7 @@
       <workItem from="1572347297752" duration="16000" />
       <workItem from="1572347682932" duration="19074000" />
       <workItem from="1572869141948" duration="21000" />
-      <workItem from="1572869223585" duration="36703000" />
+      <workItem from="1572869223585" duration="43912000" />
     </task>
     <servers />
   </component>

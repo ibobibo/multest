@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="TestNg">
+<suite name="Digital Consultation tests">
     <listeners>
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="resources.Listeners"/>

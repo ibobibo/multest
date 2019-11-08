@@ -48,13 +48,13 @@ public class AskForMeeting extends MulLoginLogout {
                 askForMeetingPage.wishTime().click();
                 askForMeetingPage.wishTimeChosen().click();
             }
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(3);
             askForMeetingPage.textAreaComment().sendKeys(prop.getProperty("textAreaComment"));
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(3);
             askForMeetingPage.next().click();
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(3);
             askForMeetingPage.accept().click();
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(3);
             askForMeetingPage.next().click();
             TimeUnit.SECONDS.sleep(6);
             askForMeetingPage.accountMenu().click();
