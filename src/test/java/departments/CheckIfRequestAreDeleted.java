@@ -22,7 +22,7 @@ public class CheckIfRequestAreDeleted extends MulLoginLogout {
     }
 
     @Test()
-    public void deleteAllOrganisation() throws InterruptedException {
+    public void checkIfRequestAreDeleted() throws InterruptedException {
         CheckIfRequestAreDeletedPage checkIfRequestAreDeletedPage = new CheckIfRequestAreDeletedPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
         checkIfRequestAreDeletedPage.requestCount().click();

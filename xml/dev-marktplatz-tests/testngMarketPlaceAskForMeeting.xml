@@ -6,57 +6,51 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    <test name="Marketplace Registration">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.MarketplaceRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Verify Marketplace User">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.VerifyMarketplaceUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Ask for Meeting as User">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.AskForMeeting"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Accept Meeting as Provider">-->
-    <!--        <classes>-->
-    <!--            <class name="departments.AcceptMeeting"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Accept Meeting as User">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.AcceptMeetingAsMarketplaceUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Discard Meeting as User">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.DiscardMeetingAsMarketplaceUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Discard Meeting as Provider">-->
-    <!--        <classes>-->
-    <!--            <class name="departments.DeleteMeeting"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="Delete Marketplace User">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.DeleteMarketplaceUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <test name="Check if deleted Meeting Request are available">
+    <test name="Marketplace Registration">
         <classes>
-            <class name="departments.CheckIfRequestAreDeleted"/>
+            <class name="marketplaceTests.MarketplaceRegister"/>
+        </classes>
+    </test>
+
+    <test name="Verify Marketplace User">
+        <classes>
+            <class name="marketplaceTests.VerifyMarketplaceUser"/>
+        </classes>
+    </test>
+
+    <test name="Ask for Meeting as User">
+        <classes>
+            <class name="marketplaceTests.AskForMeeting"/>
+        </classes>
+    </test>
+
+    <test name="Accept Meeting as Provider">
+        <classes>
+            <class name="departments.AcceptMeeting"/>
+        </classes>
+    </test>
+
+    <test name="Accept Meeting as User">
+        <classes>
+            <class name="marketplaceTests.AcceptMeetingAsMarketplaceUser"/>
+        </classes>
+    </test>
+
+    <test name="Discard Meeting as User">
+        <classes>
+            <class name="marketplaceTests.DiscardMeetingAsMarketplaceUser"/>
+        </classes>
+    </test>
+
+    <test name="Discard Meeting as Provider">
+        <classes>
+            <class name="departments.DeleteMeeting"/>
+        </classes>
+    </test>
+
+    <test name="Delete Marketplace User">
+        <classes>
+            <class name="marketplaceTests.DeleteMarketplaceUser"/>
         </classes>
     </test>
 </suite>

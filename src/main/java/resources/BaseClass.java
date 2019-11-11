@@ -58,6 +58,11 @@ public class BaseClass {
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
     }
 
+    public void initializeBrowserForInformationPortal() throws IOException {
+        driver = initializeDriver();
+        driver.get(prop.getProperty("urlForInformationPortal"));
+    }
+
     public void initializeMailServer() throws IOException {
         driver = initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));

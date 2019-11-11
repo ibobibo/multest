@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="InformationPortalOnMarketPlace">
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+        <listener class-name="resources.Listeners"/>
+    </listeners>
+
+    <test name="Marketplace Care">
+        <classes>
+            <class name="marketplaceTests.informationPortal.Care"/>
+        </classes>
+    </test>
+
+</suite>
