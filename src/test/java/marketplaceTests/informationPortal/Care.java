@@ -21,8 +21,7 @@ public class Care extends BaseClass {
     }
 
     @Test
-    public void care() throws IOException, InterruptedException {
-        loadProps();
+    public void care() throws InterruptedException {
         CarePage carePage = new CarePage(driver);
         TimeUnit.SECONDS.sleep(2);
 

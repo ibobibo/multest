@@ -3,18 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CheckIfRequestAreDeleted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CheckIfRequestAreDeleted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/AskForMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/AskForMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/DeleteMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/DeleteMarketplaceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CheckIfRequestAreDeleted.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CheckIfRequestAreDeleted.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/AskForMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/AskForMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/DeleteMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/DeleteMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/care_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/care_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/informationPortal/Care.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/informationPortal/Care.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/informationPortal/Care.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/informationPortal/Care.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceInformationPortal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/testngDiscardedTest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,9 +60,9 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xml" />
       <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
       <recent name="$PROJECT_DIR$/xml/dev-partner-tests" />
-      <recent name="$PROJECT_DIR$/xml" />
       <recent name="C:\Users\ibobi\OneDrive\Dokumente\Automatisierung\MulTesting\src\main\java\properties" />
       <recent name="C:\Users\ibobi\OneDrive\Dokumente\Automatisierung\MulTesting\src\main\java" />
     </key>
@@ -200,7 +193,7 @@
       <workItem from="1572347297752" duration="16000" />
       <workItem from="1572347682932" duration="19074000" />
       <workItem from="1572869141948" duration="21000" />
-      <workItem from="1572869223585" duration="63689000" />
+      <workItem from="1572869223585" duration="67236000" />
     </task>
     <servers />
   </component>
