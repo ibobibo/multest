@@ -8,13 +8,13 @@
 
     <test name="Registration Test">
         <classes>
-            <class name="MulRegister"/>
+            <class name="user.MulRegister"/>
         </classes>
     </test>
 
-    <test name="Verify Test">
+    <test name="user.Verify Test">
         <classes>
-            <class name="Verify"/>
+            <class name="user.Verify"/>
         </classes>
     </test>
 
@@ -62,7 +62,7 @@
 
     <test name="Delete User">
         <classes>
-            <class name="DeleteUser"/>
+            <class name="user.DeleteUser"/>
         </classes>
     </test>
 </suite>

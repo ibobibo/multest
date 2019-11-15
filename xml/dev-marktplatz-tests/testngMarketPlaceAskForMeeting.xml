@@ -8,19 +8,19 @@
 
     <test name="Marketplace Registration">
         <classes>
-            <class name="marketplaceTests.MarketplaceRegister"/>
+            <class name="marketplaceTests.user.MarketplaceRegister"/>
         </classes>
     </test>
 
-    <test name="Verify Marketplace User">
+    <test name="user.Verify Marketplace User">
         <classes>
-            <class name="marketplaceTests.VerifyMarketplaceUser"/>
+            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
         </classes>
     </test>
 
     <test name="Ask for Meeting as User">
         <classes>
-            <class name="marketplaceTests.AskForMeeting"/>
+            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>
         </classes>
     </test>
 
@@ -32,13 +32,13 @@
 
     <test name="Accept Meeting as User">
         <classes>
-            <class name="marketplaceTests.AcceptMeetingAsMarketplaceUser"/>
+            <class name="marketplaceTests.meetingRequest.AcceptMeetingAsMarketplaceUser"/>
         </classes>
     </test>
 
     <test name="Discard Meeting as User">
         <classes>
-            <class name="marketplaceTests.DiscardMeetingAsMarketplaceUser"/>
+            <class name="marketplaceTests.meetingRequest.DiscardMeetingAsMarketplaceUser"/>
         </classes>
     </test>
 
@@ -50,7 +50,7 @@
 
     <test name="Delete Marketplace User">
         <classes>
-            <class name="marketplaceTests.DeleteMarketplaceUser"/>
+            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
         </classes>
     </test>
 </suite>

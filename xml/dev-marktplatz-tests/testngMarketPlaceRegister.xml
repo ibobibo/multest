@@ -8,19 +8,19 @@
 
     <test name="Marketplace Registration">
         <classes>
-            <class name="marketplaceTests.MarketplaceRegister"/>
+            <class name="marketplaceTests.user.MarketplaceRegister"/>
         </classes>
     </test>
 
-    <test name="Verify Marketplace User">
+    <test name="user.Verify Marketplace User">
         <classes>
-            <class name="marketplaceTests.VerifyMarketplaceUser"/>
+            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
         </classes>
     </test>
 
     <test name="Delete Marketplace User">
         <classes>
-            <class name="marketplaceTests.DeleteMarketplaceUser"/>
+            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
         </classes>
     </test>
 </suite>

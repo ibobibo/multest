@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Department search request from user">
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+        <listener class-name="resources.Listeners"/>
+    </listeners>
+
+<!--    <test name="Search Department with PostalCode">-->
+<!--        <classes>-->
+<!--            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPostalCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Search Department after perimeter">
+        <classes>
+            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeter"/>
+        </classes>
+    </test>
+</suite>

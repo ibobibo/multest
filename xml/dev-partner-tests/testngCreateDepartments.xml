@@ -8,13 +8,13 @@
 
     <test name="Registration Test">
         <classes>
-            <class name="MulRegister"/>
+            <class name="user.MulRegister"/>
         </classes>
     </test>
 
-    <test name="Verify Test">
+    <test name="user.Verify Test">
         <classes>
-            <class name="Verify"/>
+            <class name="user.Verify"/>
         </classes>
     </test>
 
@@ -42,6 +42,13 @@
         </classes>
     </test>
 
+    <test name="Make public">
+        <classes>
+            <class name="departments.ToggleOrganisation"/>
+        </classes>
+    </test>
+
+
     <test name="Delete Placement">
         <classes>
             <class name="placements.DeletePlacement"/>
@@ -50,7 +57,7 @@
 
     <test name="Delete User">
         <classes>
-            <class name="DeleteUser"/>
+            <class name="user.DeleteUser"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Digital Consultation tests">
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+        <listener class-name="resources.Listeners"/>
+    </listeners>
+
+    <test name="Registration Test">
+        <classes>
+            <class name="user.MulRegister"/>
+        </classes>
+    </test>
+
+    <test name="user.Verify Test">
+        <classes>
+            <class name="user.Verify"/>
+        </classes>
+    </test>
+
+    <test name="Digital Consultation">
+        <classes>
+            <class name="marketplaceTests.DigitalConsultation"/>
+        </classes>
+    </test>
+</suite>
