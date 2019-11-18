@@ -29,7 +29,7 @@ public class SearchDepartmentAfterPostalCode extends BaseClass {
 
         searchDepartmentPage.searchDepartmentTitle().click();
         TimeUnit.SECONDS.sleep(2);
-        int[] plz = {13159, 13125, 12623, 12559, 12307, 14165, 13591, 13465, 13189, 10247, 10999, 10117};
+        int[] plz = {13159, 13125, 12623, 12559, 12307, 14165, 13591, 13465, 13189, 10247, 10999};
         for (int card = 1; card < 5; card++) {
             WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
             cardElement.click();
