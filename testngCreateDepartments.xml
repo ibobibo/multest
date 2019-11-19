@@ -48,7 +48,6 @@
         </classes>
     </test>
 
-
     <test name="Delete Placement">
         <classes>
             <class name="placements.DeletePlacement"/>

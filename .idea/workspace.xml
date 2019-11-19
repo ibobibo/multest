@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testngCreateDepartments.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngCreateDepartments.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +79,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngCreateDepartments.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMarketPlaceSearchDepartment.xml" />
@@ -90,16 +103,6 @@
     <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceInformationPortal.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceInformationPortal.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -137,18 +140,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceInformationPortal.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceInformationPortal.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +205,7 @@
       <workItem from="1574074028363" duration="20000" />
       <workItem from="1574074074743" duration="1382000" />
       <workItem from="1574076036131" duration="356000" />
-      <workItem from="1574076567042" duration="24303000" />
+      <workItem from="1574076567042" duration="24862000" />
     </task>
     <servers />
   </component>
