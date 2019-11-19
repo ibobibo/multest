@@ -50,22 +50,7 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
             while (true) {
                 try {
                     tr = tr + 1;
-                    try {
-                        WebElement skipSecondElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Altersgerechtes Wohnangebot')]"));
-                        if (skipSecondElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr + 1;
-                        }
-                    } catch (Exception e) {
-                    }
-                    try {
-                        WebElement skipFirstElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Pflegeheim')]"));
-                        if (skipFirstElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr + 1;
-                        }
-                    } catch (Exception e) {
-                    }
+
                     WebElement postalCodeResults = driver.findElement(By.xpath("//tr[" + tr + "]//td[1]//div[1]//div[2]//div[1]//div[3]//div[2]"));
 
                     for (int array = 0; array < plzPerimeterMoreToBorder.length; array++) {
@@ -81,23 +66,6 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
                             break;
                         }
                     }
-                    try {
-                        WebElement skipSecondElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Altersgerechtes Wohnangebot')]"));
-                        if (skipSecondElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr - 1;
-                        }
-                    } catch (Exception e) {
-                    }
-                    try {
-                        WebElement skipFirstElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Pflegeheim')]"));
-                        if (skipFirstElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr - 1;
-                        }
-                    } catch (Exception e) {
-                    }
-
 
                     if ((tr % 10) == 0) {
                         tr = 0;
@@ -109,8 +77,8 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
                             break;
                         }
                     }
+
                 } catch (Exception e) {
-                    tr = 0;
                     break;
                 }
             }
@@ -124,7 +92,7 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
 
     @AfterTest
     public void closeBrowser() {
-        driver.close();
-        driver = null;
+//        driver.close();
+//        driver = null;
     }
 }

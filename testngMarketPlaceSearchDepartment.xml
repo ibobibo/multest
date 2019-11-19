@@ -6,11 +6,11 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <test name="Search Department with PostalCode">
-        <classes>
-            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPostalCode"/>
-        </classes>
-    </test>
+<!--    <test name="Search Department with PostalCode">-->
+<!--        <classes>-->
+<!--            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPostalCode"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="Search Department after perimeter near Center">
         <classes>

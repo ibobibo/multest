@@ -25,7 +25,19 @@
                 <version>3.0.0-M3</version>
                 <configuration>
                     <suiteXmlFiles>
+                        <!--Searching Tests-->
                         <suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>
+
+                        <!--Deparment Stuff-->
+                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>
+                        <suiteXmlFile>testngCreateDepartments.xml</suiteXmlFile>
+                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>
+
+                        <!--Marketplace Stuff-->
+                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>
+                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>
+                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>
+
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
