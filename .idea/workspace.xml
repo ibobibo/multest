@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngMarketPlaceSearchDepartment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +44,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xml" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/xml" />
       <recent name="$PROJECT_DIR$/src/" />
       <recent name="$PROJECT_DIR$/xml/discardedTests" />
       <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
@@ -201,7 +203,7 @@
       <workItem from="1574074028363" duration="20000" />
       <workItem from="1574074074743" duration="1382000" />
       <workItem from="1574076036131" duration="356000" />
-      <workItem from="1574076567042" duration="17025000" />
+      <workItem from="1574076567042" duration="17132000" />
     </task>
     <servers />
   </component>
