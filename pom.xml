@@ -34,8 +34,8 @@
                         <!--                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>-->
 
                         <!--Marketplace Stuff-->
-                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>
-                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>
+                        <!--                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>-->
+                        <!--                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>-->
                         <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>
 
                     </suiteXmlFiles>
