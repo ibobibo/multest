@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/searchDepartmentAfterPerimeter_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/searchDepartmentAfterPerimeter_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +203,7 @@
       <workItem from="1574074028363" duration="20000" />
       <workItem from="1574074074743" duration="1382000" />
       <workItem from="1574076036131" duration="356000" />
-      <workItem from="1574076567042" duration="11474000" />
+      <workItem from="1574076567042" duration="16066000" />
     </task>
     <servers />
   </component>
@@ -230,80 +225,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31149426" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>FramworksCombined</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31149426" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.aventstack:extentreports:3.0.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31149426" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
