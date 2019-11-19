@@ -30,8 +30,8 @@
 
                         <!--Deparment Stuff-->
                         <!--                        <suiteXmlFile>testngCreateDepartments.xml</suiteXmlFile>-->
-                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>
-                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>
+                        <!--                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>-->
+                        <!--                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>-->
 
                         <!--Marketplace Stuff-->
                         <!--                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>-->
