@@ -53,8 +53,10 @@ public class MulRegister extends BaseClass {
             registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
             registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
             registerPage.accept().click();
+            TimeUnit.SECONDS.sleep(2);
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
             registerPage.registerSubmit().click();
+            TimeUnit.SECONDS.sleep(4);
         }
         log.info("Successfully Register for a mul account");
     }

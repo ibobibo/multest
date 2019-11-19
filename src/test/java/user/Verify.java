@@ -43,9 +43,9 @@ public class Verify extends BaseClass {
             driver.close();
 
             driver.switchTo().window(tabs.get(0));
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             driver.switchTo().defaultContent();
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
         }
     }
 
