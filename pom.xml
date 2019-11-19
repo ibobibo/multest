@@ -26,18 +26,15 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--Searching Tests-->
-                        <!--<suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>-->
-
+                        <suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>
                         <!--Deparment Stuff-->
-                                                <suiteXmlFile>testngCreateDepartments.xml</suiteXmlFile>
-                        <!--                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>-->
-
+                        <suiteXmlFile>testngCreateDepartments.xml</suiteXmlFile>
+                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>
+                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>
                         <!--Marketplace Stuff-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>-->
-
+                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>
+                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>
+                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
