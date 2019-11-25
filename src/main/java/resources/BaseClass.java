@@ -29,7 +29,7 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            WebDriverManager.chromedriver().version("78.0.3904.105").setup();
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.get("https://dev-partner.mitpflegeleben.de/#/login");
             TimeUnit.SECONDS.sleep(4);
