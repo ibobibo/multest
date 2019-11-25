@@ -1,4 +1,4 @@
-image: docker:latest
+
 services:
   - selenium/standalone-chrome:latest
 
@@ -9,4 +9,4 @@ stages:
 maven-build:
   image: maven:3-jdk-8
   stage: build
-  script: mvn verify
+  script: mvn test
