@@ -14,4 +14,4 @@ before_script:
 maven-build:
   image: maven:3-jdk-8
   stage: build
-  script: "mvn test"
+  script: mvn test
