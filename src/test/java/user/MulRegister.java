@@ -1,7 +1,5 @@
 package user;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,12 +13,7 @@ public class MulRegister extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
-        WebDriverManager.chromedriver().version("78.0.3904.105").setup();
-        driver = new ChromeDriver();
-        driver.get("https://dev-partner.mitpflegeleben.de/#/login");
-        TimeUnit.SECONDS.sleep(4);
-        accessAllCookies();
-        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+        initializeDriver();
     }
 
     @Test

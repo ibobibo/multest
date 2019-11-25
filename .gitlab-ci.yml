@@ -10,5 +10,3 @@ stages:
 maven-build:
   stage: build
   script: mvn test
-
-
