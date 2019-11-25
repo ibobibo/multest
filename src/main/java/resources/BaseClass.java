@@ -42,7 +42,6 @@ public class BaseClass {
             System.setProperty(prop.getProperty("edgeDriver"), prop.getProperty("edgeDriverPath"));
             driver = new InternetExplorerDriver();
         }
-
         return driver;
     }
 

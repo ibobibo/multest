@@ -4,7 +4,6 @@
     <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,15 +42,12 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/xml" />
-      <recent name="$PROJECT_DIR$/src/" />
-      <recent name="$PROJECT_DIR$/xml/discardedTests" />
-      <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="marketplaceTests.searchDepartmentRequest" />
@@ -60,9 +56,12 @@
       <recent name="marketplaceTests" />
       <recent name="pageObjectsMarketplace" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/xml" />
+      <recent name="$PROJECT_DIR$/src/" />
+      <recent name="$PROJECT_DIR$/xml/discardedTests" />
+      <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
     </key>
   </component>
   <component name="RunDashboard">
