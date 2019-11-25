@@ -1,5 +1,6 @@
 package resources;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,12 +29,12 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("webdriver.chrome.driver"), prop.getProperty("src/main/java/properties/driver/chromedriver"));
-            driver = new ChromeDriver();
-//            WebDriverManager.chromedriver().version("78.0.3904.105").setup();
+//            System.setProperty(prop.getProperty("webdriver.chrome.driver"), prop.getProperty("src/main/java/properties/driver/chromedriver"));
 //            driver = new ChromeDriver();
-//            driver.get("https://dev-partner.mitpflegeleben.de/#/login");
-//            TimeUnit.SECONDS.sleep(4);
+            WebDriverManager.chromedriver().version("78.0.3904.105").setup();
+            driver = new ChromeDriver();
+            driver.get("https://dev-partner.mitpflegeleben.de/#/login");
+            TimeUnit.SECONDS.sleep(4);
             accessAllCookies();
         } else if (browserName.equals("firefox")) {
             System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
