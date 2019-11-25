@@ -42,12 +42,6 @@
         </classes>
     </test>
 
-    <test name="Make public">
-        <classes>
-            <class name="departments.ToggleOrganisation"/>
-        </classes>
-    </test>
-
     <test name="Delete Placement">
         <classes>
             <class name="placements.DeletePlacement"/>

@@ -5,13 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import resources.BaseClass;
+import resources.MulLoginLogout;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class Verify extends BaseClass {
+public class Verify extends MulLoginLogout {
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
         initializeMailServer();
@@ -36,6 +36,10 @@ public class Verify extends BaseClass {
 
             driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='preview-iframe panel-html']")));
             driver.findElement(By.xpath("/html/body/p[3]/a")).click();
+            TimeUnit.SECONDS.sleep(2);
+            driver.switchTo().defaultContent();
+            TimeUnit.SECONDS.sleep(2);
+            login();
             TimeUnit.SECONDS.sleep(4);
 
             ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
@@ -43,9 +47,9 @@ public class Verify extends BaseClass {
             driver.close();
 
             driver.switchTo().window(tabs.get(0));
-            TimeUnit.SECONDS.sleep(4);
+            TimeUnit.SECONDS.sleep(2);
             driver.switchTo().defaultContent();
-            TimeUnit.SECONDS.sleep(4);
+            TimeUnit.SECONDS.sleep(2);
         }
     }
 

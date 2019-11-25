@@ -636,6 +636,48 @@ public class DepartmentPage {
         return environmentInfo;
     }
 
+    //preise
+    @FindBy(xpath = "//section[@id='DepartmentResidentialProperty']/label[1]")
+    WebElement toRent;
+
+    @FindBy(xpath = "//span[contains(text(),'Zum Kauf')]")
+    WebElement toBuy;
+    //OPTIONen die dann angezeigt werden
+    @FindBy(xpath = "//input[@id='residentialProperty.minPurchasePrice']")
+    WebElement price;
+    @FindBy(xpath = "//input[@id='residentialProperty.commonCharge']")
+    WebElement houseMoney;
+    @FindBy(xpath = "//input[@id='residentialProperty.additionalPurchasePrice']")
+    WebElement additionalCosts;
+    @FindBy(xpath = "//input[@id='residentialProperty.commission']")
+    WebElement provision;
+
+    public WebElement toRent() {
+        return toRent;
+    }
+
+    public WebElement toBuy() {
+        return toBuy;
+    }
+
+    //optionen die dann angezeigt werden
+    public WebElement price() {
+        return price;
+    }
+
+    public WebElement houseMoney() {
+        return houseMoney;
+    }
+
+    public WebElement additionalCosts() {
+        return additionalCosts;
+    }
+
+    public WebElement provision() {
+        return provision;
+    }
+
+
     //Pflegegrad der Betreut wird
     @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.offers.minPrice.1']")
     WebElement careLevelOne;
@@ -745,7 +787,7 @@ public class DepartmentPage {
     WebElement operator;
     @FindBy(id = "residentialProperty.operator.description")
     WebElement operatorDescription;
-    @FindBy(id = "residentialProperty.minRentalFee")
+    @FindBy(xpath = "//select[@id='residentialProperty.type']")
     WebElement rental;
     @FindBy(id = "residentialProperty.ancillaryCosts")
     WebElement otherCosts;
@@ -999,7 +1041,6 @@ public class DepartmentPage {
     WebElement doctorVisit;
     @FindBy(xpath = "//section[@class='DepartmentCategories']//input[@id='tmp.facilityCategories.5d109c239a3dec00013e1092']")
     WebElement specialDoctorVisit;
-
 
 
     //GETTER Sonstige Ausstattungen

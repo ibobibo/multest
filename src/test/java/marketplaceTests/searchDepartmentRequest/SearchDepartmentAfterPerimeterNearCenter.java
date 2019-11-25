@@ -39,7 +39,7 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
         searchDepartmentPage.selectPerimeterOption5().click();
         TimeUnit.SECONDS.sleep(2);
 
-        int tr = 1;
+        int tr = 0;
 
         for (int card = 1; card < 5; card++) {
             WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
@@ -50,22 +50,7 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
             while (true) {
                 try {
                     tr = tr + 1;
-                    try {
-                        WebElement skipSecondElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Altersgerechtes Wohnangebot')]"));
-                        if (skipSecondElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr + 1;
-                        }
-                    } catch (Exception e) {
-                    }
-                    try {
-                        WebElement skipFirstElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Pflegeheim')]"));
-                        if (skipFirstElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr + 1;
-                        }
-                    } catch (Exception e) {
-                    }
+
                     WebElement postalCodeResults = driver.findElement(By.xpath("//tr[" + tr + "]//td[1]//div[1]//div[2]//div[1]//div[3]//div[2]"));
 
                     for (int array = 0; array < plzPerimeterCentral.length; array++) {
@@ -79,23 +64,6 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
                             break;
                         }
                     }
-                    try {
-                        WebElement skipSecondElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Altersgerechtes Wohnangebot')]"));
-                        if (skipSecondElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr - 1;
-                        }
-                    } catch (Exception e) {
-                    }
-                    try {
-                        WebElement skipFirstElem = driver.findElement(By.xpath("//div[contains(text(),'Sinas Pflegeheim')]"));
-                        if (skipFirstElem.isDisplayed()) {
-                            System.out.println("skip sinas elem");
-                            tr = tr - 1;
-                        }
-                    } catch (Exception e) {
-                    }
-
 
                     if ((tr % 10) == 0) {
                         tr = 0;

@@ -19,16 +19,18 @@ public class MulLoginLogout extends BaseClass {
     }
 
     public void login() throws InterruptedException {
+        System.out.println("bin drin");
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
         loginLogoutPage.anmelden().click();
-
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(4);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     public void login(String anfrageNameEmail, String anfrageNamePassword) throws InterruptedException {
+        accessAllCookies();
+        TimeUnit.SECONDS.sleep(2);
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.username().sendKeys(anfrageNameEmail);
         loginLogoutPage.password().sendKeys(anfrageNamePassword);

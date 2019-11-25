@@ -25,16 +25,16 @@
                 <version>3.0.0-M3</version>
                 <configuration>
                     <suiteXmlFiles>
+                        <!--Deparment Stuff-->
+                        <suiteXmlFile>testngCreateDepartments.xml</suiteXmlFile>
+                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>
+                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>
                         <!--Searching Tests-->
-                        <suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>
-<!--                        &lt;!&ndash;Deparment Stuff&ndash;&gt;-->
-<!--                        <suiteXmlFile>testngCreateDepartments.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>-->
-<!--                        &lt;!&ndash;Marketplace Stuff&ndash;&gt;-->
-<!--                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>-->
+                        <!--Marketplace Stuff-->
+                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>
+                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>
+                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
