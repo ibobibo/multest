@@ -1,19 +1,12 @@
 image: maven:latest
 
+services:
+  - selenium/standalone-chrome:latest
+
 stages:
   - build
   - test
 
-cache:
-  paths:
-    - target
-
-build:
+maven-build:
   stage: build
-  script:
-    - mvn compile
-
-test:
-  stage: test
-  script:
-    - mvn test
+  script: mvn test
