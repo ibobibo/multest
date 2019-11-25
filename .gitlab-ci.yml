@@ -1,33 +1,18 @@
-# These are the default stages.
-# You don't need to explicitly define them.
-# But you could define any stages you want.
+image: docker:latest
+services:
+  - docker:dind
+  - selenium/standalone-chrome:latest
 
 stages:
   - build
   - test
-  - deploy
 
-# This is the name of the job.
-# You can choose it freely.
+before_script:
+  - apt-get update
+  - export DISPLAY=:1
+  - sleep 3
 
-maven_build:
-  # A job is always executed within a stage.
-  # If no stage is set, it defaults to 'test'.
-
-  stage: test
-  # Since we require Maven for this job,
-  # we can restrict the job to runners with a certain tag.
-  # Of course, it is our duty to actually configure a runner
-  # with the tag 'maven' and a working maven installation
-
-  # Here you can execute arbitrate terminal commands.
-  # If any of the commands returns a non zero exit code the job fails.
-
-  image: maven:3-jdk-8
-
-  services:
-    - selenium/standalone-chrome
-  script:
-    - npm run confidence-check --host=selenium__standalone-chrome
-    - echo "Building project with maven"
-    - mvn verify
+maven-build:
+  image: maven:3.3.9-jdk-8
+  stage: build
+  script: "mvn test"
