@@ -33,6 +33,7 @@ public class BaseClass {
 //            driver = new ChromeDriver();
             WebDriverManager.chromedriver().version("78.0.3904.105").setup();
             driver = new ChromeDriver();
+            TimeUnit.SECONDS.sleep(4);
             driver.get("https://dev-partner.mitpflegeleben.de/#/login");
             TimeUnit.SECONDS.sleep(4);
             accessAllCookies();
