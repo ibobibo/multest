@@ -28,7 +28,7 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+            System.setProperty(prop.getProperty("webdriver.chrome.driver"), prop.getProperty("src/main/java/properties/driver/chromedriver"));
             driver = new ChromeDriver();
 //            WebDriverManager.chromedriver().version("78.0.3904.105").setup();
 //            driver = new ChromeDriver();
