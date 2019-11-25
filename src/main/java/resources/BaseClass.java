@@ -2,16 +2,14 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.URL;
 import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -31,8 +29,7 @@ public class BaseClass {
         //check for browser
         if (browserName.equals("chrome")) {
             System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-            DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL(prop.getProperty("chromeDriverPath")),desiredCapabilities);
+            driver = new ChromeDriver();
         } else if (browserName.equals("firefox")) {
             System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
