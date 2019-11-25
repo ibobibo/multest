@@ -8,8 +8,5 @@ stages:
   - test
 
 maven-build:
+  stage: build
   script: mvn test
-  cache:
-    paths:
-      - binaries/*.xml
-      - .config
