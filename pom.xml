@@ -89,4 +89,11 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>83d43b5afeb5-releases</name>
+            <url>c97011e60e8e951c409af4cd5c69870795b48d0a/src</url>
+        </repository>
+    </distributionManagement>
 </project>
