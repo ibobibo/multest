@@ -1,6 +1,5 @@
 image: docker:latest
 services:
-  - docker:dind
   - selenium/standalone-chrome:latest
 
 stages:
@@ -13,6 +12,6 @@ before_script:
   - sleep 3
 
 maven-build:
-  image: maven:3.3.9-jdk-8
+  image: maven:3-jdk-8
   stage: build
   script: "mvn test"
