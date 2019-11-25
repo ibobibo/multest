@@ -27,14 +27,14 @@
                     <suiteXmlFiles>
                         <!--Deparment Stuff-->
                         <suiteXmlFile>testngCreateDepartments.xml</suiteXmlFile>
-                        <!--                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>-->
-                        <!--                        &lt;!&ndash;Searching Tests&ndash;&gt;-->
-                        <!--&lt;!&ndash;                        <suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>&ndash;&gt;-->
-                        <!--                        &lt;!&ndash;Marketplace Stuff&ndash;&gt;-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>-->
+<!--                        &lt;!&ndash;Searching Tests&ndash;&gt;-->
+<!--&lt;!&ndash;                        <suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>&ndash;&gt;-->
+<!--                        &lt;!&ndash;Marketplace Stuff&ndash;&gt;-->
+<!--                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -64,7 +64,12 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.0.0-alpha-3</version>
+            <version>3.141.59</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.141.59</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
