@@ -11,7 +11,7 @@ import java.io.IOException;
 public class CreateNewPlacement extends MulLoginLogout {
 
     @BeforeTest
-    public void initialize() throws IOException {
+    public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
     }
 
