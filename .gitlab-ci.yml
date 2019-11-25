@@ -6,12 +6,7 @@ stages:
   - build
   - test
 
-before_script:
-  - apt-get update
-  - export DISPLAY=:1
-  - sleep 3
-
 maven-build:
   image: maven:3-jdk-8
   stage: build
-  script: mvn test
+  script: mvn verify
