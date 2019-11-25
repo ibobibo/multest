@@ -13,7 +13,9 @@ public class MulRegister extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
-        initializeDriver();
+        initializeBrowser();
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies();
     }
 
     @Test

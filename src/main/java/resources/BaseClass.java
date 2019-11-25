@@ -28,13 +28,12 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("webdriver.chrome.driver"), prop.getProperty("src/main/java/properties/driver/chromedriver"));
+            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
             driver = new ChromeDriver();
 //            WebDriverManager.chromedriver().version("78.0.3904.105").setup();
 //            driver = new ChromeDriver();
 //            driver.get("https://dev-partner.mitpflegeleben.de/#/login");
 //            TimeUnit.SECONDS.sleep(4);
-            accessAllCookies();
         } else if (browserName.equals("firefox")) {
             System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
