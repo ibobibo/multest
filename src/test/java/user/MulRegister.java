@@ -15,7 +15,12 @@ public class MulRegister extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
+        WebDriverManager.chromedriver().version("78.0.3904.105").setup();
+        driver = new ChromeDriver();
+        driver.get("https://dev-partner.mitpflegeleben.de/#/login");
+        TimeUnit.SECONDS.sleep(4);
+        accessAllCookies();
+        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
     }
 
     @Test
