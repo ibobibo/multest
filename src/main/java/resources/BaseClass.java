@@ -1,9 +1,7 @@
 package resources;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -29,21 +27,17 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-//            System.setProperty(prop.getProperty("webdriver.chrome.driver"), prop.getProperty("src/main/java/properties/driver/chromedriver"));
-//            driver = new ChromeDriver();
-            WebDriverManager.chromedriver().version("78.0.3904.105").setup();
-            driver = new ChromeDriver();
-            TimeUnit.SECONDS.sleep(4);
-            driver.get("https://dev-partner.mitpflegeleben.de/#/login");
-            TimeUnit.SECONDS.sleep(4);
-            accessAllCookies();
+            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+            driver = new FirefoxDriver();
+            TimeUnit.SECONDS.sleep(5);
         } else if (browserName.equals("firefox")) {
             System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
-
+            TimeUnit.SECONDS.sleep(5);
         } else if (browserName.equals("edge")) {
             System.setProperty(prop.getProperty("edgeDriver"), prop.getProperty("edgeDriverPath"));
             driver = new InternetExplorerDriver();
+            TimeUnit.SECONDS.sleep(5);
         }
 
         return driver;

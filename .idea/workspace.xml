@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f23af4a1-ccb7-4093-a6d7-392b4a9cc80a" name="Default Changelist" comment="">
+    <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/Test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/Test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createDayNightCareOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createDayNightCareOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createFairHouseOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createFairHouseOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createStationaryOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createStationaryOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/user/Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/Verify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/user/Verify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/Verify.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testngCreateDepartments.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngCreateDepartments.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
