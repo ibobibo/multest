@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="docker" parallel="classes">
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+        <listener class-name="resources.Listeners"/>
+    </listeners>
+
+    <test thread-count="5" name="docker Tests">
+        <classes>
+            <class name="dockerTests.DockerTest"/>
+                        <class name="dockerTests.DockerTest2"/>
+            <!--            <class name="dockerTests.DockerTest3"/>-->
+            <!--            <class name="dockerTests.DockerTest4"/>-->
+        </classes>
+    </test>
+</suite>

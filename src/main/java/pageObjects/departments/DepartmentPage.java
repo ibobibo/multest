@@ -70,28 +70,47 @@ public class DepartmentPage {
         return submitButton;
     }
 
-
-    @FindBy(xpath = "//section[@class='Department']//a[@id='add-department']")
+    @FindBy(xpath = "//a[@id='add-department']")
     WebElement addDepartment;
+    @FindBy(xpath = "//div[@id='app-view-container']//li[1]//a[1]")
+    WebElement dashboardCard;
+    @FindBy(xpath = "//div[@id='app-view-container']//li[2]//a[1]")
+    WebElement addDepartmentCard;
+    @FindBy(xpath = "//div[@id='app-view-container']//li[3]//a[1]")
+    WebElement addContactPersonCard;
+
+    @FindBy(xpath = "//div[@class='tab-pane active']//div[@class='AMBULANT card']//div[2]//a[@class='create']")
+    WebElement addFirstAmbulantDepartment;
     @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
     WebElement addAmbulantDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='AMBULANT card']//a[@class='create']")
-    WebElement addFirstAmbulantDepartment;
+    @FindBy(xpath = "//div[@class='tab-pane active']//div[@class='STATIONARY card']//div[2]//a[@class='create']")
+    WebElement addFirstStationaryDepartment;
     @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='STATIONARY card']//a[@class='create']")
     WebElement addStationaryDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='STATIONARY card']//a[@class='create']")
-    WebElement addFirstStationaryDepartment;
+    @FindBy(xpath = "//div[@class='tab-pane active']//div[@class='HOUSING card']//div[2]//a[@class='create']")
+    WebElement addFirstFairHouseOfferDepartment;
     @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='HOUSING card']//a[@class='create']")
     WebElement addFairHouseOfferDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='HOUSING card']//a[@class='create']")
-    WebElement addFirstFairHouseOfferDepartment;
+    @FindBy(xpath = "//div[@class='tab-pane active']//div[@class='DAYCARE card']//div[2]//a[@class='create']")
+    WebElement addFirstDayNightCareDepartment;
     @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='DAYCARE card']//a[@class='create']")
     WebElement addDayNightCareDepartment;
-    @FindBy(xpath = "//section[@class='DepartmentCreateTiles']//div[@class='DAYCARE card']//a[@class='create']")
-    WebElement addFirstDayNightCareDepartment;
+
 
     public WebElement addDepartment() {
         return addDepartment;
+    }
+
+    public WebElement dashboardCard() {
+        return dashboardCard;
+    }
+
+    public WebElement addDepartmentCard() {
+        return addDepartmentCard;
+    }
+
+    public WebElement addContactPersonCard() {
+        return addContactPersonCard;
     }
 
     public WebElement addAmbulantDepartment() {
@@ -110,6 +129,7 @@ public class DepartmentPage {
         return addFirstStationaryDepartment;
     }
 
+
     public WebElement addFairHouseOfferDepartment() {
         return addFairHouseOfferDepartment;
     }
@@ -125,7 +145,6 @@ public class DepartmentPage {
     public WebElement addFirstDayNightCareDepartment() {
         return addFirstDayNightCareDepartment;
     }
-
 
     //allgemeine Angaben zur Einrichtung
     @FindBy(id = "name")

@@ -34,10 +34,15 @@ public class CreateStationaryOrganisation extends MulLoginLogout {
             loadPropsForDepartment();
             DepartmentPage stationaryOrganisationPage = new DepartmentPage(driver);
 
+            try{
+                stationaryOrganisationPage.addDepartmentCard().click();
+                TimeUnit.SECONDS.sleep(1);
+            }catch (Exception e){
+                System.out.println("Card wird geklickt.");
+            }
+
             try {
                 stationaryOrganisationPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
-                stationaryOrganisationPage.addStationaryDepartment().click();
                 TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
@@ -45,6 +50,13 @@ public class CreateStationaryOrganisation extends MulLoginLogout {
 
             try {
                 stationaryOrganisationPage.addFirstStationaryDepartment().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Es wurde noch kein Department angelegt.");
+            }
+
+            try {
+                stationaryOrganisationPage.addStationaryDepartment().click();
             } catch (Exception e) {
                 System.out.println("Es existiert schon ein erstes Department");
             }

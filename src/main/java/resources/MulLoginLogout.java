@@ -42,6 +42,7 @@ public class MulLoginLogout extends BaseClass {
 
     public void loginLoop(int i) throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
+        TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail") + i);
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
         TimeUnit.SECONDS.sleep(1);

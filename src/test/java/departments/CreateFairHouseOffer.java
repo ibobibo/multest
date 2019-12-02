@@ -35,10 +35,15 @@ public class CreateFairHouseOffer extends MulLoginLogout {
             loadPropsForFairHouseOfferDepartment();
             DepartmentPage fairHouseOfferPage = new DepartmentPage(driver);
 
+            try{
+                fairHouseOfferPage.addDepartmentCard().click();
+                TimeUnit.SECONDS.sleep(1);
+            }catch (Exception e){
+                System.out.println("Card wird geklickt.");
+            }
+
             try {
                 fairHouseOfferPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
-                fairHouseOfferPage.addFairHouseOfferDepartment().click();
                 TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
@@ -46,6 +51,13 @@ public class CreateFairHouseOffer extends MulLoginLogout {
 
             try {
                 fairHouseOfferPage.addFirstFairHouseOfferDepartment().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Es wurde noch kein Department angelegt.");
+            }
+
+            try {
+                fairHouseOfferPage.addFairHouseOfferDepartment().click();
             } catch (Exception e) {
                 System.out.println("Es existiert schon ein erstes Department");
             }
@@ -270,7 +282,7 @@ public class CreateFairHouseOffer extends MulLoginLogout {
 
     @AfterTest
     public void closeBrowser() {
-//        driver.close();
-//        driver = null;
+        driver.close();
+        driver = null;
     }
 }

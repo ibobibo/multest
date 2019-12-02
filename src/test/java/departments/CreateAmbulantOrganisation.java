@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
-import java.awt.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -23,7 +22,7 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
     }
 
     @Test
-    public void createAmbulantOrganisation() throws IOException, InterruptedException, AWTException {
+    public void createAmbulantOrganisation() throws IOException, InterruptedException {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
@@ -35,19 +34,30 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
             loadPropsForDepartment();
             DepartmentPage ambulantOrganisationPage = new DepartmentPage(driver);
 
+            try{
+                ambulantOrganisationPage.addDepartmentCard().click();
+                TimeUnit.SECONDS.sleep(2);
+            }catch (Exception e){
+                System.out.println("Card wird geklickt.");
+            }
+
             try {
                 ambulantOrganisationPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
-                ambulantOrganisationPage.addAmbulantDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
-
+                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
             }
 
             try {
                 ambulantOrganisationPage.addFirstAmbulantDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Es wurde noch kein Department angelegt.");
+            }
+
+            try {
+                ambulantOrganisationPage.addAmbulantDepartment().click();
+                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Es existiert schon ein erstes Department");
             }

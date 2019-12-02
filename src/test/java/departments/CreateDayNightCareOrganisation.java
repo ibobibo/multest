@@ -34,10 +34,15 @@ public class CreateDayNightCareOrganisation extends MulLoginLogout {
             loadPropsForDepartment();
             DepartmentPage dayNightCareOrganisationPage = new DepartmentPage(driver);
 
+            try{
+                dayNightCareOrganisationPage.addDepartmentCard().click();
+                TimeUnit.SECONDS.sleep(1);
+            }catch (Exception e){
+                System.out.println("Card wird geklickt.");
+            }
+
             try {
                 dayNightCareOrganisationPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
-                dayNightCareOrganisationPage.addDayNightCareDepartment().click();
                 TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
@@ -45,6 +50,13 @@ public class CreateDayNightCareOrganisation extends MulLoginLogout {
 
             try {
                 dayNightCareOrganisationPage.addFirstDayNightCareDepartment().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Es wurde noch kein Department angelegt.");
+            }
+
+            try {
+                dayNightCareOrganisationPage.addDayNightCareDepartment().click();
             } catch (Exception e) {
                 System.out.println("Es existiert schon ein erstes Department");
             }
