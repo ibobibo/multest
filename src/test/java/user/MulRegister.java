@@ -10,11 +10,12 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class MulRegister extends BaseClass {
+
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
-        initializeDriver();
-        TimeUnit.SECONDS.sleep(2);
+        initializeBrowser();
         accessAllCookies();
+        TimeUnit.SECONDS.sleep(1);
     }
 
     @Test
