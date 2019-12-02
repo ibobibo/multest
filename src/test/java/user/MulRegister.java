@@ -1,7 +1,5 @@
 package user;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,12 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 public class MulRegister extends BaseClass {
 
-    public static Logger log = LogManager.getLogger(BaseClass.class.getName());
-
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        accessAllCookies();
+        initializeDriver();
     }
 
     @Test
@@ -58,7 +53,6 @@ public class MulRegister extends BaseClass {
             registerPage.registerSubmit().click();
             TimeUnit.SECONDS.sleep(4);
         }
-        log.info("Successfully Register for a mul account");
     }
 
     @AfterTest

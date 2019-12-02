@@ -1,5 +1,6 @@
 package resources;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,15 +23,20 @@ public class BaseClass {
     public static Properties propNewPlacement = new Properties();
 
 
-    public WebDriver initializeDriver() throws IOException {
+    public WebDriver initializeDriver() throws IOException, InterruptedException {
         loadProps();
         String browserName = prop.getProperty("browser");
 
         //check for browser
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+//            System.setProperty(prop.getProperty("webdriver.chrome.driver"), prop.getProperty("src/main/java/properties/driver/chromedriver"));
+//            driver = new ChromeDriver();
+            WebDriverManager.chromedriver().version("78.0.3904.105").setup();
             driver = new ChromeDriver();
-
+            TimeUnit.SECONDS.sleep(4);
+            driver.get("https://dev-partner.mitpflegeleben.de/#/login");
+            TimeUnit.SECONDS.sleep(4);
+            accessAllCookies();
         } else if (browserName.equals("firefox")) {
             System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
@@ -48,22 +54,22 @@ public class BaseClass {
         FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
     }
 
-    public void initializeBrowser() throws IOException {
+    public void initializeBrowser() throws IOException, InterruptedException {
         driver = initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
     }
 
-    public void initializeBrowserForMarketplace() throws IOException {
+    public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
         driver = initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
     }
 
-    public void initializeBrowserForInformationPortal() throws IOException {
+    public void initializeBrowserForInformationPortal() throws IOException, InterruptedException {
         driver = initializeDriver();
         driver.get(prop.getProperty("urlForInformationPortal"));
     }
 
-    public void initializeMailServer() throws IOException {
+    public void initializeMailServer() throws IOException, InterruptedException {
         driver = initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));
     }
