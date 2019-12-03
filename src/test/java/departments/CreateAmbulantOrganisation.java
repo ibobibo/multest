@@ -32,31 +32,31 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
             Actions actions = new Actions(driver);
 
             loadPropsForDepartment();
-            DepartmentPage ambulantOrganisationPage = new DepartmentPage(driver);
+            DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try{
-                ambulantOrganisationPage.addDepartmentCard().click();
+                departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
             }catch (Exception e){
                 System.out.println("Card wird geklickt.");
             }
 
             try {
-                ambulantOrganisationPage.addDepartment().click();
+                departmentPage.addDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
             }
 
             try {
-                ambulantOrganisationPage.addFirstAmbulantDepartment().click();
+                departmentPage.addFirstAmbulantDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
             }
 
             try {
-                ambulantOrganisationPage.addAmbulantDepartment().click();
+                departmentPage.addAmbulantDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Es existiert schon ein erstes Department");
@@ -68,60 +68,60 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
-            ambulantOrganisationPage.departmentName().sendKeys(propDepartment.getProperty("ambulantDepartmentName"));
+            departmentPage.departmentName().sendKeys(propDepartment.getProperty("ambulantDepartmentName"));
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
-            ambulantOrganisationPage.departmentOrganisationTypeChosen().click();
+            departmentPage.departmentOrganisationTypeChosen().click();
 
-            ambulantOrganisationPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
-            ambulantOrganisationPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
-            ambulantOrganisationPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
-            ambulantOrganisationPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
-            ambulantOrganisationPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
+            departmentPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+            departmentPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+            departmentPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+            departmentPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+            departmentPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
 
             //angaben zur Person
-            ambulantOrganisationPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
-            ambulantOrganisationPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
-            ambulantOrganisationPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
-            ambulantOrganisationPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+            departmentPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+            departmentPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+            departmentPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+            departmentPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
 
             WebElement availability = driver.findElement(By.id("availability"));
             actions.moveToElement(availability).click().build().perform();
-            ambulantOrganisationPage.departmentAvailableChosen().click();
+            departmentPage.departmentAvailableChosen().click();
 
             WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));
             actions.moveToElement(contactSalutation).click().build().perform();
-            ambulantOrganisationPage.departmentContactSalutationChosen().click();
+            departmentPage.departmentContactSalutationChosen().click();
 
             //sprechzeiten
-            ambulantOrganisationPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
-            ambulantOrganisationPage.mondayMinuteBegin().sendKeys(propDepartment.getProperty("mondayMinuteBegin"));
-            ambulantOrganisationPage.mondayHourEnd().sendKeys(propDepartment.getProperty("mondayHourEnd"));
-            ambulantOrganisationPage.mondayMinuteEnd().sendKeys(propDepartment.getProperty("mondayMinuteEnd"));
+            departmentPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
+            departmentPage.mondayMinuteBegin().sendKeys(propDepartment.getProperty("mondayMinuteBegin"));
+            departmentPage.mondayHourEnd().sendKeys(propDepartment.getProperty("mondayHourEnd"));
+            departmentPage.mondayMinuteEnd().sendKeys(propDepartment.getProperty("mondayMinuteEnd"));
 
-            ambulantOrganisationPage.wednesdayHourBegin().sendKeys(propDepartment.getProperty("wednesdayHourBegin"));
-            ambulantOrganisationPage.wednesdayMinuteBegin().sendKeys(propDepartment.getProperty("wednesdayMinuteBegin"));
-            ambulantOrganisationPage.wednesdayHourEnd().sendKeys(propDepartment.getProperty("wednesdayHourEnd"));
-            ambulantOrganisationPage.wednesdayMinuteEnd().sendKeys(propDepartment.getProperty("wednesdayMinuteEnd"));
+            departmentPage.wednesdayHourBegin().sendKeys(propDepartment.getProperty("wednesdayHourBegin"));
+            departmentPage.wednesdayMinuteBegin().sendKeys(propDepartment.getProperty("wednesdayMinuteBegin"));
+            departmentPage.wednesdayHourEnd().sendKeys(propDepartment.getProperty("wednesdayHourEnd"));
+            departmentPage.wednesdayMinuteEnd().sendKeys(propDepartment.getProperty("wednesdayMinuteEnd"));
 
-            ambulantOrganisationPage.fridayHourBegin().sendKeys(propDepartment.getProperty("fridayHourBegin"));
-            ambulantOrganisationPage.fridayMinuteBegin().sendKeys(propDepartment.getProperty("fridayMinuteBegin"));
-            ambulantOrganisationPage.fridayHourEnd().sendKeys(propDepartment.getProperty("fridayHourEnd"));
-            ambulantOrganisationPage.fridayMinuteEnd().sendKeys(propDepartment.getProperty("fridayMinuteEnd"));
+            departmentPage.fridayHourBegin().sendKeys(propDepartment.getProperty("fridayHourBegin"));
+            departmentPage.fridayMinuteBegin().sendKeys(propDepartment.getProperty("fridayMinuteBegin"));
+            departmentPage.fridayHourEnd().sendKeys(propDepartment.getProperty("fridayHourEnd"));
+            departmentPage.fridayMinuteEnd().sendKeys(propDepartment.getProperty("fridayMinuteEnd"));
 
             //Beschreibung
-            ambulantOrganisationPage.presentationOfDepartment().sendKeys(propDepartment.getProperty("presentationOfDepartment"));
-            ambulantOrganisationPage.particularityZero().sendKeys(propDepartment.getProperty("particularityZero"));
-            ambulantOrganisationPage.particularityOne().sendKeys(propDepartment.getProperty("particularityOne"));
-            ambulantOrganisationPage.particularityTwo().sendKeys(propDepartment.getProperty("particularityTwo"));
+            departmentPage.presentationOfDepartment().sendKeys(propDepartment.getProperty("presentationOfDepartment"));
+            departmentPage.particularityZero().sendKeys(propDepartment.getProperty("particularityZero"));
+            departmentPage.particularityOne().sendKeys(propDepartment.getProperty("particularityOne"));
+            departmentPage.particularityTwo().sendKeys(propDepartment.getProperty("particularityTwo"));
 
             //youtube
-            ambulantOrganisationPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
+            departmentPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
             TimeUnit.SECONDS.sleep(3);
 
             //speichern
-            ambulantOrganisationPage.saveDepartment().click();
+            departmentPage.saveDepartment().click();
 
             TimeUnit.SECONDS.sleep(6);
             logout();

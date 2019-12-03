@@ -33,7 +33,7 @@ public class DeleteMarketplaceUser extends MulLoginLogout {
             TimeUnit.SECONDS.sleep(1);
             deleteMarketplaceUserPage.deleteButton().click();
             deleteMarketplaceUserPage.deleteAccept().click();
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(6);
         }
     }
 

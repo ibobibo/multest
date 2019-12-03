@@ -6,6 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.AcceptMeetingPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -21,9 +22,17 @@ public class AcceptMeeting extends MulLoginLogout {
     }
 
     @Test()
-    public void deleteAllOrganisation() throws InterruptedException {
+    public void acceptMeeting() throws InterruptedException {
         AcceptMeetingPage acceptMeetingPage = new AcceptMeetingPage(driver);
+        DepartmentPage departmentPage = new DepartmentPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
+        TimeUnit.SECONDS.sleep(2);
+        try {
+            departmentPage.addDepartmentCard().click();
+            TimeUnit.SECONDS.sleep(1);
+        } catch (Exception e) {
+            System.out.println("Card wird geklickt.");
+        }
         acceptMeetingPage.requestCount().click();
 
         int i = 1;
@@ -47,7 +56,7 @@ public class AcceptMeeting extends MulLoginLogout {
 
     @AfterTest
     public void closeBrowser() {
-        driver.close();
-        driver = null;
+//        driver.close();
+//        driver = null;
     }
 }

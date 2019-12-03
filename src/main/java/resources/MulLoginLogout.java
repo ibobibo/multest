@@ -25,7 +25,6 @@ public class MulLoginLogout extends BaseClass {
     }
 
     public void login(String anfrageNameEmail, String anfrageNamePassword) throws InterruptedException {
-        accessAllCookies();
         TimeUnit.SECONDS.sleep(2);
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.username().sendKeys(anfrageNameEmail);

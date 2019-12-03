@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -29,8 +30,15 @@ public class ToggleOrganisation extends MulLoginLogout {
     @Test()
     public void toggleAllOrganisation() throws InterruptedException {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            DepartmentPage departmentPage = new DepartmentPage(driver);
             loginLoop(i);
             TimeUnit.SECONDS.sleep(2);
+            try {
+                departmentPage.addDepartmentCard().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Card wird geklickt.");
+            }
             WebDriverWait wait = new WebDriverWait(driver, 20);
 
             int x = 1;

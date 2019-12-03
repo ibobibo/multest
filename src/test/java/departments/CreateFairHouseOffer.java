@@ -33,61 +33,61 @@ public class CreateFairHouseOffer extends MulLoginLogout {
 
             loadPropsForDepartment();
             loadPropsForFairHouseOfferDepartment();
-            DepartmentPage fairHouseOfferPage = new DepartmentPage(driver);
+            DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try{
-                fairHouseOfferPage.addDepartmentCard().click();
+                departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(1);
             }catch (Exception e){
                 System.out.println("Card wird geklickt.");
             }
 
             try {
-                fairHouseOfferPage.addDepartment().click();
+                departmentPage.addDepartment().click();
                 TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
             }
 
             try {
-                fairHouseOfferPage.addFirstFairHouseOfferDepartment().click();
+                departmentPage.addFirstFairHouseOfferDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Es wurde noch kein Department angelegt.");
             }
 
             try {
-                fairHouseOfferPage.addFairHouseOfferDepartment().click();
+                departmentPage.addFairHouseOfferDepartment().click();
             } catch (Exception e) {
                 System.out.println("Es existiert schon ein erstes Department");
             }
 
             try {
-                fairHouseOfferPage.accessibilityApartment().click();
+                departmentPage.accessibilityApartment().click();
             } catch (Exception e) {
                 System.out.println("accessibilityApartment");
             }
             try {
-                fairHouseOfferPage.accessibilityApartmentArea().click();
+                departmentPage.accessibilityApartmentArea().click();
             } catch (Exception e) {
                 System.out.println("accessibilityApartmentArea");
             }
             try {
-                fairHouseOfferPage.accessibility().click();
+                departmentPage.accessibility().click();
             } catch (Exception e) {
                 System.out.println("accessibility");
             }
             try {
-                fairHouseOfferPage.conformation().click();
+                departmentPage.conformation().click();
             } catch (Exception e) {
                 System.out.println("conformation");
             }
             TimeUnit.SECONDS.sleep(4);
             try {
                 //Submit Button hat Fehler
-                fairHouseOfferPage.submitButton().click();
-                fairHouseOfferPage.submitButton().click();
-                fairHouseOfferPage.submitButton().click();
+                departmentPage.submitButton().click();
+                departmentPage.submitButton().click();
+                departmentPage.submitButton().click();
             } catch (Exception e) {
                 System.out.println("Submit Button in modal doesnt work!");
             }
@@ -99,54 +99,54 @@ public class CreateFairHouseOffer extends MulLoginLogout {
             actions.moveToElement(findName).click().build().perform();
 
             try {
-                fairHouseOfferPage.departmentName().sendKeys(propDepartment.getProperty("fairHouseOfferDepartmentName"));
+                departmentPage.departmentName().sendKeys(propDepartment.getProperty("fairHouseOfferDepartmentName"));
             } catch (Exception e) {
                 System.out.println("departmentName");
             }
             try {
-                fairHouseOfferPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
+                departmentPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
             } catch (Exception e) {
                 System.out.println("departmentStreetAddress");
             }
             try {
-                fairHouseOfferPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
+                departmentPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
             } catch (Exception e) {
                 System.out.println("departmentStreetNumber");
             }
             try {
-                fairHouseOfferPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
+                departmentPage.departmentPostalCode().sendKeys(propDepartment.getProperty("postalCode"));
             } catch (Exception e) {
                 System.out.println("departmentPostalCode");
             }
             try {
-                fairHouseOfferPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
+                departmentPage.departmentAddressCity().sendKeys(propDepartment.getProperty("addressCity"));
             } catch (Exception e) {
                 System.out.println("departmentAddressCity");
             }
             try {
-                fairHouseOfferPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
+                departmentPage.departmentWebsite().sendKeys(propDepartment.getProperty("website"));
             } catch (Exception e) {
                 System.out.println("departmentWebsite");
             }
 
             //angaben zur Person
             try {
-                fairHouseOfferPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
+                departmentPage.departmentContactFirstName().sendKeys(propDepartment.getProperty("contactFirstName"));
             } catch (Exception e) {
                 System.out.println("departmentContactFirstName");
             }
             try {
-                fairHouseOfferPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
+                departmentPage.departmentContactLastName().sendKeys(propDepartment.getProperty("contactLastName"));
             } catch (Exception e) {
                 System.out.println("departmentContactLastName");
             }
             try {
-                fairHouseOfferPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
+                departmentPage.departmentContactTitle().sendKeys(propDepartment.getProperty("contactTitle"));
             } catch (Exception e) {
                 System.out.println("departmentContactTitle");
             }
             try {
-                fairHouseOfferPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
+                departmentPage.departmentContactPhone().sendKeys(propDepartment.getProperty("contactPhone"));
             } catch (Exception e) {
                 System.out.println("departmentContactPhone");
             }
@@ -158,121 +158,121 @@ public class CreateFairHouseOffer extends MulLoginLogout {
                 System.out.println("contactSalutation");
             }
             try {
-                fairHouseOfferPage.departmentContactSalutationChosen().click();
+                departmentPage.departmentContactSalutationChosen().click();
             } catch (Exception e) {
                 System.out.println("departmentContactSalutationChosen");
             }
 
             //sprechzeiten
-            fairHouseOfferPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
-            fairHouseOfferPage.mondayMinuteBegin().sendKeys(propDepartment.getProperty("mondayMinuteBegin"));
-            fairHouseOfferPage.mondayHourEnd().sendKeys(propDepartment.getProperty("mondayHourEnd"));
-            fairHouseOfferPage.mondayMinuteEnd().sendKeys(propDepartment.getProperty("mondayMinuteEnd"));
+            departmentPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
+            departmentPage.mondayMinuteBegin().sendKeys(propDepartment.getProperty("mondayMinuteBegin"));
+            departmentPage.mondayHourEnd().sendKeys(propDepartment.getProperty("mondayHourEnd"));
+            departmentPage.mondayMinuteEnd().sendKeys(propDepartment.getProperty("mondayMinuteEnd"));
 
-            fairHouseOfferPage.wednesdayHourBegin().sendKeys(propDepartment.getProperty("wednesdayHourBegin"));
-            fairHouseOfferPage.wednesdayMinuteBegin().sendKeys(propDepartment.getProperty("wednesdayMinuteBegin"));
-            fairHouseOfferPage.wednesdayHourEnd().sendKeys(propDepartment.getProperty("wednesdayHourEnd"));
-            fairHouseOfferPage.wednesdayMinuteEnd().sendKeys(propDepartment.getProperty("wednesdayMinuteEnd"));
+            departmentPage.wednesdayHourBegin().sendKeys(propDepartment.getProperty("wednesdayHourBegin"));
+            departmentPage.wednesdayMinuteBegin().sendKeys(propDepartment.getProperty("wednesdayMinuteBegin"));
+            departmentPage.wednesdayHourEnd().sendKeys(propDepartment.getProperty("wednesdayHourEnd"));
+            departmentPage.wednesdayMinuteEnd().sendKeys(propDepartment.getProperty("wednesdayMinuteEnd"));
 
-            fairHouseOfferPage.fridayHourBegin().sendKeys(propDepartment.getProperty("fridayHourBegin"));
-            fairHouseOfferPage.fridayMinuteBegin().sendKeys(propDepartment.getProperty("fridayMinuteBegin"));
-            fairHouseOfferPage.fridayHourEnd().sendKeys(propDepartment.getProperty("fridayHourEnd"));
-            fairHouseOfferPage.fridayMinuteEnd().sendKeys(propDepartment.getProperty("fridayMinuteEnd"));
+            departmentPage.fridayHourBegin().sendKeys(propDepartment.getProperty("fridayHourBegin"));
+            departmentPage.fridayMinuteBegin().sendKeys(propDepartment.getProperty("fridayMinuteBegin"));
+            departmentPage.fridayHourEnd().sendKeys(propDepartment.getProperty("fridayHourEnd"));
+            departmentPage.fridayMinuteEnd().sendKeys(propDepartment.getProperty("fridayMinuteEnd"));
 
             //Allgemeine Beschreibung des Wohnprojekts
             try {
-                fairHouseOfferPage.descriptionOfApartment().sendKeys(propFairHouseOffer.getProperty("descriptionOfApartment"));
+                departmentPage.descriptionOfApartment().sendKeys(propFairHouseOffer.getProperty("descriptionOfApartment"));
             } catch (Exception e) {
                 System.out.println("descriptionOfDepartment");
             }
 
             try {
-                fairHouseOfferPage.provider().sendKeys(propFairHouseOffer.getProperty("provider"));
+                departmentPage.provider().sendKeys(propFairHouseOffer.getProperty("provider"));
             } catch (Exception e) {
                 System.out.println("provider");
             }
             try {
-                fairHouseOfferPage.operator().sendKeys(propFairHouseOffer.getProperty("operator"));
+                departmentPage.operator().sendKeys(propFairHouseOffer.getProperty("operator"));
             } catch (Exception e) {
                 System.out.println("operator");
             }
             try {
-                fairHouseOfferPage.operatorDescription().sendKeys(propFairHouseOffer.getProperty("operatorDescription"));
+                departmentPage.operatorDescription().sendKeys(propFairHouseOffer.getProperty("operatorDescription"));
             } catch (Exception e) {
                 System.out.println("operatorDescription");
             }
             try {
-                fairHouseOfferPage.rental().sendKeys(propFairHouseOffer.getProperty("rental"));
+                departmentPage.rental().sendKeys(propFairHouseOffer.getProperty("rental"));
             } catch (Exception e) {
                 System.out.println("rental");
             }
             try {
-                fairHouseOfferPage.available().sendKeys(propFairHouseOffer.getProperty("available"));
+                departmentPage.available().sendKeys(propFairHouseOffer.getProperty("available"));
             } catch (Exception e) {
                 System.out.println("available");
             }
 
-            fairHouseOfferPage.toBuy().click();
+            departmentPage.toBuy().click();
 
-            fairHouseOfferPage.price().sendKeys(propFairHouseOffer.getProperty("price"));
-            fairHouseOfferPage.houseMoney().sendKeys(propFairHouseOffer.getProperty("houseMoney"));
-            fairHouseOfferPage.additionalCosts().sendKeys(propFairHouseOffer.getProperty("additionalCosts"));
-            fairHouseOfferPage.provision().sendKeys(propFairHouseOffer.getProperty("provision"));
+            departmentPage.price().sendKeys(propFairHouseOffer.getProperty("price"));
+            departmentPage.houseMoney().sendKeys(propFairHouseOffer.getProperty("houseMoney"));
+            departmentPage.additionalCosts().sendKeys(propFairHouseOffer.getProperty("additionalCosts"));
+            departmentPage.provision().sendKeys(propFairHouseOffer.getProperty("provision"));
 
             try {
-                fairHouseOfferPage.numberOfRooms().sendKeys(propFairHouseOffer.getProperty("numberOfRooms"));
+                departmentPage.numberOfRooms().sendKeys(propFairHouseOffer.getProperty("numberOfRooms"));
             } catch (Exception e) {
                 System.out.println("numberOfRooms");
             }
             try {
-                fairHouseOfferPage.livingSpace().sendKeys(propFairHouseOffer.getProperty("livingSpace"));
+                departmentPage.livingSpace().sendKeys(propFairHouseOffer.getProperty("livingSpace"));
             } catch (Exception e) {
                 System.out.println("livingSpace");
             }
 
             try {
-                fairHouseOfferPage.energyDemand().sendKeys(propFairHouseOffer.getProperty("energyDemand"));
+                departmentPage.energyDemand().sendKeys(propFairHouseOffer.getProperty("energyDemand"));
             } catch (Exception e) {
                 System.out.println("energyDemand");
             }
 
             //Beschreibungen örtliche Gegebenheiten
             try {
-                fairHouseOfferPage.constructionYear().sendKeys(propFairHouseOffer.getProperty("yearOfConstruction"));
+                departmentPage.constructionYear().sendKeys(propFairHouseOffer.getProperty("yearOfConstruction"));
             } catch (Exception e) {
                 System.out.println("constructionYear");
             }
             try {
-                fairHouseOfferPage.refurbishmentYear().sendKeys(propFairHouseOffer.getProperty("yearOfLastRefurbishment"));
+                departmentPage.refurbishmentYear().sendKeys(propFairHouseOffer.getProperty("yearOfLastRefurbishment"));
             } catch (Exception e) {
                 System.out.println("refurbishmentYear");
             }
             try {
-                fairHouseOfferPage.numberOfCommonRooms().sendKeys(propFairHouseOffer.getProperty("numberOfCommonRooms"));
+                departmentPage.numberOfCommonRooms().sendKeys(propFairHouseOffer.getProperty("numberOfCommonRooms"));
             } catch (Exception e) {
                 System.out.println("numberOfCommonRooms");
             }
 
             //Youtube
             try {
-                fairHouseOfferPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
+                departmentPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
             } catch (Exception e) {
                 System.out.println("youTubeVideo");
             }
 
             //save
-            fairHouseOfferPage.saveDepartment().click();
+            departmentPage.saveDepartment().click();
             TimeUnit.SECONDS.sleep(2);
 
             try {
                 WebElement apartmentProperty = driver.findElement(By.xpath("//select[@id='residentialProperty.type']"));
                 actions.moveToElement(apartmentProperty).click().build().perform();
-                fairHouseOfferPage.apartmentTypeChosen().click();
+                departmentPage.apartmentTypeChosen().click();
             } catch (Exception e) {
                 System.out.println("residentialProperty.type");
             }
 
-            fairHouseOfferPage.saveDepartment().click();
+            departmentPage.saveDepartment().click();
 
 //            TimeUnit.SECONDS.sleep(6);
 //            logout();

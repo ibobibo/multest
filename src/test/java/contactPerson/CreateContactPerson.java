@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.contactPerson.ContactPersonPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -24,6 +25,7 @@ public class CreateContactPerson extends MulLoginLogout {
     @Test()
     public void addContactPerson() throws IOException, InterruptedException {
         ContactPersonPage contactPersonPage = new ContactPersonPage(driver);
+        DepartmentPage departmentPage = new DepartmentPage(driver);
         Actions actions = new Actions(driver);
         TimeUnit.SECONDS.sleep(1);
 
@@ -31,6 +33,14 @@ public class CreateContactPerson extends MulLoginLogout {
 
             loginLoop(i);
             loadPropsForDepartment();
+
+            try {
+                departmentPage.addContactPersonCard().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Card wird geklickt.");
+            }
+
 
             TimeUnit.SECONDS.sleep(1);
 

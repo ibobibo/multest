@@ -2,10 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createDayNightCareOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createDayNightCareOrganisation_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteAllOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteAllOrganisation_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/editAllOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/editAllOrganisation_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/searchDepartmentAfterPerimeterOutsideCenter_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/searchDepartmentAfterPerimeterOutsideCenter_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/MulLoginLogout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testngContactPersonStuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngContactPersonStuff.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,10 +115,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml">
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngCreateDepartments.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngContactPersonStuff.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngDepartmentStuffCreateEditToggleDelete.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMarketPlaceAskForMeeting.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMarketPlaceRegister.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -99,58 +166,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xml/dev-partner-tests/testngCreateDepartments.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceAskForMeeting.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceSearchDepartment.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-partner-tests/testngCreateDepartments.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xml/dev-marktplatz-tests/testngMarketPlaceAskForMeeting.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceAskForMeeting.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngDepartmentStuffCreateEditToggleDelete.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngContactPersonStuff.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -227,5 +256,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MulTesting$_Users_ijawad_Documents_Arbeit_Automatisierung_MulTesting_testngMarketPlaceAskForMeeting_xml.ic" NAME="$PROJECT_DIR$/testngMarketPlaceAskForMeeting.xml Coverage Results" MODIFIED="1575380146417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

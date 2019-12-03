@@ -29,19 +29,19 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
 
         searchDepartmentPage.searchDepartmentTitle().click();
         TimeUnit.SECONDS.sleep(2);
-        int[] plzPerimeterCentral = {13189, 10999, 10247};
+        int[] plzPerimeterCentral = {13189, 10999, 10247, 13159, 10117};
         int testIfFailure = 0;
 
         searchDepartmentPage.location().sendKeys("Berlin");
+        searchDepartmentPage.departmentName().sendKeys("EinNameDerNichtSoEinFachZuFindenSeinSoll");
         TimeUnit.SECONDS.sleep(2);
         searchDepartmentPage.selectPerimeter().click();
         TimeUnit.SECONDS.sleep(2);
         searchDepartmentPage.selectPerimeterOption5().click();
         TimeUnit.SECONDS.sleep(2);
 
-        int tr = 0;
-
         for (int card = 1; card < 5; card++) {
+            int tr = 0;
             WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
             cardElement.click();
             searchDepartmentPage.searchDepartment().click();
@@ -59,7 +59,7 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
                             break;
                         }
 
-                        if (testIfFailure == 3) {
+                        if (testIfFailure == 5) {
                             System.out.println("breakTest");
                             break;
                         }
@@ -80,10 +80,10 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
                     break;
                 }
             }
-            if (testIfFailure == 3) {
-                testIfFailure = testIfFailure - 3;
+            if (testIfFailure == 5) {
+                testIfFailure = testIfFailure - 5;
             } else {
-                Assert.fail("We found more/less places than expected(Expected places: 3): " + testIfFailure + " in Card No:" + card);
+                Assert.fail("We found more/less places than expected(Expected places: 5): " + testIfFailure + " in Card No:" + card);
             }
         }
     }

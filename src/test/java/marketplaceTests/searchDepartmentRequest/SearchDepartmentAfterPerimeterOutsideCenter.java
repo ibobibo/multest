@@ -29,19 +29,19 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
 
         searchDepartmentPage.searchDepartmentTitle().click();
         TimeUnit.SECONDS.sleep(2);
-        int[] plzPerimeterMoreToBorder = {13159, 13125, 12623, 12559, 12307, 14165, 13591, 13465};
+        int[] plzPerimeterMoreToBorder = {10999, 10117, 13189, 10247, 13159, 13125, 12623, 12559, 12307, 14165, 13591, 13465};
         int testIfFailure = 0;
 
         searchDepartmentPage.location().sendKeys("Berlin");
+        searchDepartmentPage.departmentName().sendKeys("EinNameDerNichtSoEinFachZuFindenSeinSoll");
         TimeUnit.SECONDS.sleep(2);
         searchDepartmentPage.selectPerimeter().click();
         TimeUnit.SECONDS.sleep(2);
         searchDepartmentPage.selectPerimeterOption50().click();
         TimeUnit.SECONDS.sleep(2);
 
-        int tr = 1;
-
         for (int card = 1; card < 5; card++) {
+            int tr = 0;
             WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
             cardElement.click();
             searchDepartmentPage.searchDepartment().click();
@@ -61,7 +61,7 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
                             break;
                         }
 
-                        if (testIfFailure == 8) {
+                        if (testIfFailure == 12) {
                             System.out.println("breakTest");
                             break;
                         }
@@ -82,17 +82,17 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
                     break;
                 }
             }
-            if (testIfFailure == 8) {
-                testIfFailure = testIfFailure - 8;
+            if (testIfFailure == 12) {
+                testIfFailure = testIfFailure - 12;
             } else {
-                Assert.fail("We found more/less places than expected(Expected places: 8): " + testIfFailure + " in Card No:" + card);
+                Assert.fail("We found more/less places than expected(Expected places: 12): " + testIfFailure + " in Card No:" + card);
             }
         }
     }
 
     @AfterTest
     public void closeBrowser() {
-//        driver.close();
-//        driver = null;
+        driver.close();
+        driver = null;
     }
 }
