@@ -55,8 +55,6 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
 
                     for (int array = 0; array < plzPerimeterMoreToBorder.length; array++) {
                         if (postalCodeResults.getText().equals(plzPerimeterMoreToBorder[array] + " Berlin")) {
-                            System.out.println(postalCodeResults.getText());
-                            System.out.println(plzPerimeterMoreToBorder[array] + " Berlin");
                             testIfFailure = testIfFailure + 1;
                             break;
                         }

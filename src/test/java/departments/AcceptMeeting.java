@@ -28,12 +28,12 @@ public class AcceptMeeting extends MulLoginLogout {
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
         TimeUnit.SECONDS.sleep(2);
         try {
-            departmentPage.addDepartmentCard().click();
+            departmentPage.dashboardCard().click();
             TimeUnit.SECONDS.sleep(1);
         } catch (Exception e) {
             System.out.println("Card wird geklickt.");
         }
-        acceptMeetingPage.requestCount().click();
+        acceptMeetingPage.newRequest().click();
 
         int i = 1;
         while (true) {

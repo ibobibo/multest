@@ -48,12 +48,6 @@ public class MarketplaceRegister extends BaseClass {
             TimeUnit.SECONDS.sleep(1);
             registerOnMarketplacePage.registerSubmit().click();
             TimeUnit.SECONDS.sleep(1);
-            try {
-                registerOnMarketplacePage.registerSubmit().click();
-                TimeUnit.SECONDS.sleep(1);
-            } catch (Exception e) {
-                System.out.println("Musste ein zweites mal auf registrieren klicken");
-            }
         }
     }
 

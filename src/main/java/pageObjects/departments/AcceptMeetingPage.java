@@ -25,6 +25,8 @@ public class AcceptMeetingPage {
     WebElement submit;
     @FindBy(xpath = "//button[@class='secondary cancelButton btn btn-secondary']")
     WebElement cancel;
+    @FindBy(xpath = "//section[@class='MasterDashboard']//div[contains(@class,'request SETTLED')]")
+    WebElement newRequest;
 
 
     public WebElement requestCount() {
@@ -50,4 +52,9 @@ public class AcceptMeetingPage {
     public WebElement cancel() {
         return cancel;
     }
+
+    public WebElement newRequest() {
+        return newRequest;
+    }
+
 }
