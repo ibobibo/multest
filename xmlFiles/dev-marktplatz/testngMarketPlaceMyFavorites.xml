@@ -6,27 +6,33 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    <test name="Marketplace Registration">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.user.MarketplaceRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    <test name="user.Verify Marketplace User">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <test name="Bookmark Departments">
+    <test name="Marketplace Registration">
         <classes>
-            <class name="marketplaceTests.bookmarkTests.MyFavoriteMarketplaceDepartments"/>
+            <class name="marketplaceTests.user.MarketplaceRegister"/>
         </classes>
     </test>
 
-    <!--    <test name="Delete Marketplace User">-->
-    <!--        <classes>-->
-    <!--            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="user.Verify Marketplace User">
+        <classes>
+            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
+        </classes>
+    </test>
+
+    <test name="Bookmark Departments">
+        <classes>
+            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.MyFavoriteMarketplaceDepartments"/>
+        </classes>
+    </test>
+
+    <test name="Compare Departments">
+        <classes>
+            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.CompareMarketplaceDepartments"/>
+        </classes>
+    </test>
+
+    <test name="Delete Marketplace User">
+        <classes>
+            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
+        </classes>
+    </test>
 </suite>

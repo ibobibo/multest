@@ -70,7 +70,7 @@ public class DepartmentPage {
         return submitButton;
     }
 
-    @FindBy(xpath = "//a[@id='add-department']")
+    @FindBy(xpath = "//h3[@id='department-heading']//button")
     WebElement addDepartment;
     @FindBy(xpath = "//div[@id='app-view-container']//li[1]//a[1]")
     WebElement dashboardCard;

@@ -1,4 +1,4 @@
-package marketplaceTests.bookmarkTests;
+package marketplaceTests.bookmarkAndCompareDepartmentTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

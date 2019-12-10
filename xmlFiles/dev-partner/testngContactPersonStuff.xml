@@ -6,23 +6,23 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    <test name="Registration Test">-->
-    <!--        <classes>-->
-    <!--            <class name="user.MulRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Registration Test">
+        <classes>
+            <class name="user.MulRegister"/>
+        </classes>
+    </test>
 
-    <!--    <test name="user.Verify Test">-->
-    <!--        <classes>-->
-    <!--            <class name="user.Verify"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="user.Verify Test">
+        <classes>
+            <class name="user.Verify"/>
+        </classes>
+    </test>
 
-    <!--        <test name="Creating an ambulant Organisation">-->
-    <!--            <classes>-->
-    <!--                <class name="departments.CreateAmbulantOrganisation"/>-->
-    <!--            </classes>-->
-    <!--        </test>-->
+    <test name="Creating an ambulant Organisation">
+        <classes>
+            <class name="departments.CreateAmbulantOrganisation"/>
+        </classes>
+    </test>
 
     <test name="Creating a Contact Person">
         <classes>
@@ -54,15 +54,15 @@
         </classes>
     </test>
 
-    <!--    <test name="Delete Placement">-->
-    <!--        <classes>-->
-    <!--            <class name="placements.DeletePlacement"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Delete Placement">
+        <classes>
+            <class name="placements.DeletePlacement"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Delete User">-->
-    <!--        <classes>-->
-    <!--            <class name="user.DeleteUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Delete User">
+        <classes>
+            <class name="user.DeleteUser"/>
+        </classes>
+    </test>
 </suite>
