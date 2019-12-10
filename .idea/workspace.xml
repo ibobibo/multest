@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/bookmarkTests/CompareMarketplaceDepartmentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/bookmarkTests/CompareMarketplaceDepartmentsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkTests/CompareMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkTests/CompareMarketplaceDepartments.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

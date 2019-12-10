@@ -46,6 +46,22 @@ public class CompareMarketplaceDepartments extends MulLoginLogout {
                 TimeUnit.SECONDS.sleep(1);
                 compareMarketplaceDepartments.location().clear();
             }
+            for (int searchButton = 0; searchButton < 4; searchButton++) {
+                compareMarketplaceDepartments.clickHeaderForCompare().click();
+                if (searchButton == 0) {
+                    compareMarketplaceDepartments.bucketButtonCompareAmbulant().click();
+                    TimeUnit.SECONDS.sleep(3);
+                } else if (searchButton == 1) {
+                    compareMarketplaceDepartments.bucketButtonCompareStationary().click();
+                    TimeUnit.SECONDS.sleep(3);
+                } else if (searchButton == 2) {
+                    compareMarketplaceDepartments.bucketButtonCompareDayNight().click();
+                    TimeUnit.SECONDS.sleep(3);
+                } else {
+                    compareMarketplaceDepartments.bucketButtonCompareFairHouseOffer().click();
+                    TimeUnit.SECONDS.sleep(3);
+                }
+            }
             for (int loop = 0; loop < 16; loop++) {
                 compareMarketplaceDepartments.clickHeaderForCompare().click();
                 if (loop < 4) {
@@ -57,7 +73,7 @@ public class CompareMarketplaceDepartments extends MulLoginLogout {
                 } else if (loop < 12) {
                     compareMarketplaceDepartments.bucketItemDayNight().click();
                     TimeUnit.SECONDS.sleep(1);
-                } else if (loop < 16) {
+                } else {
                     compareMarketplaceDepartments.bucketItemFairHouseOffer().click();
                     TimeUnit.SECONDS.sleep(1);
                 }

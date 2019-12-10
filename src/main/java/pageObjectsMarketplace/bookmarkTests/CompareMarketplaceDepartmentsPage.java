@@ -21,6 +21,14 @@ public class CompareMarketplaceDepartmentsPage {
     WebElement clickHeaderForCompare;
     @FindBy(xpath = "//button[@id='publish-department']")
     WebElement searchDepartment;
+    @FindBy(xpath = "//div[@class='bucket AMBULANT']//a[@class='button primary small toCompare']")
+    WebElement bucketButtonCompareAmbulant;
+    @FindBy(xpath = "//div[@class='bucket STATIONARY']//a[@class='button primary small toCompare']")
+    WebElement bucketButtonCompareStationary;
+    @FindBy(xpath = "//div[@class='bucket DAYCARE']//a[@class='button primary small toCompare']")
+    WebElement bucketButtonCompareDayNight;
+    @FindBy(xpath = "//div[@class='bucket HOUSING']//a[@class='button primary small toCompare']")
+    WebElement bucketButtonCompareFairHouseOffer;
     @FindBy(xpath = "//div[@class='bucket AMBULANT']/div[1]/button[1]")
     WebElement bucketItemAmbulant;
     @FindBy(xpath = "//div[@class='bucket STATIONARY']/div[1]/button[1]")
@@ -44,6 +52,22 @@ public class CompareMarketplaceDepartmentsPage {
 
     public WebElement searchDepartment() {
         return searchDepartment;
+    }
+
+    public WebElement bucketButtonCompareAmbulant() {
+        return bucketButtonCompareAmbulant;
+    }
+
+    public WebElement bucketButtonCompareStationary() {
+        return bucketButtonCompareStationary;
+    }
+
+    public WebElement bucketButtonCompareDayNight() {
+        return bucketButtonCompareDayNight;
+    }
+
+    public WebElement bucketButtonCompareFairHouseOffer() {
+        return bucketButtonCompareFairHouseOffer;
     }
 
     public WebElement bucketItemAmbulant() {
