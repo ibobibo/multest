@@ -1,26 +1,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="RegisterVerifyDeleteUserOnMarketPlace">
+<suite name="MarketPlaceMyFavorites">
     <listeners>
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <test name="Marketplace Registration">
+    <!--    <test name="Marketplace Registration">-->
+    <!--        <classes>-->
+    <!--            <class name="marketplaceTests.user.MarketplaceRegister"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="user.Verify Marketplace User">-->
+    <!--        <classes>-->
+    <!--            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="Bookmark Departments">
         <classes>
-            <class name="marketplaceTests.user.MarketplaceRegister"/>
+            <class name="marketplaceTests.bookmarkTests.MyFavoriteMarketplaceDepartments"/>
         </classes>
     </test>
 
-    <test name="user.Verify Marketplace User">
-        <classes>
-            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
-        </classes>
-    </test>
-
-    <test name="Delete Marketplace User">
-        <classes>
-            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
-        </classes>
-    </test>
+    <!--    <test name="Delete Marketplace User">-->
+    <!--        <classes>-->
+    <!--            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 </suite>

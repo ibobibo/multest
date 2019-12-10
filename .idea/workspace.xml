@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngCreateDepartments.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dockerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AcceptMeetingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AcceptMeetingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/registerOnMarketplace_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/registerOnMarketplace_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/register_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/AcceptMeetingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/AcceptMeetingPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjectsMarketplace/searchDepartmentRequest/SearchDepartmentPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngContactPersonStuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngCreateDepartments.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngDepartmentStuffCreateEditToggleDelete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngDepartmentStuffCreateEditToggleDelete.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngMarketPlaceAskForMeeting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceAskForMeeting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngMarketPlaceCheckIfDeletedUserRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceCheckIfDeletedUserRequest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngMarketPlaceRegister.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceRegister.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testngMarketPlaceSearchDepartment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceSearchDepartment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,15 +51,16 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xmlFiles/dev-marktplatz" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageObjectsMarketplace.bookmarkTests" />
+      <recent name="marketplaceTests.bookmarkTests" />
       <recent name="departments" />
       <recent name="marketplaceTests.searchDepartmentRequest" />
       <recent name="pageObjects.departments" />
-      <recent name="marketplaceTests" />
-      <recent name="pageObjectsMarketplace" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/xmlFiles/dev-partner" />
@@ -100,40 +82,61 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceRegister.xml">
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CompareMarketplaceDepartments">
+    <configuration name="CompareMarketplaceDepartments" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngCreateDepartments.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="marketplaceTests.bookmarkTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="marketplaceTests.bookmarkTests" />
+      <option name="MAIN_CLASS_NAME" value="marketplaceTests.bookmarkTests.CompareMarketplaceDepartments" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyFavoriteMarketplaceDepartments" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMarketPlaceRegister.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="marketplaceTests.bookmarkTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="marketplaceTests.bookmarkTests" />
+      <option name="MAIN_CLASS_NAME" value="marketplaceTests.bookmarkTests.MyFavoriteMarketplaceDepartments" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchDepartmentAfterPostalCode" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMarketPlaceSearchDepartment.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="marketplaceTests.searchDepartmentRequest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="marketplaceTests.searchDepartmentRequest" />
+      <option name="MAIN_CLASS_NAME" value="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPostalCode" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMassiveRegistrationTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngMassiveRegistrationTest.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -152,19 +155,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMassiveRegistrationTest.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceRegister.xml" />
+      <item itemvalue="TestNG.SearchDepartmentAfterPostalCode" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
+      <item itemvalue="TestNG.MyFavoriteMarketplaceDepartments" />
+      <item itemvalue="TestNG.CompareMarketplaceDepartments" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CompareMarketplaceDepartments" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceRegister.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceRegister.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMassiveRegistrationTest.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngCreateDepartments.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/testngMarketPlaceSearchDepartment.xml" />
+        <item itemvalue="TestNG.MyFavoriteMarketplaceDepartments" />
+        <item itemvalue="TestNG.SearchDepartmentAfterPostalCode" />
       </list>
     </recent_temporary>
   </component>

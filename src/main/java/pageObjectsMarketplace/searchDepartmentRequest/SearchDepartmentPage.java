@@ -14,7 +14,7 @@ public class SearchDepartmentPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//section[@id='app-header']//li[3]")
+    @FindBy(xpath = "//span[contains(text(),'Vermittlung')]")
     WebElement searchDepartmentTitle;
     @FindBy(xpath = "//div[contains(@class,'tab-pane active')]//div[contains(@class,'row')]//div[contains(@class,'col-12')]//section[contains(@class,'DepartmentSearchBase')]//div//input[@id='location']")
     WebElement location;

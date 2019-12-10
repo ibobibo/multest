@@ -40,7 +40,7 @@ public class SearchDepartmentAfterPostalCode extends BaseClass {
                 TimeUnit.SECONDS.sleep(2);
                 String equalPostalCode = searchDepartmentPage.getPostalCodeOfResult().getText();
                 if (!equalPostalCode.equals(plz[i] + " Berlin")) {
-                    Assert.fail("Error: " + equalPostalCode + "is not equal" + plz[i] + " Berlin");
+                    Assert.fail("Error: " + equalPostalCode + " is not equal" + plz[i] + " Berlin in Card " + card);
                 }
                 TimeUnit.SECONDS.sleep(2);
                 searchDepartmentPage.location().clear();
@@ -50,7 +50,7 @@ public class SearchDepartmentAfterPostalCode extends BaseClass {
 
     @AfterTest
     public void closeBrowser() {
-        driver.close();
-        driver = null;
+//        driver.close();
+//        driver = null;
     }
 }
