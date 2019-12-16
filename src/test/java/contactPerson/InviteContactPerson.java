@@ -2,13 +2,12 @@ package contactPerson;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.contactPerson.ContactPersonPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -25,9 +24,17 @@ public class InviteContactPerson extends MulLoginLogout {
 
     @Test()
     public void inviteContactPerson() throws InterruptedException {
+        DepartmentPage departmentPage = new DepartmentPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(2);
+
+            try {
+                departmentPage.addContactPersonCard().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Card wird geklickt.");
+            }
 
             WebDriverWait wait = new WebDriverWait(driver, 5);
 

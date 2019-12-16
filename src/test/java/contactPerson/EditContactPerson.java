@@ -9,6 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.contactPerson.EditContactPersonPage;
+import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -26,12 +27,21 @@ public class EditContactPerson extends MulLoginLogout {
     @Test()
     public void editContactPerson() throws IOException, InterruptedException {
         EditContactPersonPage editContactPersonPage = new EditContactPersonPage(driver);
+        DepartmentPage departmentPage = new DepartmentPage(driver);
+
         Actions actions = new Actions(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(2);
             loadPropsForDepartment();
+
+            try {
+                departmentPage.addContactPersonCard().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Card wird geklickt.");
+            }
             WebDriverWait wait = new WebDriverWait(driver, 5);
 
             int x = 1;

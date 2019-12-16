@@ -41,7 +41,6 @@ public class CreateContactPerson extends MulLoginLogout {
                 System.out.println("Card wird geklickt.");
             }
 
-
             TimeUnit.SECONDS.sleep(1);
 
             contactPersonPage.addContactPerson().click();

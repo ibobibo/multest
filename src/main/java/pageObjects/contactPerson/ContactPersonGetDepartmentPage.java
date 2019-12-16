@@ -13,12 +13,14 @@ public class ContactPersonGetDepartmentPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//section[@class='Userdata']//tbody//tr")
+    @FindBy(xpath = "//section[contains(@class,'MulTable withoutSearch withoutTopElements')]//table//tbody//tr")
     WebElement contactUserDisplayed;
-    @FindBy(xpath = "//label[@class='Checkbox ']")
+    @FindBy(xpath = "//button[@class='assign']")
     WebElement choseContactPerson;
-    @FindBy(xpath = "//button[@class='submit-button saveUser']")
+    @FindBy(xpath = "//button[contains(@class,'primary')]")
     WebElement submit;
+    @FindBy(xpath = "//span[text()='Ambulant']")
+    WebElement addedLocationForContactPerson;
 
     public WebElement contactUserDisplayed() {
         return contactUserDisplayed;
@@ -30,5 +32,9 @@ public class ContactPersonGetDepartmentPage {
 
     public WebElement submit() {
         return submit;
+    }
+
+    public WebElement addedLocationForContactPerson() {
+        return addedLocationForContactPerson;
     }
 }
