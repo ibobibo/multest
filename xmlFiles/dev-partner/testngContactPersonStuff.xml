@@ -6,41 +6,41 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    <test name="Registration Test">-->
-    <!--        <classes>-->
-    <!--            <class name="user.MulRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Registration Test">
+        <classes>
+            <class name="user.MulRegister"/>
+        </classes>
+    </test>
 
-    <!--    <test name="user.Verify Test">-->
-    <!--        <classes>-->
-    <!--            <class name="user.Verify"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="user.Verify Test">
+        <classes>
+            <class name="user.Verify"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Creating an ambulant Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Creating an ambulant Organisation">
+        <classes>
+            <class name="departments.CreateAmbulantOrganisation"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Creating a Contact Person">-->
-    <!--        <classes>-->
-    <!--            <class name="contactPerson.CreateContactPerson"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Creating a Contact Person">
+        <classes>
+            <class name="contactPerson.CreateContactPerson"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Edit a Contact Person">-->
-    <!--        <classes>-->
-    <!--            <class name="contactPerson.EditContactPerson"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Edit a Contact Person">
+        <classes>
+            <class name="contactPerson.EditContactPerson"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Invite a Contact Person">-->
-    <!--        <classes>-->
-    <!--            <class name="contactPerson.InviteContactPerson"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Invite a Contact Person">
+        <classes>
+            <class name="contactPerson.InviteContactPerson"/>
+        </classes>
+    </test>
 
     <test name="Contact Person gets Department">
         <classes>
@@ -48,21 +48,21 @@
         </classes>
     </test>
 
-    <!--    <test name="Delete a Contact Person">-->
-    <!--        <classes>-->
-    <!--            <class name="contactPerson.DeleteContactPerson"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Delete a Contact Person">
+        <classes>
+            <class name="contactPerson.DeleteContactPerson"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Delete Placement">-->
-    <!--        <classes>-->
-    <!--            <class name="placements.DeletePlacement"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Delete Placement">
+        <classes>
+            <class name="placements.DeletePlacement"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Delete User">-->
-    <!--        <classes>-->
-    <!--            <class name="user.DeleteUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Delete User">
+        <classes>
+            <class name="user.DeleteUser"/>
+        </classes>
+    </test>
 </suite>

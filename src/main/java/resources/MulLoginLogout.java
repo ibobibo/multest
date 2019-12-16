@@ -29,10 +29,10 @@ public class MulLoginLogout extends BaseClass {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.username().sendKeys(anfrageNameEmail);
         loginLogoutPage.password().sendKeys(anfrageNamePassword);
+        TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.anmelden().click();
 
-        TimeUnit.SECONDS.sleep(1);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        TimeUnit.SECONDS.sleep(2);
     }
 
     public void loginLoop(int i) throws InterruptedException {

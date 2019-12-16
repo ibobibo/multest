@@ -24,15 +24,15 @@
         </classes>
     </test>
 
-    <!--    <test name="Delete Placement">-->
-    <!--        <classes>-->
-    <!--            <class name="placements.DeletePlacement"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Delete Placement">
+        <classes>
+            <class name="placements.DeletePlacement"/>
+        </classes>
+    </test>
 
-    <!--    <test name="Delete User">-->
-    <!--        <classes>-->
-    <!--            <class name="user.DeleteUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="Delete User">
+        <classes>
+            <class name="user.DeleteUser"/>
+        </classes>
+    </test>
 </suite>

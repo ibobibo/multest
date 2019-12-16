@@ -61,4 +61,31 @@ public class EditUserDetailsPage {
     public WebElement submitButton() {
         return submitButton;
     }
+
+    //passwordChangeTest
+    @FindBy(xpath = "//span[@class='password']")
+    WebElement passwordMenuSettings;
+    @FindBy(xpath = "//input[@id='currentPassword']")
+    WebElement currentPassword;
+    @FindBy(xpath = "//input[@id='account.firstPassword']")
+    WebElement newPassword;
+    @FindBy(xpath = "//input[@id='account.secondPassword']")
+    WebElement newPasswordRepeat;
+
+    public WebElement passwordMenuSettings() {
+        return passwordMenuSettings;
+    }
+
+    public WebElement currentPassword() {
+        return currentPassword;
+    }
+
+    public WebElement newPassword() {
+        return newPassword;
+    }
+
+    public WebElement newPasswordRepeat() {
+        return newPasswordRepeat;
+    }
+
 }

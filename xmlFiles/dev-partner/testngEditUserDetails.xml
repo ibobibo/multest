@@ -24,6 +24,18 @@
         </classes>
     </test>
 
+    <test name="Password Change Test">
+        <classes>
+            <class name="user.PasswordChangeTest"/>
+        </classes>
+    </test>
+
+    <test name="Password Reset">
+        <classes>
+            <class name="user.ResetPasswordTest"/>
+        </classes>
+    </test>
+
     <test name="Delete Placement">
         <classes>
             <class name="placements.DeletePlacement"/>

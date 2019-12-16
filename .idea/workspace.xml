@@ -3,18 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/ContactPersonGetDepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/ContactPersonGetDepartmentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/user/EditUserDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/user/EditUserDetailsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/departmentPage.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/contactPersonGetDepartment_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/contactPersonGetDepartment_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/editContactPerson_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/editContactPerson_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/EditContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/EditContactPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/InviteContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/InviteContactPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngEditUserDetails.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngEditUserDetails.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngMassiveRegistrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngMassiveRegistrationTest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +61,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="user" />
       <recent name="contactPerson" />
       <recent name="pageObjects.contactPerson" />
       <recent name="pageObjectsMarketplace.user" />
       <recent name="departments" />
-      <recent name="pageObjectsMarketplace.bookmarkTests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/xmlFiles/dev-partner" />
@@ -89,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml">
     <configuration name="EditUserDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <extension name="coverage">
@@ -163,10 +160,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml" />
         <item itemvalue="TestNG.SearchContactPerson" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
         <item itemvalue="TestNG.EditUserDetails" />
       </list>
     </recent_temporary>
@@ -225,7 +222,7 @@
       <workItem from="1575044321540" duration="12772000" />
       <workItem from="1575985379956" duration="60000" />
       <workItem from="1575985563900" duration="7089000" />
-      <workItem from="1576225444644" duration="16018000" />
+      <workItem from="1576225444644" duration="20693000" />
     </task>
     <servers />
   </component>
