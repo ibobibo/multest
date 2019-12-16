@@ -40,7 +40,6 @@ public class DeleteUser extends MulLoginLogout {
         }
     }
 
-
     @AfterTest
     public void closeBrowser() {
         driver.close();

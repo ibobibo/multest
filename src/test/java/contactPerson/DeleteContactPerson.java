@@ -29,6 +29,12 @@ public class DeleteContactPerson extends MulLoginLogout {
 
             loginLoop(i);
             WebDriverWait wait = new WebDriverWait(driver, 5);
+            try {
+                deleteContactPersonPage.addContactPersonCard().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Card wird geklickt.");
+            }
 
             while (getCountContactPerson() != 0) {
                 String xpath = "//section[@class='Userdata']//tr[1]//a[@class='delete']";
@@ -36,10 +42,10 @@ public class DeleteContactPerson extends MulLoginLogout {
                 if (findTr.isDisplayed()) {
                     findTr.click();
                     deleteContactPersonPage.delete().click();
-                    TimeUnit.SECONDS.sleep(1);
+                    TimeUnit.SECONDS.sleep(2);
                 }
             }
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(2);
         }
         logout();
     }

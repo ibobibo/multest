@@ -3,21 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/DeleteContactPersonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/DeleteContactPersonPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createDayNightCareOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createDayNightCareOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/createStationaryOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/createStationaryOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteMarketplaceUser_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkTests/CompareMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkTests/MyFavoriteMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/DepartmentPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkTests/CompareMarketplaceDepartments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkTests/MyFavoriteMarketplaceDepartments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/addContactPerson_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/addContactPerson_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteContactPerson_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteContactPerson_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/DeleteContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/DeleteContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngCreateDepartments.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngCreateDepartments.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlFiles/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +40,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570635716092" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xmlFiles/dev-partner" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -56,27 +49,28 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xmlFiles/dev-marktplatz" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pageObjectsMarketplace.bookmarkTests" />
-      <recent name="marketplaceTests.bookmarkTests" />
-      <recent name="departments" />
-      <recent name="marketplaceTests.searchDepartmentRequest" />
-      <recent name="pageObjects.departments" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/xmlFiles/dev-partner" />
       <recent name="$PROJECT_DIR$/xmlFiles/dev-marktplatz" />
       <recent name="$PROJECT_DIR$/xmlFiles" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/xml" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="contactPerson" />
+      <recent name="pageObjects.contactPerson" />
+      <recent name="pageObjectsMarketplace.user" />
+      <recent name="departments" />
+      <recent name="pageObjectsMarketplace.bookmarkTests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xmlFiles/dev-partner" />
+      <recent name="$PROJECT_DIR$/xmlFiles/dev-marktplatz" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -91,17 +85,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml">
-    <configuration name="CompareMarketplaceDepartments" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml">
+    <configuration name="EditUserDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="marketplaceTests.bookmarkAndCompareDepartmentTests.*" />
+          <option name="PATTERN" value="user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="marketplaceTests.bookmarkTests" />
-      <option name="MAIN_CLASS_NAME" value="marketplaceTests.bookmarkAndCompareDepartmentTests.CompareMarketplaceDepartments" />
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.EditUserDetails" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchContactPerson" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="contactPerson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="contactPerson" />
+      <option name="MAIN_CLASS_NAME" value="contactPerson.SearchContactPerson" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -119,9 +130,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/searchContactPerson.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -129,19 +140,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCreateDepartments.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/testngCreateDepartments.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngDepartmentStuffCreateEditToggleDelete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/testngDepartmentStuffCreateEditToggleDelete.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/testngEditUserDetails.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -151,18 +152,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
-      <item itemvalue="TestNG.CompareMarketplaceDepartments" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCreateDepartments.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngDepartmentStuffCreateEditToggleDelete.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml" />
+      <item itemvalue="TestNG.EditUserDetails" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml" />
+      <item itemvalue="TestNG.SearchContactPerson" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngDepartmentStuffCreateEditToggleDelete.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCreateDepartments.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml" />
+        <item itemvalue="TestNG.SearchContactPerson" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
+        <item itemvalue="TestNG.EditUserDetails" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
-        <item itemvalue="TestNG.CompareMarketplaceDepartments" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +220,8 @@
       <workItem from="1574076567042" duration="26032000" />
       <workItem from="1575044321540" duration="12772000" />
       <workItem from="1575985379956" duration="60000" />
-      <workItem from="1575985563900" duration="5813000" />
+      <workItem from="1575985563900" duration="7089000" />
+      <workItem from="1576225444644" duration="12310000" />
     </task>
     <servers />
   </component>

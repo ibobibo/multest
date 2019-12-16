@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SearchContactPerson">
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+        <listener class-name="resources.Listeners"/>
+    </listeners>
+
+    <test name="Registration Test">
+        <classes>
+            <class name="user.MulRegister"/>
+        </classes>
+    </test>
+
+    <test name="user.Verify Test">
+        <classes>
+            <class name="user.Verify"/>
+        </classes>
+    </test>
+
+    <test name="Creating Some Contact Person">
+        <classes>
+            <class name="contactPerson.CreateSomeContactPersonForSearch"/>
+        </classes>
+    </test>
+
+    <test name="Search Contact Person">
+        <classes>
+            <class name="contactPerson.SearchContactPerson"/>
+        </classes>
+    </test>
+
+    <test name="Delete a Contact Person">
+        <classes>
+            <class name="contactPerson.DeleteContactPerson"/>
+        </classes>
+    </test>
+
+    <test name="Delete Placement">
+        <classes>
+            <class name="placements.DeletePlacement"/>
+        </classes>
+    </test>
+
+    <test name="Delete User">
+        <classes>
+            <class name="user.DeleteUser"/>
+        </classes>
+    </test>
+</suite>

@@ -17,6 +17,8 @@ public class DeleteContactPersonPage {
     WebElement delete;
     @FindBy(xpath = "//button[@class='cancel']")
     WebElement back;
+    @FindBy(xpath = "//div[@id='app-view-container']//li[3]//a[1]")
+    WebElement addContactPersonCard;
 
     public WebElement delete() {
         return delete;
@@ -24,6 +26,10 @@ public class DeleteContactPersonPage {
 
     public WebElement back() {
         return back;
+    }
+
+    public WebElement addContactPersonCard() {
+        return addContactPersonCard;
     }
 
 }

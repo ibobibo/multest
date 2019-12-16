@@ -88,11 +88,11 @@
     <!--</classes>-->
     <!--</test>-->
 
-    <!--<test name="Create new Placement">-->
-    <!--<classes>-->
-    <!--<class name="placements.CreateNewPlacement"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="Create new Placement">
+    <classes>
+    <class name="placements.CreateNewPlacement"/>
+    </classes>
+    </test>
 
     <test name="Delete Placement">
         <classes>
