@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/editAllOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/editAllOrganisation_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/user/VerifyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/user/VerifyPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/verifyRegisteredUser_screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,11 +59,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="user" />
+      <recent name="pageObjects.user" />
       <recent name="departments" />
       <recent name="pageObjects.departments" />
-      <recent name="user" />
       <recent name="contactPerson" />
-      <recent name="pageObjects.contactPerson" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/xmlFiles/dev-partner" />
@@ -80,24 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCopyDepartmentTest.xml">
-    <configuration name="SearchContactPerson" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="contactPerson.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="contactPerson" />
-      <option name="MAIN_CLASS_NAME" value="contactPerson.SearchContactPerson" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngForgetPassword.xml">
     <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/searchContactPerson.xml" />
@@ -138,20 +125,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngForgetPassword.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/testngForgetPassword.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml" />
-      <item itemvalue="TestNG.SearchContactPerson" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngForgetPassword.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngForgetPassword.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngContactPersonStuff.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/searchContactPerson.xml" />
-        <item itemvalue="TestNG.SearchContactPerson" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +206,7 @@
       <workItem from="1575044321540" duration="12772000" />
       <workItem from="1575985379956" duration="60000" />
       <workItem from="1575985563900" duration="7089000" />
-      <workItem from="1576225444644" duration="24970000" />
+      <workItem from="1576225444644" duration="28830000" />
     </task>
     <servers />
   </component>

@@ -13,12 +13,24 @@ public class DeletePlacementPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = "//input[@id='username']")
+    WebElement nameField;
+    @FindBy(xpath = "//input[@id='password']")
+    WebElement passwordField;
     @FindBy(xpath = "//section[@class='SiteDashboardHeader']//a[@class='edit']")
     WebElement editPlacement;
     @FindBy(xpath = "//button[@class='delete-button']")
     WebElement deletePlacement;
     @FindBy(id = "mul-confirm-delete-category")
     WebElement acceptDelete;
+
+    public WebElement nameField() {
+        return nameField;
+    }
+
+    public WebElement passwordField() {
+        return passwordField;
+    }
 
     public WebElement editPlacement() {
         return editPlacement;

@@ -21,10 +21,17 @@ public class DeletePlacement extends MulLoginLogout {
     @Test
     public void deletePlacement() throws IOException, InterruptedException {
         loadProps();
+        DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
             loginLoop(i);
-            DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);
+            try {
+                deletePlacementPage.nameField().clear();
+                deletePlacementPage.passwordField().clear();
+                login(prop.getProperty("contactEmail") + i, prop.getProperty("contactNewPassword"));
+            } catch (Exception e) {
+                System.out.println("Passwort wurde nicht verändert");
+            }
 
             TimeUnit.SECONDS.sleep(2);
             deletePlacementPage.editPlacement().click();

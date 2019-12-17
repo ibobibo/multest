@@ -3,7 +3,7 @@ package user;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjectsMarketplace.user.EditUserDetailsPage;
+import pageObjects.user.ResetPasswordPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
@@ -15,25 +15,18 @@ public class ResetPasswordTest extends MulLoginLogout {
     public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
         accessAllCookies();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
     }
 
     @Test
     public void resetPassword() throws InterruptedException {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            EditUserDetailsPage editUserDetailsPage = new EditUserDetailsPage(driver);
-            TimeUnit.SECONDS.sleep(2);
-            login(prop.getProperty("contactEmail") + i, prop.getProperty("contactNewPassword"));
-            TimeUnit.SECONDS.sleep(3);
-            editUserDetailsPage.accountMenu().click();
-            editUserDetailsPage.passwordMenuSettings().click();
+            ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);
+            resetPasswordPage.getNewPassword().click();
             TimeUnit.SECONDS.sleep(1);
-            editUserDetailsPage.currentPassword().sendKeys(prop.getProperty("contactNewPassword"));
-            editUserDetailsPage.newPassword().sendKeys(prop.getProperty("contactPassword"));
-            editUserDetailsPage.newPasswordRepeat().sendKeys(prop.getProperty("contactPassword"));
-            editUserDetailsPage.submitButton().click();
-            TimeUnit.SECONDS.sleep(2);
-            logout();
+            resetPasswordPage.email().sendKeys(prop.getProperty("contactEmail") + i);
+            TimeUnit.SECONDS.sleep(1);
+            resetPasswordPage.resetPassword().click();
         }
     }
 

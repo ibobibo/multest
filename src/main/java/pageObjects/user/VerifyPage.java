@@ -15,8 +15,28 @@ public class VerifyPage {
 
     @FindBy(xpath = "//input[@placeholder='Search']")
     WebElement inputField;
+    @FindBy(xpath = "//input[@id='newPassword']")
+    WebElement newPassword;
+    @FindBy(xpath = "//input[@id='confirmPassword']")
+    WebElement newPasswordRepeat;
+    @FindBy(xpath = "//button[@class='mul-set-password-button']")
+    WebElement submitPassword;
+
 
     public WebElement inputField() {
         return inputField;
     }
+
+    public WebElement newPassword() {
+        return newPassword;
+    }
+
+    public WebElement newPasswordRepeat() {
+        return newPasswordRepeat;
+    }
+
+    public WebElement submitPassword() {
+        return submitPassword;
+    }
+
 }
