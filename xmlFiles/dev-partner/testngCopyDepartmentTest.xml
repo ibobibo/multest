@@ -26,7 +26,7 @@
 
     <test name="Copy department Test">
         <classes>
-            <class name="contactPerson.CreateContactPerson"/>
+            <class name="departments.CopyDepartment"/>
         </classes>
     </test>
 
