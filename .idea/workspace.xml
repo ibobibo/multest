@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/user/EditUserDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/user/EditUserDetailsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deletePlacement_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteUser_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngContactPersonStuff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngEditUserDetails.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngEditUserDetails.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-partner/testngMassiveRegistrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-partner/testngMassiveRegistrationTest.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +213,7 @@
       <workItem from="1575044321540" duration="12772000" />
       <workItem from="1575985379956" duration="60000" />
       <workItem from="1575985563900" duration="7089000" />
-      <workItem from="1576225444644" duration="20693000" />
+      <workItem from="1576225444644" duration="22354000" />
     </task>
     <servers />
   </component>
