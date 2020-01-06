@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Discard Meeting as User">
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+        <listener class-name="resources.Listeners"/>
+    </listeners>
+
+    <test name="Marketplace Registration">
+        <classes>
+            <class name="marketplaceTests.user.MarketplaceRegister"/>
+        </classes>
+    </test>
+
+    <test name="user.Verify Marketplace User">
+        <classes>
+            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
+        </classes>
+    </test>
+
+    <test name="Ask for Meeting as User">
+        <classes>
+            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>
+        </classes>
+    </test>
+
+    <test name="Accept Meeting as Provider">
+        <classes>
+            <class name="departments.AcceptMeeting"/>
+        </classes>
+    </test>
+
+    <test name="Discard Meeting as User">
+        <classes>
+            <class name="marketplaceTests.meetingRequest.DiscardMeetingAsMarketplaceUser"/>
+        </classes>
+    </test>
+
+    <test name="Delete Marketplace User">
+        <classes>
+            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
+        </classes>
+    </test>
+</suite>

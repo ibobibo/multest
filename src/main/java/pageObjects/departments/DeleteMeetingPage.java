@@ -13,19 +13,14 @@ public class DeleteMeetingPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//a[@class='requests']//span[@class='requestCount']")
-    WebElement requestCount;
-    @FindBy(xpath = "//textarea[@id='admin-request-cancel']")
+    @FindBy(xpath = "//textarea[@id='message']")
     WebElement textArea;
-    @FindBy(xpath = "//button[@class='primary btn btn-secondary']")
+    @FindBy(xpath = "//button[@class='primary']")
     WebElement submit;
-    @FindBy(xpath = "//button[@class='secondary cancelButton btn btn-secondary']")
+    @FindBy(xpath = "//button[@class='secondary']")
     WebElement cancel;
-
-
-    public WebElement requestCount() {
-        return requestCount;
-    }
+    @FindBy(xpath = "//label[3]//div[1]//div[1]//span[1]")
+    WebElement discardMeetingReqFromUser;
 
     public WebElement textArea() {
         return textArea;
@@ -38,4 +33,9 @@ public class DeleteMeetingPage {
     public WebElement cancel() {
         return cancel;
     }
+
+    public WebElement discardMeetingReqFromUser() {
+        return discardMeetingReqFromUser;
+    }
+
 }

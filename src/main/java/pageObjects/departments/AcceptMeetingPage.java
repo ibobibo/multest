@@ -15,19 +15,20 @@ public class AcceptMeetingPage {
 
     @FindBy(xpath = "//a[@class='requests']//span[@class='requestCount']")
     WebElement requestCount;
-    @FindBy(xpath = "//input[@placeholder='Zeit']")
+    @FindBy(xpath = "//input[@placeholder='Zeit *']")
     WebElement timeSelectField;
     @FindBy(xpath = "//li[contains(text(),'00:00')]")
     WebElement whichTime;
-    @FindBy(xpath = "//textarea[@id='admin-request-cancel']")
+    @FindBy(xpath = "//textarea[@id='message']")
     WebElement textArea;
-    @FindBy(xpath = "//button[@class='primary btn btn-secondary']")
+    @FindBy(xpath = "//button[@class='primary']")
     WebElement submit;
-    @FindBy(xpath = "//button[@class='secondary cancelButton btn btn-secondary']")
+    @FindBy(xpath = "//button[@class='secondary']")
     WebElement cancel;
     @FindBy(xpath = "//section[@class='MasterDashboard']//div[contains(@class,'request SETTLED')]")
     WebElement newRequest;
-
+    @FindBy(xpath = "//label[2]//div[1]//div[1]//span[1]")
+    WebElement labelForKindOfRes;
 
     public WebElement requestCount() {
         return requestCount;
@@ -35,6 +36,10 @@ public class AcceptMeetingPage {
 
     public WebElement timeSelectField() {
         return timeSelectField;
+    }
+
+    public WebElement labelForKindOfRes() {
+        return labelForKindOfRes;
     }
 
     public WebElement whichTime() {

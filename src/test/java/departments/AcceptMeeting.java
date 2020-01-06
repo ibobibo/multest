@@ -38,25 +38,24 @@ public class AcceptMeeting extends MulLoginLogout {
         int i = 1;
         while (true) {
             try {
-                String xpath = "//body//div[@class='DepartmentRequests']//div//div[" + i + "]//div[2]//button[1]";
+                String xpath = "//section[@class='Workspace']//section[" + i + "]//div[1]//button[1]//span[1]";
                 WebElement webElemForXpath = driver.findElement(By.xpath(xpath));
                 webElemForXpath.click();
+                acceptMeetingPage.labelForKindOfRes().click();
                 acceptMeetingPage.timeSelectField().click();
                 acceptMeetingPage.whichTime().click();
                 acceptMeetingPage.textArea().sendKeys(prop.getProperty("textAreaAcceptInvite"));
                 acceptMeetingPage.submit().click();
-                i = i + 1;
             } catch (Exception e) {
                 break;
             }
         }
-
         logout();
     }
 
     @AfterTest
     public void closeBrowser() {
-//        driver.close();
-//        driver = null;
+        driver.close();
+        driver = null;
     }
 }

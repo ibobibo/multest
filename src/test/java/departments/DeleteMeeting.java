@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.departments.AcceptMeetingPage;
 import pageObjects.departments.DeleteMeetingPage;
 import resources.MulLoginLogout;
 
@@ -25,18 +24,16 @@ public class DeleteMeeting extends MulLoginLogout {
     public void deleteAllOrganisation() throws InterruptedException {
         DeleteMeetingPage deletetMeetingPage = new DeleteMeetingPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
-        deletetMeetingPage.requestCount().click();
 
-        int i = 1;
         while (true) {
             try {
-                String xpath = "//body//div[@class='DepartmentRequests']//div//div[" + i + "]//div[2]//a[1]";
+                String xpath = "//section[@class='Workspace']//section[1]//div[1]//button[1]//span[1]";
                 WebElement webElemForXpath = driver.findElement(By.xpath(xpath));
                 webElemForXpath.click();
+                deletetMeetingPage.discardMeetingReqFromUser().click();
                 deletetMeetingPage.textArea().sendKeys(prop.getProperty("textAreaDiscardInvite"));
                 deletetMeetingPage.submit().click();
-                TimeUnit.SECONDS.sleep(6);
-                i = i + 1;
+                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 break;
             }

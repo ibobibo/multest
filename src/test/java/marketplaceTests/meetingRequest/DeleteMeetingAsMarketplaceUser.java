@@ -5,13 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjectsMarketplace.meetingRequest.AcceptMeetingAsMarketplaceUserPage;
+import pageObjectsMarketplace.meetingRequest.OperationsOnMeetingAsMarketplaceUserPage;
 import resources.MulLoginLogout;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class AcceptMeetingAsMarketplaceUser extends MulLoginLogout {
+public class DeleteMeetingAsMarketplaceUser extends MulLoginLogout {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
@@ -23,26 +23,27 @@ public class AcceptMeetingAsMarketplaceUser extends MulLoginLogout {
 
     @Test
     public void askForMeeting() throws InterruptedException {
-        AcceptMeetingAsMarketplaceUserPage acceptMeetingAsMarketplaceUserPage = new AcceptMeetingAsMarketplaceUserPage(driver);
+        OperationsOnMeetingAsMarketplaceUserPage operationsOnMeetingAsMarketplaceUserPage = new OperationsOnMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoopMarketplace(i);
             TimeUnit.SECONDS.sleep(3);
 
-            int x = 0;
+            operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
+            operationsOnMeetingAsMarketplaceUserPage.myAccount().click();
+
             while (true) {
                 try {
-                    x = x + 1;
-                    String xPathString = "//div[@class='results']//div[" + x + "]//div[1]//div[1]//div[1]//div[1]//button[1]//span[1]";
+                    String xPathString = "//div[@class='results']//div[1]//div[1]//div[1]//div[1]//button[2]//span[1]";
                     WebElement elemForXpath = driver.findElement(By.xpath(xPathString));
                     elemForXpath.click();
                 } catch (Exception e) {
                     break;
                 }
             }
-            acceptMeetingAsMarketplaceUserPage.accountMenu().click();
-            acceptMeetingAsMarketplaceUserPage.accountMenuLogout().click();
+            operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
+            operationsOnMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }
     }
 
