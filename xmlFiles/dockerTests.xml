@@ -9,9 +9,9 @@
     <test thread-count="5" name="docker Tests">
         <classes>
             <class name="dockerTests.DockerTest"/>
-                        <class name="dockerTests.DockerTest2"/>
-            <!--            <class name="dockerTests.DockerTest3"/>-->
-            <!--            <class name="dockerTests.DockerTest4"/>-->
+            <class name="dockerTests.DockerTest2"/>
+            <class name="dockerTests.DockerTest3"/>
+            <class name="dockerTests.DockerTest4"/>
         </classes>
     </test>
 </suite>

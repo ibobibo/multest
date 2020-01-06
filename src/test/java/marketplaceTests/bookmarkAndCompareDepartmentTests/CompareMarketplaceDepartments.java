@@ -63,7 +63,10 @@ public class CompareMarketplaceDepartments extends MulLoginLogout {
                 }
             }
             for (int loop = 0; loop < 16; loop++) {
-                compareMarketplaceDepartments.clickHeaderForCompare().click();
+                if (loop == 0) {
+                    compareMarketplaceDepartments.clickHeaderForCompare().click();
+                    TimeUnit.SECONDS.sleep(1);
+                }
                 if (loop < 4) {
                     compareMarketplaceDepartments.bucketItemAmbulant().click();
                     TimeUnit.SECONDS.sleep(1);
