@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlFiles/dockerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dockerTests.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,10 +99,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SetupDockerGrid" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dockerTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dockerTests" />
+      <option name="MAIN_CLASS_NAME" value="dockerTests.SetupDockerGrid" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -138,19 +147,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptAsProvider.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptMeeting.xml" />
       <item itemvalue="TestNG.DockerTest" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml" />
+      <item itemvalue="TestNG.SetupDockerGrid" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml" />
+        <item itemvalue="TestNG.SetupDockerGrid" />
         <item itemvalue="TestNG.DockerTest" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptMeeting.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptAsProvider.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +221,7 @@
       <workItem from="1578313037892" duration="4000" />
       <workItem from="1578313078312" duration="5000" />
       <workItem from="1578313087793" duration="24000" />
-      <workItem from="1578313304631" duration="15713000" />
+      <workItem from="1578313304631" duration="18070000" />
     </task>
     <servers />
   </component>
