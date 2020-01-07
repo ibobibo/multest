@@ -6,7 +6,7 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <test thread-count="5" name="docker Tests">
+    <test thread-count="4" name="docker Tests">
         <classes>
             <class name="dockerTests.DockerTest"/>
             <class name="dockerTests.DockerTest2"/>

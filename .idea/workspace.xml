@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AcceptMeetingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AcceptMeetingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DeleteMeetingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DeleteMeetingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/meetingRequest/DiscardMeetingAsMarketplaceUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/meetingRequest/OperationsOnMeetingAsMarketplaceUserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/acceptMeeting_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/acceptMeeting_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/askForMeeting_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteAllOrganisation_screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screenShots/deleteAllOrganisation_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/AcceptMeetingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/AcceptMeetingPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/departments/DeleteMeetingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/DeleteMeetingPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjectsMarketplace/meetingRequest/DiscardMeetingAsMarketplaceUserPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceAskForMeeting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmlFiles/dockerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dockerTests.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,10 +80,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceAskForMeeting.xml">
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DockerTest">
+    <configuration name="DockerTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceAskForMeeting.xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dockerTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dockerTests" />
+      <option name="MAIN_CLASS_NAME" value="dockerTests.DockerTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -110,9 +108,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptAsProvider.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptAsProvider.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -120,9 +118,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceSearchDepartment.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptMeeting.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceSearchDepartment.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptMeeting.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -130,19 +128,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-partner/testngEditUserDetails.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dockerTests.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -151,19 +139,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceSearchDepartment.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
-      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceAskForMeeting.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptAsProvider.xml" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptMeeting.xml" />
+      <item itemvalue="TestNG.DockerTest" />
+      <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceAskForMeeting.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceMyFavorites.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngEditUserDetails.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-partner/testngCopyDepartmentTest.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/testngMarketPlaceSearchDepartment.xml" />
+        <item itemvalue="TestNG.DockerTest" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptMeeting.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptAsProvider.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceAskForMeeting.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +213,7 @@
       <workItem from="1578313037892" duration="4000" />
       <workItem from="1578313078312" duration="5000" />
       <workItem from="1578313087793" duration="24000" />
-      <workItem from="1578313304631" duration="8890000" />
+      <workItem from="1578313304631" duration="13679000" />
     </task>
     <servers />
   </component>
