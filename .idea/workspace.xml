@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="" />
+    <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +60,11 @@
       <recent name="pageObjects.departments" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/xmlFiles/dev-marktplatz/meetingReq" />
       <recent name="$PROJECT_DIR$/xmlFiles/dev-partner" />
       <recent name="$PROJECT_DIR$/xmlFiles/dev-marktplatz" />
       <recent name="$PROJECT_DIR$/xmlFiles" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,7 +219,7 @@
       <workItem from="1578313037892" duration="4000" />
       <workItem from="1578313078312" duration="5000" />
       <workItem from="1578313087793" duration="24000" />
-      <workItem from="1578313304631" duration="20268000" />
+      <workItem from="1578313304631" duration="22261000" />
     </task>
     <servers />
   </component>
