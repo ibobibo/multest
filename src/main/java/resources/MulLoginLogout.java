@@ -81,7 +81,6 @@ public class MulLoginLogout extends BaseClass {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
-
     @AfterTest
     public void closeBrowser() {
         driver.close();

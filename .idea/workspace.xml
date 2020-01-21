@@ -4,6 +4,7 @@
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/MulLoginLogout.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml">
+  <component name="RunManager" selected="TestNG.SetupDockerGrid">
     <configuration name="DockerTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <extension name="coverage">
@@ -153,8 +154,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml" />
         <item itemvalue="TestNG.SetupDockerGrid" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dockerTests.xml" />
         <item itemvalue="TestNG.DockerTest" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptMeeting.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/xmlFiles/dev-marktplatz/meetingReq/testngMarketPlaceMeetingTestCaseAcceptAsProvider.xml" />
@@ -219,7 +220,7 @@
       <workItem from="1578313037892" duration="4000" />
       <workItem from="1578313078312" duration="5000" />
       <workItem from="1578313087793" duration="24000" />
-      <workItem from="1578313304631" duration="22261000" />
+      <workItem from="1578313304631" duration="22670000" />
     </task>
     <servers />
   </component>
