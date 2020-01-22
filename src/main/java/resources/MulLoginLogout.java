@@ -15,7 +15,6 @@ public class MulLoginLogout extends BaseClass {
     }
 
     public void login() throws InterruptedException {
-        System.out.println("bin drin");
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));

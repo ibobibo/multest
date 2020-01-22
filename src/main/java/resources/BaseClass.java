@@ -66,7 +66,6 @@ public class BaseClass {
 
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
-        System.out.println(prop.getProperty("urlFromHomeNetwork"));
         driver.get(prop.getProperty("urlFromHomeNetwork"));
     }
 

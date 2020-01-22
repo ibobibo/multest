@@ -6,15 +6,15 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    <test thread-count="4" name="docker Tests">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="dockerTests.DockerTest"/>-->
-    <!--            <class name="dockerTests.DockerTest2"/>-->
-    <!--            <class name="dockerTests.DockerTest3"/>-->
-    <!--            <class name="dockerTests.DockerTest4"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test thread-count="4" parallel="true" name="docker Tests">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="dockerTests.DockerTest"/>
+            <class name="dockerTests.DockerTest2"/>
+            <class name="dockerTests.DockerTest3"/>
+            <class name="dockerTests.DockerTest4"/>
+        </classes>
+    </test>
 
     <test thread-count="4" name="register mul master test">
         <classes>
@@ -29,4 +29,15 @@
             <class name="user.Verify"/>
         </classes>
     </test>
+
+    <test thread-count="4" parallel="true" name="verify mul master test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="departments.CreateDayNightCareOrganisation"/>
+            <class name="departments.CreateAmbulantOrganisation"/>
+            <class name="departments.CreateFairHouseOffer"/>
+            <class name="departments.CreateStationaryOrganisation"/>
+        </classes>
+    </test>
+
 </suite>

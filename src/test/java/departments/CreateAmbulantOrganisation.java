@@ -3,8 +3,6 @@ package departments;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import resources.MulLoginLogout;
@@ -13,16 +11,9 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class CreateAmbulantOrganisation extends MulLoginLogout {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
-
     @Test
     public void createAmbulantOrganisation() throws IOException, InterruptedException {
+        initializeBrowser();
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
@@ -34,10 +25,10 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
             loadPropsForDepartment();
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
-            try{
+            try {
                 departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
-            }catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Card wird geklickt.");
             }
 
@@ -126,11 +117,8 @@ public class CreateAmbulantOrganisation extends MulLoginLogout {
             TimeUnit.SECONDS.sleep(6);
             logout();
             TimeUnit.SECONDS.sleep(2);
-        }
-    }
 
-    @AfterTest
-    public void closeBrowser() {
+        }
         driver.close();
         driver = null;
     }

@@ -6,12 +6,6 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--<test name="Test">-->
-    <!--<classes>-->
-    <!--<class name="resources.MulLogin"/>-->
-    <!--</classes>-->
-    <!--</test>-->
-
     <test name="Registration Test">
         <classes>
             <class name="user.MulRegister"/>
