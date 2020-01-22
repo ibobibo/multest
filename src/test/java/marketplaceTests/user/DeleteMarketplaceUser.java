@@ -15,7 +15,7 @@ public class DeleteMarketplaceUser extends MulLoginLogout {
     public void initialize() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
-        accessAllCookies();
+        accessAllCookies(driver);
         TimeUnit.SECONDS.sleep(2);
     }
 

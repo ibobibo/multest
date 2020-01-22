@@ -19,7 +19,7 @@ public class CreateSomeContactPersonForSearch extends MulLoginLogout {
     public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
-        accessAllCookies();
+        accessAllCookies(driver);
     }
 
     @Test()

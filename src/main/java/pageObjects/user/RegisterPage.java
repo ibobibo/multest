@@ -16,7 +16,7 @@ public class RegisterPage {
     @FindBy(xpath = "//section[@id='app-header']//a[@href='#/register']")
     WebElement registerButtonHomepage;
 
-    @FindBy(id = "site.company")
+    @FindBy(xpath = "//input[@id='site.company']")
     WebElement siteCompany;
     @FindBy(id = "site.streetAddress")
     WebElement streetAddress;

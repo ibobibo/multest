@@ -14,7 +14,7 @@ public class ResetPasswordTest extends MulLoginLogout {
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
-        accessAllCookies();
+        accessAllCookies(driver);
         TimeUnit.SECONDS.sleep(2);
     }
 

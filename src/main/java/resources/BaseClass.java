@@ -2,44 +2,41 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
-    public static WebDriver driver;
+    public static RemoteWebDriver driver;
     public static Properties prop = new Properties();
     public static Properties propFairHouseOffer = new Properties();
     public static Properties propDepartment = new Properties();
     public static Properties propNewPlacement = new Properties();
 
 
-    public WebDriver initializeDriver() throws IOException, InterruptedException {
+    public WebDriver initializeDriver() throws IOException {
         loadProps();
         String browserName = prop.getProperty("browser");
 
         //check for browser
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-            driver = new FirefoxDriver();
-            TimeUnit.SECONDS.sleep(5);
+            DesiredCapabilities cap = DesiredCapabilities.chrome();
+            RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
         } else if (browserName.equals("firefox")) {
-            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
-            driver = new FirefoxDriver();
-            TimeUnit.SECONDS.sleep(5);
+            DesiredCapabilities cap = DesiredCapabilities.firefox();
+            RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
         } else if (browserName.equals("edge")) {
-            System.setProperty(prop.getProperty("edgeDriver"), prop.getProperty("edgeDriverPath"));
-            driver = new InternetExplorerDriver();
-            TimeUnit.SECONDS.sleep(5);
+            DesiredCapabilities cap = DesiredCapabilities.edge();
+            RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
         }
-
+        System.out.println("after if");
         return driver;
     }
 
@@ -49,22 +46,23 @@ public class BaseClass {
     }
 
     public void initializeBrowser() throws IOException, InterruptedException {
-        driver = initializeDriver();
+        initializeDriver();
+        System.out.println(prop.getProperty("urlFromHomeNetwork"));
         driver.get(prop.getProperty("urlFromHomeNetwork"));
     }
 
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
-        driver = initializeDriver();
+        initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
     }
 
     public void initializeBrowserForInformationPortal() throws IOException, InterruptedException {
-        driver = initializeDriver();
+        initializeDriver();
         driver.get(prop.getProperty("urlForInformationPortal"));
     }
 
     public void initializeMailServer() throws IOException, InterruptedException {
-        driver = initializeDriver();
+        initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));
     }
 
@@ -125,20 +123,8 @@ public class BaseClass {
         }
     }
 
-    public void accessAllCookies() throws InterruptedException {
-        try {
-            Actions actions = new Actions(driver);
-            WebElement accessAllCookies = driver.findElement(By.xpath("//html//body//div[@id='CybotCookiebotDialog']//div[@id='CybotCookiebotDialogBody']//a[@id='CybotCookiebotDialogBodyButtonAccept']"));
-            while (true) {
-                if (accessAllCookies.isDisplayed()) {
-                    actions.moveToElement(accessAllCookies).click().build().perform();
-                    break;
-                } else {
-                    TimeUnit.SECONDS.sleep(5);
-                }
-            }
-        } catch (Exception e) {
-        }
+    public void accessAllCookies(RemoteWebDriver driver) {
+        driver.findElement(By.xpath("//div[@id='CybotCookiebotDialog']//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
     }
 
     public static int getRandomNumberInRange(int min, int max) {

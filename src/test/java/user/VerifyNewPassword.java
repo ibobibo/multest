@@ -17,7 +17,7 @@ public class VerifyNewPassword extends MulLoginLogout {
     public void initialize() throws IOException, InterruptedException {
         initializeMailServer();
         TimeUnit.SECONDS.sleep(2);
-        accessAllCookies();
+        accessAllCookies(driver);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class VerifyNewPassword extends MulLoginLogout {
             ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
             driver.switchTo().window(tabs.get(1));
             TimeUnit.SECONDS.sleep(4);
-            accessAllCookies();
+            accessAllCookies(driver);
             TimeUnit.SECONDS.sleep(2);
 
             verifyPage.newPassword().sendKeys(prop.getProperty("contactNewPassword"));

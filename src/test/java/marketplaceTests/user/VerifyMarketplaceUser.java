@@ -15,7 +15,7 @@ public class VerifyMarketplaceUser extends BaseClass {
     public void initialize() throws IOException, InterruptedException {
         initializeMailServer();
         TimeUnit.SECONDS.sleep(2);
-        accessAllCookies();
+        accessAllCookies(driver);
     }
 
     @Test

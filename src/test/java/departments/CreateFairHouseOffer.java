@@ -17,7 +17,7 @@ public class CreateFairHouseOffer extends MulLoginLogout {
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
-        accessAllCookies();
+        accessAllCookies(driver);
         TimeUnit.SECONDS.sleep(1);
     }
 

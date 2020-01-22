@@ -15,7 +15,7 @@ public class DeleteUser extends MulLoginLogout {
     public void initialize() throws IOException, InterruptedException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(4);
-        accessAllCookies();
+        accessAllCookies(driver);
         TimeUnit.SECONDS.sleep(4);
     }
 

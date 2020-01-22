@@ -16,7 +16,7 @@ public class Care extends BaseClass {
     public void initialize() throws IOException, InterruptedException {
         initializeBrowserForInformationPortal();
         TimeUnit.SECONDS.sleep(2);
-        accessAllCookies();
+        accessAllCookies(driver);
         TimeUnit.SECONDS.sleep(2);
     }
 

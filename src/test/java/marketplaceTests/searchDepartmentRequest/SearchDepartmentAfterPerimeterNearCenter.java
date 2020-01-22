@@ -18,7 +18,7 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
     public void initialize() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(1);
-        accessAllCookies();
+        accessAllCookies(driver);
         TimeUnit.SECONDS.sleep(1);
     }
 
