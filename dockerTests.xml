@@ -20,7 +20,13 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
             <class name="user.MulRegister"/>
-<!--            <class name="user.Verify"/>-->
+        </classes>
+    </test>
+
+    <test thread-count="4" name="verify mul master test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.Verify"/>
         </classes>
     </test>
 </suite>

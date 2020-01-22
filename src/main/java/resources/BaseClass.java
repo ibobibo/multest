@@ -20,29 +20,42 @@ public class BaseClass {
     public static Properties propDepartment = new Properties();
     public static Properties propNewPlacement = new Properties();
 
-
     public WebDriver initializeDriver() throws IOException, InterruptedException {
         loadProps();
         String browserName = prop.getProperty("browser");
 
         //check for browser
         if (browserName.equals("chrome")) {
-
             DesiredCapabilities cap = DesiredCapabilities.firefox();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-            driver.get("https://dev-partner.mitpflegeleben.de/#/login");
+            driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
-            accessAllCookies(driver);
-            TimeUnit.SECONDS.sleep(1);
-
+            try {
+                accessAllCookies(driver);
+            } catch (Exception e) {
+                System.out.println("cookies accepted");
+            }
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
-            RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            driver.get(prop.getProperty("urlFromHomeNetwork"));
+            TimeUnit.SECONDS.sleep(2);
+            try {
+                accessAllCookies(driver);
+            } catch (Exception e) {
+                System.out.println("cookies accepted");
+            }
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
-            RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            driver.get(prop.getProperty("urlFromHomeNetwork"));
+            TimeUnit.SECONDS.sleep(2);
+            try {
+                accessAllCookies(driver);
+            } catch (Exception e) {
+                System.out.println("cookies accepted");
+            }
         }
-        System.out.println("after if");
         return driver;
     }
 
@@ -70,6 +83,11 @@ public class BaseClass {
     public void initializeMailServer() throws IOException, InterruptedException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
     }
 
     public void loadProps() throws IOException {
