@@ -2,7 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -12,6 +11,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
     public static RemoteWebDriver driver;
@@ -21,14 +21,20 @@ public class BaseClass {
     public static Properties propNewPlacement = new Properties();
 
 
-    public WebDriver initializeDriver() throws IOException {
+    public WebDriver initializeDriver() throws IOException, InterruptedException {
         loadProps();
         String browserName = prop.getProperty("browser");
 
         //check for browser
         if (browserName.equals("chrome")) {
-            DesiredCapabilities cap = DesiredCapabilities.chrome();
-            RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+
+            DesiredCapabilities cap = DesiredCapabilities.firefox();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            driver.get("https://dev-partner.mitpflegeleben.de/#/login");
+            TimeUnit.SECONDS.sleep(2);
+            accessAllCookies(driver);
+            TimeUnit.SECONDS.sleep(1);
+
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
             RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
@@ -113,16 +119,6 @@ public class BaseClass {
     }
 
     //access Cookies
-    public void accessCookies() {
-        try {
-            Actions actions = new Actions(driver);
-            WebElement accessCookies = driver.findElement(By.id("//a[@id='CybotCookiebotDialogBodyButtonDecline']"));
-            actions.moveToElement(accessCookies).click().build().perform();
-        } catch (Exception e) {
-            System.out.println("Cookies wurden schon aktzeptiert.");
-        }
-    }
-
     public void accessAllCookies(RemoteWebDriver driver) {
         driver.findElement(By.xpath("//div[@id='CybotCookiebotDialog']//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
     }

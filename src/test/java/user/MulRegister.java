@@ -1,25 +1,16 @@
 package user;
 
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 import pageObjects.user.RegisterPage;
 import resources.BaseClass;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
-        DesiredCapabilities cap = DesiredCapabilities.firefox();
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-        driver.get("https://dev-partner.mitpflegeleben.de/#/login");
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-
+        initializeDriver();
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
