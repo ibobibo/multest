@@ -4,12 +4,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.placements.DeletePlacementPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class DeletePlacement extends MulLoginLogout {
+public class DeletePlacement extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {

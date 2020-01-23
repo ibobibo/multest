@@ -4,12 +4,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.user.DeleteMarketplaceUserPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class DeleteMarketplaceUser extends MulLoginLogout {
+public class DeleteMarketplaceUser extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {

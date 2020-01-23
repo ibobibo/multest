@@ -6,13 +6,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.user.VerifyPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
-public class VerifyNewPassword extends MulLoginLogout {
+public class VerifyNewPassword extends BaseClass {
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
         initializeMailServer();

@@ -6,12 +6,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.CopyDepartmentPage;
 import pageObjects.departments.DepartmentPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class CopyDepartment extends MulLoginLogout {
+public class CopyDepartment extends BaseClass {
 
     @Override
     public int getCount() {

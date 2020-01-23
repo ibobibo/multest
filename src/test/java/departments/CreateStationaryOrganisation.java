@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class CreateStationaryOrganisation extends MulLoginLogout {
+public class CreateStationaryOrganisation extends BaseClass {
     @Test
     public void createStationaryOrganisation() throws IOException, InterruptedException {
         initializeBrowser();

@@ -7,12 +7,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.CheckIfRequestAreDeletedPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class CheckIfRequestAreDeleted extends MulLoginLogout {
+public class CheckIfRequestAreDeleted extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {

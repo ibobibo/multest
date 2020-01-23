@@ -6,12 +6,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.meetingRequest.OperationsOnMeetingAsMarketplaceUserPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class DiscardMeetingAsMarketplaceUser extends MulLoginLogout {
+public class DiscardMeetingAsMarketplaceUser extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {

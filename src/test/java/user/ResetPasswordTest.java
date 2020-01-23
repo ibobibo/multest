@@ -4,12 +4,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.user.ResetPasswordPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class ResetPasswordTest extends MulLoginLogout {
+public class ResetPasswordTest extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {

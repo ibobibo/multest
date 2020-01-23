@@ -5,31 +5,24 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import pageObjects.departments.EditOrganisationPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class EditOrganisation extends MulLoginLogout {
+public class EditOrganisation extends BaseClass {
 
     @Override
     public int getCount() {
         return super.getCount();
     }
 
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
-
     @Test()
-    public void editAllOrganisation() throws InterruptedException {
+    public void editAllOrganisation() throws InterruptedException, IOException {
+        initializeBrowser();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
@@ -55,7 +48,6 @@ public class EditOrganisation extends MulLoginLogout {
 
                 editOrganisationPage.changeName().clear();
                 editOrganisationPage.changeName().sendKeys(prop.getProperty("edit"));
-                System.out.println("getNewName");
                 WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(editOrganisationPage.saveClick()));
                 findElem.click();
                 TimeUnit.SECONDS.sleep(2);
@@ -70,10 +62,7 @@ public class EditOrganisation extends MulLoginLogout {
             TimeUnit.SECONDS.sleep(2);
         }
         logout();
-    }
-
-    @AfterTest
-    public void closeBrowser() {
+        TimeUnit.SECONDS.sleep(2);
         driver.close();
         driver = null;
     }

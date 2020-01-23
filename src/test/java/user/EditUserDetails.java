@@ -4,12 +4,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.user.EditUserDetailsPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class EditUserDetails extends MulLoginLogout {
+public class EditUserDetails extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {

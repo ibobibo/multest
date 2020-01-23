@@ -4,31 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class ToggleOrganisation extends MulLoginLogout {
+public class ToggleOrganisation extends BaseClass {
 
     @Override
     public int getCount() {
         return super.getCount();
     }
 
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
-
     @Test()
-    public void toggleAllOrganisation() throws InterruptedException {
+    public void toggleAllOrganisation() throws InterruptedException, IOException {
+        initializeBrowser();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             DepartmentPage departmentPage = new DepartmentPage(driver);
             loginLoop(i);
@@ -56,10 +48,6 @@ public class ToggleOrganisation extends MulLoginLogout {
             logout();
             TimeUnit.SECONDS.sleep(2);
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

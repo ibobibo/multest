@@ -5,23 +5,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class CreateDayNightCareOrganisation extends MulLoginLogout {
+public class CreateDayNightCareOrganisation extends BaseClass {
     @Test
     public void createDayNightCareOrganisation() throws IOException, InterruptedException {
         initializeBrowser();
         loadProps();
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
             loginLoop(i);
 
-            //because we have to move explicit to our select fields
             Actions actions = new Actions(driver);
-
             loadPropsForDepartment();
             DepartmentPage departmentPage = new DepartmentPage(driver);
 

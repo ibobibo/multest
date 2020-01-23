@@ -7,12 +7,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.AcceptMeetingPage;
 import pageObjects.departments.DepartmentPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class AcceptMeeting extends MulLoginLogout {
+public class AcceptMeeting extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {

@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class CreateFairHouseOffer extends MulLoginLogout {
+public class CreateFairHouseOffer extends BaseClass {
     @Test
     public void createFairHouseOrganisation() throws IOException, InterruptedException {
         initializeBrowser();

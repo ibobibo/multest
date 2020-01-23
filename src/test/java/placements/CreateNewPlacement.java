@@ -4,11 +4,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.placements.NewPlacementPage;
-import resources.MulLoginLogout;
+import resources.BaseClass;
 
 import java.io.IOException;
 
-public class CreateNewPlacement extends MulLoginLogout {
+public class CreateNewPlacement extends BaseClass {
 
     @BeforeTest
     public void initialize() throws IOException, InterruptedException {
