@@ -23,7 +23,6 @@ public class MulRegister extends BaseClass {
             registerPage.streetNumber().sendKeys(prop.getProperty("streetNumber"));
             registerPage.postalCode().sendKeys(prop.getProperty("postalCode"));
             registerPage.city().sendKeys(prop.getProperty("city"));
-            registerPage.siteName().sendKeys(prop.getProperty("registerSiteName") + i);
 
             registerPage.umbrellaOrganisation().click();
             registerPage.umbrellaOrganisationChosen().click();
@@ -40,13 +39,11 @@ public class MulRegister extends BaseClass {
             registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
 
             registerPage.accept().click();
-            TimeUnit.SECONDS.sleep(2);
-            driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+            TimeUnit.SECONDS.sleep(4);
             registerPage.registerSubmit().click();
             TimeUnit.SECONDS.sleep(4);
-
-            driver.close();
-            driver = null;
         }
+        driver.close();
+        driver = null;
     }
 }

@@ -16,20 +16,18 @@ public class RegisterPage {
     @FindBy(xpath = "//section[@id='app-header']//a[@href='#/register']")
     WebElement registerButtonHomepage;
 
-    @FindBy(xpath = "//input[@id='site.company']")
+    @FindBy(xpath = "//input[@id='enterprise.name']")
     WebElement siteCompany;
-    @FindBy(id = "site.streetAddress")
+    @FindBy(xpath = "//input[@id='enterprise.streetAddress']")
     WebElement streetAddress;
-    @FindBy(id = "site.streetNumber")
+    @FindBy(xpath = "//input[@id='enterprise.streetNumber']")
     WebElement streetNumber;
-    @FindBy(id = "site.postalCode")
+    @FindBy(xpath = "//input[@id='enterprise.postalCode']")
     WebElement postalCode;
-    @FindBy(id = "site.city")
+    @FindBy(xpath = "//input[@id='enterprise.city']")
     WebElement city;
-    @FindBy(id = "site.name")
-    WebElement siteName;
 
-    @FindBy(id = "site.umbrellaOrganisation.id")
+    @FindBy(xpath = "//select[@id='enterprise.umbrellaOrganisation.id']")
     WebElement umbrellaOrganisation;
     @FindBy(xpath = "//option[. = 'Stiftung Liebenau']")
     WebElement umbrellaOrganisationChosen;
@@ -78,10 +76,6 @@ public class RegisterPage {
 
     public WebElement city() {
         return city;
-    }
-
-    public WebElement siteName() {
-        return siteName;
     }
 
     public WebElement umbrellaOrganisation() {
