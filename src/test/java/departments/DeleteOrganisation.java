@@ -17,6 +17,7 @@ public class DeleteOrganisation extends BaseClass {
     public void deleteAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            System.out.println(i + "i");
             DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
             loginLoop(i);
@@ -28,9 +29,7 @@ public class DeleteOrganisation extends BaseClass {
             while (getCount() != 0) {
                 String xpath = "//section[@class='MulTable withoutSearch withoutTopElements']//tr[1]//a[@class='delete']";
                 WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-                System.out.println("xxx");
                 findTr.click();
-                System.out.println("delete click");
                 WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
                 findElem.click();
                 TimeUnit.SECONDS.sleep(2);
