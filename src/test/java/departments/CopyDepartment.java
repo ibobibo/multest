@@ -1,8 +1,5 @@
 package departments;
 
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.CopyDepartmentPage;
 import pageObjects.departments.DepartmentPage;
@@ -18,15 +15,9 @@ public class CopyDepartment extends BaseClass {
         return super.getCount();
     }
 
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
-
     @Test()
-    public void editAllOrganisation() throws InterruptedException {
+    public void copyOrganisation() throws InterruptedException, IOException {
+        initializeBrowser();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             CopyDepartmentPage copyDepartmentPage = new CopyDepartmentPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
@@ -41,25 +32,11 @@ public class CopyDepartment extends BaseClass {
                 System.out.println("Card wird geklickt.");
             }
 
-            String departmentName = copyDepartmentPage.departmentName().getText();
             copyDepartmentPage.addCopyOfDepartment().click();
-            String copiedDepartmentName = copyDepartmentPage.copiedDepartmentName().getText();
-            String x = departmentName + " - Kopie";
-            if (x.equals(copiedDepartmentName)) {
-
-            } else {
-                System.out.println(x);
-                System.out.println(copiedDepartmentName);
-                Assert.fail("Department konnte nicht kopiert werden.");
-            }
-
             TimeUnit.SECONDS.sleep(2);
         }
         logout();
-    }
-
-    @AfterTest
-    public void closeBrowser() {
+        TimeUnit.SECONDS.sleep(2);
         driver.close();
         driver = null;
     }

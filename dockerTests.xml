@@ -57,19 +57,27 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    MAKE DEPARTMENTS PUBLIC-->
-    <test thread-count="4" name="make departments public">
+    <!--    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;-->
+    <!--    <test thread-count="4" name="make departments public">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.ToggleOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    &lt;!&ndash;    EDIT DEPARTMENTS&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Editing Departments">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.EditOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test thread-count="4" name="Copy department Test">
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.ToggleOrganisation"/>
+            <class name="departments.CopyDepartment"/>
         </classes>
     </test>
 
-    <!--    EDIT DEPARTMENTS-->
-    <test thread-count="4" name="Editing Departments">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.EditOrganisation"/>
-        </classes>
-    </test>
 </suite>
