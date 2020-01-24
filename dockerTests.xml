@@ -31,82 +31,81 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    CREATE DEPARTMENT TESTS-->
-    <test thread-count="4" name="Create Day Night Care Organisation">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.CreateDayNightCareOrganisation"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Create Ambulant Organisation">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.CreateAmbulantOrganisation"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Create Stationary Organisation">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.CreateStationaryOrganisation"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Create Fair House Offer Organisation">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.CreateFairHouseOffer"/>
-        </classes>
-    </test>
-
-    <!--    &lt;!&ndash;    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;&ndash;&gt;-->
-    <!--    &lt;!&ndash;    <test thread-count="4" name="make departments public">&ndash;&gt;-->
-    <!--    &lt;!&ndash;        <classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="dockerTests.SetupDockerGrid"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="departments.ToggleOrganisation"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;        </classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;    </test>&ndash;&gt;-->
-
-    <!--    &lt;!&ndash;    &lt;!&ndash;    EDIT DEPARTMENTS&ndash;&gt;&ndash;&gt;-->
-    <!--    &lt;!&ndash;    <test thread-count="4" name="Editing Departments">&ndash;&gt;-->
-    <!--    &lt;!&ndash;        <classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="dockerTests.SetupDockerGrid"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="departments.EditOrganisation"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;        </classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;    </test>&ndash;&gt;-->
-
-    <!--&lt;!&ndash;            COPY DEPARTMENT&ndash;&gt;-->
-    <!--    &lt;!&ndash;    <test thread-count="4" name="Copy department Test">&ndash;&gt;-->
-    <!--    &lt;!&ndash;        <classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="dockerTests.SetupDockerGrid"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="departments.CopyDepartment"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;        </classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;    </test>&ndash;&gt;-->
-
-    <!--    &lt;!&ndash;    EDIT USER DETAILS TEST&ndash;&gt;-->
-    <!--    &lt;!&ndash;        <test thread-count="4" name="Edit User details">&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;                <class name="dockerTests.SetupDockerGrid"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;                <class name="user.EditUserDetails"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;                    </classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;        </test>&ndash;&gt;-->
-    <!--    &lt;!&ndash;    <test thread-count="4" name="Password Change Test">&ndash;&gt;-->
-    <!--    &lt;!&ndash;        <classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="dockerTests.SetupDockerGrid"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="user.PasswordChangeTest"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;        </classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;    </test>&ndash;&gt;-->
-    <!--    &lt;!&ndash;    <test thread-count="4" name="Password Reset">&ndash;&gt;-->
-    <!--    &lt;!&ndash;        <classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="dockerTests.SetupDockerGrid"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;            <class name="user.ResetPasswordTest"/>&ndash;&gt;-->
-    <!--    &lt;!&ndash;        </classes>&ndash;&gt;-->
-    <!--    &lt;!&ndash;    </test>&ndash;&gt;-->
-
-    <!--    &lt;!&ndash;   DELETE DEPARTMENT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Delete Department">-->
+    <!--    &lt;!&ndash;    CREATE DEPARTMENT TESTS&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Create Day Night Care Organisation">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.DeleteOrganisation"/>-->
+    <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Create Ambulant Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Create Stationary Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CreateStationaryOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Create Fair House Offer Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CreateFairHouseOffer"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 
+    <!--    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;-->
+    <!--    <test thread-count="4" name="make departments public">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.ToggleOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    &lt;!&ndash;    EDIT DEPARTMENTS&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Editing Departments">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.EditOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    &lt;!&ndash;            COPY DEPARTMENT&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Copy department Test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CopyDepartment"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    &lt;!&ndash;    EDIT USER DETAILS TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Edit User details">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="user.EditUserDetails"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Password Change Test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="user.PasswordChangeTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Password Reset">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="user.ResetPasswordTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--   DELETE DEPARTMENT-->
+    <test thread-count="4" name="Delete Department">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="departments.DeleteOrganisation"/>
+        </classes>
+    </test>
 </suite>

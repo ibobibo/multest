@@ -119,7 +119,6 @@ public class BaseClass {
         try {
             WebElement x = driver.findElement(By.xpath("//section[@class='Department']//tbody//tr"));
             int count = x.findElements(By.xpath("//section[@class='Department']//tbody//tr")).size();
-            System.out.println("b");
             return count;
         } catch (Exception e) {
             Assert.fail("Nicht möglich die Departments zu zählen.");

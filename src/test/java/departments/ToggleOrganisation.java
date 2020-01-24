@@ -12,12 +12,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class ToggleOrganisation extends BaseClass {
-
-    @Override
-    public int getCount() {
-        return super.getCount();
-    }
-
     @Test()
     public void toggleAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();

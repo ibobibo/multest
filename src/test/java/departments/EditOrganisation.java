@@ -14,12 +14,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class EditOrganisation extends BaseClass {
-
-    @Override
-    public int getCount() {
-        return super.getCount();
-    }
-
     @Test()
     public void editAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
