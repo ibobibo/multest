@@ -17,15 +17,21 @@ public class DeleteOrganisation extends BaseClass {
     public void deleteAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            System.out.println(i + "i");
             DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
+
             loginLoop(i);
             TimeUnit.SECONDS.sleep(4);
 
-            departmentPage.addDepartmentCard().click();
+            try {
+                departmentPage.addDepartmentCard().click();
+                TimeUnit.SECONDS.sleep(2);
+            } catch (Exception e) {
+                System.out.println("Card wird geklickt.");
+            }
 
             WebDriverWait wait = new WebDriverWait(driver, 20);
+            System.out.println(getCount());
             while (getCount() != 0) {
                 String xpath = "//section[@class='MulTable withoutSearch withoutTopElements']//tr[1]//a[@class='delete']";
                 WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
@@ -33,6 +39,7 @@ public class DeleteOrganisation extends BaseClass {
                 WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
                 findElem.click();
                 TimeUnit.SECONDS.sleep(2);
+
                 try {
                     departmentPage.addDepartmentCard().click();
                     TimeUnit.SECONDS.sleep(2);
@@ -42,8 +49,6 @@ public class DeleteOrganisation extends BaseClass {
             }
             TimeUnit.SECONDS.sleep(2);
         }
-        logout();
-        TimeUnit.SECONDS.sleep(2);
         driver.close();
         driver = null;
     }

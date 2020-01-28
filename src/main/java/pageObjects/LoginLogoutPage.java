@@ -40,7 +40,7 @@ public class LoginLogoutPage {
     }
 
     //LOGOUT
-    @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
+    @FindBy(xpath = "//div[@class='collapse navbar-collapse']//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
     WebElement userOption;
     @FindBy(xpath = "//span[@class='logout']")
     WebElement logout;

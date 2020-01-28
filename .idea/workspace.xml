@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/deleteAllOrganisation_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/SetupDockerGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/SetupDockerGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

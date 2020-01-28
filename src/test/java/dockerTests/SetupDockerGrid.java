@@ -20,6 +20,7 @@ public class SetupDockerGrid {
         System.out.println("Docker scale more Browser");
         Thread.sleep(15000);
     }
+
     @AfterTest
     void stopDockerGrid() throws IOException, InterruptedException {
         Runtime.getRuntime().exec("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/stop_dockerGrid.sh");

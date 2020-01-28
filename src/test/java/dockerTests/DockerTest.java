@@ -11,7 +11,7 @@ import java.net.URL;
 public class DockerTest {
     @Test
     public void dockerTest() throws MalformedURLException, InterruptedException {
-
+        System.out.println("bin drin");
         DesiredCapabilities cap = DesiredCapabilities.firefox();
 
         RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);

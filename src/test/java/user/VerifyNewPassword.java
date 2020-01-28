@@ -2,8 +2,6 @@ package user;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.user.VerifyPage;
 import resources.BaseClass;
@@ -13,15 +11,10 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class VerifyNewPassword extends BaseClass {
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeMailServer();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-    }
-
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
+        initializeMailServer();
+
         VerifyPage verifyPage = new VerifyPage(driver);
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
@@ -60,10 +53,6 @@ public class VerifyNewPassword extends BaseClass {
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

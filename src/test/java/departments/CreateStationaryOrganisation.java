@@ -17,8 +17,11 @@ public class CreateStationaryOrganisation extends BaseClass {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
-            loginLoop(i);
-
+            try {
+                loginLoop(i);
+            } catch (Exception e) {
+                System.out.println("eingeloggt");
+            }
             //because we have to move explicit to our select fields
             Actions actions = new Actions(driver);
 
@@ -27,33 +30,33 @@ public class CreateStationaryOrganisation extends BaseClass {
 
             try {
                 departmentPage.addDepartmentCard().click();
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Card wird geklickt.");
             }
 
             try {
                 departmentPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Es wurde noch kein Department angelegt.");
+                System.out.println("erster FB");
             }
 
             try {
                 departmentPage.addFirstStationaryDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Es wurde noch kein Department angelegt.");
+                System.out.println("erster FB");
             }
 
             try {
                 departmentPage.addStationaryDepartment().click();
             } catch (Exception e) {
-                System.out.println("Es existiert schon ein erstes Department");
+                System.out.println("n'ter FB");
             }
 
             //Allgemeine Angaben
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
 
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();

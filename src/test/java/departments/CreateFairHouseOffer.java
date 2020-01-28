@@ -17,8 +17,11 @@ public class CreateFairHouseOffer extends BaseClass {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
-            loginLoop(i);
-
+            try {
+                loginLoop(i);
+            } catch (Exception e) {
+                System.out.println("eingeloggt");
+            }
             //because we have to move explicit to our select fields
             Actions actions = new Actions(driver);
 
@@ -37,20 +40,20 @@ public class CreateFairHouseOffer extends BaseClass {
                 departmentPage.addDepartment().click();
                 TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
-                System.out.println("Es wurde noch kein Department angelegt.");
+                System.out.println("erster FB");
             }
 
             try {
                 departmentPage.addFirstFairHouseOfferDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Es wurde noch kein Department angelegt.");
+                System.out.println("erster FB");
             }
 
             try {
                 departmentPage.addFairHouseOfferDepartment().click();
             } catch (Exception e) {
-                System.out.println("Es existiert schon ein erstes Department");
+                System.out.println("n'ter FB");
             }
 
             try {
@@ -58,29 +61,32 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("accessibilityApartment");
             }
+
             try {
                 departmentPage.accessibilityApartmentArea().click();
             } catch (Exception e) {
                 System.out.println("accessibilityApartmentArea");
             }
+
             try {
                 departmentPage.accessibility().click();
             } catch (Exception e) {
                 System.out.println("accessibility");
             }
+
             try {
                 departmentPage.conformation().click();
             } catch (Exception e) {
                 System.out.println("conformation");
             }
+
             TimeUnit.SECONDS.sleep(4);
+
             try {
-                //Submit Button hat Fehler
                 departmentPage.submitButton().click();
                 departmentPage.submitButton().click();
                 departmentPage.submitButton().click();
             } catch (Exception e) {
-                System.out.println("Submit Button in modal doesnt work!");
             }
 
             //allgemeine Angaben
@@ -268,7 +274,6 @@ public class CreateFairHouseOffer extends BaseClass {
             TimeUnit.SECONDS.sleep(6);
             logout();
             TimeUnit.SECONDS.sleep(4);
-
         }
         driver.close();
         driver = null;

@@ -28,7 +28,7 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            DesiredCapabilities cap = DesiredCapabilities.firefox();
+            DesiredCapabilities cap = DesiredCapabilities.chrome();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
@@ -117,11 +117,22 @@ public class BaseClass {
 
     public int getCount() {
         try {
-            WebElement x = driver.findElement(By.xpath("//section[@class='Department']//tbody//tr"));
-            int count = x.findElements(By.xpath("//section[@class='Department']//tbody//tr")).size();
+            WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
+            int count = x.findElements(By.xpath("//td[@class='actions']")).size();
             return count;
         } catch (Exception e) {
             Assert.fail("Nicht möglich die Departments zu zählen.");
+            return 0;
+        }
+    }
+
+    public int getCountForDelete() {
+        try {
+            WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
+            int count = x.findElements(By.xpath("//td[@class='actions']")).size();
+            System.out.println(count);
+            return count;
+        } catch (Exception e) {
             return 0;
         }
     }

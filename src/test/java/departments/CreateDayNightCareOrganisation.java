@@ -18,7 +18,11 @@ public class CreateDayNightCareOrganisation extends BaseClass {
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
-            loginLoop(i);
+            try {
+                loginLoop(i);
+            } catch (Exception e) {
+                System.out.println("eingeloggt");
+            }
 
             Actions actions = new Actions(driver);
             loadPropsForDepartment();
@@ -35,24 +39,24 @@ public class CreateDayNightCareOrganisation extends BaseClass {
                 departmentPage.addDepartment().click();
                 TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
-                System.out.println("Es wurde noch kein Department angelegt.");
+                System.out.println("erster FB");
             }
 
             try {
                 departmentPage.addFirstDayNightCareDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Es wurde noch kein Department angelegt.");
+                System.out.println("erster FB");
             }
 
             try {
                 departmentPage.addDayNightCareDepartment().click();
             } catch (Exception e) {
-                System.out.println("Es existiert schon ein erstes Department");
+                System.out.println("n'ter FB");
             }
 
             //allgemeine Angaben
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
 
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
@@ -115,8 +119,8 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             logout();
             TimeUnit.SECONDS.sleep(2);
 
-            driver.close();
-            driver = null;
         }
+        driver.close();
+        driver = null;
     }
 }
