@@ -35,21 +35,17 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
             int tr = 0;
             WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
             cardElement.click();
-            System.out.println("card clicked");
             searchDepartmentPage.searchDepartment().click();
             TimeUnit.SECONDS.sleep(4);
 
             while (true) {
                 try {
                     tr = tr + 1;
-                    System.out.println(tr + " tr");
-
                     WebElement postalCodeResults = driver.findElement(By.xpath("//tr[" + tr + "]//td[1]//div[1]//div[2]//div[1]//div[2]//div[2]"));
 
                     for (int array = 0; array < plzPerimeterCentral.length; array++) {
                         if (postalCodeResults.getText().equals(plzPerimeterCentral[array] + " Berlin")) {
                             testIfFailure = testIfFailure + 1;
-                            System.out.println(testIfFailure);
                             break;
                         }
                         if (testIfFailure == 5) {
