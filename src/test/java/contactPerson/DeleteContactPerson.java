@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.contactPerson.DeleteContactPersonPage;
 import resources.BaseClass;
@@ -14,16 +12,10 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class DeleteContactPerson extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-    }
-
     @Test()
-    public void deleteContactPerson() throws InterruptedException {
+    public void deleteContactPerson() throws InterruptedException, IOException {
+        initializeBrowser();
+
         DeleteContactPersonPage deleteContactPersonPage = new DeleteContactPersonPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
@@ -35,6 +27,8 @@ public class DeleteContactPerson extends BaseClass {
             } catch (Exception e) {
                 System.out.println("Card wird geklickt.");
             }
+
+            System.out.println("contact person count= " + getCountContactPerson());
 
             while (getCountContactPerson() != 0) {
                 String xpath = "//section[@class='Userdata']//tr[1]//a[@class='delete']";
@@ -48,10 +42,7 @@ public class DeleteContactPerson extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
         }
         logout();
-    }
-
-    @AfterTest
-    public void closeBrowser() {
+        TimeUnit.SECONDS.sleep(2);
         driver.close();
         driver = null;
     }

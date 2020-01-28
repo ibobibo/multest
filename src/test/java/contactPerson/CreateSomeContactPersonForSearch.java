@@ -14,16 +14,10 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class CreateSomeContactPersonForSearch extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-    }
-
     @Test()
     public void addContactPerson() throws IOException, InterruptedException {
+        initializeBrowser();
+
         ContactPersonPage contactPersonPage = new ContactPersonPage(driver);
         DepartmentPage departmentPage = new DepartmentPage(driver);
         Actions actions = new Actions(driver);
@@ -82,10 +76,6 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                 TimeUnit.SECONDS.sleep(2);
             }
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

@@ -3,8 +3,6 @@ package marketplaceTests.searchDepartmentRequest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.searchDepartmentRequest.SearchDepartmentPage;
 import resources.BaseClass;
@@ -13,22 +11,15 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
+    @Test
+    public void searchDepartmentAfterPerimeterNearCenter() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(1);
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
 
-    @Test
-    public void searchDepartmentAfterPerimeterNearCenter() throws InterruptedException {
         SearchDepartmentPage searchDepartmentPage = new SearchDepartmentPage(driver);
-        TimeUnit.SECONDS.sleep(2);
-
         searchDepartmentPage.searchDepartmentTitle().click();
         TimeUnit.SECONDS.sleep(2);
+
         int[] plzPerimeterCentral = {13189, 10999, 10247, 13159, 10117};
         int testIfFailure = 0;
 
@@ -44,21 +35,23 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
             int tr = 0;
             WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
             cardElement.click();
+            System.out.println("card clicked");
             searchDepartmentPage.searchDepartment().click();
             TimeUnit.SECONDS.sleep(4);
 
             while (true) {
                 try {
                     tr = tr + 1;
+                    System.out.println(tr + " tr");
 
-                    WebElement postalCodeResults = driver.findElement(By.xpath("//tr[" + tr + "]//td[1]//div[1]//div[2]//div[1]//div[3]//div[2]"));
+                    WebElement postalCodeResults = driver.findElement(By.xpath("//tr[" + tr + "]//td[1]//div[1]//div[2]//div[1]//div[2]//div[2]"));
 
                     for (int array = 0; array < plzPerimeterCentral.length; array++) {
                         if (postalCodeResults.getText().equals(plzPerimeterCentral[array] + " Berlin")) {
                             testIfFailure = testIfFailure + 1;
+                            System.out.println(testIfFailure);
                             break;
                         }
-
                         if (testIfFailure == 5) {
                             System.out.println("breakTest");
                             break;
@@ -76,20 +69,16 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
                         }
                     }
                 } catch (Exception e) {
-                    tr = 0;
                     break;
                 }
             }
             if (testIfFailure == 5) {
+                tr = 0;
                 testIfFailure = testIfFailure - 5;
             } else {
                 Assert.fail("We found more/less places than expected(Expected places: 5): " + testIfFailure + " in Card No:" + card);
             }
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

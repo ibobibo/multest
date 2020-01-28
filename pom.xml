@@ -26,15 +26,8 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--Deparment Stuff-->
-                        <suiteXmlFile>dockerTests.xml</suiteXmlFile>
-                        <!--                        <suiteXmlFile>testngContactPersonStuff.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngDepartmentStuffCreateEditToggleDelete.xml</suiteXmlFile>-->
-                        <!--                        &lt;!&ndash;Searching Tests&ndash;&gt;-->
-                        <!--&lt;!&ndash;                        <suiteXmlFile>testngMarketPlaceSearchDepartment.xml</suiteXmlFile>&ndash;&gt;-->
-                        <!--                        &lt;!&ndash;Marketplace Stuff&ndash;&gt;-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceRegister.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceAskForMeeting.xml</suiteXmlFile>-->
-                        <!--                        <suiteXmlFile>testngMarketPlaceCheckIfDeletedUserRequest.xml</suiteXmlFile>-->
+                        <suiteXmlFile>dockerTestsPartner.xml</suiteXmlFile>
+                        <suiteXmlFile>dockerTestsMarketplace.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -12,16 +12,10 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class SearchContactPerson extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-    }
-
     @Test()
-    public void searchContactPerson() throws InterruptedException {
+    public void searchContactPerson() throws InterruptedException, IOException {
+        initializeBrowser();
+
         SearchContactPersonPage searchContactPersonPage = new SearchContactPersonPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
@@ -70,10 +64,7 @@ public class SearchContactPerson extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
         }
         logout();
-    }
-
-    @AfterTest
-    public void closeBrowser() {
+        TimeUnit.SECONDS.sleep(2);
         driver.close();
         driver = null;
     }

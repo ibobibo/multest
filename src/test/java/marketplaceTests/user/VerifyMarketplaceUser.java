@@ -1,8 +1,7 @@
 package marketplaceTests.user;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import resources.BaseClass;
 
@@ -11,15 +10,11 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class VerifyMarketplaceUser extends BaseClass {
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeMailServer();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-    }
-
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
+        initializeMailServer();
+        TimeUnit.SECONDS.sleep(2);
+
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             WebElement inputField = driver.findElement(By.xpath("//div[@class='search-container']//input[@placeholder='Search']"));
@@ -46,10 +41,6 @@ public class VerifyMarketplaceUser extends BaseClass {
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

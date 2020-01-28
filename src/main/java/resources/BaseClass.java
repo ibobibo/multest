@@ -62,8 +62,12 @@ public class BaseClass {
     }
 
     public void getScreenshot(String name) throws IOException {
-        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
+        try {
+            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
+        } catch (Exception e) {
+            System.out.println("Null pointer Exception in take Screenshot Method");
+        }
     }
 
     public void initializeBrowser() throws IOException, InterruptedException {
@@ -141,9 +145,9 @@ public class BaseClass {
         try {
             WebElement x = driver.findElement(By.xpath("//section[@class='Userdata']//tbody//tr"));
             int count = x.findElements(By.xpath("//section[@class='Userdata']//tbody//tr")).size();
-
             return count;
         } catch (Exception e) {
+            Assert.fail("Nicht möglich die Contact Personen zu zählen.");
             return 0;
         }
     }
