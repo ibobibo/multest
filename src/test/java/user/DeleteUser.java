@@ -1,7 +1,5 @@
 package user;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.user.DeleteUserPage;
 import resources.BaseClass;
@@ -10,17 +8,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class DeleteUser extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        TimeUnit.SECONDS.sleep(4);
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(4);
-    }
-
     @Test
     public void deleteUser() throws IOException, InterruptedException {
+        initializeBrowser();
+        TimeUnit.SECONDS.sleep(4);
+
         loadProps();
         loginAdmin();
         DeleteUserPage deleteUserPage = new DeleteUserPage(driver);
@@ -38,10 +30,6 @@ public class DeleteUser extends BaseClass {
             deleteUserPage.deleteAccess().click();
             TimeUnit.SECONDS.sleep(2);
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

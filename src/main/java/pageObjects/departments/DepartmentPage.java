@@ -249,13 +249,13 @@ public class DepartmentPage {
     }
 
     //sprechzeiten Montag
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.startHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.0.0.startHour']")
     WebElement mondayHourBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.startMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.0.0.startMinute']")
     WebElement mondayMinuteBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.endHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.0.0.endHour']")
     WebElement mondayHourEnd;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.0.0.endMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.0.0.endMinute']")
     WebElement mondayMinuteEnd;
 
     //GETTER sprechzeiten Montag
@@ -276,13 +276,13 @@ public class DepartmentPage {
     }
 
     //sprechzeiten Dienstag
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.startHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.1.0.startHour']")
     WebElement tuesdayHourBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.startMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.1.0.startMinute']")
     WebElement tuesdayMinuteBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.endHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.1.0.endHour']")
     WebElement tuesdayHourEnd;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.1.0.endMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.1.0.endMinute']")
     WebElement tuesdayMinuteEnd;
 
     //GETTER sprechzeiten Dienstag
@@ -303,13 +303,13 @@ public class DepartmentPage {
     }
 
     //sprechzeiten Mittwoch
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.startHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.2.0.startHour']")
     WebElement wednesdayHourBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.startMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.2.0.startMinute']")
     WebElement wednesdayMinuteBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.endHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.2.0.endHour']")
     WebElement wednesdayHourEnd;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.2.0.endMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.2.0.endMinute']")
     WebElement wednesdayMinuteEnd;
 
     //GETTER sprechzeiten Mittwoch
@@ -330,13 +330,13 @@ public class DepartmentPage {
     }
 
     //sprechzeiten Donnerstag
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.startHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.3.0.startHour']")
     WebElement thursdayHourBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.startMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.3.0.startMinute']")
     WebElement thursdayMinuteBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.endHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.3.0.endHour']")
     WebElement thursdayHourEnd;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.3.0.endMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.3.0.endMinute']")
     WebElement thursdayMinuteEnd;
 
     //GETTER sprechzeiten Donnerstag
@@ -357,13 +357,13 @@ public class DepartmentPage {
     }
 
     //sprechzeiten Freitag
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.startHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.4.0.startHour']")
     WebElement fridayHourBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.startMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.4.0.startMinute']")
     WebElement fridayMinuteBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.endHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.4.0.endHour']")
     WebElement fridayHourEnd;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.4.0.endMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.4.0.endMinute']")
     WebElement fridayMinuteEnd;
 
     //GETTER sprechzeiten Freitag
@@ -384,13 +384,13 @@ public class DepartmentPage {
     }
 
     //sprechzeiten Samstag
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.startHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.5.0.startHour']")
     WebElement saturdayHourBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.startMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.5.0.startMinute']")
     WebElement saturdayMinuteBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.endHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.5.0.endHour']")
     WebElement saturdayHourEnd;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.5.0.endMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.5.0.endMinute']")
     WebElement saturdayMinuteEnd;
 
     //GETTER sprechzeiten Samstag
@@ -411,13 +411,13 @@ public class DepartmentPage {
     }
 
     //sprechzeiten Sonntag
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.startHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.6.0.startHour']")
     WebElement sundayHourBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.startMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.6.0.startMinute']")
     WebElement sundayMinuteBegin;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.endHour']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.6.0.endHour']")
     WebElement sundayHourEnd;
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='tmp.consultationHours.6.0.endMinute']")
+    @FindBy(xpath = "//input[@id='tmp.consultationHours.6.0.endMinute']")
     WebElement sundayMinuteEnd;
 
     //GETTER sprechzeiten Sonntag
@@ -1190,7 +1190,7 @@ public class DepartmentPage {
     }
 
     //youtube video
-    @FindBy(xpath = "//section[@class='Input  text     empty']//input[@id='youtubeURL']")
+    @FindBy(xpath = "//input[@id='youtubeURL']")
     WebElement youTubeVideo;
 
     //GETTER youtube video

@@ -123,6 +123,10 @@ public class BaseClass {
         try {
             WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
             int count = x.findElements(By.xpath("//td[@class='actions']")).size();
+            if (count == 0) {
+                System.out.println("Es existieren keine Daten");
+                return 0;
+            }
             return count;
         } catch (Exception e) {
             Assert.fail("Nicht möglich die Departments zu zählen.");
@@ -145,6 +149,10 @@ public class BaseClass {
         try {
             WebElement x = driver.findElement(By.xpath("//section[@class='Userdata']//tbody//tr"));
             int count = x.findElements(By.xpath("//section[@class='Userdata']//tbody//tr")).size();
+            if(count == 0) {
+                System.out.println("Es existiert keine Kontaktperson.");
+                return 0;
+            }
             return count;
         } catch (Exception e) {
             Assert.fail("Nicht möglich die Contact Personen zu zählen.");

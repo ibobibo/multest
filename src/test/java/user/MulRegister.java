@@ -19,6 +19,10 @@ public class MulRegister extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany") + i);
+
+            registerPage.companyForm().click();
+            registerPage.companyFormChosen().click();
+
             registerPage.streetAddress().sendKeys(prop.getProperty("streetAddress"));
             registerPage.streetNumber().sendKeys(prop.getProperty("streetNumber"));
             registerPage.postalCode().sendKeys(prop.getProperty("postalCode"));

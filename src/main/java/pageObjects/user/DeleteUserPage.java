@@ -13,11 +13,11 @@ public class DeleteUserPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//div[@class='sitesAndMasters card']//a")
+    @FindBy(xpath = "//div[@class='searchView card']//a")
     WebElement masterManaging;
-    @FindBy(xpath = "//section[@class='Userdata']//input[@placeholder='Suche nach E-Mail, Name']")
+    @FindBy(xpath = "//input[@placeholder='Unternehmen, Einrichtungen, Master']")
     WebElement searchField;
-    @FindBy(xpath = "//section[@class='Userdata']//button[@id='search-userdata']")
+    @FindBy(xpath = "//button[@id='search-userdata']")
     WebElement searchFieldButton;
     @FindBy(xpath = "//a[@id='delete-user-button-0']")
     WebElement deleteButton;

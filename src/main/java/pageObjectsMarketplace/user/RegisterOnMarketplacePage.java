@@ -15,7 +15,7 @@ public class RegisterOnMarketplacePage {
 
     @FindBy(xpath = "//section[@id='app-header']//a[@href='#/login']")
     WebElement loginButtonMarketplace;
-    @FindBy(xpath = "//section[@id='app-header']//a[@href='#/register']")
+    @FindBy(xpath = "//section[@id='app-header']//a[@href='/register']")
     WebElement registerButtonMarketplace;
     @FindBy(xpath = "//input[@id='account.login']")
     WebElement accountLogin;

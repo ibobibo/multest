@@ -34,8 +34,6 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
             } catch (Exception e) {
                 System.out.println("Card wird geklickt.");
             }
-
-
             TimeUnit.SECONDS.sleep(1);
 
             for (int loop = 0; loop < 3; loop++) {

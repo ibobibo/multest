@@ -13,7 +13,7 @@ public class ContactPersonPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id = "add-user")
+    @FindBy(xpath = "//a[@id='add-user']")
     WebElement addContactPerson;
     @FindBy(xpath = "//option[. = 'ohne Anrede']")
     WebElement contactSalutationChosen;

@@ -2,8 +2,6 @@ package marketplaceTests.meetingRequest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.meetingRequest.OperationsOnMeetingAsMarketplaceUserPage;
 import resources.BaseClass;
@@ -12,17 +10,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class DeleteMeetingAsMarketplaceUser extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
+    @Test
+    public void deleteMeetingAsMarketplaceUser() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(1);
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
 
-    @Test
-    public void askForMeeting() throws InterruptedException {
         OperationsOnMeetingAsMarketplaceUserPage operationsOnMeetingAsMarketplaceUserPage = new OperationsOnMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);
 
@@ -39,16 +31,13 @@ public class DeleteMeetingAsMarketplaceUser extends BaseClass {
                     WebElement elemForXpath = driver.findElement(By.xpath(xPathString));
                     elemForXpath.click();
                 } catch (Exception e) {
+                    System.out.println("Cant delete meeting req");
                     break;
                 }
             }
             operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
             operationsOnMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

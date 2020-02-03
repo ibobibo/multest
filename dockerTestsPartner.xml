@@ -6,30 +6,19 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    &lt;!&ndash;        DOCKER TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" parallel="true" name="docker Tests">-->
+    <!--    REGISTER TEST-->
+    <!--    <test thread-count="4" name="register mul master test">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="dockerTests.DockerTest"/>-->
-    <!--            <class name="dockerTests.DockerTest2"/>-->
-    <!--            <class name="dockerTests.DockerTest3"/>-->
-    <!--            <class name="dockerTests.DockerTest4"/>-->
+    <!--            <class name="user.MulRegister"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-
-    <!--    REGISTER TEST-->
-    <test thread-count="4" name="register mul master test">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="user.MulRegister"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="verify mul master test">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="user.Verify"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="verify mul master test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="user.Verify"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <!--    CREATE DEPARTMENT TESTS-->
     <test thread-count="4" name="Create Day Night Care Organisation">
@@ -57,69 +46,57 @@
         </classes>
     </test>
 
-    <!--    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;-->
-    <!--    <test thread-count="4" name="make departments public">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.ToggleOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--    MAKE DEPARTMENTS PUBLIC-->
+    <test thread-count="4" name="make departments public">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="departments.ToggleOrganisation"/>
+        </classes>
+    </test>
 
-    <!--    &lt;!&ndash;    EDIT DEPARTMENTS&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Editing Departments">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.EditOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--    EDIT DEPARTMENTS-->
+    <test thread-count="4" name="Editing Departments">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="departments.EditOrganisation"/>
+        </classes>
+    </test>
 
-    <!--    &lt;!&ndash;            COPY DEPARTMENT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Copy department Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.CopyDepartment"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--            COPY DEPARTMENT-->
+    <test thread-count="4" name="Copy department Test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="departments.CopyDepartment"/>
+        </classes>
+    </test>
 
-    <!--    &lt;!&ndash;    EDIT USER DETAILS TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Edit User details">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.EditUserDetails"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Password Change Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.PasswordChangeTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Password Reset">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.ResetPasswordTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--    EDIT USER DETAILS TEST-->
+    <test thread-count="4" name="Edit User details">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.EditUserDetails"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="Password Change Test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.PasswordChangeTest"/>
+        </classes>
+    </test>
 
-    <!--            &lt;!&ndash;    Reset Password and Verify new password&ndash;&gt;-->
-    <!--            <test thread-count="4" name="Reset Password Test">-->
-    <!--                <classes>-->
-    <!--                    <class name="user.ResetPasswordTest"/>-->
-    <!--                </classes>-->
-    <!--            </test>-->
-    <!--            <test thread-count="4" name="Verify new Password Test">-->
-    <!--                <classes>-->
-    <!--                    <class name="user.VerifyNewPassword"/>-->
-    <!--                </classes>-->
-    <!--            </test>-->
-
-    <!--    &lt;!&ndash;   DELETE DEPARTMENT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Delete Department">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.DeleteOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--    PASSWORD RESET AND VERIFY NEW PASSWORD-->
+    <test thread-count="4" name="Password Reset">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.ResetPasswordTest"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="Verify new Password Test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.VerifyNewPassword"/>
+        </classes>
+    </test>
 
     <!--    CONTACT PERSON TESTS-->
     <test thread-count="4" name="Creating Some Contact Person">
@@ -138,6 +115,28 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
             <class name="contactPerson.DeleteContactPerson"/>
+        </classes>
+    </test>
+
+    <!--   DELETE DEPARTMENT-->
+    <test thread-count="4" name="Delete Department">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="departments.DeleteOrganisation"/>
+        </classes>
+    </test>
+
+    <!--    DELETE ACCOUNT-->
+    <test thread-count="4" name="Delete Placement">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="placements.DeletePlacement"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="Delete User">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.DeleteUser"/>
         </classes>
     </test>
 </suite>

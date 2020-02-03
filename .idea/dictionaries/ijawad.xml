@@ -20,6 +20,7 @@
       <w>chromedriver</w>
       <w>cookiebot</w>
       <w>cybot</w>
+      <w>daten</w>
       <w>diese</w>
       <w>einen</w>
       <w>einladung</w>
@@ -27,6 +28,8 @@
       <w>entgegen</w>
       <w>erneut</w>
       <w>erster</w>
+      <w>existieren</w>
+      <w>existiert</w>
       <w>fehler</w>
       <w>fuer</w>
       <w>geckodriver</w>
@@ -44,20 +47,25 @@
       <w>jahre</w>
       <w>jede</w>
       <w>kaffeemaschine</w>
+      <w>keine</w>
       <w>keithstr</w>
       <w>keithstraße</w>
       <w>killall</w>
       <w>koennen</w>
       <w>komplett</w>
+      <w>kontaktperson</w>
       <w>leid</w>
       <w>marktplatz</w>
       <w>mitarbeiter</w>
       <w>msedgedriver</w>
       <w>märchennamen</w>
+      <w>möglich</w>
       <w>namen</w>
       <w>nehmen</w>
       <w>nicht</w>
+      <w>personen</w>
       <w>pflege</w>
+      <w>pflegedienstmaster</w>
       <w>saniert</w>
       <w>sationary</w>
       <w>schon</w>
@@ -87,6 +95,7 @@
       <w>wurden</w>
       <w>zeit</w>
       <w>zeitlichen</w>
+      <w>zählen</w>
     </words>
   </dictionary>
 </component>

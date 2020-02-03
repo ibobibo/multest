@@ -2,8 +2,6 @@ package marketplaceTests.bookmarkAndCompareDepartmentTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.bookmarkTests.CompareMarketplaceDepartmentsPage;
 import resources.BaseClass;
@@ -12,17 +10,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class CompareMarketplaceDepartments extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(2);
-    }
-
     @Test
     public void compareMarketplaceDepartments() throws IOException, InterruptedException {
+        initializeBrowserForMarketplace();
+        TimeUnit.SECONDS.sleep(2);
+
         loadProps();
         CompareMarketplaceDepartmentsPage compareMarketplaceDepartments = new CompareMarketplaceDepartmentsPage(driver);
 
@@ -83,10 +75,6 @@ public class CompareMarketplaceDepartments extends BaseClass {
             }
             TimeUnit.SECONDS.sleep(2);
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

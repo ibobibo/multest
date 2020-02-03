@@ -17,7 +17,7 @@ public class DeletePlacementPage {
     WebElement nameField;
     @FindBy(xpath = "//input[@id='password']")
     WebElement passwordField;
-    @FindBy(xpath = "//section[@class='SiteDashboardHeader']//a[@class='edit']")
+    @FindBy(xpath = "//div[@class='actionButtonContainer']//a[@class='edit']")
     WebElement editPlacement;
     @FindBy(xpath = "//button[@class='delete-button']")
     WebElement deletePlacement;

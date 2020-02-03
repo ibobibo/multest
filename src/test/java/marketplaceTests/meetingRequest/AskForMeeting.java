@@ -2,8 +2,6 @@ package marketplaceTests.meetingRequest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.meetingRequest.AskForMeetingPage;
 import resources.BaseClass;
@@ -12,17 +10,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class AskForMeeting extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
+    @Test
+    public void askForMeeting() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(1);
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
 
-    @Test
-    public void askForMeeting() throws InterruptedException {
         AskForMeetingPage askForMeetingPage = new AskForMeetingPage(driver);
         TimeUnit.SECONDS.sleep(2);
 
@@ -60,10 +52,6 @@ public class AskForMeeting extends BaseClass {
             askForMeetingPage.accountMenu().click();
             askForMeetingPage.accountMenuLogout().click();
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

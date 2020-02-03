@@ -2,8 +2,6 @@ package departments;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.AcceptMeetingPage;
 import pageObjects.departments.DepartmentPage;
@@ -13,16 +11,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class AcceptMeeting extends BaseClass {
-
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowser();
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(1);
-    }
-
     @Test()
-    public void acceptMeeting() throws InterruptedException {
+    public void acceptMeeting() throws InterruptedException, IOException {
+        initializeBrowser();
+        TimeUnit.SECONDS.sleep(1);
+
         AcceptMeetingPage acceptMeetingPage = new AcceptMeetingPage(driver);
         DepartmentPage departmentPage = new DepartmentPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
@@ -47,14 +40,13 @@ public class AcceptMeeting extends BaseClass {
                 acceptMeetingPage.textArea().sendKeys(prop.getProperty("textAreaAcceptInvite"));
                 acceptMeetingPage.submit().click();
             } catch (Exception e) {
+                System.out.println("cant accept meeting as pflegedienstmaster");
                 break;
             }
         }
         logout();
-    }
+        TimeUnit.SECONDS.sleep(1);
 
-    @AfterTest
-    public void closeBrowser() {
         driver.close();
         driver = null;
     }

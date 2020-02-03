@@ -13,25 +13,29 @@ public class RegisterPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//section[@id='app-header']//a[@href='#/register']")
+    @FindBy(xpath = "//section[@id='app-header']//a[@href='/register']")
     WebElement registerButtonHomepage;
 
     @FindBy(xpath = "//input[@id='enterprise.name']")
     WebElement siteCompany;
-    @FindBy(xpath = "//input[@id='enterprise.streetAddress']")
+    @FindBy(xpath = "//input[@id='enterprise.address.streetAddress']")
     WebElement streetAddress;
-    @FindBy(xpath = "//input[@id='enterprise.streetNumber']")
+    @FindBy(xpath = "//input[@id='enterprise.address.streetNumber']")
     WebElement streetNumber;
-    @FindBy(xpath = "//input[@id='enterprise.postalCode']")
+    @FindBy(xpath = "//input[@id='enterprise.address.postalCode']")
     WebElement postalCode;
-    @FindBy(xpath = "//input[@id='enterprise.city']")
+    @FindBy(xpath = "//input[@id='enterprise.address.city']")
     WebElement city;
 
-    @FindBy(xpath = "//select[@id='enterprise.umbrellaOrganisation.id']")
+    @FindBy(xpath = "//select[@id='enterprise.umbrellaOrganisationId']")
     WebElement umbrellaOrganisation;
+    @FindBy(xpath = "//select[@id='enterprise.legalForm']")
+    WebElement companyForm;
     @FindBy(xpath = "//option[. = 'Stiftung Liebenau']")
     WebElement umbrellaOrganisationChosen;
-    @FindBy(xpath = "//section[@class='Input  select    required empty']//select[@id='contact.salutation']")
+    @FindBy(xpath = "//option[contains(text(),'Aktiengesellschaft (AG)')]")
+    WebElement companyFormChosen;
+    @FindBy(xpath = "//select[@id='contact.salutation']")
     WebElement contactSalutation;
     @FindBy(xpath = "//option[. = 'Herr']")
     WebElement contactSalutationMale;
@@ -62,6 +66,10 @@ public class RegisterPage {
         return siteCompany;
     }
 
+    public WebElement companyFormChosen() {
+        return companyFormChosen;
+    }
+
     public WebElement streetAddress() {
         return streetAddress;
     }
@@ -80,6 +88,10 @@ public class RegisterPage {
 
     public WebElement umbrellaOrganisation() {
         return umbrellaOrganisation;
+    }
+
+    public WebElement companyForm() {
+        return companyForm;
     }
 
     public WebElement umbrellaOrganisationChosen() {
