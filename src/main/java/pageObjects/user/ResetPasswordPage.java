@@ -17,11 +17,8 @@ public class ResetPasswordPage {
     WebElement getNewPassword;
     @FindBy(xpath = "//input[@id='email']")
     WebElement email;
-    @FindBy(xpath = "//div[@class='col-md-6']//span[contains(text(),'Passwort zurücksetzen')]")
+    @FindBy(xpath = "//div[@class='col-md-6']//button")
     WebElement resetPassword;
-    @FindBy(xpath = "//span[contains(text(),'Neues Passwort anfordern.')]")
-    WebElement bb;
-
 
     public WebElement getNewPassword() {
         return getNewPassword;
@@ -34,5 +31,4 @@ public class ResetPasswordPage {
     public WebElement resetPassword() {
         return resetPassword;
     }
-
 }

@@ -18,7 +18,6 @@ public class DeleteContactPerson extends BaseClass {
 
         DeleteContactPersonPage deleteContactPersonPage = new DeleteContactPersonPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-
             loginLoop(i);
             WebDriverWait wait = new WebDriverWait(driver, 5);
             try {
@@ -28,15 +27,18 @@ public class DeleteContactPerson extends BaseClass {
                 System.out.println("Card wird geklickt.");
             }
 
-            System.out.println("contact person count= " + getCountContactPerson());
-
             while (getCountContactPerson() != 0) {
-                String xpath = "//section[@class='Userdata']//tr[1]//a[@class='delete']";
-                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-                if (findTr.isDisplayed()) {
-                    findTr.click();
-                    deleteContactPersonPage.delete().click();
-                    TimeUnit.SECONDS.sleep(2);
+                try {
+                    String xpath = "//section[@class='Userdata']//tr[1]//a[@class='delete']";
+                    WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                    if (findTr.isDisplayed()) {
+                        findTr.click();
+                        deleteContactPersonPage.delete().click();
+                        TimeUnit.SECONDS.sleep(2);
+                    }
+                } catch (Exception e) {
+                    System.out.println("Kein Anprechpartner mehr zu finden.");
+                    break;
                 }
             }
             TimeUnit.SECONDS.sleep(2);

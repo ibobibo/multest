@@ -16,6 +16,7 @@ public class DeleteOrganisation extends BaseClass {
     @Test()
     public void deleteAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
+        TimeUnit.SECONDS.sleep(2);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
@@ -31,14 +32,18 @@ public class DeleteOrganisation extends BaseClass {
             }
 
             WebDriverWait wait = new WebDriverWait(driver, 20);
-            System.out.println(getCount());
             while (getCount() != 0) {
-                String xpath = "//section[@class='MulTable withoutSearch withoutTopElements']//tr[1]//a[@class='delete']";
-                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-                findTr.click();
-                WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
-                findElem.click();
-                TimeUnit.SECONDS.sleep(2);
+                try {
+                    String xpath = "//section[@class='MulTable withoutSearch withoutTopElements']//tr[1]//a[@class='delete']";
+                    WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                    findTr.click();
+                    WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
+                    findElem.click();
+                    TimeUnit.SECONDS.sleep(2);
+                } catch (Exception e) {
+                    System.out.println("Es existiert kein Department.");
+                    break;
+                }
 
                 try {
                     departmentPage.addDepartmentCard().click();

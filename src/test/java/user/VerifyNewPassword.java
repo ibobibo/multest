@@ -14,6 +14,7 @@ public class VerifyNewPassword extends BaseClass {
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
+        TimeUnit.SECONDS.sleep(2);
 
         VerifyPage verifyPage = new VerifyPage(driver);
         loadProps();
@@ -40,8 +41,8 @@ public class VerifyNewPassword extends BaseClass {
             accessAllCookies(driver);
             TimeUnit.SECONDS.sleep(2);
 
-            verifyPage.newPassword().sendKeys(prop.getProperty("contactNewPassword"));
-            verifyPage.newPasswordRepeat().sendKeys(prop.getProperty("contactNewPassword"));
+            verifyPage.newPassword().sendKeys(prop.getProperty("contactPassword"));
+            verifyPage.newPasswordRepeat().sendKeys(prop.getProperty("contactPassword"));
             TimeUnit.SECONDS.sleep(2);
             verifyPage.submitPassword().click();
             TimeUnit.SECONDS.sleep(1);

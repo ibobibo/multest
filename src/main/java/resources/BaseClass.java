@@ -149,7 +149,7 @@ public class BaseClass {
         try {
             WebElement x = driver.findElement(By.xpath("//section[@class='Userdata']//tbody//tr"));
             int count = x.findElements(By.xpath("//section[@class='Userdata']//tbody//tr")).size();
-            if(count == 0) {
+            if (count == 0) {
                 System.out.println("Es existiert keine Kontaktperson.");
                 return 0;
             }
@@ -162,7 +162,11 @@ public class BaseClass {
 
     //access Cookies
     public void accessAllCookies(RemoteWebDriver driver) {
-        driver.findElement(By.xpath("//div[@id='CybotCookiebotDialog']//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
+        try {
+            driver.findElement(By.xpath("//div[@id='CybotCookiebotDialog']//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
+        } catch (Exception e) {
+            System.out.println("Kann keine Cookies finden.");
+        }
     }
 
     public static int getRandomNumberInRange(int min, int max) {

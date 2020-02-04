@@ -11,12 +11,13 @@ public class ResetPasswordTest extends BaseClass {
     @Test
     public void resetPassword() throws InterruptedException, IOException {
         initializeBrowser();
+        TimeUnit.SECONDS.sleep(1);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);
             resetPasswordPage.getNewPassword().click();
-            TimeUnit.SECONDS.sleep(1);
+            System.out.println("click reset password");
+            TimeUnit.SECONDS.sleep(3);
             resetPasswordPage.email().sendKeys(prop.getProperty("contactEmail") + i);
-            TimeUnit.SECONDS.sleep(1);
             resetPasswordPage.resetPassword().click();
         }
         driver.close();

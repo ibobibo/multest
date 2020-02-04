@@ -13,7 +13,7 @@ public class RegisterOnMarketplacePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//section[@id='app-header']//a[@href='#/login']")
+    @FindBy(xpath = "//section[@id='app-header']//a[@href='/login']")
     WebElement loginButtonMarketplace;
     @FindBy(xpath = "//section[@id='app-header']//a[@href='/register']")
     WebElement registerButtonMarketplace;

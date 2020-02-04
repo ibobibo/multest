@@ -36,7 +36,7 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
             WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
             cardElement.click();
             searchDepartmentPage.searchDepartment().click();
-            TimeUnit.SECONDS.sleep(4);
+            TimeUnit.SECONDS.sleep(2);
 
             while (true) {
                 try {

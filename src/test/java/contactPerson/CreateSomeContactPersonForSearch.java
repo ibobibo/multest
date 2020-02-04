@@ -3,8 +3,6 @@ package contactPerson;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.contactPerson.ContactPersonPage;
 import pageObjects.departments.DepartmentPage;
@@ -39,7 +37,7 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
             for (int loop = 0; loop < 3; loop++) {
                 if (loop == 0) {
                     contactPersonPage.addContactPerson().click();
-                    TimeUnit.SECONDS.sleep(1);
+                    TimeUnit.SECONDS.sleep(2);
                     WebElement availability = driver.findElement(By.id("salutation"));
                     actions.moveToElement(availability).click().build().perform();
                     contactPersonPage.contactSalutationChosen().click();
@@ -50,7 +48,7 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                     contactPersonPage.submit().click();
                 } else if (loop == 1) {
                     contactPersonPage.addContactPerson().click();
-                    TimeUnit.SECONDS.sleep(1);
+                    TimeUnit.SECONDS.sleep(2);
                     WebElement availability = driver.findElement(By.id("salutation"));
                     actions.moveToElement(availability).click().build().perform();
                     contactPersonPage.contactSalutationChosen().click();
@@ -61,7 +59,7 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                     contactPersonPage.submit().click();
                 } else if (loop == 2) {
                     contactPersonPage.addContactPerson().click();
-                    TimeUnit.SECONDS.sleep(1);
+                    TimeUnit.SECONDS.sleep(2);
                     WebElement availability = driver.findElement(By.id("salutation"));
                     actions.moveToElement(availability).click().build().perform();
                     contactPersonPage.contactSalutationChosen().click();

@@ -7,18 +7,18 @@
     </listeners>
 
     <!--    REGISTER TEST-->
-    <!--    <test thread-count="4" name="register mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.MulRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="verify mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.Verify"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test thread-count="4" name="register mul master test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.MulRegister"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="verify mul master test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.Verify"/>
+        </classes>
+    </test>
 
     <!--    CREATE DEPARTMENT TESTS-->
     <test thread-count="4" name="Create Day Night Care Organisation">
@@ -126,17 +126,17 @@
         </classes>
     </test>
 
-    <!--    DELETE ACCOUNT-->
-    <test thread-count="4" name="Delete Placement">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="placements.DeletePlacement"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Delete User">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="user.DeleteUser"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    DELETE ACCOUNT&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Delete Placement">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="placements.DeletePlacement"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Delete User">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="user.DeleteUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 </suite>
