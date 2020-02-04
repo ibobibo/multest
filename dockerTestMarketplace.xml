@@ -6,48 +6,47 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--        REGISTER AND VERIFY USER TEST-->
-    <test thread-count="4" name="Marketplace Registration">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.user.MarketplaceRegister"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="user.Verify Marketplace User">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;        REGISTER AND VERIFY USER TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Marketplace Registration">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.user.MarketplaceRegister"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="user.Verify Marketplace User">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--    SEARCH DEPARTMENT TEST-->
-    <test thread-count="4" name="Search Department after perimeter near Center">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterNearCenter"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Search Department after perimeter outside center">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterOutsideCenter"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    SEARCH DEPARTMENT TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Search Department after perimeter near Center">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterNearCenter"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Search Department after perimeter outside center">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterOutsideCenter"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--    BOOKMARKS TEST-->
-    <!--    TODO-->
-    <test thread-count="4" name="Bookmark Departments">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.MyFavoriteMarketplaceDepartments"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Compare Departments">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.CompareMarketplaceDepartments"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    BOOKMARKS TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Bookmark Departments">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.MyFavoriteMarketplaceDepartments"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Compare Departments">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.CompareMarketplaceDepartments"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <!--    ASK FOR MEETING-->
     <test thread-count="4" name="Ask for Meeting as User">
@@ -93,26 +92,26 @@
         </classes>
     </test>
 
-    <!--    CHECK IF MEETING REQ WOULD BE ALSO DELETE IF USER IS DELETED AFTER REQ-->
-    <test thread-count="4" name="Ask second time for Meeting as User">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    CHECK IF MEETING REQ WOULD BE ALSO DELETE IF USER IS DELETED AFTER REQ&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Ask second time for Meeting as User">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--    DELETE USER-->
-    <test thread-count="4" name="Delete Marketplace User">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Check if deleted Meeting Request are available">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.CheckIfRequestAreDeleted"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    DELETE USER&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Delete Marketplace User">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Check if deleted Meeting Request are available">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CheckIfRequestAreDeleted"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
 </suite>

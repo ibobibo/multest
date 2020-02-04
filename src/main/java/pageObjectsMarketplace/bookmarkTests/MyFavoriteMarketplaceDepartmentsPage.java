@@ -17,7 +17,7 @@ public class MyFavoriteMarketplaceDepartmentsPage {
     WebElement clickHeaderForSearch;
     @FindBy(xpath = "//div[contains(@class,'tab-pane active')]//div[contains(@class,'row')]//div[contains(@class,'col-12')]//section[contains(@class,'DepartmentSearchBase')]//div//input[@id='location']")
     WebElement location;
-    @FindBy(xpath = "//tr[1]//section[@class='DepartmentBookmarkButton']//button[@class='bookmark ']")
+    @FindBy(xpath = "//body//tr[1]//section[contains(@class,'DepartmentBookmarkButton')]//button[1]")
     WebElement theFirstElementIsMyFavorite;
     @FindBy(xpath = "//a[contains(@class,'Bookmarks nav-link')]")
     WebElement clickHeaderForBookmark;

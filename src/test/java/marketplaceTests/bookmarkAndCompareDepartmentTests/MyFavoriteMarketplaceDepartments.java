@@ -2,6 +2,7 @@ package marketplaceTests.bookmarkAndCompareDepartmentTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.bookmarkTests.MyFavoriteMarketplaceDepartmentsPage;
 import resources.BaseClass;
@@ -21,31 +22,31 @@ public class MyFavoriteMarketplaceDepartments extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoopMarketplace(i);
             TimeUnit.SECONDS.sleep(2);
+            Actions actions = new Actions(driver);
             myFavoriteMarketplaceDepartmentsPage.clickHeaderForSearch().click();
 
             for (int card = 1; card < 5; card++) {
-                System.out.println(card + " Card");
                 WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
-                cardElement.click();
-                System.out.println("card clicked");
-                myFavoriteMarketplaceDepartmentsPage.location().sendKeys("Berlin");
-                TimeUnit.SECONDS.sleep(2);
-                System.out.println("1");
-                myFavoriteMarketplaceDepartmentsPage.searchDepartment().click();
-                TimeUnit.SECONDS.sleep(2);
-                System.out.println("2");
-                myFavoriteMarketplaceDepartmentsPage.theFirstElementIsMyFavorite().click();
-                TimeUnit.SECONDS.sleep(1);
-                System.out.println("3");
+                actions.moveToElement(cardElement).click().build().perform();
 
                 myFavoriteMarketplaceDepartmentsPage.location().clear();
+                myFavoriteMarketplaceDepartmentsPage.location().sendKeys("Berlin");
+                TimeUnit.SECONDS.sleep(2);
+                myFavoriteMarketplaceDepartmentsPage.searchDepartment().click();
+                TimeUnit.SECONDS.sleep(2);
+                myFavoriteMarketplaceDepartmentsPage.theFirstElementIsMyFavorite().click();
+                TimeUnit.SECONDS.sleep(1);
             }
 
             myFavoriteMarketplaceDepartmentsPage.clickHeaderForBookmark().click();
             TimeUnit.SECONDS.sleep(2);
             for (int removing = 0; removing < 4; removing++) {
-                myFavoriteMarketplaceDepartmentsPage.removeMyFavorite().click();
-                TimeUnit.SECONDS.sleep(1);
+                try {
+                    myFavoriteMarketplaceDepartmentsPage.removeMyFavorite().click();
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (Exception e) {
+                    break;
+                }
             }
         }
         driver.close();

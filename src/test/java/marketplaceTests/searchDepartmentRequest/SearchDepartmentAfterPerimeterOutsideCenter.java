@@ -43,7 +43,7 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
                 try {
                     tr = tr + 1;
 
-                    WebElement postalCodeResults = driver.findElement(By.xpath("//tr[" + tr + "]//td[1]//div[1]//div[2]//div[1]//div[2]//div[2]"));
+                    WebElement postalCodeResults = driver.findElement(By.xpath("//tr[" + tr + "]//td[1]//div[1]//div[2]//div[1]//div[3]//div[2]"));
 
                     for (int array = 0; array < plzPerimeterMoreToBorder.length; array++) {
                         if (postalCodeResults.getText().equals(plzPerimeterMoreToBorder[array] + " Berlin")) {
