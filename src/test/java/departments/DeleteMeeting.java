@@ -20,7 +20,7 @@ public class DeleteMeeting extends BaseClass {
 
         while (true) {
             try {
-                String xpath = "//section[@class='Workspace']//section[1]//div[1]//button[1]//span[1]";
+                String xpath = "//span[contains(text(),'Antworten')]";
                 WebElement webElemForXpath = driver.findElement(By.xpath(xpath));
                 webElemForXpath.click();
                 deleteMeetingPage.discardMeetingReqFromUser().click();

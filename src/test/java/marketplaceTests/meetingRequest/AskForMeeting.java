@@ -29,6 +29,13 @@ public class AskForMeeting extends BaseClass {
             askForMeetingPage.moreInformation().click();
             TimeUnit.SECONDS.sleep(2);
             askForMeetingPage.askForMeeting().click();
+            TimeUnit.SECONDS.sleep(2);
+            try {
+                askForMeetingPage.askForMeeting().click();
+            } catch (Exception e) {
+                System.out.println("Meeting Anfrage wird gestellt.");
+            }
+
             //meetingType
             String meetingType = "//label[" + getRandomNumberInRange(1, 3) + "]//div[1]//div[1]";
             String meetingTypePhone = "//label[1]//div[1]//div[1]";

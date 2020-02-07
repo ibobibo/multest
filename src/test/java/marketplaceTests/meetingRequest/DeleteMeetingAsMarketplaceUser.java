@@ -35,6 +35,7 @@ public class DeleteMeetingAsMarketplaceUser extends BaseClass {
                     break;
                 }
             }
+            TimeUnit.SECONDS.sleep(5);
             operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
             operationsOnMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }

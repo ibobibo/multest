@@ -33,7 +33,6 @@ public class DiscardMeetingAsMarketplaceUser extends BaseClass {
                     WebElement elemForXpath = driver.findElement(By.xpath(xPathString));
                     elemForXpath.click();
                 } catch (Exception e) {
-                    System.out.println("cant discard meeting as Marketplace User");
                     break;
                 }
             }
