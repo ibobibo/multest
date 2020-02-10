@@ -33,13 +33,13 @@ public class Verify extends BaseClass {
 
             ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
             driver.switchTo().window(tabs.get(1));
-            driver.close();
+            driver.quit();
 
             driver.switchTo().window(tabs.get(0));
             TimeUnit.SECONDS.sleep(2);
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
-            driver.close();
+            driver.quit();
             driver = null;
         }
     }

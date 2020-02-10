@@ -47,14 +47,14 @@ public class VerifyNewPassword extends BaseClass {
             verifyPage.submitPassword().click();
             TimeUnit.SECONDS.sleep(1);
 
-            driver.close();
+            driver.quit();
 
             driver.switchTo().window(tabs.get(0));
             TimeUnit.SECONDS.sleep(2);
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

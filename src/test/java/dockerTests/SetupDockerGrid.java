@@ -1,33 +1,42 @@
 package dockerTests;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+import resources.BaseClass;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class SetupDockerGrid {
-    @BeforeTest
+public class SetupDockerGrid extends BaseClass {
+    @BeforeSuite
     void startDockerGrid() throws IOException, InterruptedException {
-        Runtime.getRuntime().exec("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/start_dockerGrid.sh");
+        Process proc =  Runtime.getRuntime().exec("./start_dockerGrid.sh");
+        BufferedReader stdInput = new BufferedReader(new
+                InputStreamReader(proc.getInputStream()));
+        String s;
+        while ((s = stdInput.readLine()) != null) {
+            System.out.println(s);
+        }
         System.out.println("Docker initialized");
         Thread.sleep(15000);
     }
 
-    @Test
-    void moreContainerDockerGrid() throws IOException, InterruptedException {
-        Runtime.getRuntime().exec("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/moreContainer_dockerGrid.sh");
-        System.out.println("Docker scale more Browser");
-        Thread.sleep(15000);
-    }
-
-    @AfterTest
+    @AfterSuite
     void stopDockerGrid() throws IOException, InterruptedException {
-        Runtime.getRuntime().exec("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/stop_dockerGrid.sh");
+        Runtime.getRuntime().exec("./stop_dockerGrid.sh");
         System.out.println("Docker shutdown");
         Thread.sleep(5000);
 
         Runtime.getRuntime().exec("killall 'Terminal'");
         System.out.println("Close Terminal");
     }
+
+    @BeforeTest
+    void cleanUp() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
+    }
+
 }

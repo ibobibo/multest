@@ -2,19 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestMarketplace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestMarketplace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/bookmarkTests/MyFavoriteMarketplaceDepartmentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjectsMarketplace/bookmarkTests/MyFavoriteMarketplaceDepartmentsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moreContainer_dockerGrid.sh" beforeDir="false" afterPath="$PROJECT_DIR$/moreContainer_dockerGrid.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateSomeContactPersonForSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateSomeContactPersonForSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/DeleteContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/DeleteContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/EditContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/EditContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/InviteContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/InviteContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/SearchContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/SearchContactPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CheckIfRequestAreDeleted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CheckIfRequestAreDeleted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CopyDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CopyDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/LoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/LoginLogout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/SetupDockerGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/SetupDockerGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/DigitalConsultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/DigitalConsultation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/informationPortal/Care.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/informationPortal/Care.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AskForMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AskForMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/VerifyMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/VerifyMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/EditUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/EditUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/PasswordChangeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/PasswordChangeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/Verify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_dockerGrid.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start_dockerGrid.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stop_dockerGrid.sh" beforeDir="false" afterPath="$PROJECT_DIR$/stop_dockerGrid.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MulTesting.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/ExtentReporterNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/ExtentReporterNG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/Listeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/Listeners.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/MulTesting.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/InviteContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/InviteContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/SearchContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/SearchContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CheckIfRequestAreDeleted.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CheckIfRequestAreDeleted.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CopyDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CopyDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/LoginLogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/LoginLogout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/DigitalConsultation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/DigitalConsultation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/informationPortal/Care.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/informationPortal/Care.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/placements/CreateNewPlacement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/placements/CreateNewPlacement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/placements/DeletePlacement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/placements/DeletePlacement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/DeleteUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/EditUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/EditUserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/PasswordChangeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/PasswordChangeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/ResetPasswordTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/ResetPasswordTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/Verify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/Verify.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/VerifyNewPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/VerifyNewPassword.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,17 +128,23 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570635716092" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31149426" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -76,53 +172,12 @@
       <recent name="$PROJECT_DIR$/xml/dev-marktplatz-tests" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn site:run" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml">
-    <configuration name="MarketplaceRegister" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="marketplaceTests.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="marketplaceTests.user" />
-      <option name="MAIN_CLASS_NAME" value="marketplaceTests.user.MarketplaceRegister" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchContactPerson" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="contactPerson.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="contactPerson" />
-      <option name="MAIN_CLASS_NAME" value="contactPerson.SearchContactPerson" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG./Users/jbounama/Documents/mitpflegeleben/integrationtests/dockerTestMarketplace.xml">
     <configuration name="/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/dockerTestMarketplace.xml" />
@@ -153,20 +208,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/jbounama/Documents/mitpflegeleben/integrationtests/dockerTestMarketplace.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="integrationtests" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/dockerTestMarketplace.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/jbounama/Documents/mitpflegeleben/integrationtests/xmlFiles/dev-marktplatz/testngMarketPlaceCheckIfDeletedUserRequest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="integrationtests" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceCheckIfDeletedUserRequest.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTests.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
-      <item itemvalue="TestNG.MarketplaceRegister" />
-      <item itemvalue="TestNG.SearchContactPerson" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
+      <item itemvalue="TestNG./Users/jbounama/Documents/mitpflegeleben/integrationtests/xmlFiles/dev-marktplatz/testngMarketPlaceCheckIfDeletedUserRequest.xml" />
+      <item itemvalue="TestNG./Users/jbounama/Documents/mitpflegeleben/integrationtests/dockerTestMarketplace.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/jbounama/Documents/mitpflegeleben/integrationtests/dockerTestMarketplace.xml" />
+        <item itemvalue="TestNG./Users/jbounama/Documents/mitpflegeleben/integrationtests/xmlFiles/dev-marktplatz/testngMarketPlaceCheckIfDeletedUserRequest.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
-        <item itemvalue="TestNG.SearchContactPerson" />
-        <item itemvalue="TestNG.MarketplaceRegister" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTests.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +304,8 @@
       <workItem from="1578313078312" duration="5000" />
       <workItem from="1578313087793" duration="24000" />
       <workItem from="1578313304631" duration="69243000" />
+      <workItem from="1581332558884" duration="1572000" />
+      <workItem from="1581334285641" duration="11658000" />
     </task>
     <servers />
   </component>
@@ -250,6 +327,97 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="205" key="#Project_Structure" timestamp="1581332610448">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="205" key="#Project_Structure/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581332610448" />
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581334162408">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581334162408" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1581346677543">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581346677543" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1440.203.1440.807@0.0.1920.1080" timestamp="1581346145775" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1440.203.1440.877@0.0.1920.1080" timestamp="1581337875139" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223423" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center" timestamp="1581346677541">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581346677541" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1920.1080/-1440.203.1440.807@0.0.1920.1080" timestamp="1581346145773" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1920.1080/-1440.203.1440.877@0.0.1920.1080" timestamp="1581337875138" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223422" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left" timestamp="1581346677540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581346677540" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1920.1080/-1440.203.1440.807@0.0.1920.1080" timestamp="1581346145772" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1920.1080/-1440.203.1440.877@0.0.1920.1080" timestamp="1581337875136" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223421" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right" timestamp="1581346677542">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581346677542" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1920.1080/-1440.203.1440.807@0.0.1920.1080" timestamp="1581346145774" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1920.1080/-1440.203.1440.877@0.0.1920.1080" timestamp="1581337875139" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223422" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom" timestamp="1581345263945">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581345263945" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223417" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center" timestamp="1581345263943">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581345263943" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223416" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left" timestamp="1581345263942">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581345263942" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223414" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right" timestamp="1581345263944">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581345263944" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1920.1057/-1440.203.1440.807@0.23.1920.1057" timestamp="1581334223416" />
+    <state x="469" y="179" key="SettingsEditor" timestamp="1581337451216">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581337451215" />
+    <state x="640" y="297" width="782" height="486" key="find.popup" timestamp="1581346125077">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="640" y="297" width="782" height="486" key="find.popup/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581346125077" />
+    <state x="640" y="297" width="791" height="486" key="find.popup/0.0.1920.1080/-1440.203.1440.877@0.0.1920.1080" timestamp="1581345245776" />
+    <state x="625" y="255" width="670" height="675" key="run.anything.popup" timestamp="1581334169967">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="255" width="670" height="675" key="run.anything.popup/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581334169967" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1581344531688">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/-1440.180.1440.900@0.0.1920.1080" timestamp="1581344531688" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AskForMeeting.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MulTesting$_Users_ijawad_Documents_Arbeit_Automatisierung_MulTesting_testngMarketPlaceAskForMeeting_xml.ic" NAME="$PROJECT_DIR$/testngMarketPlaceAskForMeeting.xml Coverage Results" MODIFIED="1575380146417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -39,7 +39,11 @@ public class BaseClass {
             }
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            try {
+                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            } catch (Exception e) {
+                System.out.println("Error connecting to  RemoteWebDriver: " + e);
+            }
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
             try {

@@ -30,7 +30,7 @@ public class DeleteUser extends BaseClass {
             deleteUserPage.deleteAccess().click();
             TimeUnit.SECONDS.sleep(2);
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

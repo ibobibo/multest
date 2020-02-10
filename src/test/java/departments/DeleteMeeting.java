@@ -34,7 +34,7 @@ public class DeleteMeeting extends BaseClass {
         }
         logout();
         TimeUnit.SECONDS.sleep(1);
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

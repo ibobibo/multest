@@ -20,7 +20,7 @@ public class ResetPasswordTest extends BaseClass {
             resetPasswordPage.email().sendKeys(prop.getProperty("contactEmail") + i);
             resetPasswordPage.resetPassword().click();
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

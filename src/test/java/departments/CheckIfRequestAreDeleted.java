@@ -37,7 +37,7 @@ public class CheckIfRequestAreDeleted extends BaseClass {
         logout();
         TimeUnit.SECONDS.sleep(1);
 
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }
