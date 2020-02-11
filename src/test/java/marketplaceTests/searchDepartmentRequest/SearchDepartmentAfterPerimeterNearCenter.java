@@ -3,6 +3,7 @@ package marketplaceTests.searchDepartmentRequest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.searchDepartmentRequest.SearchDepartmentPage;
 import resources.BaseClass;
@@ -11,6 +12,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
+    @BeforeTest
+    public void freeDriver() {
+        //cleanUp();
+    }
+
     @Test
     public void searchDepartmentAfterPerimeterNearCenter() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();

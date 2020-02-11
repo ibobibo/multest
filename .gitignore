@@ -1,0 +1,5 @@
+src/main/java/screenshots
+target
+.idea
+test-output
+.DS_STORE

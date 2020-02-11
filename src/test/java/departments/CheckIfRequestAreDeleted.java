@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class CheckIfRequestAreDeleted extends BaseClass {
     @Test()
     public void checkIfRequestAreDeleted() throws InterruptedException, IOException {
+        cleanUp();
         initializeBrowser();
         TimeUnit.SECONDS.sleep(1);
 

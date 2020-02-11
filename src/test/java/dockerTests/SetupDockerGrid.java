@@ -31,12 +31,4 @@ public class SetupDockerGrid extends BaseClass {
         System.out.println("Close Terminal");
     }
 
-    @BeforeTest
-    void cleanUp() {
-        if (driver != null) {
-            driver.quit();
-            driver = null;
-        }
-    }
-
 }

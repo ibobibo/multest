@@ -5,6 +5,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import pageObjects.LoginLogoutPage;
 
 import java.io.File;
@@ -23,6 +25,7 @@ public class BaseClass {
     public static Properties propNewPlacement = new Properties();
 
     public WebDriver initializeDriver() throws IOException, InterruptedException {
+        cleanUp();
         loadProps();
         String browserName = prop.getProperty("browser");
 
@@ -39,11 +42,7 @@ public class BaseClass {
             }
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
-            try {
-                driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-            } catch (Exception e) {
-                System.out.println("Error connecting to  RemoteWebDriver: " + e);
-            }
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
             try {
@@ -248,5 +247,13 @@ public class BaseClass {
 
         TimeUnit.SECONDS.sleep(1);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
+
+    public void cleanUp() {
+        if (driver != null) {
+            System.out.println("CleanUp");
+            driver.quit();
+            driver = null;
+        }
     }
 }
