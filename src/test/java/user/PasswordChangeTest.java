@@ -11,6 +11,12 @@ public class PasswordChangeTest extends BaseClass {
     @Test
     public void changePasswordTest() throws InterruptedException, IOException {
         initializeBrowser();
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
             EditUserDetailsPage editUserDetailsPage = new EditUserDetailsPage(driver);

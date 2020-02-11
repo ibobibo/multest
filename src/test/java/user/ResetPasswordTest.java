@@ -11,7 +11,14 @@ public class ResetPasswordTest extends BaseClass {
     @Test
     public void resetPassword() throws InterruptedException, IOException {
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(5);
+        loadProps();
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);
             resetPasswordPage.getNewPassword().click();

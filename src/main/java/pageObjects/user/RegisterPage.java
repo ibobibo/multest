@@ -31,7 +31,7 @@ public class RegisterPage {
     WebElement umbrellaOrganisation;
     @FindBy(xpath = "//select[@id='enterprise.legalForm']")
     WebElement companyForm;
-    @FindBy(xpath = "//option[. = 'Stiftung Liebenau']")
+    @FindBy(xpath = "//option[contains(text(),'Bathildisheim e. V.')]")
     WebElement umbrellaOrganisationChosen;
     @FindBy(xpath = "//option[contains(text(),'Aktiengesellschaft (AG)')]")
     WebElement companyFormChosen;

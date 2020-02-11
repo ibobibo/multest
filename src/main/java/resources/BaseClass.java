@@ -2,6 +2,7 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -29,22 +30,22 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            DesiredCapabilities cap = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-            driver.get(prop.getProperty("urlFromHomeNetwork"));
+            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+            driver = new ChromeDriver();
             TimeUnit.SECONDS.sleep(2);
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
-                System.out.println("cookies accepted");
+                System.out.println("cookies accepted through register class");
             }
         } else if (browserName.equals("firefox")) {
             System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
+            TimeUnit.SECONDS.sleep(2);
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
-                System.out.println("cookies accepted");
+                System.out.println("cookies accepted through register class");
             }
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
@@ -54,7 +55,7 @@ public class BaseClass {
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
-                System.out.println("cookies accepted");
+                System.out.println("cookies accepted through register class");
             }
         }
         return driver;
@@ -162,7 +163,7 @@ public class BaseClass {
     //access Cookies
     public void accessAllCookies(RemoteWebDriver driver) {
         try {
-            driver.findElement(By.xpath("//div[@id='CybotCookiebotDialog']//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
+            driver.findElement(By.xpath("//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
         } catch (Exception e) {
             System.out.println("Kann keine Cookies finden.");
         }
@@ -203,6 +204,11 @@ public class BaseClass {
         TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail") + i);
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
 
         TimeUnit.SECONDS.sleep(1);
         loginLogoutPage.anmelden().click();

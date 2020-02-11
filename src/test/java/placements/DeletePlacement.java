@@ -11,6 +11,11 @@ public class DeletePlacement extends BaseClass {
     @Test
     public void deletePlacement() throws IOException, InterruptedException {
         initializeBrowser();
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
         TimeUnit.SECONDS.sleep(1);
 
         loadProps();
@@ -18,14 +23,6 @@ public class DeletePlacement extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
             loginLoop(i);
-            try {
-                deletePlacementPage.nameField().clear();
-                deletePlacementPage.passwordField().clear();
-                login(prop.getProperty("contactEmail") + i, prop.getProperty("contactNewPassword"));
-            } catch (Exception e) {
-                System.out.println("Passwort wurde nicht verändert");
-            }
-
             TimeUnit.SECONDS.sleep(2);
             deletePlacementPage.editPlacement().click();
             deletePlacementPage.deletePlacement().click();

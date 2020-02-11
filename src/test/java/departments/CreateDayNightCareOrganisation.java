@@ -15,6 +15,11 @@ public class CreateDayNightCareOrganisation extends BaseClass {
     public void createDayNightCareOrganisation() throws IOException, InterruptedException {
         initializeBrowser();
         loadProps();
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();

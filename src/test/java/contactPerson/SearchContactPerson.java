@@ -13,6 +13,11 @@ public class SearchContactPerson extends BaseClass {
     @Test()
     public void searchContactPerson() throws InterruptedException, IOException {
         initializeBrowser();
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
 
         SearchContactPersonPage searchContactPersonPage = new SearchContactPersonPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
@@ -33,7 +38,7 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchButton().click();
                     TimeUnit.SECONDS.sleep(2);
                     try {
-                        searchContactPersonPage.resultFromSearch().getText().contains(prop.getProperty("contactFirstName1"));
+                        searchContactPersonPage.resultFromSearchAlpha().getText().contains(prop.getProperty("contactFirstName1"));
                     } catch (Exception e) {
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
@@ -43,7 +48,7 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchButton().click();
                     TimeUnit.SECONDS.sleep(2);
                     try {
-                        searchContactPersonPage.resultFromSearch().getText().contains(prop.getProperty("contactFirstName2"));
+                        searchContactPersonPage.resultFromSearchBeta().getText().contains(prop.getProperty("contactFirstName2"));
                     } catch (Exception e) {
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
@@ -53,7 +58,7 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchButton().click();
                     TimeUnit.SECONDS.sleep(2);
                     try {
-                        searchContactPersonPage.resultFromSearch().getText().contains(prop.getProperty("contactFirstName3"));
+                        searchContactPersonPage.resultFromSearchGamma().getText().contains(prop.getProperty("contactFirstName3"));
                     } catch (Exception e) {
                         Assert.fail("Suche ergab kein Ergebnis");
                     }

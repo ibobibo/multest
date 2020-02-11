@@ -15,6 +15,12 @@ public class VerifyNewPassword extends BaseClass {
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
         TimeUnit.SECONDS.sleep(2);
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
+
 
         VerifyPage verifyPage = new VerifyPage(driver);
         loadProps();

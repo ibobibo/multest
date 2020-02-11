@@ -6,19 +6,19 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    &lt;!&ndash;        REGISTER AND VERIFY USER TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Marketplace Registration">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="marketplaceTests.user.MarketplaceRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="user.Verify Marketplace User">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--        REGISTER AND VERIFY USER TEST-->
+    <test thread-count="4" name="Marketplace Registration">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="marketplaceTests.user.MarketplaceRegister"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="user.Verify Marketplace User">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
+        </classes>
+    </test>
 
     <!--    &lt;!&ndash;    SEARCH DEPARTMENT TEST&ndash;&gt;-->
     <!--    <test thread-count="4" name="Search Department after perimeter near Center">-->
@@ -125,11 +125,11 @@
     <!--            <class name="marketplaceTests.user.DeleteMarketplaceUser"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <test thread-count="4" name="Check if deleted Meeting Request are available">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.CheckIfRequestAreDeleted"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="Check if deleted Meeting Request are available">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CheckIfRequestAreDeleted"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
 </suite>

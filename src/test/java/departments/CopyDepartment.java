@@ -18,6 +18,12 @@ public class CopyDepartment extends BaseClass {
     @Test()
     public void copyOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             CopyDepartmentPage copyDepartmentPage = new CopyDepartmentPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);

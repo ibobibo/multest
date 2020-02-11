@@ -10,13 +10,20 @@ import java.util.concurrent.TimeUnit;
 public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
-        initializeDriver();
+        initializeBrowser();
         loadProps();
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
             RegisterPage registerPage = new RegisterPage(driver);
+            TimeUnit.SECONDS.sleep(2);
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(2);
+            try {
+                accessAllCookies(driver);
+            } catch (Exception e) {
+                System.out.println("cookies accepted");
+            }
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany") + i);
 
@@ -29,7 +36,6 @@ public class MulRegister extends BaseClass {
             registerPage.city().sendKeys(prop.getProperty("city"));
 
             registerPage.umbrellaOrganisation().click();
-            registerPage.umbrellaOrganisationChosen().click();
 
             registerPage.contactSalutation().click();
             registerPage.contactSalutationMale().click();
@@ -40,7 +46,6 @@ public class MulRegister extends BaseClass {
             registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone"));
             registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword"));
             registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
-            registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
 
             registerPage.accept().click();
             TimeUnit.SECONDS.sleep(4);

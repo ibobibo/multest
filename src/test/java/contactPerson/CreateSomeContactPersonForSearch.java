@@ -15,6 +15,11 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
     @Test()
     public void addContactPerson() throws IOException, InterruptedException {
         initializeBrowser();
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted through register class");
+        }
 
         ContactPersonPage contactPersonPage = new ContactPersonPage(driver);
         DepartmentPage departmentPage = new DepartmentPage(driver);

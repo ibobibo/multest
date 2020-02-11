@@ -17,11 +17,11 @@ public class DeletePlacementPage {
     WebElement nameField;
     @FindBy(xpath = "//input[@id='password']")
     WebElement passwordField;
-    @FindBy(xpath = "//div[@class='actionButtonContainer']//a[@class='edit']")
+    @FindBy(xpath = "//a[@id='edit-enterprise-button']")
     WebElement editPlacement;
     @FindBy(xpath = "//button[@class='delete-button']")
     WebElement deletePlacement;
-    @FindBy(id = "mul-confirm-delete-category")
+    @FindBy(xpath = "//button[@class='confirm']")
     WebElement acceptDelete;
 
     public WebElement nameField() {
