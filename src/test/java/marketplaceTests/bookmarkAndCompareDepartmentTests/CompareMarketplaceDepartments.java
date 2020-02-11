@@ -14,6 +14,11 @@ public class CompareMarketplaceDepartments extends BaseClass {
     public void compareMarketplaceDepartments() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
 
         loadProps();
         CompareMarketplaceDepartmentsPage compareMarketplaceDepartments = new CompareMarketplaceDepartmentsPage(driver);

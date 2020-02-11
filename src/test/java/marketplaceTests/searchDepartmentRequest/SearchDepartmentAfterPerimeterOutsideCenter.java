@@ -14,7 +14,12 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
     @Test
     public void searchDepartmentAfterPerimeterOutsideCenter() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
 
         SearchDepartmentPage searchDepartmentPage = new SearchDepartmentPage(driver);
         TimeUnit.SECONDS.sleep(2);

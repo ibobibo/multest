@@ -13,7 +13,12 @@ public class DeleteMeeting extends BaseClass {
     @Test()
     public void deleteAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
 
         DeleteMeetingPage deleteMeetingPage = new DeleteMeetingPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));

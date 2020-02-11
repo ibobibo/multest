@@ -13,7 +13,12 @@ public class AskForMeeting extends BaseClass {
     @Test
     public void askForMeeting() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
 
         AskForMeetingPage askForMeetingPage = new AskForMeetingPage(driver);
         TimeUnit.SECONDS.sleep(2);

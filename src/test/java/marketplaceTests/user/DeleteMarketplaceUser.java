@@ -15,8 +15,11 @@ public class DeleteMarketplaceUser extends BaseClass {
     public void initialize() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(2);
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
     }
 
     @Test

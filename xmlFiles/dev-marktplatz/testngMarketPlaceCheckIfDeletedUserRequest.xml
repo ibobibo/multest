@@ -29,10 +29,4 @@
             <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
         </classes>
     </test>
-
-    <test name="Check if deleted Meeting Request are available">
-        <classes>
-            <class name="departments.CheckIfRequestAreDeleted"/>
-        </classes>
-    </test>
 </suite>
