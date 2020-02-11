@@ -22,7 +22,6 @@ public class ResetPasswordTest extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);
             resetPasswordPage.getNewPassword().click();
-            System.out.println("click reset password");
             TimeUnit.SECONDS.sleep(3);
             resetPasswordPage.email().sendKeys(prop.getProperty("contactEmail") + i);
             resetPasswordPage.resetPassword().click();

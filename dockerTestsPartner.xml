@@ -24,21 +24,21 @@
             <class name="departments.CreateDayNightCareOrganisation"/>
         </classes>
     </test>
-    <!--    <test thread-count="4" name="Create Ambulant Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Create Stationary Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Create Fair House Offer Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="departments.CreateFairHouseOffer"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test thread-count="4" name="Create Ambulant Organisation">
+        <classes>
+            <class name="departments.CreateAmbulantOrganisation"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="Create Stationary Organisation">
+        <classes>
+            <class name="departments.CreateStationaryOrganisation"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="Create Fair House Offer Organisation">
+        <classes>
+            <class name="departments.CreateFairHouseOffer"/>
+        </classes>
+    </test>
 
     <!--    MAKE DEPARTMENTS PUBLIC-->
     <test thread-count="4" name="make departments public">
@@ -115,7 +115,7 @@
             <class name="placements.DeletePlacement"/>
         </classes>
     </test>
-    <test thread-count="4" name="Delete User">
+    <test thread-count="4" name="Check if User is deleted.">
         <classes>
             <class name="user.DeleteUser"/>
         </classes>

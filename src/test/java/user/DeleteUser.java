@@ -1,5 +1,6 @@
 package user;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.user.DeleteUserPage;
 import resources.BaseClass;
@@ -9,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DeleteUser extends BaseClass {
     @Test
-    public void deleteUser() throws IOException, InterruptedException {
+    public void checkIfUserIsDeleted() throws IOException, InterruptedException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
         try {
@@ -29,10 +30,13 @@ public class DeleteUser extends BaseClass {
             deleteUserPage.searchField().sendKeys(prop.getProperty("contactEmail") + i);
             deleteUserPage.searchFieldButton().click();
             TimeUnit.SECONDS.sleep(2);
-            deleteUserPage.deleteButton().click();
-            TimeUnit.SECONDS.sleep(2);
-            deleteUserPage.deleteAccess().click();
-            TimeUnit.SECONDS.sleep(2);
+            try {
+                deleteUserPage.deleteButton().click();
+                deleteUserPage.deleteAccess().click();
+                Assert.fail("User isn't deleted.");
+            } catch (Exception e) {
+                break;
+            }
         }
         driver.close();
         driver = null;
