@@ -1,2 +1,2 @@
-cd /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting || exit
-docker-compose up
+echo $PWD
+docker-compose up -d

@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moreContainer_dockerGrid.sh" beforeDir="false" afterPath="$PROJECT_DIR$/moreContainer_dockerGrid.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/SetupDockerGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/SetupDockerGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_dockerGrid.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start_dockerGrid.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stop_dockerGrid.sh" beforeDir="false" afterPath="$PROJECT_DIR$/stop_dockerGrid.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
