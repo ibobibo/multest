@@ -35,7 +35,7 @@ public class BaseClass {
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
-                System.out.println("cookies accepted through register class");
+                System.out.println("cookies accepted without base class");
             }
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
@@ -45,7 +45,7 @@ public class BaseClass {
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
-                System.out.println("cookies accepted through register class");
+                System.out.println("cookies accepted without base class");
             }
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
@@ -55,7 +55,7 @@ public class BaseClass {
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
-                System.out.println("cookies accepted through register class");
+                System.out.println("cookies accepted without base class");
             }
         }
         return driver;
