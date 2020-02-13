@@ -31,7 +31,7 @@ public class PasswordChangeTest extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
             logout();
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

@@ -52,7 +52,7 @@ public class MulRegister extends BaseClass {
             registerPage.registerSubmit().click();
             TimeUnit.SECONDS.sleep(4);
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

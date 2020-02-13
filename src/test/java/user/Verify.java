@@ -44,7 +44,7 @@ public class Verify extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
-            driver.close();
+            driver.quit();
             driver = null;
         }
     }

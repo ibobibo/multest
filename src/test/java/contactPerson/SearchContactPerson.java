@@ -68,7 +68,7 @@ public class SearchContactPerson extends BaseClass {
         }
         logout();
         TimeUnit.SECONDS.sleep(2);
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

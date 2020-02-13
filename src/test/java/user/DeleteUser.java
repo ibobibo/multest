@@ -38,7 +38,7 @@ public class DeleteUser extends BaseClass {
                 break;
             }
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

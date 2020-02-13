@@ -60,7 +60,7 @@ public class VerifyNewPassword extends BaseClass {
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }
