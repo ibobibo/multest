@@ -80,7 +80,7 @@ public class CompareMarketplaceDepartments extends BaseClass {
             }
             TimeUnit.SECONDS.sleep(2);
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

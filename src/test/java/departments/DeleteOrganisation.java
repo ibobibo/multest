@@ -40,14 +40,14 @@ public class DeleteOrganisation extends BaseClass {
             WebDriverWait wait = new WebDriverWait(driver, 20);
             while (getCount() != 0) {
                 try {
-                    String xpath = "//section[@class='MulTable withoutSearch withoutTopElements']//tr[1]//a[@class='delete']";
+                    String xpath = "//a[@id='delete-button-0']";
                     WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
                     findTr.click();
                     WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(deleteOrganisationPage.deleteClick()));
                     findElem.click();
-                    TimeUnit.SECONDS.sleep(2);
+                    TimeUnit.SECONDS.sleep(4);
                 } catch (Exception e) {
-                    System.out.println("Es existiert kein Department.");
+                    System.out.println("Departmentanzahl= " + getCount());
                     break;
                 }
 

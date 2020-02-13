@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import pageObjects.departments.EditOrganisationPage;
@@ -38,10 +37,10 @@ public class EditOrganisation extends BaseClass {
                 System.out.println("Card wird geklickt.");
             }
 
-            int x = 1;
-            while (getCount() >= x) {
+            int x = 0;
+            while (getCount() != x) {
                 TimeUnit.SECONDS.sleep(2);
-                String xpath = "//section[@class='Department']//tr[" + x + "]//td[@class='actions']//a[@class='edit']";
+                String xpath = "//a[@id='edit-button-" + x + "']";
                 WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
                 findTr.click();
                 TimeUnit.SECONDS.sleep(2);

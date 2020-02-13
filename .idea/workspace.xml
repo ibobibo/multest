@@ -2,7 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerTestMarketplace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestMarketplace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/AcceptMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AskForMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AskForMeeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/VerifyMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/VerifyMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/placements/DeletePlacementPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/placements/DeletePlacementPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml">
     <configuration name="MarketplaceRegister" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <extension name="coverage">
@@ -152,8 +190,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
         <item itemvalue="TestNG.SearchContactPerson" />
         <item itemvalue="TestNG.MarketplaceRegister" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTests.xml" />

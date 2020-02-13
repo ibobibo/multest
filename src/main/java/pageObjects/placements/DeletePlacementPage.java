@@ -21,7 +21,7 @@ public class DeletePlacementPage {
     WebElement editPlacement;
     @FindBy(xpath = "//button[@class='delete-button']")
     WebElement deletePlacement;
-    @FindBy(xpath = "//button[@class='confirm']")
+    @FindBy(xpath = "//button[@class='confirm delete']")
     WebElement acceptDelete;
 
     public WebElement nameField() {

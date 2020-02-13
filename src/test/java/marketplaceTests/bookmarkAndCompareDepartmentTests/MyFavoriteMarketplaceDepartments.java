@@ -54,7 +54,7 @@ public class MyFavoriteMarketplaceDepartments extends BaseClass {
                 }
             }
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

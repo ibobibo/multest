@@ -49,7 +49,7 @@ public class AnswerMeetingAsMarketplaceUser extends BaseClass {
             operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
             operationsOnMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

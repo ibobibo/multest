@@ -6,6 +6,12 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
+    <test thread-count="4" name="start docker container">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+        </classes>
+    </test>
+
     <!--        REGISTER AND VERIFY USER TEST-->
     <test thread-count="4" name="Marketplace Registration">
         <classes>
