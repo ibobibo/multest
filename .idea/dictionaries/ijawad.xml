@@ -26,6 +26,7 @@
       <w>bewertungstest</w>
       <w>chii</w>
       <w>chromedriver</w>
+      <w>collapsable</w>
       <w>cookiebot</w>
       <w>cybot</w>
       <w>daten</w>
@@ -33,10 +34,12 @@
       <w>einen</w>
       <w>einladung</w>
       <w>einrichtung</w>
+      <w>elems</w>
       <w>entgegen</w>
       <w>ergab</w>
       <w>ergebnis</w>
       <w>erneut</w>
+      <w>ersten</w>
       <w>erster</w>
       <w>existieren</w>
       <w>existiert</w>
@@ -79,9 +82,11 @@
       <w>märchennamen</w>
       <w>möglich</w>
       <w>namen</w>
+      <w>navbar</w>
       <w>nehmen</w>
       <w>neues</w>
       <w>nicht</w>
+      <w>pageobject</w>
       <w>passwort</w>
       <w>personen</w>
       <w>pflege</w>
@@ -121,6 +126,7 @@
       <w>zeit</w>
       <w>zeitlichen</w>
       <w>zurücksetzen</w>
+      <w>zweiten</w>
       <w>zählen</w>
     </words>
   </dictionary>
