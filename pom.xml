@@ -25,7 +25,7 @@
                 <version>3.0.0-M1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <!--Deparment Stuff-->
+                        <!--Department Stuff-->
                         <suiteXmlFile>dockerTestsPartner.xml</suiteXmlFile>
                         <suiteXmlFile>dockerTestsMarketplace.xml</suiteXmlFile>
                     </suiteXmlFiles>
