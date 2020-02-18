@@ -27,7 +27,7 @@
                     <suiteXmlFiles>
                         <!--Department Stuff-->
                         <suiteXmlFile>dockerTestsPartner.xml</suiteXmlFile>
-                        <suiteXmlFile>dockerTestsMarketplace.xml</suiteXmlFile>
+                        <!--                        <suiteXmlFile>dockerTestsMarketplace.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
