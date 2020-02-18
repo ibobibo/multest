@@ -1,7 +1,4 @@
 #!/bin/sh
 
-#print all args
-echo $@
-
 maven_build:
   script: mvn verify
