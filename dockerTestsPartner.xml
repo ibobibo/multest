@@ -7,11 +7,11 @@
     </listeners>
 
     <!--    DOCKER SETUP-->
-    <!--    <test thread-count="4" name="start docker container">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test thread-count="4" name="start docker container">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+        </classes>
+    </test>
 
     <!--    REGISTER TEST-->
     <!--    <test thread-count="4" name="register mul master test">-->
