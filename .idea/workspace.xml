@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/docker/start docker container.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/docker/start docker container.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/docker/start docker container.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/docker/start docker container.xml" afterDir="false" />
-    </list>
+    <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +221,7 @@
       <workItem from="1581080877826" duration="569000" />
       <workItem from="1581941736268" duration="981000" />
       <workItem from="1581943444392" duration="3157000" />
-      <workItem from="1581949452936" duration="17615000" />
+      <workItem from="1581949452936" duration="17864000" />
     </task>
     <servers />
   </component>
