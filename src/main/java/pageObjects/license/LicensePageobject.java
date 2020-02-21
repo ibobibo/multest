@@ -57,7 +57,7 @@ public class LicensePageobject {
         return secondDepartmentRemoveLicense;
     }
 
-    @FindBy(xpath = "//section[@class='Collapsable isOpen']/div[@class='collapse show']/div[1]//span[contains(text(),'jetzt für 12 Monate buchen für 299.88')]")
+    @FindBy(xpath = "//section[@class='Collapsable isOpen']/div[@class='collapse show']/div[1]//span[contains(text(),'jetzt für 12 Monate buchen für 299,88')]")
     WebElement priceTextOfFirstElem;
     @FindBy(xpath = "//section[@class='Collapsable isOpen']/div[@class='collapse show']/div[2]//b[1]")
     WebElement priceTextOfSecondElem;

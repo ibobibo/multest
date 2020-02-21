@@ -1,27 +1,26 @@
 package dockerTests;
 
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
 
 public class SetupDockerGrid {
-    @BeforeSuite
+    @BeforeTest
     void startDockerGrid() throws IOException, InterruptedException {
         Runtime.getRuntime().exec("./start_dockerGrid.sh");
         System.out.println("Docker initialized");
         Thread.sleep(15000);
     }
 
-    @Test
-    void moreContainerDockerGrid() throws IOException, InterruptedException {
-        Runtime.getRuntime().exec("./moreContainer_dockerGrid.sh");
-        System.out.println("Docker scale more Browser");
-        Thread.sleep(15000);
-    }
+//    @Test
+//    void moreContainerDockerGrid() throws IOException, InterruptedException {
+//        Runtime.getRuntime().exec("./moreContainer_dockerGrid.sh");
+//        System.out.println("Docker scale more Browser");
+//        Thread.sleep(15000);
+//    }
 
-    @AfterSuite
+    @AfterTest
     void stopDockerGrid() throws IOException, InterruptedException {
         Runtime.getRuntime().exec("./stop_dockerGrid.sh");
         System.out.println("Docker shutdown");
