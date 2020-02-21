@@ -3,4 +3,5 @@ image: maven:latest
 maven_build:
   script:
     - echo "Start Test"
+    - mvn clean compile
     - mvn test
