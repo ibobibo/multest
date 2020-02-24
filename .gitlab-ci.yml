@@ -10,7 +10,7 @@ stages:
 selenium-build:
   image: tmaier/docker-compose:latest
   stage: build
-  script: mvn test
+  script: docker-compose up -d
 
 maven-build:
   stage: test
