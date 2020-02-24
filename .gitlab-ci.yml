@@ -1,4 +1,5 @@
-image: maven:latest
+variables:
+  DOCKER_DRIVER: overlay2
 
 services:
   - docker:dind
@@ -6,8 +7,12 @@ stages:
   - build
   - test
 
-maven-build:
+selenium-build:
+  image: docker-compose:stable
   stage: build
-  before_script:
-    - docker
+  script: docker-compose up
+
+maven-build:
+  stage: test
+  image: maven:3-jdk-8
   script: mvn test
