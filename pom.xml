@@ -28,8 +28,9 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--Department Stuff-->
-                        <suiteXmlFile>dockerTestsPartner.xml</suiteXmlFile>
-<!--                        <suiteXmlFile>dockerTestMarketplace.xml</suiteXmlFile>-->
+                        <suiteXmlFile>dockerTestsParallel.xml</suiteXmlFile>
+                        <!--                        <suiteXmlFile>dockerTestsPartner.xml</suiteXmlFile>-->
+                        <!--                        <suiteXmlFile>dockerTestMarketplace.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

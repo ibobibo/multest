@@ -2,6 +2,7 @@ image: maven:latest
 
 services:
   - selenium/standalone-chrome:latest
+  - selenium/standalone-firefox:latest
 
 stages:
   - build
