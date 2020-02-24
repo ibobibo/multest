@@ -11,7 +11,7 @@ build_image:
     - docker build -t ${REGISTRY}/selenium-hub-runner-image .
     - docker push ${REGISTRY}/selenium-hub-runner-image:latest
 selenium-build:
-  image: selenium-hub-runner-image
+  image: ${REGISTRY}/selenium-hub-runner-image
   stage: build
   script: mvn test
 
