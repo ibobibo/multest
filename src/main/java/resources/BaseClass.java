@@ -2,7 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -29,8 +28,9 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-            driver = new ChromeDriver();
+            DesiredCapabilities cap = DesiredCapabilities.chrome();
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
             try {
                 accessAllCookies(driver);
