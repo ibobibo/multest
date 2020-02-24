@@ -13,7 +13,7 @@ build_image:
 selenium-build:
   image: ${REGISTRY}/selenium-hub-runner-image
   stage: build
-  script: mvn test
+  script: docker-compose up -d && mvn test
 
 
 maven-build:
