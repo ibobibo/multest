@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-24T11:38:49 MEZ" name="docker" finished-at="2020-02-24T11:40:24 MEZ" duration-ms="95052">
+  <suite started-at="2020-02-24T14:06:25 MEZ" name="docker" finished-at="2020-02-24T14:07:12 MEZ" duration-ms="46620">
     <groups>
     </groups>
-    <test started-at="2020-02-24T11:38:49 MEZ" name="register mul master test" finished-at="2020-02-24T11:39:41 MEZ" duration-ms="51261">
-      <class name="user.MulRegister">
-        <test-method signature="register()[pri:0, instance:user.MulRegister@4d49af10]" started-at="2020-02-24T11:39:04 MEZ" name="register" finished-at="2020-02-24T11:39:36 MEZ" duration-ms="31191" status="PASS">
+    <test started-at="2020-02-24T14:06:25 MEZ" name="docker Tests" finished-at="2020-02-24T14:07:12 MEZ" duration-ms="46620">
+      <class name="dockerTests.DockerTest2">
+        <test-method signature="dockerTest()[pri:0, instance:dockerTests.DockerTest2@5d20e46]" started-at="2020-02-24T14:06:40 MEZ" name="dockerTest" finished-at="2020-02-24T14:06:53 MEZ" duration-ms="12495" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
-      </class> <!-- user.MulRegister -->
+        </test-method> <!-- dockerTest -->
+      </class> <!-- dockerTests.DockerTest2 -->
+      <class name="dockerTests.DockerTest4">
+        <test-method signature="dockerTest()[pri:0, instance:dockerTests.DockerTest4@3d36e4cd]" started-at="2020-02-24T14:06:40 MEZ" name="dockerTest" finished-at="2020-02-24T14:07:07 MEZ" duration-ms="26540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dockerTest -->
+      </class> <!-- dockerTests.DockerTest4 -->
+      <class name="dockerTests.DockerTest3">
+        <test-method signature="dockerTest()[pri:0, instance:dockerTests.DockerTest3@709ba3fb]" started-at="2020-02-24T14:06:40 MEZ" name="dockerTest" finished-at="2020-02-24T14:07:00 MEZ" duration-ms="19711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dockerTest -->
+      </class> <!-- dockerTests.DockerTest3 -->
+      <class name="dockerTests.DockerTest">
+        <test-method signature="dockerTest()[pri:0, instance:dockerTests.DockerTest@7364985f]" started-at="2020-02-24T14:06:40 MEZ" name="dockerTest" finished-at="2020-02-24T14:06:55 MEZ" duration-ms="14898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dockerTest -->
+      </class> <!-- dockerTests.DockerTest -->
       <class name="dockerTests.SetupDockerGrid">
-        <test-method is-config="true" signature="startDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@429bd883]" started-at="2020-02-24T11:38:49 MEZ" name="startDockerGrid" finished-at="2020-02-24T11:39:04 MEZ" duration-ms="15020" status="PASS">
+        <test-method is-config="true" signature="startDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@ba8d91c]" started-at="2020-02-24T14:06:25 MEZ" name="startDockerGrid" finished-at="2020-02-24T14:06:40 MEZ" duration-ms="15016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDockerGrid -->
-        <test-method is-config="true" signature="stopDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@429bd883]" started-at="2020-02-24T11:39:36 MEZ" name="stopDockerGrid" finished-at="2020-02-24T11:39:41 MEZ" duration-ms="5017" status="PASS">
+        <test-method is-config="true" signature="stopDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@ba8d91c]" started-at="2020-02-24T14:07:07 MEZ" name="stopDockerGrid" finished-at="2020-02-24T14:07:12 MEZ" duration-ms="5018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDockerGrid -->
       </class> <!-- dockerTests.SetupDockerGrid -->
-    </test> <!-- register mul master test -->
-    <test started-at="2020-02-24T11:39:41 MEZ" name="verify mul master test" finished-at="2020-02-24T11:40:24 MEZ" duration-ms="43587">
-      <class name="user.Verify">
-        <test-method signature="verifyRegisteredUser()[pri:0, instance:user.Verify@145eaa29]" started-at="2020-02-24T11:39:56 MEZ" name="verifyRegisteredUser" finished-at="2020-02-24T11:40:19 MEZ" duration-ms="23565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisteredUser -->
-      </class> <!-- user.Verify -->
-      <class name="dockerTests.SetupDockerGrid">
-        <test-method is-config="true" signature="startDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@6328d34a]" started-at="2020-02-24T11:39:41 MEZ" name="startDockerGrid" finished-at="2020-02-24T11:39:56 MEZ" duration-ms="15006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDockerGrid -->
-        <test-method is-config="true" signature="stopDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@6328d34a]" started-at="2020-02-24T11:40:19 MEZ" name="stopDockerGrid" finished-at="2020-02-24T11:40:24 MEZ" duration-ms="5013" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDockerGrid -->
-      </class> <!-- dockerTests.SetupDockerGrid -->
-    </test> <!-- verify mul master test -->
+    </test> <!-- docker Tests -->
   </suite> <!-- docker -->
 </testng-results>
