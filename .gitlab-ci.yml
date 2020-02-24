@@ -1,14 +1,14 @@
 image: maven:latest
 
 e2e:firefox:
-  stage: confidence-check
+  stage: test
   services:
     - selenium/standalone-firefox
   script:
     - mvn test
 
 e2e:chrome:
-  stage: confidence-check
+  stage: test
   services:
     - selenium/standalone-chrome
   script:
