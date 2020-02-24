@@ -11,9 +11,6 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
             <class name="dockerTests.DockerTest"/>
-            <class name="dockerTests.DockerTest2"/>
-            <class name="dockerTests.DockerTest3"/>
-            <class name="dockerTests.DockerTest4"/>
         </classes>
     </test>
 
