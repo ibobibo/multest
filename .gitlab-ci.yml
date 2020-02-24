@@ -9,11 +9,13 @@ services:
 stages:
   - build
   - test
-
+build_image:
+  script:
+    - docker build -t selenium-hub-runner-image .
 selenium-build:
-  image: tmaier/docker-compose:latest
+  image: selenium-hub-runner-image
   stage: build
-  script: docker-compose up -d && docker-ps
+  script: mvn test
 
 
 maven-build:
