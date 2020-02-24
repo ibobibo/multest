@@ -1,7 +1,8 @@
 image: docker:latest
-
 services:
   - docker:dind
+  - selenium/standalone-chrome:latest
+  - selenium/standalone-firefox:latest
 
 stages:
   - build
@@ -15,4 +16,9 @@ before_script:
 maven-build:
   image: maven:latest
   stage: build
+  script: mvn build
+
+maven-test:
+  image: maven:latest
+  stage: test
   script: mvn test
