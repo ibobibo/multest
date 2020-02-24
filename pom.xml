@@ -14,6 +14,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <build>
+        <defaultGoal>install</defaultGoal>
         <resources>
             <resource>
                 <directory>src/main/resources/xml</directory>
