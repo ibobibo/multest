@@ -14,12 +14,12 @@ public class SetupDockerGrid {
         Thread.sleep(15000);
     }
 
-    @Test
-    void moreContainerDockerGrid() throws IOException, InterruptedException {
-        Runtime.getRuntime().exec("./moreContainer_dockerGrid.sh");
-        System.out.println("Docker scale more Browser");
-        Thread.sleep(15000);
-    }
+//    @Test
+//    void moreContainerDockerGrid() throws IOException, InterruptedException {
+//        Runtime.getRuntime().exec("./moreContainer_dockerGrid.sh");
+//        System.out.println("Docker scale more Browser");
+//        Thread.sleep(15000);
+//    }
 
     @AfterTest
     void stopDockerGrid() throws IOException, InterruptedException {
