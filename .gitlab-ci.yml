@@ -13,7 +13,7 @@ stages:
 selenium-build:
   image: tmaier/docker-compose:latest
   stage: build
-  script: ./start_dockerGrid.sh
+  script: docker-compose up -d && docker-ps
 
 
 maven-build:
