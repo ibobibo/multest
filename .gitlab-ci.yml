@@ -1,11 +1,18 @@
-image: maven:latest
+image: docker:latest
 
-build:
+services:
+  - docker:dind
+
+stages:
+  - build
+  - test
+
+before_script:
+  - apt-get update
+  - export DISPLAY=:1
+  - sleep 3
+
+maven-build:
+  image: maven:latest
   stage: build
-  script:
-    - mvn compile
-
-test:
-  stage: test
-  script:
-    - mvn test
+  script: mvn test
