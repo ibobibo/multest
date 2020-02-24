@@ -5,11 +5,11 @@
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="resources.Listeners"/>
     </listeners>
-    <test name="setupPlaceholder">
+    <!--test name="setupPlaceholder">
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
         </classes>
-    </test>
+    </test-->
         <test thread-count="4" name="Marketplace Registration">
             <classes>
 
