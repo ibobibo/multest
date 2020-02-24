@@ -7,21 +7,6 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="docker Tests(failed)" verbose="0">
     <classes>
-      <class name="dockerTests.DockerTest3">
-        <methods>
-          <include name="dockerTest"/>
-        </methods>
-      </class> <!-- dockerTests.DockerTest3 -->
-      <class name="dockerTests.DockerTest2">
-        <methods>
-          <include name="dockerTest"/>
-        </methods>
-      </class> <!-- dockerTests.DockerTest2 -->
-      <class name="dockerTests.DockerTest4">
-        <methods>
-          <include name="dockerTest"/>
-        </methods>
-      </class> <!-- dockerTests.DockerTest4 -->
       <class name="dockerTests.DockerTest">
         <methods>
           <include name="dockerTest"/>

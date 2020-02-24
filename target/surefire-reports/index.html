@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +102,7 @@
                     <div class="method-list-content passed suite-docker">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-docker" title="dockerTests.DockerTest4" class="method navigator-link" hash-for-method="dockerTest">dockerTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-docker" title="dockerTests.DockerTest3" class="method navigator-link" hash-for-method="dockerTest">dockerTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-docker" title="dockerTests.DockerTest" class="method navigator-link" hash-for-method="dockerTest">dockerTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-docker" title="dockerTests.DockerTest2" class="method navigator-link" hash-for-method="dockerTest">dockerTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-docker -->
@@ -132,51 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-docker" class="panel docker">
-          <div class="suite-docker-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">dockerTests.DockerTest3</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dockerTest">
-                  </a> <!-- dockerTest -->
-                  <span class="method-name">dockerTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-docker-class-passed -->
-          <div class="suite-docker-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">dockerTests.DockerTest2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dockerTest">
-                  </a> <!-- dockerTest -->
-                  <span class="method-name">dockerTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-docker-class-passed -->
-          <div class="suite-docker-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">dockerTests.DockerTest4</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dockerTest">
-                  </a> <!-- dockerTest -->
-                  <span class="method-name">dockerTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-docker-class-passed -->
           <div class="suite-docker-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -210,9 +150,6 @@
     &lt;classes&gt;
       &lt;class name=&quot;dockerTests.SetupDockerGrid&quot;/&gt;
       &lt;class name=&quot;dockerTests.DockerTest&quot;/&gt;
-      &lt;class name=&quot;dockerTests.DockerTest2&quot;/&gt;
-      &lt;class name=&quot;dockerTests.DockerTest3&quot;/&gt;
-      &lt;class name=&quot;dockerTests.DockerTest4&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- docker Tests --&gt;
 &lt;/suite&gt; &lt;!-- docker --&gt;
@@ -226,7 +163,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">docker Tests (5 classes)</span>
+                <span class="test-name">docker Tests (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,28 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'dockerTest')
-data.setCell(0, 2, 'dockerTests.DockerTest2')
-data.setCell(0, 3, 21714);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'dockerTest')
-data.setCell(1, 2, 'dockerTests.DockerTest4')
-data.setCell(1, 3, 14990);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'dockerTest')
-data.setCell(2, 2, 'dockerTests.DockerTest')
-data.setCell(2, 3, 13089);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'dockerTest')
-data.setCell(3, 2, 'dockerTests.DockerTest3')
-data.setCell(3, 3, 8293);
+data.setCell(0, 2, 'dockerTests.DockerTest')
+data.setCell(0, 3, 15102);
 window.suiteTableData['docker']= { tableData: data, tableDiv: 'times-div-docker'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-docker">
               </div> <!-- times-div-docker -->
             </div> <!-- times-div -->
@@ -306,38 +231,17 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">dockerTests.DockerTest3</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">dockerTest</span>
-                <span class="method-start">15056 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">dockerTests.DockerTest2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">dockerTest</span>
-                <span class="method-start">15056 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">dockerTests.DockerTest4</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">dockerTest</span>
-                <span class="method-start">15056 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">dockerTests.DockerTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">dockerTest</span>
-                <span class="method-start">15056 ms</span>
+                <span class="method-start">15044 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dockerTests.SetupDockerGrid</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">stopDockerGrid</span>
-                <span class="method-start">36771 ms</span>
+                <span class="method-start">30151 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
