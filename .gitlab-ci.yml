@@ -8,7 +8,9 @@ stages:
   - test
 
 selenium-build:
-  image: docker/compose:stable
+  image:
+    name: docker/compose:latest
+    entrypoint: ["/bin/sh", "-c"]
   stage: build
   script: docker-compose up
 
