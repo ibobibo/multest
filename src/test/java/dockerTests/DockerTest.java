@@ -1,25 +1,25 @@
 package dockerTests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import resources.BaseClass;
 
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.io.IOException;
 
-public class DockerTest {
+public class DockerTest extends BaseClass {
     @Test
-    public void dockerTest() throws MalformedURLException, InterruptedException {
+    public void dockerTest() throws InterruptedException, IOException {
+        loadProps();
+        System.out.println(prop.getProperty("chromeDriver"));
+        System.out.println(prop.getProperty("chromeDriverPath"));
+        System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+        driver = new ChromeDriver();
         System.out.println("a");
-        FirefoxOptions cap = new FirefoxOptions();
-        System.out.println("b");
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-        System.out.println("c");
         driver.get("http://www.google.com");
-        System.out.println("d");
+        System.out.println("b");
         driver.findElement(By.name("q")).sendKeys("Learn Automation");
-        System.out.println("e");
+        System.out.println("c");
         Thread.sleep(5000);
 
         driver.quit();
