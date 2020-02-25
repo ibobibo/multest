@@ -13,8 +13,9 @@ public class DockerTest extends BaseClass {
     public void dockerTest() throws InterruptedException, IOException {
         loadProps();
         System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-        RemoteWebDriver driver = new ChromeDriver();
         Thread.sleep(5000);
+        RemoteWebDriver driver = new ChromeDriver();
+
         System.out.println("a");
         driver.get("http://www.google.com");
         System.out.println("b");
