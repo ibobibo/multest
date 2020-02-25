@@ -1,18 +1,25 @@
 image: docker:latest
+
 services:
   - docker:dind
   - selenium/standalone-chrome:latest
   - selenium/standalone-firefox:latest
 
 stages:
-  - build
+  - clean
+  - test
 
 before_script:
   - apt-get update
   - export DISPLAY=:1
   - sleep 3
 
-maven-build:
+maven-clean:
   image: maven:latest
-  stage: build
-  script: mvn clean install
+  stage: clean
+  script: mvn clean
+
+maven-test:
+  image: maven:latest
+  stage: test
+  script: mvn test
