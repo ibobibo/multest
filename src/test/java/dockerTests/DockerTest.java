@@ -2,6 +2,7 @@ package dockerTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 import resources.BaseClass;
 
@@ -14,7 +15,7 @@ public class DockerTest extends BaseClass {
         System.out.println(prop.getProperty("chromeDriver"));
         System.out.println(prop.getProperty("chromeDriverPath"));
         System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-        driver = new ChromeDriver();
+        RemoteWebDriver driver = new ChromeDriver();
         System.out.println("a");
         driver.get("http://www.google.com");
         System.out.println("b");

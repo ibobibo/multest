@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-docker" class="navigator-link">
-              <span class="suite-name border-failed">docker</span>
+              <span class="suite-name border-passed">docker</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-docker" class="hide-methods failed suite-docker"> (hide)</a> <!-- hide-methods failed suite-docker -->
-                      <a href="#" panel-name="suite-docker" class="show-methods failed suite-docker"> (show)</a> <!-- show-methods failed suite-docker -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-docker" class="hide-methods passed suite-docker"> (hide)</a> <!-- hide-methods passed suite-docker -->
+                      <a href="#" panel-name="suite-docker" class="show-methods passed suite-docker"> (show)</a> <!-- show-methods passed suite-docker -->
                     </span>
-                    <div class="method-list-content failed suite-docker">
+                    <div class="method-list-content passed suite-docker">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-docker" title="dockerTests.DockerTest" class="method navigator-link" hash-for-method="dockerTest">dockerTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-docker -->
+                    </div> <!-- method-list-content passed suite-docker -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-docker" class="panel docker">
-          <div class="suite-docker-class-failed">
+          <div class="suite-docker-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">dockerTests.DockerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,19 +128,10 @@
                   <a name="dockerTest">
                   </a> <!-- dockerTest -->
                   <span class="method-name">dockerTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException: key can&apos;t be null
-	at java.base/java.lang.System.checkKey(System.java:972)
-	at java.base/java.lang.System.setProperty(System.java:920)
-	at dockerTests.DockerTest.dockerTest(DockerTest.java:13)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-... Removed 12 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-docker-class-failed -->
+          </div> <!-- suite-docker-class-passed -->
         </div> <!-- panel docker -->
         <div panel-name="test-xml-docker" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -202,12 +193,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'dockerTest')
 data.setCell(0, 2, 'dockerTests.DockerTest')
-data.setCell(0, 3, 1);
+data.setCell(0, 3, 10891);
 window.suiteTableData['docker']= { tableData: data, tableDiv: 'times-div-docker'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-docker">
               </div> <!-- times-div-docker -->
             </div> <!-- times-div -->
@@ -242,17 +233,15 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">dockerTests.DockerTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">dockerTest</span>
-                <span class="method-start">15053 ms</span>
+                <span class="method-start">15042 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dockerTests.SetupDockerGrid</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">stopDockerGrid</span>
-                <span class="method-start">15066 ms</span>
+                <span class="method-start">25936 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
