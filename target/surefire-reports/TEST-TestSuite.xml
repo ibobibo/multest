@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="14.031" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="98.037" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12.0.1+12"/>
@@ -41,7 +41,7 @@
     <property name="java.class.path" value="/Applications/apache-maven-3.6.1/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="12"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -e"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home"/>
     <property name="user.language" value="de"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -58,5 +58,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="dockerTest" classname="dockerTests.DockerTest" time="13.193"/>
+  <testcase name="register" classname="user.MulRegister" time="34.173"/>
+  <testcase name="verifyRegisteredUser" classname="user.Verify" time="22.567"/>
 </testsuite>
