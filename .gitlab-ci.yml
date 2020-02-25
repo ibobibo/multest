@@ -1,4 +1,4 @@
-image: docker:latest
+image: maven:latest
 
 services:
   - selenium/standalone-chrome:latest
@@ -8,15 +8,10 @@ stages:
   - clean
   - test
 
-before_script:
-  - docker info
-
-maven-clean:
-  image: maven:latest
+clean:
   stage: clean
   script: mvn clean
 
-maven-test:
-  image: maven:latest
+test:
   stage: test
   script: mvn test
