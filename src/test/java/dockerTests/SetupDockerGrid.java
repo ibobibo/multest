@@ -7,10 +7,9 @@ import java.io.IOException;
 
 public class SetupDockerGrid {
     @BeforeTest
-    void startDockerGrid() throws IOException, InterruptedException {
+    void startDockerGrid() throws IOException {
         Runtime.getRuntime().exec("./start_dockerGrid.sh");
         System.out.println("Docker initialized");
-        Thread.sleep(15000);
     }
 
 //    @Test
@@ -21,10 +20,9 @@ public class SetupDockerGrid {
 //    }
 
     @AfterTest
-    void stopDockerGrid() throws IOException, InterruptedException {
+    void stopDockerGrid() throws IOException {
         Runtime.getRuntime().exec("./stop_dockerGrid.sh");
         System.out.println("Docker shutdown");
-        Thread.sleep(5000);
 
         Runtime.getRuntime().exec("killall 'Terminal'");
         System.out.println("Close Terminal");
