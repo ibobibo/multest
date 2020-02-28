@@ -60,7 +60,7 @@ ENV DOCKER_TLS_CERTDIR=/certs
 # also, ensure the directory pre-exists and has wide enough permissions for "dockerd-entrypoint.sh" to create subdirectories, even when run in "rootless" mode
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
 # (doing both /certs and /certs/client so that if Docker does a "copy-up" into a volume defined on /certs/client, it will "do the right thing" by default in a way that still works for rootless users)
-
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["sh"]
 ARG DOCKER_VERSION=latest
 ARG COMPOSE_VERSION=
