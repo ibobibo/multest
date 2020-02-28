@@ -46,7 +46,7 @@ RUN set -eux; \
 	\
 	dockerd --version; \
 	docker --version
-
+COPY DockerDependencies/docker-entrypoint.sh /usr/local/bin/
 # https://github.com/docker-library/docker/pull/166
 #   dockerd-entrypoint.sh uses DOCKER_TLS_CERTDIR for auto-generating TLS certificates
 #   docker-entrypoint.sh uses DOCKER_TLS_CERTDIR for auto-setting DOCKER_TLS_VERIFY and DOCKER_CERT_PATH
@@ -55,7 +55,7 @@ ENV DOCKER_TLS_CERTDIR=/certs
 # also, ensure the directory pre-exists and has wide enough permissions for "dockerd-entrypoint.sh" to create subdirectories, even when run in "rootless" mode
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
 # (doing both /certs and /certs/client so that if Docker does a "copy-up" into a volume defined on /certs/client, it will "do the right thing" by default in a way that still works for rootless users)
-ADD DockerDependencies/docker-entrypoint.sh /
+
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["sh"]
 ARG DOCKER_VERSION=latest
