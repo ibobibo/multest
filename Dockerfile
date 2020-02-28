@@ -2,18 +2,13 @@ FROM maven:3-jdk-8
 
 ADD DockerDependencies/alpine-minirootfs-3.11.3-x86_64.tar.gz /
 CMD ["/bin/sh"]
-FROM alpine:3.11
 
 RUN apk add --no-cache \
 		ca-certificates \
 # DOCKER_HOST=ssh://... -- https://github.com/docker/cli/pull/1014
 		openssh-client
 
-# set up nsswitch.conf for Go's "netgo" implementation (which Docker explicitly uses)
-# - https://github.com/docker/docker-ce/blob/v17.09.0-ce/components/engine/hack/make.sh#L149
-# - https://github.com/golang/go/blob/go1.9.1/src/net/conf.go#L194-L275
-# - docker run --rm debian:stretch grep '^hosts:' /etc/nsswitch.conf
-RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+
 
 ENV DOCKER_CHANNEL stable
 ENV DOCKER_VERSION 19.03.6
@@ -60,6 +55,7 @@ ENV DOCKER_TLS_CERTDIR=/certs
 # also, ensure the directory pre-exists and has wide enough permissions for "dockerd-entrypoint.sh" to create subdirectories, even when run in "rootless" mode
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
 # (doing both /certs and /certs/client so that if Docker does a "copy-up" into a volume defined on /certs/client, it will "do the right thing" by default in a way that still works for rootless users)
+ADD DockerDependencies/docker-entrypoint.sh /
 ENTRYPOINT ["DockerDependencies/docker-entrypoint.sh"]
 CMD ["sh"]
 ARG DOCKER_VERSION=latest
