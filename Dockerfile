@@ -1,3 +1,5 @@
+FROM maven:3-jdk-8
+
 ADD alpine-minirootfs-3.11.3-x86_64.tar.gz /
 CMD ["/bin/sh"]
 RUN apk add --no-cache \
@@ -66,4 +68,3 @@ ARG COMPOSE_VERSION=latest
 
 RUN apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
 RUN pip install "docker-compose${COMPOSE_VERSION:+==}${COMPOSE_VERSION}"
-FROM maven:3-jdk-8
