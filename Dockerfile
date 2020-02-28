@@ -1,5 +1,7 @@
 FROM maven:3-jdk-8
 
+ADD alpine-minirootfs-3.11.3-x86_64.tar.gz /
+CMD ["/bin/sh"]
 RUN apk add --no-cache \
 		ca-certificates \
 # DOCKER_HOST=ssh://... -- https://github.com/docker/cli/pull/1014
