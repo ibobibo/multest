@@ -56,7 +56,7 @@ ENV DOCKER_TLS_CERTDIR=/certs
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
 # (doing both /certs and /certs/client so that if Docker does a "copy-up" into a volume defined on /certs/client, it will "do the right thing" by default in a way that still works for rootless users)
 ADD DockerDependencies/docker-entrypoint.sh /
-ENTRYPOINT ["DockerDependencies/docker-entrypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["sh"]
 ARG DOCKER_VERSION=latest
 ARG COMPOSE_VERSION=
