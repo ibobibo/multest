@@ -14,13 +14,7 @@ build_image:
     - docker build -t ${REGISTRY}/selenium-hub-runner-image .
     - docker push ${REGISTRY}/selenium-hub-runner-image:latest
 
-selenium-build:
+run-selenium-tests:
   image: ${REGISTRY}/selenium-hub-runner-image
-  stage: build
-  script: docker-compose up -d && mvn test
-
-
-maven-build:
   stage: test
-  image: maven:3-jdk-8
   script: mvn test
