@@ -52,9 +52,6 @@ RUN set -eux; \
 	dockerd --version; \
 	docker --version
 
-COPY modprobe.sh /usr/local/bin/modprobe
-COPY docker-entrypoint.sh /usr/local/bin/
-
 # https://github.com/docker-library/docker/pull/166
 #   dockerd-entrypoint.sh uses DOCKER_TLS_CERTDIR for auto-generating TLS certificates
 #   docker-entrypoint.sh uses DOCKER_TLS_CERTDIR for auto-setting DOCKER_TLS_VERIFY and DOCKER_CERT_PATH
@@ -66,7 +63,8 @@ RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
 
 CMD ["sh"]
 ARG DOCKER_VERSION=latest
-ARG COMPOSE_VERSION=latest
+ARG COMPOSE_VERSION=
+ARG DOCKER_VERSION
 
 RUN apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
 RUN pip install "docker-compose${COMPOSE_VERSION:+==}${COMPOSE_VERSION}"
