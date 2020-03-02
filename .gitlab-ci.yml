@@ -7,12 +7,6 @@ stages:
 variables:
   DOCKER_DRIVER: overlay2
 
-build_image:
-  script:
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY
-    - docker build -t ${REGISTRY}/selenium-hub-runner-image .
-    - docker push ${REGISTRY}/selenium-hub-runner-image:latest
-
 run-selenium-tests:
   image: ${REGISTRY}/selenium-hub-runner-image
   stage: test
