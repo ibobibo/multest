@@ -1,3 +1,2 @@
-echo $PWD
 docker-compose up -d
-docker ps
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' selenium-hub
