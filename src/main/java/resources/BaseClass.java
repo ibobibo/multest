@@ -70,6 +70,7 @@ public class BaseClass {
             FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
         } catch (Exception e) {
             System.out.println("Null pointer Exception in take Screenshot Method");
+            System.out.println(e);
         }
     }
 
