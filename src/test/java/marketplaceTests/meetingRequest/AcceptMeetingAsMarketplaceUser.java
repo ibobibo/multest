@@ -14,11 +14,7 @@ public class AcceptMeetingAsMarketplaceUser extends BaseClass {
     public void askForMeeting() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
 
         AcceptMeetingAsMarketplaceUserPage acceptMeetingAsMarketplaceUserPage = new AcceptMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);

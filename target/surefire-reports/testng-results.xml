@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-25T12:08:47 MEZ" name="docker" finished-at="2020-02-25T12:09:28 MEZ" duration-ms="40958">
+  <suite started-at="2020-02-25T14:25:29 MEZ" name="docker" finished-at="2020-02-25T14:26:09 MEZ" duration-ms="40651">
     <groups>
     </groups>
-    <test started-at="2020-02-25T12:08:47 MEZ" name="docker Tests" finished-at="2020-02-25T12:09:28 MEZ" duration-ms="40958">
+    <test started-at="2020-02-25T14:25:29 MEZ" name="docker Tests" finished-at="2020-02-25T14:26:09 MEZ" duration-ms="40651">
       <class name="dockerTests.DockerTest">
-        <test-method signature="dockerTest()[pri:0, instance:dockerTests.DockerTest@6591f517]" started-at="2020-02-25T12:09:02 MEZ" name="dockerTest" finished-at="2020-02-25T12:09:13 MEZ" duration-ms="10891" status="PASS">
+        <test-method signature="dockerTest()[pri:0, instance:dockerTests.DockerTest@6591f517]" started-at="2020-02-25T14:25:44 MEZ" name="dockerTest" finished-at="2020-02-25T14:25:54 MEZ" duration-ms="10569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dockerTest -->
       </class> <!-- dockerTests.DockerTest -->
       <class name="dockerTests.SetupDockerGrid">
-        <test-method is-config="true" signature="startDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@5a4aa2f2]" started-at="2020-02-25T12:08:47 MEZ" name="startDockerGrid" finished-at="2020-02-25T12:09:02 MEZ" duration-ms="15018" status="PASS">
+        <test-method is-config="true" signature="startDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@5a4aa2f2]" started-at="2020-02-25T14:25:29 MEZ" name="startDockerGrid" finished-at="2020-02-25T14:25:44 MEZ" duration-ms="15026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDockerGrid -->
-        <test-method is-config="true" signature="stopDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@5a4aa2f2]" started-at="2020-02-25T12:09:13 MEZ" name="stopDockerGrid" finished-at="2020-02-25T12:09:28 MEZ" duration-ms="15019" status="PASS">
+        <test-method is-config="true" signature="stopDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@5a4aa2f2]" started-at="2020-02-25T14:25:54 MEZ" name="stopDockerGrid" finished-at="2020-02-25T14:26:09 MEZ" duration-ms="15015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDockerGrid -->

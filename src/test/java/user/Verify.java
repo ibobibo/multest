@@ -14,11 +14,8 @@ public class Verify extends BaseClass {
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
         loadProps();
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
+
+        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             WebElement inputField = driver.findElement(By.xpath("//div[@class='search-container']//input[@placeholder='Search']"));

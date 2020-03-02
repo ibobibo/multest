@@ -19,11 +19,8 @@ public class MulRegister extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(2);
-            try {
-                accessAllCookies(driver);
-            } catch (Exception e) {
-                System.out.println("cookies accepted");
-            }
+
+            accessAllCookies(driver);
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany") + i);
 

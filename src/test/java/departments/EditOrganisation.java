@@ -16,11 +16,7 @@ public class EditOrganisation extends BaseClass {
     @Test()
     public void editAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
+        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);

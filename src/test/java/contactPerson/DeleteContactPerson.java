@@ -15,11 +15,7 @@ public class DeleteContactPerson extends BaseClass {
     @Test()
     public void deleteContactPerson() throws InterruptedException, IOException {
         initializeBrowser();
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
+        accessAllCookies(driver);
 
         DeleteContactPersonPage deleteContactPersonPage = new DeleteContactPersonPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {

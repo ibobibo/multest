@@ -16,11 +16,7 @@ public class DeleteOrganisation extends BaseClass {
     @Test()
     public void deleteAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
+        accessAllCookies(driver);
 
         TimeUnit.SECONDS.sleep(2);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {

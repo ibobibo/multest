@@ -13,11 +13,8 @@ public class DeleteUser extends BaseClass {
     public void checkIfUserIsDeleted() throws IOException, InterruptedException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
+        accessAllCookies(driver);
+
         loadProps();
         loginAdmin();
         DeleteUserPage deleteUserPage = new DeleteUserPage(driver);

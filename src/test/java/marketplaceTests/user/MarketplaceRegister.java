@@ -25,11 +25,7 @@ public class MarketplaceRegister extends BaseClass {
             TimeUnit.SECONDS.sleep(6);
             registerOnMarketplacePage.registerButtonMarketplace().click();
             TimeUnit.SECONDS.sleep(2);
-            try {
-                accessAllCookies(driver);
-            } catch (Exception e) {
-                System.out.println("cookies accepted");
-            }
+            accessAllCookies(driver);
 
             registerOnMarketplacePage.accountLogin().sendKeys(prop.getProperty("marketPlaceName") + i);
             registerOnMarketplacePage.accountEmail().sendKeys(prop.getProperty("marketPlaceEmail") + i);

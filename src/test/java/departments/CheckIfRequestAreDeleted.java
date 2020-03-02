@@ -15,11 +15,7 @@ public class CheckIfRequestAreDeleted extends BaseClass {
     public void checkIfRequestAreDeleted() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
 
         CheckIfRequestAreDeletedPage checkIfRequestAreDeletedPage = new CheckIfRequestAreDeletedPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));

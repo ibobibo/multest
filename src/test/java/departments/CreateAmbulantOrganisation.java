@@ -15,11 +15,7 @@ public class CreateAmbulantOrganisation extends BaseClass {
     public void createAmbulantOrganisation() throws IOException, InterruptedException {
         initializeBrowser();
         loadProps();
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
+        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();

@@ -14,11 +14,7 @@ public class DiscardMeetingAsMarketplaceUser extends BaseClass {
     public void discardMeetingAsMarketplaceUser() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
 
         OperationsOnMeetingAsMarketplaceUserPage operationsOnMeetingAsMarketplaceUserPage = new OperationsOnMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);

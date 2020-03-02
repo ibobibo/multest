@@ -11,12 +11,7 @@ public class DeletePlacement extends BaseClass {
     @Test
     public void deletePlacement() throws IOException, InterruptedException {
         initializeBrowser();
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
-        TimeUnit.SECONDS.sleep(1);
+        accessAllCookies(driver);
 
         loadProps();
         DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);

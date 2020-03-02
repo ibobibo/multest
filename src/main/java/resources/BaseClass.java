@@ -121,6 +121,7 @@ public class BaseClass {
 
     public int getCount() {
         try {
+            TimeUnit.SECONDS.sleep(2);
             WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
             int count = x.findElements(By.xpath("//td[@class='actions']")).size();
 
@@ -133,6 +134,7 @@ public class BaseClass {
 
     public int getCountForDelete() {
         try {
+            TimeUnit.SECONDS.sleep(2);
             WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
             int count = x.findElements(By.xpath("//td[@class='actions']")).size();
             System.out.println(count);
@@ -144,6 +146,7 @@ public class BaseClass {
 
     public int getCountContactPerson() {
         try {
+            TimeUnit.SECONDS.sleep(2);
             WebElement x = driver.findElement(By.xpath("//section[@class='Userdata']//tbody//tr"));
             int count = x.findElements(By.xpath("//section[@class='Userdata']//tbody//tr")).size();
             if (count == 0) {

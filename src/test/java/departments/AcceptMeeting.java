@@ -13,11 +13,8 @@ public class AcceptMeeting extends BaseClass {
     public void acceptMeeting() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+
+        accessAllCookies(driver);
 
         AcceptMeetingPage acceptMeetingPage = new AcceptMeetingPage(driver);
         DepartmentPage departmentPage = new DepartmentPage(driver);

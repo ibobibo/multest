@@ -100,4 +100,25 @@ public class LicensePageobject {
         return wholePrice;
     }
 
+    @FindBy(xpath = "//section[@class='PremiumCart']//div[@class='confirmation']//label[@class='Checkbox ']//span[contains(text(),'Ich')]")
+    WebElement checkboxForConfirmation;
+    @FindBy(xpath = "//a[@href='/premium/checkout']")
+    WebElement continueToPayment;
+
+    public WebElement checkboxForConfirmation() {
+        return checkboxForConfirmation;
+    }
+
+    public WebElement continueToPayment() {
+        return continueToPayment;
+    }
+
+    @FindBy(xpath = "//span[contains(text(),'Ihr Warenkorb ist leer.')]")
+    WebElement checkIfBucketIsEmpty;
+
+    public WebElement checkIfBucketIsEmpty() {
+        return checkIfBucketIsEmpty;
+    }
+
+
 }
