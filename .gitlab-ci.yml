@@ -15,6 +15,7 @@ run-selenium-tests:
   before_script:
     - docker network rm mul-fe-testing-network || true;
     - docker network create mul-fe-testing-network
+    - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
   script:
     - docker run --network mul-fe-testing-network ${REGISTRY}/selenium-hub-runner-image mvn test
   after_script:
