@@ -19,6 +19,7 @@ public class SetupDockerGrid extends BaseClass {
         String s;
         while ((s = stdInput.readLine()) != null) {
             hubAddress = hubAddress + s;
+            System.out.println("start_dockerGrid output: " + s);
         }
         String IPADDRESS_PATTERN =
                 "(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)";
