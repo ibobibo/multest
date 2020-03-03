@@ -1,5 +1,6 @@
 services:
   - docker:dind
+
 stages:
   - build-image
   - build
@@ -9,6 +10,12 @@ variables:
 
 
 run-selenium-tests:
-  image: ${REGISTRY}/selenium-hub-runner-image
   stage: test
-  script: mvn test
+  image: dind/stable
+  before_script:
+    - docker network rm mul-fe-testing-network || true;
+    - docker network create mul-fe-testing-network
+  script:
+    - docker run --network mul-fe-testing-network ${REGISTRY}/selenium-hub-runner-image mvn test
+  after_script:
+    - docker network rm mul-fe-testing-network
