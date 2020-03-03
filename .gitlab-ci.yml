@@ -11,7 +11,7 @@ variables:
 
 run-selenium-tests:
   stage: test
-  image: dind/stable
+  image: docker:stable
   before_script:
     - docker network rm mul-fe-testing-network || true;
     - docker network create mul-fe-testing-network
