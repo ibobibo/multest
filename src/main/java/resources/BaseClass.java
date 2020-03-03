@@ -29,6 +29,7 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
+            //es muss die Seite angepasst werden da nun ein Menü hinzugefügt würde wenn die navbar zu wenig platz hat
             System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
             driver = new ChromeDriver();
             TimeUnit.SECONDS.sleep(2);

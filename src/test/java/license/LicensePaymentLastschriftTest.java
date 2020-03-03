@@ -11,9 +11,9 @@ import resources.BaseClass;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class LicenseCancelPaymentCreditCardTest extends BaseClass {
+public class LicensePaymentLastschriftTest extends BaseClass {
     @Test()
-    public void cancelPaymentCreditCard() throws InterruptedException, IOException {
+    public void cancelPaymentSepa() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
 
@@ -38,16 +38,16 @@ public class LicenseCancelPaymentCreditCardTest extends BaseClass {
             driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='checkout-frame']")));
             TimeUnit.SECONDS.sleep(1);
 
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Kredit- / Debitkarten']"))).click();
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Lastschrift SEPA']"))).click();
             TimeUnit.SECONDS.sleep(2);
 
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[2]/div[2]/div[6]/div/input[1]"))).click();
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[5]/div/input[1]"))).click();
             driver.switchTo().alert().accept();
             TimeUnit.SECONDS.sleep(2);
 
             driver.switchTo().defaultContent();
             if (!licensePageobject.checkIfBucketIsEmpty().isDisplayed()) {
-                Assert.fail("Abbrechen des Bezahlvorgangs mit Kredit- / Debitkarten hat nicht geklappt.");
+                Assert.fail("Abbrechen des Bezahlvorgangs mit Lastschrift SEPA hat nicht geklappt.");
             }
         }
         driver.quit();
