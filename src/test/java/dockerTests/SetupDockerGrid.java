@@ -34,7 +34,7 @@ public class SetupDockerGrid extends BaseClass {
 
         System.out.println("Selenium-hub running at: " + hubAddress);
         BaseClass.hubAddress = hubAddress;
-        Process test = Runtime.getRuntime().exec("ping " + hubAddress);
+        Process test = Runtime.getRuntime().exec("ping docker.host.internal");
         BufferedReader reader = new BufferedReader(new
                 InputStreamReader(test.getInputStream()));
         String j;
