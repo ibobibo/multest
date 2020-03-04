@@ -8,16 +8,15 @@ stages:
 variables:
   DOCKER_DRIVER: overlay2
 
-
+build_image:
+  stage: build-image
+  script:
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY
+    - docker pull ${REGISTRY}/selenium-hub-runner-image:latest
+    - docker build -t ${REGISTRY}/selenium-hub-runner-image .
+    - docker push ${REGISTRY}/selenium-hub-runner-image:latest
 
 run-selenium-tests:
   stage: test
-  image: docker:stable
-  before_script:
-    - docker network rm mul-fe-testing-network || true;
-    - docker network create mul-fe-testing-network
-    - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
-  script:
-    - docker run --network mul-fe-testing-network ${REGISTRY}/selenium-hub-runner-image mvn test
-  after_script:
-    - docker network rm mul-fe-testing-network
+  image: ${REGISTRY}/selenium-hub-runner-image
+  script: mvn test
