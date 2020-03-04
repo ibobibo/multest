@@ -29,7 +29,7 @@ public class BaseClass {
         cleanUp();
         loadProps();
         String browserName = prop.getProperty("browser");
-        hubAddress = "host.docker.internal";
+        hubAddress = "localhost";
 
         //check for browser
         if (browserName.equals("chrome")) {
