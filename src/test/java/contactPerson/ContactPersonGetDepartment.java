@@ -37,7 +37,7 @@ public class ContactPersonGetDepartment extends BaseClass {
                 departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             if (contactPersonGetDepartmentPage.contactUserDisplayed().isDisplayed()) {
@@ -65,13 +65,12 @@ public class ContactPersonGetDepartment extends BaseClass {
             departmentPage.addContactPersonCard().click();
             TimeUnit.SECONDS.sleep(2);
         } catch (Exception e) {
-            System.out.println("Card wird geklickt.");
+            System.out.println("Card will be clicked.");
         }
 
         TimeUnit.SECONDS.sleep(2);
 
-        if (contactPersonGetDepartmentPage.addedLocationForContactPerson().getText().equals("Ambulant")) {
-        } else {
+        if (!contactPersonGetDepartmentPage.addedLocationForContactPerson().getText().equals("Ambulant")) {
             Assert.fail("Der Standort konnte der Anpsprechperson nicht zugewiesen werden.");
         }
 

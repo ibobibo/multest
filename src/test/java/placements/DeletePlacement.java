@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DeletePlacement extends BaseClass {
     @Test
-    public void deletePlacement() throws IOException, InterruptedException {
+    public void deleteAccount() throws IOException, InterruptedException {
         initializeBrowser();
         accessAllCookies(driver);
 

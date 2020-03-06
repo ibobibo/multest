@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LicenseTest extends BaseClass {
     @Test()
-    public void licenseTests() throws InterruptedException, IOException {
+    public void checkIfValuesAreCorrectlyRepresented() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
         try {
@@ -37,30 +37,23 @@ public class LicenseTest extends BaseClass {
             //checks if the prices are correct
             String[] partsOfString = firstPrice.split("jetzt für 12 Monate buchen für ");
 
-            if (soppingCartFirstElem == partsOfString[1]) {
-                continue;
-            } else {
+            if (!soppingCartFirstElem.equals(partsOfString[1])) {
                 Assert.fail(partsOfString[1] + " isn't equal to " + soppingCartFirstElem);
             }
 
-            if (secondPrice == soppingCartSecondElem) {
-                continue;
-            } else {
+            if (!secondPrice.equals(soppingCartSecondElem)) {
                 Assert.fail(soppingCartSecondElem + " isn't equal to " + secondPrice);
             }
 
-            if (licensePageobject.priceOfBothElems().getText().equals("599,76 €")) {
-            } else {
+            if (!licensePageobject.priceOfBothElems().getText().equals("599,76 €")) {
                 Assert.fail(licensePageobject.priceOfBothElems().getText() + " isn't equal to 599,76 €");
             }
 
-            if (licensePageobject.taxesOfUniqueElems().getText().equals("113,96 €")) {
-            } else {
+            if (!licensePageobject.taxesOfUniqueElems().getText().equals("113,96 €")) {
                 Assert.fail(licensePageobject.taxesOfUniqueElems().getText() + " isn't equal to 113,96 €");
             }
 
-            if (licensePageobject.wholePrice().getText().equals("713,72 €")) {
-            } else {
+            if (!licensePageobject.wholePrice().getText().equals("713,72 €")) {
                 Assert.fail(licensePageobject.wholePrice().getText() + " isn't equal to 713,72 €");
             }
 

@@ -25,7 +25,7 @@ public class DeleteContactPerson extends BaseClass {
                 deleteContactPersonPage.addContactPersonCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             while (getCountContactPerson() != 0) {

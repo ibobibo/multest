@@ -30,7 +30,7 @@ public class DeleteOrganisation extends BaseClass {
                 departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -51,7 +51,7 @@ public class DeleteOrganisation extends BaseClass {
                     departmentPage.addDepartmentCard().click();
                     TimeUnit.SECONDS.sleep(2);
                 } catch (Exception e) {
-                    System.out.println("Card wird geklickt.");
+                    System.out.println("Card will be clicked.");
                 }
             }
             TimeUnit.SECONDS.sleep(2);

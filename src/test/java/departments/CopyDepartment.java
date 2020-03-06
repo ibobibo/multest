@@ -31,7 +31,7 @@ public class CopyDepartment extends BaseClass {
                 departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             copyDepartmentPage.addCopyOfDepartment().click();

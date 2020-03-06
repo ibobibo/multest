@@ -47,7 +47,7 @@ public class LicenseCancelPaymentLastschriftTest extends BaseClass {
 
             driver.switchTo().defaultContent();
             if (!licensePageobject.checkIfBucketIsEmpty().isDisplayed()) {
-                Assert.fail("Abbrechen des Bezahlvorgangs mit Lastschrift SEPA hat nicht geklappt.");
+                Assert.fail("Canceling Payment with Sepa Lastschrift couldn't work.");
             }
         }
         driver.quit();

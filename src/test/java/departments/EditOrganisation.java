@@ -30,7 +30,7 @@ public class EditOrganisation extends BaseClass {
                 departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             int x = 0;
@@ -50,7 +50,7 @@ public class EditOrganisation extends BaseClass {
                     departmentPage.addDepartmentCard().click();
                     TimeUnit.SECONDS.sleep(2);
                 } catch (Exception e) {
-                    System.out.println("Card wird geklickt.");
+                    System.out.println("Card will be clicked.");
                 }
                 x++;
             }

@@ -25,7 +25,7 @@ public class AcceptMeeting extends BaseClass {
             departmentPage.dashboardCard().click();
             TimeUnit.SECONDS.sleep(1);
         } catch (Exception e) {
-            System.out.println("Card wird geklickt.");
+            System.out.println("Card will be clicked.");
         }
         acceptMeetingPage.newRequest().click();
 

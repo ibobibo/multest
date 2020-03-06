@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LicensePaymentLastschriftTest extends BaseClass {
     @Test()
-    public void cancelPaymentSepa() throws InterruptedException, IOException {
+    public void cancelPaymentCreditCard() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
 
@@ -36,18 +36,28 @@ public class LicensePaymentLastschriftTest extends BaseClass {
             licensePageobject.continueToPayment().click();
             TimeUnit.SECONDS.sleep(1);
             driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='checkout-frame']")));
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(2);
 
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Lastschrift SEPA']"))).click();
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(1);
 
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[5]/div/input[1]"))).click();
-            driver.switchTo().alert().accept();
-            TimeUnit.SECONDS.sleep(2);
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[2]/div/input"))).clear();
+            TimeUnit.SECONDS.sleep(1);
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[2]/div/input"))).sendKeys("Max Musterman");
+            TimeUnit.SECONDS.sleep(1);
+
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[3]/div/input"))).sendKeys("DE27100777770209299700");
+            TimeUnit.SECONDS.sleep(1);
+
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[5]/div/input[2]"))).click();
+            TimeUnit.SECONDS.sleep(4);
+
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div[7]/div/div/input[2]"))).click();
+            TimeUnit.SECONDS.sleep(4);
 
             driver.switchTo().defaultContent();
-            if (!licensePageobject.checkIfBucketIsEmpty().isDisplayed()) {
-                Assert.fail("Abbrechen des Bezahlvorgangs mit Lastschrift SEPA hat nicht geklappt.");
+            if (driver.findElement(By.xpath("//span[contains(text(),'Kauf leider fehlgeschlagen!')]")).getText().equals("Kauf leider fehlgeschlagen!")) {
+                Assert.fail("Paying failure during payment for license.");
             }
         }
         driver.quit();
