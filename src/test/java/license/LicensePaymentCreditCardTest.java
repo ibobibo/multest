@@ -46,7 +46,7 @@ public class LicensePaymentCreditCardTest extends BaseClass {
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[2]/div[2]/div[2]/div/input"))).sendKeys("Max Musterman");
             TimeUnit.SECONDS.sleep(1);
 
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[2]/div[2]/div[3]/div/input"))).sendKeys("5500000000000004");
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[2]/div[2]/div[3]/div/input"))).sendKeys("4200000000000000");
             TimeUnit.SECONDS.sleep(1);
 
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[2]/div[2]/div[4]/div/div/div[1]/select"))).click();

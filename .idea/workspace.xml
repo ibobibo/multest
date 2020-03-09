@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/license/LicensePageobject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/license/LicensePageobject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/license/LicensePageobject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/license/LicensePageobject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/InviteContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/InviteContactPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/SearchContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/SearchContactPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CopyDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CopyDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentCreditCardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentCreditCardTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/placements/DeletePlacement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/placements/DeletePlacement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicensePaymentLastschriftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicensePaymentLastschriftTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +241,7 @@
       <workItem from="1581943444392" duration="3157000" />
       <workItem from="1581949452936" duration="19052000" />
       <workItem from="1582293272932" duration="38204000" />
-      <workItem from="1583148985817" duration="36818000" />
+      <workItem from="1583148985817" duration="37350000" />
     </task>
     <servers />
   </component>

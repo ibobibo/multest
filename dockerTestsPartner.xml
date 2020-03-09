@@ -73,16 +73,16 @@
     <!--            <class name="license.LicenseCancelPaymentCreditCardTest"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <!--    <test thread-count="4" name="Payment for Lastschrift License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="license.LicensePaymentLastschriftTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Payment for Credit Card License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="license.LicensePaymentCreditCardTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--        <test thread-count="4" name="Payment for Lastschrift License Test">-->
+    <!--            <classes>-->
+    <!--                <class name="license.LicensePaymentLastschriftTest"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+    <!--        <test thread-count="4" name="Payment for Credit Card License Test">-->
+    <!--            <classes>-->
+    <!--                <class name="license.LicensePaymentCreditCardTest"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
     <!--    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;-->
     <!--    <test thread-count="4" name="make departments public">-->
     <!--        <classes>-->

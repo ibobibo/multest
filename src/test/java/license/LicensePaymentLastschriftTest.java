@@ -46,7 +46,7 @@ public class LicensePaymentLastschriftTest extends BaseClass {
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[2]/div/input"))).sendKeys("Max Musterman");
             TimeUnit.SECONDS.sleep(1);
 
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[3]/div/input"))).sendKeys("DE27100777770209299700");
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[3]/div/input"))).sendKeys("DE24300209002411761956");
             TimeUnit.SECONDS.sleep(1);
 
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[5]/div/input[2]"))).click();
