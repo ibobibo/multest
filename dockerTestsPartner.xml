@@ -25,133 +25,143 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    CREATE DEPARTMENT TESTS-->
-    <test thread-count="4" name="Create Day Night Care Organisation">
-        <classes>
-            <class name="departments.CreateDayNightCareOrganisation"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Create Ambulant Organisation">
-        <classes>
-            <class name="departments.CreateAmbulantOrganisation"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Create Stationary Organisation">
-        <classes>
-            <class name="departments.CreateStationaryOrganisation"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Create Fair House Offer Organisation">
-        <classes>
-            <class name="departments.CreateFairHouseOffer"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    CREATE DEPARTMENT TESTS&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Create Day Night Care Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Create Ambulant Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Create Stationary Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CreateStationaryOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Create Fair House Offer Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CreateFairHouseOffer"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--            LICENSE TEST-->
-    <test thread-count="4" name="Check License and Prices if correct">
+    <!--    &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Click license from Homepage">-->
+    <!--        <classes>-->
+    <!--            <class name="license.GetLicenseFromHomepage"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <test thread-count="4" name="Count Departments on Licensepage">
         <classes>
-            <class name="license.LicenseTest"/>
+            <class name="license.CountDepartments"/>
         </classes>
     </test>
-    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">
-        <classes>
-            <class name="license.LicenseCancelPaymentLastschriftTest"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Cancel Payment for Credit Card License Test">
-        <classes>
-            <class name="license.LicenseCancelPaymentCreditCardTest"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Payment for Lastschrift License Test">
-        <classes>
-            <class name="license.LicensePaymentLastschriftTest"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Payment for Credit Card License Test">
-        <classes>
-            <class name="license.LicensePaymentCreditCardTest"/>
-        </classes>
-    </test>
-    <!--    MAKE DEPARTMENTS PUBLIC-->
-    <test thread-count="4" name="make departments public">
-        <classes>
-            <class name="departments.ToggleOrganisation"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="Check License and Prices if correct">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicenseTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicenseCancelPaymentLastschriftTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Cancel Payment for Credit Card License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicenseCancelPaymentCreditCardTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Payment for Lastschrift License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicensePaymentLastschriftTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Payment for Credit Card License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicensePaymentCreditCardTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;-->
+    <!--    <test thread-count="4" name="make departments public">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.ToggleOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--    EDIT DEPARTMENTS-->
-    <test thread-count="4" name="Editing Departments">
-        <classes>
-            <class name="departments.EditOrganisation"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    EDIT DEPARTMENTS&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Editing Departments">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.EditOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--                COPY DEPARTMENT-->
-    <test thread-count="4" name="Copy department Test">
-        <classes>
-            <class name="departments.CopyDepartment"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;                COPY DEPARTMENT&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Copy department Test">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.CopyDepartment"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--    EDIT USER DETAILS TEST-->
-    <test thread-count="4" name="Edit User details">
-        <classes>
-            <class name="user.EditUserDetails"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Password Change Test">
-        <classes>
-            <class name="user.PasswordChangeTest"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    EDIT USER DETAILS TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Edit User details">-->
+    <!--        <classes>-->
+    <!--            <class name="user.EditUserDetails"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Password Change Test">-->
+    <!--        <classes>-->
+    <!--            <class name="user.PasswordChangeTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--    PASSWORD RESET AND VERIFY NEW PASSWORD-->
-    <test thread-count="4" name="Password Reset">
-        <classes>
-            <class name="user.ResetPasswordTest"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Verify new Password Test">
-        <classes>
-            <class name="user.VerifyNewPassword"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    PASSWORD RESET AND VERIFY NEW PASSWORD&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Password Reset">-->
+    <!--        <classes>-->
+    <!--            <class name="user.ResetPasswordTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Verify new Password Test">-->
+    <!--        <classes>-->
+    <!--            <class name="user.VerifyNewPassword"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--                CONTACT PERSON TESTS-->
-    <test thread-count="4" name="Creating Some Contact Persons">
-        <classes>
-            <class name="contactPerson.CreateSomeContactPersonForSearch"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Search Contact Person">
-        <classes>
-            <class name="contactPerson.SearchContactPerson"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;                CONTACT PERSON TESTS&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Creating Some Contact Persons">-->
+    <!--        <classes>-->
+    <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Search Contact Person">-->
+    <!--        <classes>-->
+    <!--            <class name="contactPerson.SearchContactPerson"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <test thread-count="4" name="Delete all Contact Persons">
-        <classes>
-            <class name="contactPerson.DeleteContactPerson"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="Delete all Contact Persons">-->
+    <!--        <classes>-->
+    <!--            <class name="contactPerson.DeleteContactPerson"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--       DELETE DEPARTMENT-->
-    <test thread-count="4" name="Delete all Departments">
-        <classes>
-            <class name="departments.DeleteOrganisation"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;       DELETE DEPARTMENT&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Delete all Departments">-->
+    <!--        <classes>-->
+    <!--            <class name="departments.DeleteOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
-    <!--        DELETE ACCOUNT-->
-    <test thread-count="4" name="Delete Account">
-        <classes>
-            <class name="placements.DeletePlacement"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Check if User is deleted.">
-        <classes>
-            <class name="user.DeleteUser"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;        DELETE ACCOUNT&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Delete Account">-->
+    <!--        <classes>-->
+    <!--            <class name="placements.DeletePlacement"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Check if User is deleted.">-->
+    <!--        <classes>-->
+    <!--            <class name="user.DeleteUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 </suite>

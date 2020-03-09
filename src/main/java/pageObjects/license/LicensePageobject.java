@@ -120,5 +120,42 @@ public class LicensePageobject {
         return checkIfBucketIsEmpty;
     }
 
+    @FindBy(xpath = "//div[@class='trialEndInfo']")
+    WebElement checkIfTrial;
+    @FindBy(xpath = "//a[@class='newPremium']")
+    WebElement navToLicensePage;
+    @FindBy(xpath = "//span[contains(text(),'Premium-Lizenzen')]")
+    WebElement checkIfLicensePage;
+
+    public WebElement checkIfTrial() {
+        return checkIfTrial;
+    }
+
+    public WebElement navToLicensePage() {
+        return navToLicensePage;
+    }
+
+    public WebElement checkIfLicensePage() {
+        return checkIfLicensePage;
+    }
+
+    @FindBy(xpath = "//div[@class='tab-pane active']//span[contains(text(),'Einrichtung erstellen')]")
+    WebElement checkIfDepartmentsAreCreated;
+    @FindBy(xpath = "//div[@id='app-view-container']//li[2]//a[1]")
+    WebElement showDepartments;
+    @FindBy(xpath = "//div[@class='info']//span[contains(text(),'Einrichtungen')]")
+    WebElement countDepartmentsInLicensePage;
+
+    public WebElement checkIfDepartmentsAreCreated() {
+        return checkIfDepartmentsAreCreated;
+    }
+
+    public WebElement showDepartments() {
+        return showDepartments;
+    }
+
+    public WebElement countDepartmentsInLicensePage() {
+        return countDepartmentsInLicensePage;
+    }
 
 }
