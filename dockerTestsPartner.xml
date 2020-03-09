@@ -13,6 +13,13 @@
         </classes>
     </test>
 
+    <!--Routing tests for login to register and the other way around-->
+    <test thread-count="4" name="navigation test from login and registration forms">
+        <classes>
+            <class name="navigation.FormNavigation"/>
+        </classes>
+    </test>
+
     <!--    &lt;!&ndash;        REGISTER TEST&ndash;&gt;-->
     <!--    <test thread-count="4" name="register mul master test">-->
     <!--        <classes>-->
@@ -53,11 +60,11 @@
     <!--            <class name="license.GetLicenseFromHomepage"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <test thread-count="4" name="Count Departments on Licensepage">
-        <classes>
-            <class name="license.CountDepartments"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="Count Departments on Licensepage">-->
+    <!--        <classes>-->
+    <!--            <class name="license.CountDepartments"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
     <!--    <test thread-count="4" name="Check License and Prices if correct">-->
     <!--        <classes>-->
     <!--            <class name="license.LicenseTest"/>-->
