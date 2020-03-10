@@ -14,11 +14,7 @@ public class VerifyMarketplaceUser extends BaseClass {
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
         TimeUnit.SECONDS.sleep(2);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
 
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {

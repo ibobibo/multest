@@ -16,12 +16,7 @@ public class LicensePaymentLastschriftTest extends BaseClass {
     public void payWithSepaLastschriftForLicense() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
-
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             LicensePageobject licensePageobject = new LicensePageobject(driver);

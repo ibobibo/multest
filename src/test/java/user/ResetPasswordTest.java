@@ -13,11 +13,8 @@ public class ResetPasswordTest extends BaseClass {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(5);
         loadProps();
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted through register class");
-        }
+        accessAllCookies(driver);
+
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);

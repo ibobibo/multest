@@ -20,17 +20,17 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    &lt;!&ndash;        REGISTER TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" name="register mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="user.MulRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="verify mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="user.Verify"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--        &lt;!&ndash;        REGISTER TEST&ndash;&gt;-->
+    <!--        <test thread-count="4" name="register mul master test">-->
+    <!--            <classes>-->
+    <!--                <class name="user.MulRegister"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
+    <!--        <test thread-count="4" name="verify mul master test">-->
+    <!--            <classes>-->
+    <!--                <class name="user.Verify"/>-->
+    <!--            </classes>-->
+    <!--        </test>-->
 
     <!--    &lt;!&ndash;    CREATE DEPARTMENT TESTS&ndash;&gt;-->
     <!--    <test thread-count="4" name="Create Day Night Care Organisation">-->
@@ -70,22 +70,22 @@
     <!--            <class name="license.LicenseTest"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <test thread-count="4" name="Navigate To License Page Through Department Icon">
+    <!--    <test thread-count="4" name="Navigate To License Page Through Department Icon">-->
+    <!--        <classes>-->
+    <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">
         <classes>
-            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>
+            <class name="license.LicenseCancelPaymentLastschriftTest"/>
         </classes>
     </test>
-
-    <!--    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="license.LicenseCancelPaymentLastschriftTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Cancel Payment for Credit Card License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="license.LicenseCancelPaymentCreditCardTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test thread-count="4" name="Cancel Payment for Credit Card License Test">
+        <classes>
+            <class name="license.LicenseCancelPaymentCreditCardTest"/>
+        </classes>
+    </test>
     <!--    <test thread-count="4" name="Payment for Lastschrift License Test">-->
     <!--        <classes>-->
     <!--            <class name="license.LicensePaymentLastschriftTest"/>-->

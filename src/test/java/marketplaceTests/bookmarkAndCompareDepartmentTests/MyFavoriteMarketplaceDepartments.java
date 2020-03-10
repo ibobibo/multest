@@ -15,12 +15,7 @@ public class MyFavoriteMarketplaceDepartments extends BaseClass {
     public void myFavoriteMarketplaceDepartments() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
-
+        accessAllCookies(driver);
         loadProps();
         MyFavoriteMarketplaceDepartmentsPage myFavoriteMarketplaceDepartmentsPage = new MyFavoriteMarketplaceDepartmentsPage(driver);
 

@@ -36,32 +36,20 @@ public class BaseClass {
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             driver.manage().window().fullscreen();
             TimeUnit.SECONDS.sleep(2);
-            try {
-                accessAllCookies(driver);
-            } catch (Exception e) {
-                System.out.println("cookies accepted without base class");
-            }
+            accessAllCookies(driver);
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             driver.manage().window().fullscreen();
             TimeUnit.SECONDS.sleep(2);
-            try {
-                accessAllCookies(driver);
-            } catch (Exception e) {
-                System.out.println("cookies accepted without base class");
-            }
+            accessAllCookies(driver);
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
-            try {
-                accessAllCookies(driver);
-            } catch (Exception e) {
-                System.out.println("cookies accepted without base class");
-            }
+            accessAllCookies(driver);
         }
         return driver;
     }
@@ -93,11 +81,7 @@ public class BaseClass {
     public void initializeMailServer() throws IOException, InterruptedException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
     }
 
     public void loadProps() throws IOException {
@@ -171,7 +155,7 @@ public class BaseClass {
         try {
             driver.findElement(By.xpath("//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
         } catch (Exception e) {
-            System.out.println("Kann keine Cookies finden.");
+            System.out.println("Cant't find any cookies.");
         }
     }
 
@@ -210,11 +194,7 @@ public class BaseClass {
         TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
 
         TimeUnit.SECONDS.sleep(1);
         loginLogoutPage.anmelden().click();
