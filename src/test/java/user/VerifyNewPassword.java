@@ -21,10 +21,10 @@ public class VerifyNewPassword extends BaseClass {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             WebElement inputField = driver.findElement(By.xpath("//div[@class='search-container']//input[@placeholder='Search']"));
-            String x = "//ul[@class='email-list']//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + i + "')]";
+            String x = "//li[1]//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + "')]";
             inputField.clear();
             TimeUnit.SECONDS.sleep(1);
-            inputField.sendKeys(prop.getProperty("contactEmail").toLowerCase() + i);
+            inputField.sendKeys(prop.getProperty("contactEmail").toLowerCase());
             TimeUnit.SECONDS.sleep(1);
 
             WebElement findEmail = driver.findElement(By.xpath(x));

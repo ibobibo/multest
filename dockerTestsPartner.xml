@@ -13,12 +13,12 @@
         </classes>
     </test>
 
-    <!--Routing tests for login to register and the other way around-->
-    <test thread-count="4" name="navigation test from login and registration forms">
-        <classes>
-            <class name="navigation.FormNavigation"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;Routing tests for login to register and the other way around&ndash;&gt;-->
+    <!--    <test thread-count="4" name="navigation test from login and registration forms">-->
+    <!--        <classes>-->
+    <!--            <class name="navigation.FormNavigation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <!--    &lt;!&ndash;        REGISTER TEST&ndash;&gt;-->
     <!--    <test thread-count="4" name="register mul master test">-->
@@ -70,6 +70,12 @@
     <!--            <class name="license.LicenseTest"/>-->
     <!--        </classes>-->
     <!--    </test>-->
+    <test thread-count="4" name="Navigate To License Page Through Department Icon">
+        <classes>
+            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>
+        </classes>
+    </test>
+
     <!--    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">-->
     <!--        <classes>-->
     <!--            <class name="license.LicenseCancelPaymentLastschriftTest"/>-->
@@ -80,16 +86,17 @@
     <!--            <class name="license.LicenseCancelPaymentCreditCardTest"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <!--        <test thread-count="4" name="Payment for Lastschrift License Test">-->
-    <!--            <classes>-->
-    <!--                <class name="license.LicensePaymentLastschriftTest"/>-->
-    <!--            </classes>-->
-    <!--        </test>-->
-    <!--        <test thread-count="4" name="Payment for Credit Card License Test">-->
-    <!--            <classes>-->
-    <!--                <class name="license.LicensePaymentCreditCardTest"/>-->
-    <!--            </classes>-->
-    <!--        </test>-->
+    <!--    <test thread-count="4" name="Payment for Lastschrift License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicensePaymentLastschriftTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Payment for Credit Card License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicensePaymentCreditCardTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
     <!--    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;-->
     <!--    <test thread-count="4" name="make departments public">-->
     <!--        <classes>-->
@@ -146,7 +153,6 @@
     <!--            <class name="contactPerson.SearchContactPerson"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-
     <!--    <test thread-count="4" name="Delete all Contact Persons">-->
     <!--        <classes>-->
     <!--            <class name="contactPerson.DeleteContactPerson"/>-->

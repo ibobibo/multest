@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LicensePaymentLastschriftTest extends BaseClass {
     @Test()
-    public void cancelPaymentCreditCard() throws InterruptedException, IOException {
+    public void payWithSepaLastschriftForLicense() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
 
@@ -56,8 +56,13 @@ public class LicensePaymentLastschriftTest extends BaseClass {
             TimeUnit.SECONDS.sleep(4);
 
             driver.switchTo().defaultContent();
-            if (driver.findElement(By.xpath("//span[contains(text(),'Kauf leider fehlgeschlagen!')]")).getText().equals("Kauf leider fehlgeschlagen!")) {
-                Assert.fail("Paying failure during payment for license.");
+            try {
+                if (driver.findElement(By.xpath("//span[contains(text(),'Kauf leider fehlgeschlagen!')]")).getText().equals("Kauf leider fehlgeschlagen!")) {
+                    driver.quit();
+                    Assert.fail("Paying failure during payment for license.");
+                }
+            } catch (Exception e) {
+
             }
         }
         driver.quit();

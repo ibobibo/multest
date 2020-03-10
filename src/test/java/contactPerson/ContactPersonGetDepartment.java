@@ -71,6 +71,7 @@ public class ContactPersonGetDepartment extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
 
         if (!contactPersonGetDepartmentPage.addedLocationForContactPerson().getText().equals("Ambulant")) {
+            driver.quit();
             Assert.fail("Der Standort konnte der Anpsprechperson nicht zugewiesen werden.");
         }
 

@@ -38,22 +38,27 @@ public class LicenseTest extends BaseClass {
             String[] partsOfString = firstPrice.split("jetzt für 12 Monate buchen für ");
 
             if (!soppingCartFirstElem.equals(partsOfString[1])) {
+                driver.quit();
                 Assert.fail(partsOfString[1] + " isn't equal to " + soppingCartFirstElem);
             }
 
             if (!secondPrice.equals(soppingCartSecondElem)) {
+                driver.quit();
                 Assert.fail(soppingCartSecondElem + " isn't equal to " + secondPrice);
             }
 
             if (!licensePageobject.priceOfBothElems().getText().equals("599,76 €")) {
+                driver.quit();
                 Assert.fail(licensePageobject.priceOfBothElems().getText() + " isn't equal to 599,76 €");
             }
 
             if (!licensePageobject.taxesOfUniqueElems().getText().equals("113,96 €")) {
+                driver.quit();
                 Assert.fail(licensePageobject.taxesOfUniqueElems().getText() + " isn't equal to 113,96 €");
             }
 
             if (!licensePageobject.wholePrice().getText().equals("713,72 €")) {
+                driver.quit();
                 Assert.fail(licensePageobject.wholePrice().getText() + " isn't equal to 713,72 €");
             }
 

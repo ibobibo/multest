@@ -21,10 +21,10 @@ public class Verify extends BaseClass {
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search']"))).clear();
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search']"))).sendKeys(prop.getProperty("contactEmail").toLowerCase() + i);
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search']"))).sendKeys(prop.getProperty("contactEmail").toLowerCase());
             TimeUnit.SECONDS.sleep(2);
 
-            String x = "//ul[@class='email-list']//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + i + "')]";
+            String x = "//ul[@class='email-list']//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + "')]";
             WebElement findEmail = driver.findElement(By.xpath(x));
             findEmail.click();
             TimeUnit.SECONDS.sleep(2);

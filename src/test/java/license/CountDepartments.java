@@ -43,6 +43,7 @@ public class CountDepartments extends BaseClass {
             String departmentCountLicensePage = licensePageobject.countDepartmentsInLicensePage().getText().split("( [A-Z])\\w+")[0];
             String departmentCountConvert = String.valueOf(departmentCount);
             if (!departmentCountLicensePage.equals(departmentCountConvert)) {
+                driver.quit();
                 Assert.fail(departmentCountLicensePage + " isn't equal to " + departmentCountConvert);
             }
         }

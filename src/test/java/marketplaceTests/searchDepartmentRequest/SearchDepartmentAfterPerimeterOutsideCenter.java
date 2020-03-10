@@ -80,6 +80,7 @@ public class SearchDepartmentAfterPerimeterOutsideCenter extends BaseClass {
                 tr = 0;
                 testIfFailure = testIfFailure - 12;
             } else {
+                driver.quit();
                 Assert.fail("We found more/less places than expected(Expected places: 12): " + testIfFailure + " in Card No:" + card);
             }
         }

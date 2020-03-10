@@ -23,12 +23,14 @@ public class FormNavigation extends BaseClass {
             formNavigationPage.navToRegister().click();
             TimeUnit.SECONDS.sleep(2);
             if (!formNavigationPage.signupButton().getText().equals("Registrieren")) {
+                driver.quit();
                 Assert.fail("not on signup page");
             }
 
             //navigate to login form
             formNavigationPage.navToLogin().click();
             if (!formNavigationPage.loginButton().getText().equals("Anmelden")) {
+                driver.quit();
                 Assert.fail("not on login page");
             }
 

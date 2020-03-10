@@ -30,7 +30,6 @@ public class BaseClass {
         //manual start to see browser
 //        System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
 //        driver = new FirefoxDriver();
-//        driver.manage().window().fullscreen();
         if (browserName.equals("chrome")) {
             DesiredCapabilities cap = DesiredCapabilities.chrome();
             driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
@@ -161,6 +160,7 @@ public class BaseClass {
             }
             return count;
         } catch (Exception e) {
+            driver.quit();
             Assert.fail("Nicht möglich die Contact Personen zu zählen.");
             return 0;
         }
@@ -208,7 +208,7 @@ public class BaseClass {
     public void loginLoop(int i) throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         TimeUnit.SECONDS.sleep(2);
-        loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail") + i);
+        loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
         try {
             accessAllCookies(driver);

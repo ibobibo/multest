@@ -8,9 +8,9 @@ import resources.BaseClass;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class GetLicenseFromHomepage extends BaseClass {
+public class NavigateToLicensePageThroughDepartmentIcon extends BaseClass {
     @Test()
-    public void clickLicenseFromHomepage() throws InterruptedException, IOException {
+    public void checkIfValuesAreCorrectlyRepresented() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
         try {
@@ -23,17 +23,15 @@ public class GetLicenseFromHomepage extends BaseClass {
             LicensePageobject licensePageobject = new LicensePageobject(driver);
             loginLoop(i);
             TimeUnit.SECONDS.sleep(2);
-            if (!licensePageobject.checkIfTrial().getText().equals("Kostenlose Premiumversion")) {
-                driver.quit();
-                Assert.fail("'Kostenlose Premiumversion' isn't displayed");
-            }
+            licensePageobject.showDepartments().click();
             TimeUnit.SECONDS.sleep(1);
-            licensePageobject.navToLicensePage().click();
-            TimeUnit.SECONDS.sleep(1);
-            if (!licensePageobject.checkIfLicensePage().getText().equals("Premium-Lizenzen")) {
+            licensePageobject.navigateToLicensePageThroughDepartmentIcon().click();
+
+            if (!licensePageobject.countElementsInBucket().getText().equals("1")) {
                 driver.quit();
-                Assert.fail("'Premium-Lizenzen' isn't displayed");
+                Assert.fail(licensePageobject.countElementsInBucket().getText() + " isn't equal to 1");
             }
+
             logout();
         }
         TimeUnit.SECONDS.sleep(1);

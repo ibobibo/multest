@@ -23,7 +23,7 @@ public class ResetPasswordTest extends BaseClass {
             ResetPasswordPage resetPasswordPage = new ResetPasswordPage(driver);
             resetPasswordPage.getNewPassword().click();
             TimeUnit.SECONDS.sleep(3);
-            resetPasswordPage.email().sendKeys(prop.getProperty("contactEmail") + i);
+            resetPasswordPage.email().sendKeys(prop.getProperty("contactEmail"));
             resetPasswordPage.resetPassword().click();
         }
         driver.quit();

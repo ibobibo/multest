@@ -37,4 +37,17 @@ public class FormNavigationPage {
     public WebElement signupButton() {
         return signupButton;
     }
+
+    @FindBy(xpath = "//span[contains(text(),'Sie haben noch kein Konto?')]")
+    WebElement checkTextInNavbarDuringLogin;
+    @FindBy(xpath = "//div[@class='toLogin']//span[contains(text(),'Sie haben bereits ein Konto?')]")
+    WebElement checkTextInNavbarDuringSignup;
+
+    public WebElement checkTextInNavbarDuringLogin() {
+        return checkTextInNavbarDuringLogin;
+    }
+
+    public WebElement checkTextInNavbarDuringSignup() {
+        return checkTextInNavbarDuringSignup;
+    }
 }

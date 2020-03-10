@@ -24,7 +24,7 @@ public class CreateAmbulantOrganisation extends BaseClass {
             } catch (Exception e) {
                 System.out.println("logged in");
             }
-            //because we have to move explicit to our select fields
+
             Actions actions = new Actions(driver);
 
             loadPropsForDepartment();

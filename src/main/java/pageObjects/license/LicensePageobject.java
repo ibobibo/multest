@@ -158,4 +158,17 @@ public class LicensePageobject {
         return countDepartmentsInLicensePage;
     }
 
+    @FindBy(xpath = "//a[@id='purchase-premium-button-0']")
+    WebElement navigateToLicensePageThroughDepartmentIcon;
+    @FindBy(xpath = "//span[@class='count']")
+    WebElement countElementsInBucket;
+
+    public WebElement navigateToLicensePageThroughDepartmentIcon() {
+        return navigateToLicensePageThroughDepartmentIcon;
+    }
+
+    public WebElement countElementsInBucket() {
+        return countElementsInBucket;
+    }
+
 }

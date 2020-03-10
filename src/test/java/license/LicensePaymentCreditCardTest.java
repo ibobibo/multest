@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LicensePaymentCreditCardTest extends BaseClass {
     @Test()
-    public void cancelPaymentCreditCard() throws InterruptedException, IOException {
+    public void payWithCreditCardForLicense() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
 
@@ -29,7 +29,7 @@ public class LicensePaymentCreditCardTest extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
             licensePageobject.licenseNavbar().click();
             TimeUnit.SECONDS.sleep(1);
-            licensePageobject.firstDepartmentAddLicense().click();
+            licensePageobject.secondDepartmentAddLicense().click();
             TimeUnit.SECONDS.sleep(1);
             licensePageobject.checkboxForConfirmation().click();
             TimeUnit.SECONDS.sleep(1);
@@ -71,8 +71,13 @@ public class LicensePaymentCreditCardTest extends BaseClass {
             TimeUnit.SECONDS.sleep(4);
 
             driver.switchTo().defaultContent();
-            if (driver.findElement(By.xpath("//span[contains(text(),'Kauf leider fehlgeschlagen!')]")).getText().equals("Kauf leider fehlgeschlagen!")) {
-                Assert.fail("Paying failure during payment for license.");
+            try {
+                if (driver.findElement(By.xpath("//span[contains(text(),'Kauf leider fehlgeschlagen!')]")).getText().equals("Kauf leider fehlgeschlagen!")) {
+                    driver.quit();
+                    Assert.fail("Paying failure during payment for license.");
+                }
+            } catch (Exception e) {
+
             }
         }
         driver.quit();

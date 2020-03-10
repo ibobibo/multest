@@ -39,14 +39,14 @@ public class LicenseCancelPaymentCreditCardTest extends BaseClass {
             TimeUnit.SECONDS.sleep(1);
 
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Kredit- / Debitkarten']"))).click();
-            TimeUnit.SECONDS.sleep(2);
-
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[2]/div[2]/div[6]/div/input[1]"))).click();
+            TimeUnit.SECONDS.sleep(3);
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[5]/div/input[1]"))).click();
             driver.switchTo().alert().accept();
             TimeUnit.SECONDS.sleep(2);
 
             driver.switchTo().defaultContent();
             if (!licensePageobject.checkIfBucketIsEmpty().isDisplayed()) {
+                driver.quit();
                 Assert.fail("Canceling payment with Kredit- / Debitkarten couldn't work.");
             }
         }
