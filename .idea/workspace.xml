@@ -4,10 +4,23 @@
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/license/LicensePageobject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/license/LicensePageobject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentCreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentCreditCardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentLastschriftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentLastschriftTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/license/LicensePageobject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/license/LicensePageobject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentCreditCardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentCreditCardTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/ResetPasswordTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/ResetPasswordTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -245,7 +258,7 @@
       <workItem from="1581943444392" duration="3157000" />
       <workItem from="1581949452936" duration="19052000" />
       <workItem from="1582293272932" duration="38204000" />
-      <workItem from="1583148985817" duration="56823000" />
+      <workItem from="1583148985817" duration="64618000" />
     </task>
     <servers />
   </component>

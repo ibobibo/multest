@@ -76,11 +76,11 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">
-        <classes>
-            <class name="license.LicenseCancelPaymentLastschriftTest"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="license.LicenseCancelPaymentLastschriftTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
     <test thread-count="4" name="Cancel Payment for Credit Card License Test">
         <classes>
             <class name="license.LicenseCancelPaymentCreditCardTest"/>

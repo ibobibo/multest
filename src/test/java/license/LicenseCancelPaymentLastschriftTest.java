@@ -36,17 +36,18 @@ public class LicenseCancelPaymentLastschriftTest extends BaseClass {
 
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Lastschrift SEPA']"))).click();
             TimeUnit.SECONDS.sleep(3);
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[5]/div[1]/div[2]/div[5]/div/input[1]"))).click();
             try {
-                System.out.println("bin hier");
-                //hier is der fehler
-                driver.switchTo().alert().accept();
+                licensePageobject.clickAccount().click();
+                TimeUnit.SECONDS.sleep(1);
+                new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='payment_formula_checkout_page']/div/div[6]/div[1]/div[2]/div[5]/div/input[1]"))).click();
             } catch (Exception e) {
-                System.out.println("Can't switch to alert!");
+                System.out.println("Can't cancel Payment!");
             }
-            TimeUnit.SECONDS.sleep(2);
 
+            driver.switchTo().alert().accept();
+            TimeUnit.SECONDS.sleep(1);
             driver.switchTo().defaultContent();
+
             if (!licensePageobject.checkIfBucketIsEmpty().isDisplayed()) {
                 driver.quit();
                 Assert.fail("Canceling Payment with Sepa Lastschrift couldn't work.");

@@ -171,4 +171,10 @@ public class LicensePageobject {
         return countElementsInBucket;
     }
 
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[5]/div/label")
+    WebElement clickAccount;
+
+    public WebElement clickAccount() {
+        return clickAccount;
+    }
 }
