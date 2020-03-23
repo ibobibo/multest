@@ -21,4 +21,4 @@ run-selenium-tests:
   before_script:
     - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
   script:
-    - docker run --network="host" ${REGISTRY}/selenium-hub-runner-image mvn test
+    - docker run --network="selenium-headless-network-${CI_JOB_ID}" ${REGISTRY}/selenium-hub-runner-image mvn test
