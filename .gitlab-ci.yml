@@ -10,7 +10,7 @@ variables:
 
 run-selenium-tests:
   stage: test
-  image: ${REGISTRY}/selenium-hub-runner-image
+  image: selenium-hub-runner-image
   name: selenium_test_runner
   before_script:
     - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
