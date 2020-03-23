@@ -36,4 +36,4 @@ services:
 
 networks:
   selenium-headless-network:
-    name: "selenium-headless-network"
+    name: "selenium-headless-network-${CI_JOB_ID}"

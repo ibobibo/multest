@@ -2,16 +2,29 @@ services:
   - docker:dind
 
 stages:
+  - build-image
   - build
   - test
 variables:
   DOCKER_DRIVER: overlay2
 
-
+build_image:
+  stage: build-image
+  script:
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY
+    - docker pull ${REGISTRY}/selenium-hub-runner-image:latest
+    - docker build -t ${REGISTRY}/selenium-hub-runner-image .
+    - docker push ${REGISTRY}/selenium-hub-runner-image:latest
 run-selenium-tests:
   stage: test
-  image: ${REGISTRY}/selenium-hub-runner-image
+  image: docker:stable
   before_script:
     - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
+    - apk add --no-cache docker-compose
+    - docker-compose up -d
   script:
-    - docker ps
+    docker-compose ps
+    # Find out the actual name of the "hub" container we need to connect to
+    - export SELENIUM_HUB_CONTAINER_NAME=`docker-compose ps | grep hub | awk '{print $1}'`
+    - echo $SELENIUM_HUB_CONTAINER_NAME
+    - docker run --name selenium_test_runner-${CI_COMMIT_SHORT_SHA} --network="selenium-headless-network-${CI_JOB_ID}" ${REGISTRY}/selenium-hub-runner-image mvn test
