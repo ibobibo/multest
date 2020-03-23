@@ -14,4 +14,4 @@ run-selenium-tests:
   before_script:
     - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
   script:
-    - docker-compose up
+    - docker ps
