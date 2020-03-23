@@ -34,7 +34,7 @@ public class BaseClass {
         //check for browser
         if (browserName.equals("chrome")) {
             DesiredCapabilities cap = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
             try {
@@ -44,7 +44,7 @@ public class BaseClass {
             }
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
             try {
@@ -54,7 +54,7 @@ public class BaseClass {
             }
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(2);
             try {
