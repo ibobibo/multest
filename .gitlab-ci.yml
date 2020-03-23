@@ -21,4 +21,4 @@ run-selenium-tests:
   before_script:
     - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
   script:
-    - docker run --name=selenium_test_runner_${CI_JOB_ID} ${REGISTRY}/selenium-hub-runner-image mvn test
+    - docker run --name=selenium_test_runner ${REGISTRY}/selenium-hub-runner-image mvn test
