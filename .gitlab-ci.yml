@@ -2,7 +2,6 @@ services:
   - docker:dind
 
 stages:
-  - build-image
   - build
   - test
 variables:
@@ -21,4 +20,5 @@ run-selenium-tests:
   before_script:
     - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
   script:
+    - docker-compose up
     - docker run --name=selenium_test_runner ${REGISTRY}/selenium-hub-runner-image mvn test
