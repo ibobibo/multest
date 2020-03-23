@@ -1,6 +1,6 @@
 # To execute this docker-compose yml file use `docker-compose -f <file_name> up`
 # Add the `-d` flag at the end for detached execution
-version: "3"
+version: '3.5'
 services:
   selenium-hub:
     image: selenium/hub:latest
@@ -34,6 +34,6 @@ services:
     networks:
       - selenium-headless-network
 
-  networks:
-    selenium-headless-network:
-      name: "selenium-headless-network-${CI_JOB_ID}"
+networks:
+  selenium-headless-network:
+    name: "selenium-headless-network-${CI_JOB_ID}"
