@@ -10,9 +10,9 @@ variables:
 
 run-selenium-tests:
   stage: test
-  image: docker:stable
+  image: ${REGISTRY}/selenium-hub-runner-image
+  name: selenium_test_runner
   before_script:
     - docker login -u ${REGISTRY_USER} -p ${REGISTRY_PASSWORD} ${REGISTRY}
   script:
-    - docker run --name=selenium_test_runner ${REGISTRY}/selenium-hub-runner-image docker-compose up
-    - docker run --name=selenium_test_runner ${REGISTRY}/selenium-hub-runner-image mvn test
+    - docker-compose up
