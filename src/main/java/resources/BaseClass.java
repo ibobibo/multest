@@ -29,7 +29,7 @@ public class BaseClass {
         cleanUp();
         loadProps();
         String browserName = prop.getProperty("browser");
-        hubAddress = "localhost";
+        hubAddress = "172.19.0.2";
 
         //check for browser
         if (browserName.equals("chrome")) {
