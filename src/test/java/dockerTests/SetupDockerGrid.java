@@ -25,15 +25,15 @@ public class SetupDockerGrid extends BaseClass {
                 "(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)";
 
         Pattern pattern = Pattern.compile(IPADDRESS_PATTERN);
-        Matcher matcher = pattern.matcher(hubAddress);
+        /*Matcher matcher = pattern.matcher(hubAddress);
         if (matcher.find()) {
             hubAddress = matcher.group();
         } else {
             //throw new IllegalArgumentException("No ip-address for selenium-hub found. Is it running properly?");
         }
 
-        System.out.println("Selenium-hub running at: " + hubAddress);
-        BaseClass.hubAddress = hubAddress;
+        System.out.println("Selenium-hub running at: " + hubAddress);*/
+        //BaseClass.hubAddress = hubAddress;
         /*Process test = Runtime.getRuntime().exec("ping host.docker.internal");
         BufferedReader reader = new BufferedReader(new
                 InputStreamReader(test.getInputStream()));
@@ -41,6 +41,7 @@ public class SetupDockerGrid extends BaseClass {
         while ((j = reader.readLine()) != null) {
             System.out.println(j);
         }*/
+        System.out.println(hubAddress);
         System.out.println("Docker initialized");
         Thread.sleep(15000);
     }
