@@ -2,19 +2,11 @@ services:
   - docker:dind
 
 stages:
-  - build-image
   - build
   - test
 variables:
   DOCKER_DRIVER: overlay2
 
-build_image:
-  stage: build-image
-  script:
-    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY
-    - docker pull ${REGISTRY}/selenium-hub-runner-image:latest
-    - docker build -t ${REGISTRY}/selenium-hub-runner-image .
-    - docker push ${REGISTRY}/selenium-hub-runner-image:latest
 run-selenium-tests:
   stage: test
   image: docker:stable
@@ -26,4 +18,5 @@ run-selenium-tests:
     - docker-compose ps
     - export SELENIUM_HUB_CONTAINER_NAME=`docker-compose ps | grep hub | awk '{print $1}'`
     - echo $SELENIUM_HUB_CONTAINER_NAME
+    - docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' selenium-hub
     - docker run --name selenium_test_runner-${CI_COMMIT_SHORT_SHA} --network="selenium-headless-network-${CI_JOB_ID}" ${REGISTRY}/selenium-hub-runner-image mvn test
