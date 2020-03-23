@@ -23,8 +23,7 @@ run-selenium-tests:
     - apk add --no-cache docker-compose
     - docker-compose up -d
   script:
-    docker-compose ps
-    # Find out the actual name of the "hub" container we need to connect to
+    - docker-compose ps
     - export SELENIUM_HUB_CONTAINER_NAME=`docker-compose ps | grep hub | awk '{print $1}'`
     - echo $SELENIUM_HUB_CONTAINER_NAME
     - docker run --name selenium_test_runner-${CI_COMMIT_SHORT_SHA} --network="selenium-headless-network-${CI_JOB_ID}" ${REGISTRY}/selenium-hub-runner-image mvn test
