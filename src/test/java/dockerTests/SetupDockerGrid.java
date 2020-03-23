@@ -29,7 +29,7 @@ public class SetupDockerGrid extends BaseClass {
         if (matcher.find()) {
             hubAddress = matcher.group();
         } else {
-            throw new IllegalArgumentException("No ip-address for selenium-hub found. Is it running properly?");
+            //throw new IllegalArgumentException("No ip-address for selenium-hub found. Is it running properly?");
         }
 
         System.out.println("Selenium-hub running at: " + hubAddress);
