@@ -26,16 +26,17 @@ public class LicenseTest extends BaseClass {
             licensePageobject.secondDepartmentAddLicense().click();
             TimeUnit.SECONDS.sleep(1);
             String firstPrice = licensePageobject.priceTextOfFirstElem().getText();
-            String soppingCartFirstElem = licensePageobject.shoppingCartFirstElem().getText();
+            String shoppingCartFirstElem = licensePageobject.shoppingCartFirstElem().getText();
             String secondPrice = licensePageobject.priceTextOfSecondElem().getText();
             String soppingCartSecondElem = licensePageobject.shoppingCartSecondElem().getText();
 
             //checks if the prices are correct
+            System.out.println("");
             String[] partsOfString = firstPrice.split("jetzt für 12 Monate buchen für ");
 
-            if (!soppingCartFirstElem.equals(partsOfString[1])) {
+            if (!shoppingCartFirstElem.equals(partsOfString[1])) {
                 driver.quit();
-                Assert.fail(partsOfString[1] + " isn't equal to " + soppingCartFirstElem);
+                Assert.fail(partsOfString[1] + " isn't equal to " + shoppingCartFirstElem);
             }
 
             if (!secondPrice.equals(soppingCartSecondElem)) {

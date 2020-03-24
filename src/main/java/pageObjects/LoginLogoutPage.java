@@ -16,9 +16,9 @@ public class LoginLogoutPage {
     //LOGIN
     @FindBy(xpath = "//section[@id='app-header']//a[@href='/login']")
     WebElement anmeldenButton;
-    @FindBy(xpath = "//input[@id='username']")
+    @FindBy(xpath = "//section[2]//div[1]//input[1]")
     WebElement username;
-    @FindBy(xpath = "//input[@id='password']")
+    @FindBy(xpath = "//section[4]//div[1]//input[1]")
     WebElement password;
     @FindBy(xpath = "//button[@id='login-submit']")
     WebElement anmelden;

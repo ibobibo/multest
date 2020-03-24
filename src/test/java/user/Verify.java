@@ -31,7 +31,7 @@ public class Verify extends BaseClass {
 
             driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='preview-iframe panel-html']")));
             driver.findElement(By.xpath("/html/body/p[3]/a")).click();
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
 
             ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
             driver.switchTo().window(tabs.get(1));

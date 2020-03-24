@@ -15,11 +15,8 @@ public class CreateDayNightCareOrganisation extends BaseClass {
     public void createDayNightCareOrganisation() throws IOException, InterruptedException {
         initializeBrowser();
         loadProps();
-        accessAllCookies(driver);
-
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            loadProps();
             try {
                 loginLoop(i);
             } catch (Exception e) {

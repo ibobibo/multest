@@ -1,17 +1,16 @@
 package dockerTests;
 
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
 
 public class SetupDockerGrid {
-    @BeforeSuite
+    @BeforeTest
     void startDockerGrid() throws IOException, InterruptedException {
         Runtime.getRuntime().exec("./start_dockerGrid.sh");
         System.out.println("Docker initialized");
-        Thread.sleep(15000);
-
+        Thread.sleep(5000);
     }
 
 //    @Test
@@ -21,11 +20,11 @@ public class SetupDockerGrid {
 //        Thread.sleep(15000);
 //    }
 
-    @AfterSuite
+    @AfterTest
     void stopDockerGrid() throws IOException, InterruptedException {
         Runtime.getRuntime().exec("./stop_dockerGrid.sh");
         System.out.println("Docker shutdown");
-        Thread.sleep(15000);
+        Thread.sleep(5000);
 
         Runtime.getRuntime().exec("killall 'Terminal'");
         System.out.println("Close Terminal");
