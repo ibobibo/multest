@@ -39,7 +39,7 @@ public class LicenseCancelPaymentLastschriftTest extends BaseClass {
             try {
                 licensePageobject.clickAccount().click();
                 TimeUnit.SECONDS.sleep(1);
-                new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='payment_formula_checkout_page']/div/div[6]/div[1]/div[2]/div[5]/div/input[1]"))).click();
+                new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[6]/div[1]/div[2]/div[5]/div/input[1]"))).click();
             } catch (Exception e) {
                 System.out.println("Can't cancel Payment!");
             }
