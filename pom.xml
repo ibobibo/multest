@@ -36,7 +36,8 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>dockerTestsParallel.xml</suiteXmlFile>
+                        <!--                        <suiteXmlFile>dockerTestsParallel.xml</suiteXmlFile>-->
+                        <suiteXmlFile>dockerTestMarketplace.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
