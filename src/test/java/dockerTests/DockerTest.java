@@ -9,11 +9,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class DockerTest {
+    public static String hubAddress;
+
     @Test
     public void dockerTest() throws MalformedURLException, InterruptedException {
+        hubAddress = "172.19.0.2";
+
         DesiredCapabilities cap = DesiredCapabilities.firefox();
 
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+
 
         driver.get("http://www.google.com");
 
