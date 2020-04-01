@@ -2,6 +2,7 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -32,16 +33,15 @@ public class BaseClass {
 //        System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
 //        driver = new FirefoxDriver();
         if (browserName.equals("chrome")) {
-            DesiredCapabilities cap = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-            driver.get(prop.getProperty("urlFromHomeNetwork"));
-            driver.manage().window().fullscreen();
+            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+            driver = new ChromeDriver();
+//            driver.manage().window().fullscreen();
             TimeUnit.SECONDS.sleep(2);
             accessAllCookies(driver);
         } else if (browserName.equals("firefox")) {
             System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
             driver = new FirefoxDriver();
-            driver.manage().window().fullscreen();
+//            driver.manage().window().fullscreen();
             TimeUnit.SECONDS.sleep(2);
             accessAllCookies(driver);
         } else if (browserName.equals("edge")) {

@@ -43,7 +43,6 @@ public class LicenseCancelPaymentLastschriftTest extends BaseClass {
             } catch (Exception e) {
                 System.out.println("Can't cancel Payment!");
             }
-
             driver.switchTo().alert().accept();
             TimeUnit.SECONDS.sleep(1);
             driver.switchTo().defaultContent();

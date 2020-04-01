@@ -24,7 +24,7 @@ public class DeleteUser extends BaseClass {
             loadProps();
             TimeUnit.SECONDS.sleep(2);
             deleteUserPage.searchField().clear();
-            deleteUserPage.searchField().sendKeys(prop.getProperty("contactEmail") + i);
+            deleteUserPage.searchField().sendKeys(prop.getProperty("contactEmail"));
             deleteUserPage.searchFieldButton().click();
             TimeUnit.SECONDS.sleep(2);
             try {

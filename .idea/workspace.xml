@@ -4,10 +4,30 @@
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentCreditCard1585054263273_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentCreditCard1585054649855_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentCreditCard1585055605214_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentCreditCard1585057249523_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentCreditCard1585057981956_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentCreditCard1585302911934_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentSepa1585054223293_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentSepa1585055561409_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentSepa1585057209675_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentSepa1585057940907_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentSepa1585302869266_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/checkIfValuesAreCorrectlyRepresented1585054142299_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/checkIfValuesAreCorrectlyRepresented1585054562001_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/checkIfValuesAreCorrectlyRepresented1585055315420_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/checkIfValuesAreCorrectlyRepresented1585055514261_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/payWithCreditCardForLicense1585054394582_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/payWithCreditCardForLicense1585054772936_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/payWithSepaLastschriftForLicense1585054333532_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenShots/payWithSepaLastschriftForLicense1585054710647_screenshot.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentLastschriftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentLastschriftTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicenseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicenseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -246,7 +266,7 @@
       <workItem from="1581949452936" duration="19052000" />
       <workItem from="1582293272932" duration="38204000" />
       <workItem from="1583148985817" duration="79180000" />
-      <workItem from="1585481421822" duration="368000" />
+      <workItem from="1585481421822" duration="5540000" />
     </task>
     <servers />
   </component>
