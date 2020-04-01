@@ -36,8 +36,6 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <!--Deparment Stuff-->
-                        <!--suiteXmlFile>dockerTestsPartner.xml</suiteXmlFile-->
                         <suiteXmlFile>dockerTestMarketplace.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
