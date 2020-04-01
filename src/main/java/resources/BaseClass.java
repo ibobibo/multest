@@ -36,7 +36,7 @@ public class BaseClass {
             DesiredCapabilities cap = DesiredCapabilities.chrome();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
@@ -46,7 +46,7 @@ public class BaseClass {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
@@ -56,7 +56,7 @@ public class BaseClass {
             DesiredCapabilities cap = DesiredCapabilities.edge();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {
