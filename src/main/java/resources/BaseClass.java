@@ -204,9 +204,12 @@ public class BaseClass {
     }
 
     public void loginLoop(int i) throws InterruptedException {
+        System.out.println("a");
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        TimeUnit.SECONDS.sleep(2);
+        System.out.println("b");
+        TimeUnit.SECONDS.sleep(6);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
+        System.out.println("c");
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
 
         TimeUnit.SECONDS.sleep(1);
