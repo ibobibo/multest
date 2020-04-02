@@ -203,7 +203,7 @@ public class BaseClass {
         TimeUnit.SECONDS.sleep(2);
     }
 
-    public void loginLoop() throws InterruptedException {
+    public void loginLoop(int i) throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
