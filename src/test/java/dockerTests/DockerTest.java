@@ -11,6 +11,7 @@ public class DockerTest extends BaseClass {
     @Test
     public void dockerTest() throws IOException, InterruptedException {
         initializeBrowser();
+        System.out.println("wieder da");
 
         String x = driver.findElement(By.xpath("//div[@class='brand-icon']//img")).getText();
         System.out.println("x: " + x);
