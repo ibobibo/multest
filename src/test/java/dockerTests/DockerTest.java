@@ -13,7 +13,7 @@ public class DockerTest extends BaseClass {
         initializeBrowser();
         System.out.println("wieder da");
 
-        String x = driver.findElement(By.xpath("//div[@class='brand-icon']//img")).getText();
+        String x = driver.findElement(By.xpath("//span[contains(text(),'Bitte tragen Sie Ihre Anmeldedaten ein')]")).getText();
         System.out.println("x: " + x);
         Thread.sleep(5000);
 
