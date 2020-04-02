@@ -4,21 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+import resources.BaseClass;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class DockerTest {
-    public static String hubAddress;
+public class DockerTest extends BaseClass {
 
     @Test
-    public void dockerTest() throws MalformedURLException, InterruptedException {
-        hubAddress = "172.19.0.2";
-
-        DesiredCapabilities cap = DesiredCapabilities.firefox();
-
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
-
+    public void dockerTest() throws IOException, InterruptedException {
+        initializeBrowser();
 
         driver.get("http://www.google.com");
 
