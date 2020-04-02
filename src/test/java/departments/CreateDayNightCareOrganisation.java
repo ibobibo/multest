@@ -13,13 +13,13 @@ import java.util.concurrent.TimeUnit;
 public class CreateDayNightCareOrganisation extends BaseClass {
     @Test
     public void createDayNightCareOrganisation() throws IOException, InterruptedException {
-        System.out.println("Start initializing Browser");
         initializeBrowser();
-        System.out.println("Browser Initialized");
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            System.out.println("Start log in");
             loginLoop(i);
+            System.out.println("logged in");
 
             Actions actions = new Actions(driver);
             loadPropsForDepartment();
