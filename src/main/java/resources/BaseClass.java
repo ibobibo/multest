@@ -203,16 +203,16 @@ public class BaseClass {
         TimeUnit.SECONDS.sleep(2);
     }
 
-    public void loginLoop(int i) throws InterruptedException {
+    public void loginLoop() throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        TimeUnit.SECONDS.sleep(4);
+        TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
 
-        TimeUnit.SECONDS.sleep(4);
+        TimeUnit.SECONDS.sleep(1);
         loginLogoutPage.anmelden().click();
 
-        TimeUnit.SECONDS.sleep(4);
+        TimeUnit.SECONDS.sleep(1);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
