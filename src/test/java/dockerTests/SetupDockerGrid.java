@@ -1,18 +1,18 @@
 package dockerTests;
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import resources.BaseClass;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.regex.*;
-import java.lang.IllegalArgumentException;
+import java.util.regex.Pattern;
 
 public class SetupDockerGrid extends BaseClass {
     @BeforeSuite
     void startDockerGrid() throws IOException, InterruptedException {
-        Process proc =  Runtime.getRuntime().exec("./start_dockerGrid.sh");
+        Process proc = Runtime.getRuntime().exec("./start_dockerGrid.sh");
         BufferedReader stdInput = new BufferedReader(new
                 InputStreamReader(proc.getInputStream()));
         String hubAddress = "";
@@ -41,7 +41,7 @@ public class SetupDockerGrid extends BaseClass {
         while ((j = reader.readLine()) != null) {
             System.out.println(j);
         }*/
-        System.out.println(hubAddress);
+        System.out.println("hubAddress: " + hubAddress);
         System.out.println("Docker initialized");
         Thread.sleep(15000);
     }

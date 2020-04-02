@@ -5,8 +5,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import pageObjects.LoginLogoutPage;
 
 import java.io.File;
@@ -207,14 +205,14 @@ public class BaseClass {
 
     public void loginLoop(int i) throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(4);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail") + i);
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
 
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(4);
         loginLogoutPage.anmelden().click();
 
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(4);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
