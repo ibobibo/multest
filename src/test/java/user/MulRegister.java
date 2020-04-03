@@ -11,6 +11,7 @@ public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
         initializeDriver();
+        System.out.println("registrierung");
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 

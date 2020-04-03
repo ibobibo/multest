@@ -13,7 +13,7 @@ public class Verify extends BaseClass {
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
-        System.out.println("bin im mail browser");
+        System.out.println("verifizierung");
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
