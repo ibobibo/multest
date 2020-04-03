@@ -15,6 +15,7 @@
         <classes>
             <class name="user.MulRegister"/>
             <class name="user.Verify"/>
+            <class name="departments.CreateDayNightCareOrganisation"/>
         </classes>
     </test>
     <!--    <test thread-count="4" name="verify mul master test">-->
