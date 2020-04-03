@@ -18,7 +18,7 @@ public class MulRegister extends BaseClass {
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(2);
 
-            registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany") + i);
+            registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
 
             registerPage.companyForm().click();
             registerPage.companyFormChosen().click();
@@ -34,9 +34,9 @@ public class MulRegister extends BaseClass {
             registerPage.contactSalutation().click();
             registerPage.contactSalutationMale().click();
 
-            registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName") + i);
-            registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName") + i);
-            registerPage.contactEmail().sendKeys(prop.getProperty("contactEmail") + i);
+            registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName"));
+            registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName"));
+            registerPage.contactEmail().sendKeys(prop.getProperty("contactEmail"));
             registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone"));
             registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword"));
             registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
