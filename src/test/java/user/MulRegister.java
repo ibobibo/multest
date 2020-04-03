@@ -40,7 +40,7 @@ public class MulRegister extends BaseClass {
             registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone"));
             registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword"));
             registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
-            registerPage.accountPremiumCode().sendKeys(prop.getProperty("accountPremiumCode"));
+            System.out.println("removed premium code");
 
             registerPage.accept().click();
             TimeUnit.SECONDS.sleep(4);
