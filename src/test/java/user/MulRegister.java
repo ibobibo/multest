@@ -16,6 +16,7 @@ public class MulRegister extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
             RegisterPage registerPage = new RegisterPage(driver);
+            TimeUnit.SECONDS.sleep(4);
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(2);
 
