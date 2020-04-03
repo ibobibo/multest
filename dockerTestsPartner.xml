@@ -6,13 +6,13 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    &lt;!&ndash;    REGISTER TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" name="register mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.MulRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--    REGISTER TEST-->
+    <test thread-count="4" name="register mul master test">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="user.MulRegister"/>
+        </classes>
+    </test>
     <!--    <test thread-count="4" name="verify mul master test">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
@@ -20,13 +20,13 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    CREATE DEPARTMENT TESTS-->
-    <test thread-count="4" name="Create Day Night Care Organisation">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="departments.CreateDayNightCareOrganisation"/>
-        </classes>
-    </test>
+    <!--    &lt;!&ndash;    CREATE DEPARTMENT TESTS&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Create Day Night Care Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
     <!--    <test thread-count="4" name="Create Ambulant Organisation">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
