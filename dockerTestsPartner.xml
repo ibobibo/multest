@@ -5,20 +5,22 @@
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="resources.Listeners"/>
     </listeners>
-
+    <test name="setupPlaceholder">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+        </classes>
+    </test>
     <!--    REGISTER TEST-->
     <test thread-count="4" name="register mul master test">
         <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
             <class name="user.MulRegister"/>
         </classes>
     </test>
-    <!--    <test thread-count="4" name="verify mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.Verify"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test thread-count="4" name="verify mul master test">
+        <classes>
+            <class name="user.Verify"/>
+        </classes>
+    </test>
 
     <!--    &lt;!&ndash;    CREATE DEPARTMENT TESTS&ndash;&gt;-->
     <!--    <test thread-count="4" name="Create Day Night Care Organisation">-->
