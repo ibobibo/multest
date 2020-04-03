@@ -15,17 +15,18 @@ public class DockerTest extends BaseClass {
         TimeUnit.SECONDS.sleep(4);
 
         //email
-        driver.findElement(By.xpath("//input[@id='contact.firstName']")).sendKeys(prop.getProperty("contactEmail"));
+        driver.findElement(By.xpath("//section[2]//div[1]//input[1]")).sendKeys(prop.getProperty("contactEmail"));
         TimeUnit.SECONDS.sleep(4);
         //pw
-        driver.findElement(By.xpath("//input[@id='enterprise.address.streetAddress']")).sendKeys(prop.getProperty("contactPassword"));
+        driver.findElement(By.xpath("//section[4]//div[1]//input[1]")).sendKeys(prop.getProperty("contactPassword"));
         TimeUnit.SECONDS.sleep(4);
         //accept
-        driver.findElement(By.xpath("//input[@id='enterprise.address.streetNumber']")).sendKeys("contactPassword");
+        driver.findElement(By.xpath("//button[@id='login-submit']")).click();
         TimeUnit.SECONDS.sleep(4);
 
-        String y = driver.findElement(By.xpath("//input[@id='enterprise.address.streetNumber']")).getText();
+        String y = driver.findElement(By.xpath("//div[@class='enterpriseName']")).getText();
         System.out.println("y: " + y);
+        System.out.println("bin angemeldet");
 
         driver.quit();
     }
