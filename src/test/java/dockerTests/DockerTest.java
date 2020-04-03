@@ -24,9 +24,9 @@ public class DockerTest extends BaseClass {
         driver.findElement(By.xpath("//button[@id='login-submit']")).click();
         TimeUnit.SECONDS.sleep(4);
 
-        String y = driver.findElement(By.xpath("//div[@class='enterpriseName']")).getText();
+        String y = driver.findElement(By.xpath("//div[@class='enterpriseNumber']")).getText();
         System.out.println("y: " + y);
-        System.out.println("bin angemeldet");
+        System.out.println("enterprise number");
 
         driver.quit();
     }
