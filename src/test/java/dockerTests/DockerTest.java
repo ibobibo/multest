@@ -13,10 +13,6 @@ public class DockerTest extends BaseClass {
     public void dockerTest() throws IOException, InterruptedException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(4);
-        System.out.println(prop.getProperty("contactEmail")+" :props");
-        String x = driver.findElement(By.xpath("//span[contains(text(),'Bitte tragen Sie Ihre Anmeldedaten ein')]")).getText();
-        TimeUnit.SECONDS.sleep(4);
-        System.out.println("x: " + x);
 
         //email
         driver.findElement(By.xpath("//section[2]//div[1]//input[1]")).sendKeys(prop.getProperty("contactEmail"));
