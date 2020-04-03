@@ -16,11 +16,11 @@
             <class name="user.MulRegister"/>
         </classes>
     </test>
-    <test thread-count="4" name="verify mul master test">
-        <classes>
-            <class name="user.Verify"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="verify mul master test">-->
+    <!--        <classes>-->
+    <!--            <class name="user.Verify"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <!--    &lt;!&ndash;    CREATE DEPARTMENT TESTS&ndash;&gt;-->
     <!--    <test thread-count="4" name="Create Day Night Care Organisation">-->
