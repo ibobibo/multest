@@ -13,7 +13,7 @@ public class ResetPasswordPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//span[contains(text(),'Neues Passwort anfordern.')]")
+    @FindBy(xpath = "//span[contains(text(),'Neues Passwort anfordern')]")
     WebElement getNewPassword;
     @FindBy(xpath = "//input[@id='email']")
     WebElement email;

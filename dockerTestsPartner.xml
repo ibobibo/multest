@@ -5,23 +5,25 @@
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="resources.Listeners"/>
     </listeners>
-    <test name="setupPlaceholder">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-        </classes>
-    </test>
-    <!--    REGISTER TEST-->
-    <test thread-count="4" name="register mul master test">
-        <classes>
-            <class name="user.MulRegister"/>
-            <class name="user.Verify"/>
-            <class name="departments.CreateDayNightCareOrganisation"/>
-            <class name="departments.CreateAmbulantOrganisation"/>
-        </classes>
-    </test>
 
+    <!--    &lt;!&ndash;Routing tests for login to register and the other way around&ndash;&gt;-->
+    <!--    <test thread-count="4" name="navigation test from login and registration forms">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="navigation.FormNavigation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    &lt;!&ndash;        REGISTER TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="register mul master test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="user.MulRegister"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
     <!--    <test thread-count="4" name="verify mul master test">-->
     <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="user.Verify"/>-->
     <!--        </classes>-->
     <!--    </test>-->
@@ -31,6 +33,12 @@
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Create Ambulant Organisation">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
     <!--        </classes>-->
     <!--    </test>-->
     <!--    <test thread-count="4" name="Create Stationary Organisation">-->
@@ -43,6 +51,57 @@
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="departments.CreateFairHouseOffer"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Click license from Homepage">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.GetLicenseFromHomepage"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Count Departments on Licensepage">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.CountDepartments"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Check License and Prices if correct">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.LicenseTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Navigate To License Page Through Department Icon">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.LicenseCancelPaymentLastschriftTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Cancel Payment for Credit Card License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.LicenseCancelPaymentCreditCardTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Payment for Lastschrift License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.LicensePaymentLastschriftTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Payment for Credit Card License Test">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="license.LicensePaymentCreditCardTest"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 
@@ -62,7 +121,7 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    &lt;!&ndash;            COPY DEPARTMENT&ndash;&gt;-->
+    <!--    &lt;!&ndash;                COPY DEPARTMENT&ndash;&gt;-->
     <!--    <test thread-count="4" name="Copy department Test">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
@@ -98,42 +157,41 @@
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    &lt;!&ndash;    CONTACT PERSON TESTS&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Creating Some Contact Person">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Search Contact Person">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="contactPerson.SearchContactPerson"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Delete a Contact Person">-->
+    <!--    &lt;!&ndash;                CONTACT PERSON TESTS&ndash;&gt;-->
+    <test thread-count="4" name="Creating Some Contact Persons">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="contactPerson.CreateSomeContactPersonForSearch"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="Search Contact Person">
+        <classes>
+            <class name="contactPerson.SearchContactPerson"/>
+        </classes>
+    </test>
+    <!--    <test thread-count="4" name="Delete all Contact Persons">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="contactPerson.DeleteContactPerson"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    &lt;!&ndash;   DELETE DEPARTMENT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Delete Department">-->
+    <!--    &lt;!&ndash;       DELETE DEPARTMENT&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Delete all Departments">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="departments.DeleteOrganisation"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 
-    <!--    &lt;!&ndash;    DELETE ACCOUNT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Delete Placement">-->
+    <!--    &lt;!&ndash;        DELETE ACCOUNT&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Delete Account">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="placements.DeletePlacement"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <!--    <test thread-count="4" name="Delete User">-->
+    <!--    <test thread-count="4" name="Check if User is deleted.">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="user.DeleteUser"/>-->

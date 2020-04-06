@@ -17,9 +17,11 @@ public class CreateDayNightCareOrganisation extends BaseClass {
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            System.out.println("Start log in");
-            loginLoop(i);
-            System.out.println("logged in");
+            try {
+                loginLoop(i);
+            } catch (Exception e) {
+                System.out.println("logged in");
+            }
 
             Actions actions = new Actions(driver);
             loadPropsForDepartment();
@@ -27,29 +29,29 @@ public class CreateDayNightCareOrganisation extends BaseClass {
 
             try {
                 departmentPage.addDepartmentCard().click();
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             try {
                 departmentPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
-                System.out.println("erster FB");
+                System.out.println("first Department");
             }
 
             try {
                 departmentPage.addFirstDayNightCareDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("erster FB");
+                System.out.println("first Department");
             }
 
             try {
                 departmentPage.addDayNightCareDepartment().click();
             } catch (Exception e) {
-                System.out.println("n'ter FB");
+                System.out.println("n'th Department");
             }
 
             //allgemeine Angaben
@@ -58,15 +60,11 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
-            System.out.println("hier");
-
             departmentPage.departmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
             departmentPage.departmentOrganisationTypeChosen().click();
-
-            System.out.println("hier");
 
             departmentPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
             departmentPage.departmentStreetNumber().sendKeys(propDepartment.getProperty("streetNumber"));
@@ -109,8 +107,6 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             departmentPage.particularityZero().sendKeys(propDepartment.getProperty("particularityZero"));
             departmentPage.particularityOne().sendKeys(propDepartment.getProperty("particularityOne"));
             departmentPage.particularityTwo().sendKeys(propDepartment.getProperty("particularityTwo"));
-
-            System.out.println("hier");
 
             //youtube
             departmentPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));

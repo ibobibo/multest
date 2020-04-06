@@ -40,6 +40,7 @@ public class SearchDepartmentAfterPostalCode extends BaseClass {
                 TimeUnit.SECONDS.sleep(2);
                 String equalPostalCode = searchDepartmentPage.getPostalCodeOfResult().getText();
                 if (!equalPostalCode.equals(plz[i] + " Berlin")) {
+                    driver.quit();
                     Assert.fail("Error: " + equalPostalCode + " is not equal" + plz[i] + " Berlin in Card " + card);
                 }
                 TimeUnit.SECONDS.sleep(2);

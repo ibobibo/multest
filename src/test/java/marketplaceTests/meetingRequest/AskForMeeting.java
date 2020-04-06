@@ -13,7 +13,8 @@ public class AskForMeeting extends BaseClass {
     @Test
     public void askForMeeting() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies(driver);
 
         AskForMeetingPage askForMeetingPage = new AskForMeetingPage(driver);
         TimeUnit.SECONDS.sleep(2);
@@ -29,6 +30,13 @@ public class AskForMeeting extends BaseClass {
             askForMeetingPage.moreInformation().click();
             TimeUnit.SECONDS.sleep(2);
             askForMeetingPage.askForMeeting().click();
+            TimeUnit.SECONDS.sleep(2);
+            try {
+                askForMeetingPage.askForMeeting().click();
+            } catch (Exception e) {
+                System.out.println("Meeting Anfrage wird gestellt.");
+            }
+
             //meetingType
             String meetingType = "//label[" + getRandomNumberInRange(1, 3) + "]//div[1]//div[1]";
             String meetingTypePhone = "//label[1]//div[1]//div[1]";

@@ -16,7 +16,6 @@ public class DeleteMarketplaceUser extends BaseClass {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
         accessAllCookies(driver);
-        TimeUnit.SECONDS.sleep(2);
     }
 
     @Test

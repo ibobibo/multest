@@ -15,7 +15,8 @@ public class CheckIfRequestAreDeleted extends BaseClass {
     public void checkIfRequestAreDeleted() throws InterruptedException, IOException {
         cleanUp();
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies(driver);
 
         CheckIfRequestAreDeletedPage checkIfRequestAreDeletedPage = new CheckIfRequestAreDeletedPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
@@ -28,6 +29,7 @@ public class CheckIfRequestAreDeleted extends BaseClass {
                 String xpath = "//body/div[@id='root']/div/div[@class='app-container admin']/div/div[@id='app-view-container']/div[@class='view-routes']/div/div[@class='DepartmentRequests']/div/div[" + i + "]/div[1]/div[1]/span";
                 WebElement webElemForXpath = driver.findElement(By.xpath(xpath));
                 if (webElemForXpath.getText().contains("Deleted")) {
+                    driver.quit();
                     Assert.fail("Deleted user found at index " + i);
                     System.out.println(i);
                 }

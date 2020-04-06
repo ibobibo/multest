@@ -15,6 +15,7 @@ public class DeleteContactPerson extends BaseClass {
     @Test()
     public void deleteContactPerson() throws InterruptedException, IOException {
         initializeBrowser();
+        accessAllCookies(driver);
 
         DeleteContactPersonPage deleteContactPersonPage = new DeleteContactPersonPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
@@ -24,7 +25,7 @@ public class DeleteContactPerson extends BaseClass {
                 deleteContactPersonPage.addContactPersonCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             while (getCountContactPerson() != 0) {

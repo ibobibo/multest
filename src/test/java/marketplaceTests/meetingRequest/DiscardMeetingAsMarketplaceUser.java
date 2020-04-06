@@ -13,7 +13,8 @@ public class DiscardMeetingAsMarketplaceUser extends BaseClass {
     @Test
     public void discardMeetingAsMarketplaceUser() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies(driver);
 
         OperationsOnMeetingAsMarketplaceUserPage operationsOnMeetingAsMarketplaceUserPage = new OperationsOnMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);
@@ -33,7 +34,6 @@ public class DiscardMeetingAsMarketplaceUser extends BaseClass {
                     WebElement elemForXpath = driver.findElement(By.xpath(xPathString));
                     elemForXpath.click();
                 } catch (Exception e) {
-                    System.out.println("cant discard meeting as Marketplace User");
                     break;
                 }
             }

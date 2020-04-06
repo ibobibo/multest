@@ -2,6 +2,8 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -92,11 +94,7 @@ public class BaseClass {
     public void initializeMailServer() throws IOException, InterruptedException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        accessAllCookies(driver);
     }
 
     public void loadProps() throws IOException {
@@ -125,21 +123,20 @@ public class BaseClass {
 
     public int getCount() {
         try {
+            TimeUnit.SECONDS.sleep(2);
             WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
             int count = x.findElements(By.xpath("//td[@class='actions']")).size();
-            if (count == 0) {
-                System.out.println("Es existieren keine Daten");
-                return 0;
-            }
+
             return count;
         } catch (Exception e) {
-            Assert.fail("Nicht möglich die Departments zu zählen.");
+            System.out.println("No data exists.");
             return 0;
         }
     }
 
     public int getCountForDelete() {
         try {
+            TimeUnit.SECONDS.sleep(2);
             WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
             int count = x.findElements(By.xpath("//td[@class='actions']")).size();
             System.out.println(count);
@@ -151,6 +148,7 @@ public class BaseClass {
 
     public int getCountContactPerson() {
         try {
+            TimeUnit.SECONDS.sleep(2);
             WebElement x = driver.findElement(By.xpath("//section[@class='Userdata']//tbody//tr"));
             int count = x.findElements(By.xpath("//section[@class='Userdata']//tbody//tr")).size();
             if (count == 0) {
@@ -159,6 +157,7 @@ public class BaseClass {
             }
             return count;
         } catch (Exception e) {
+            driver.quit();
             Assert.fail("Nicht möglich die Contact Personen zu zählen.");
             return 0;
         }
@@ -167,9 +166,9 @@ public class BaseClass {
     //access Cookies
     public void accessAllCookies(RemoteWebDriver driver) {
         try {
-            driver.findElement(By.xpath("//div[@id='CybotCookiebotDialog']//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
+            driver.findElement(By.xpath("//a[@id='CybotCookiebotDialogBodyButtonAccept']")).click();
         } catch (Exception e) {
-            System.out.println("Kann keine Cookies finden.");
+            System.out.println("Cant't find any cookies.");
         }
     }
 
@@ -204,13 +203,11 @@ public class BaseClass {
     }
 
     public void loginLoop(int i) throws InterruptedException {
-        System.out.println("a");
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        System.out.println("b");
-        TimeUnit.SECONDS.sleep(6);
+        TimeUnit.SECONDS.sleep(2);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
-        System.out.println("c");
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
+        accessAllCookies(driver);
 
         TimeUnit.SECONDS.sleep(1);
         loginLogoutPage.anmelden().click();

@@ -13,6 +13,8 @@ public class AcceptMeetingPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = "//span[contains(text(),'Antworten')]")
+    WebElement answerReq;
     @FindBy(xpath = "//a[@class='requests']//span[@class='requestCount']")
     WebElement requestCount;
     @FindBy(xpath = "//input[@placeholder='Zeit *']")
@@ -29,6 +31,10 @@ public class AcceptMeetingPage {
     WebElement newRequest;
     @FindBy(xpath = "//label[2]//div[1]//div[1]//span[1]")
     WebElement labelForKindOfRes;
+
+    public WebElement answerReq() {
+        return answerReq;
+    }
 
     public WebElement requestCount() {
         return requestCount;

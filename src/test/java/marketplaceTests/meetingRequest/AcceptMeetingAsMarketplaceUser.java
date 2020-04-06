@@ -13,7 +13,8 @@ public class AcceptMeetingAsMarketplaceUser extends BaseClass {
     @Test
     public void askForMeeting() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies(driver);
 
         AcceptMeetingAsMarketplaceUserPage acceptMeetingAsMarketplaceUserPage = new AcceptMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);

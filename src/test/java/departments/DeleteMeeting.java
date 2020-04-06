@@ -13,14 +13,15 @@ public class DeleteMeeting extends BaseClass {
     @Test()
     public void deleteAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies(driver);
 
         DeleteMeetingPage deleteMeetingPage = new DeleteMeetingPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
 
         while (true) {
             try {
-                String xpath = "//section[@class='Workspace']//section[1]//div[1]//button[1]//span[1]";
+                String xpath = "//span[contains(text(),'Antworten')]";
                 WebElement webElemForXpath = driver.findElement(By.xpath(xpath));
                 webElemForXpath.click();
                 deleteMeetingPage.discardMeetingReqFromUser().click();

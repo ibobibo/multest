@@ -19,8 +19,12 @@ public class SearchContactPersonPage {
     WebElement searchField;
     @FindBy(xpath = "//button[@id='search-userdata']")
     WebElement searchButton;
-    @FindBy(xpath = "//td[@class='userdata']//a[1]")
-    WebElement resultFromSearch;
+    @FindBy(xpath = "//tr[@class='userdataData']//a[contains(text(),'alpha')]")
+    WebElement resultFromSearchAlpha;
+    @FindBy(xpath = "//tr[@class='userdataData']//a[contains(text(),'beta')]")
+    WebElement resultFromSearchBeta;
+    @FindBy(xpath = "//tr[@class='userdataData']//a[contains(text(),'gamma')]")
+    WebElement resultFromSearchGamma;
 
     public WebElement addContactPersonCard() {
         return addContactPersonCard;
@@ -34,7 +38,15 @@ public class SearchContactPersonPage {
         return searchButton;
     }
 
-    public WebElement resultFromSearch() {
-        return resultFromSearch;
+    public WebElement resultFromSearchAlpha() {
+        return resultFromSearchAlpha;
+    }
+
+    public WebElement resultFromSearchBeta() {
+        return resultFromSearchBeta;
+    }
+
+    public WebElement resultFromSearchGamma() {
+        return resultFromSearchGamma;
     }
 }

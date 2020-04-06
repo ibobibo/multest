@@ -20,7 +20,9 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
     @Test
     public void searchDepartmentAfterPerimeterNearCenter() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
+        accessAllCookies(driver);
+
 
         SearchDepartmentPage searchDepartmentPage = new SearchDepartmentPage(driver);
         searchDepartmentPage.searchDepartmentTitle().click();
@@ -78,6 +80,7 @@ public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
                 tr = 0;
                 testIfFailure = testIfFailure - 5;
             } else {
+                driver.quit();
                 Assert.fail("We found more/less places than expected(Expected places: 5): " + testIfFailure + " in Card No:" + card);
             }
         }

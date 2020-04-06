@@ -33,7 +33,7 @@ public class InviteContactPerson extends BaseClass {
                 departmentPage.addContactPersonCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             WebDriverWait wait = new WebDriverWait(driver, 5);

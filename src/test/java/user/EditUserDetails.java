@@ -11,6 +11,8 @@ public class EditUserDetails extends BaseClass {
     @Test
     public void editUserDetails() throws InterruptedException, IOException {
         initializeBrowser();
+        accessAllCookies(driver);
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
             EditUserDetailsPage editUserDetailsPage = new EditUserDetailsPage(driver);
@@ -38,7 +40,7 @@ public class EditUserDetails extends BaseClass {
             editUserDetailsPage.lastName().clear();
             editUserDetailsPage.lastName().sendKeys(prop.getProperty("contactLastName"));
             editUserDetailsPage.mail().clear();
-            editUserDetailsPage.mail().sendKeys(prop.getProperty("contactEmail") + i);
+            editUserDetailsPage.mail().sendKeys(prop.getProperty("contactEmail"));
             editUserDetailsPage.phone().clear();
             editUserDetailsPage.phone().sendKeys(prop.getProperty("contactPhone"));
             editUserDetailsPage.submitButton().click();

@@ -11,6 +11,8 @@ public class PasswordChangeTest extends BaseClass {
     @Test
     public void changePasswordTest() throws InterruptedException, IOException {
         initializeBrowser();
+        accessAllCookies(driver);
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
             EditUserDetailsPage editUserDetailsPage = new EditUserDetailsPage(driver);

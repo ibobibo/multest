@@ -15,14 +15,16 @@ public class CreateAmbulantOrganisation extends BaseClass {
     public void createAmbulantOrganisation() throws IOException, InterruptedException {
         initializeBrowser();
         loadProps();
+        accessAllCookies(driver);
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
             try {
                 loginLoop(i);
             } catch (Exception e) {
-                System.out.println("eingeloggt");
+                System.out.println("logged in");
             }
-            //because we have to move explicit to our select fields
+
             Actions actions = new Actions(driver);
 
             loadPropsForDepartment();
@@ -32,28 +34,28 @@ public class CreateAmbulantOrganisation extends BaseClass {
                 departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             try {
                 departmentPage.addDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("erster FB");
+                System.out.println("first Department");
             }
 
             try {
                 departmentPage.addFirstAmbulantDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("erster FB");
+                System.out.println("first Department");
             }
 
             try {
                 departmentPage.addAmbulantDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("n'ter FB");
+                System.out.println("n'th Department");
             }
 
             //allgemeine Angaben

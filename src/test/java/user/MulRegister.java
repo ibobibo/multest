@@ -10,15 +10,18 @@ import java.util.concurrent.TimeUnit;
 public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
-        initializeDriver();
-        System.out.println("registrierung");
+        initializeBrowser();
         loadProps();
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
             RegisterPage registerPage = new RegisterPage(driver);
             TimeUnit.SECONDS.sleep(4);
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(2);
+
+            registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
+            accessAllCookies(driver);
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
 

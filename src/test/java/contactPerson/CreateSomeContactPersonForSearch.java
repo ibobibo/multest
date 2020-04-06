@@ -15,6 +15,7 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
     @Test()
     public void addContactPerson() throws IOException, InterruptedException {
         initializeBrowser();
+        accessAllCookies(driver);
 
         ContactPersonPage contactPersonPage = new ContactPersonPage(driver);
         DepartmentPage departmentPage = new DepartmentPage(driver);
@@ -30,7 +31,7 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                 departmentPage.addContactPersonCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
             TimeUnit.SECONDS.sleep(1);
 

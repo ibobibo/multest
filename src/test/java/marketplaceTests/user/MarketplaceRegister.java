@@ -12,7 +12,6 @@ public class MarketplaceRegister extends BaseClass {
     public void registerOnMarketplace() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
         TimeUnit.SECONDS.sleep(2);
-
         loadProps();
         RegisterOnMarketplacePage registerOnMarketplacePage = new RegisterOnMarketplacePage(driver);
 
@@ -23,9 +22,10 @@ public class MarketplaceRegister extends BaseClass {
             } catch (Exception e) {
                 System.out.println("dont need it");
             }
-
             TimeUnit.SECONDS.sleep(6);
             registerOnMarketplacePage.registerButtonMarketplace().click();
+            TimeUnit.SECONDS.sleep(2);
+            accessAllCookies(driver);
 
             registerOnMarketplacePage.accountLogin().sendKeys(prop.getProperty("marketPlaceName") + i);
             registerOnMarketplacePage.accountEmail().sendKeys(prop.getProperty("marketPlaceEmail") + i);

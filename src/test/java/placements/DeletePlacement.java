@@ -9,31 +9,20 @@ import java.util.concurrent.TimeUnit;
 
 public class DeletePlacement extends BaseClass {
     @Test
-    public void deletePlacement() throws IOException, InterruptedException {
+    public void deleteAccount() throws IOException, InterruptedException {
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(1);
+        accessAllCookies(driver);
 
         loadProps();
         DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loadProps();
             loginLoop(i);
-            try {
-                deletePlacementPage.nameField().clear();
-                deletePlacementPage.passwordField().clear();
-                login(prop.getProperty("contactEmail") + i, prop.getProperty("contactNewPassword"));
-            } catch (Exception e) {
-                System.out.println("Passwort wurde nicht verändert");
-            }
-
             TimeUnit.SECONDS.sleep(2);
             deletePlacementPage.editPlacement().click();
             deletePlacementPage.deletePlacement().click();
             deletePlacementPage.acceptDelete().click();
-
-            TimeUnit.SECONDS.sleep(6);
-            logout();
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(3);
         }
         driver.quit();
         driver = null;

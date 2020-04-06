@@ -13,6 +13,7 @@ public class SearchContactPerson extends BaseClass {
     @Test()
     public void searchContactPerson() throws InterruptedException, IOException {
         initializeBrowser();
+        accessAllCookies(driver);
 
         SearchContactPersonPage searchContactPersonPage = new SearchContactPersonPage(driver);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
@@ -23,7 +24,7 @@ public class SearchContactPerson extends BaseClass {
                 searchContactPersonPage.addContactPersonCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
 
             for (int loop = 1; loop <= 3; loop++) {
@@ -33,8 +34,9 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchButton().click();
                     TimeUnit.SECONDS.sleep(2);
                     try {
-                        searchContactPersonPage.resultFromSearch().getText().contains(prop.getProperty("contactFirstName1"));
+                        searchContactPersonPage.resultFromSearchAlpha().getText().contains(prop.getProperty("contactFirstName1"));
                     } catch (Exception e) {
+                        driver.quit();
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
                 } else if (loop == 2) {
@@ -43,8 +45,9 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchButton().click();
                     TimeUnit.SECONDS.sleep(2);
                     try {
-                        searchContactPersonPage.resultFromSearch().getText().contains(prop.getProperty("contactFirstName2"));
+                        searchContactPersonPage.resultFromSearchBeta().getText().contains(prop.getProperty("contactFirstName2"));
                     } catch (Exception e) {
+                        driver.quit();
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
                 } else if (loop == 3) {
@@ -53,8 +56,9 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchButton().click();
                     TimeUnit.SECONDS.sleep(2);
                     try {
-                        searchContactPersonPage.resultFromSearch().getText().contains(prop.getProperty("contactFirstName3"));
+                        searchContactPersonPage.resultFromSearchGamma().getText().contains(prop.getProperty("contactFirstName3"));
                     } catch (Exception e) {
+                        driver.quit();
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
                 }

@@ -15,6 +15,8 @@ public class ToggleOrganisation extends BaseClass {
     @Test()
     public void toggleAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
+        accessAllCookies(driver);
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             DepartmentPage departmentPage = new DepartmentPage(driver);
             loginLoop(i);
@@ -23,7 +25,7 @@ public class ToggleOrganisation extends BaseClass {
                 departmentPage.addDepartmentCard().click();
                 TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
-                System.out.println("Card wird geklickt.");
+                System.out.println("Card will be clicked.");
             }
             WebDriverWait wait = new WebDriverWait(driver, 20);
 

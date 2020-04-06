@@ -13,14 +13,14 @@ public class DeleteOrganisationPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@class='confirm']")
+    @FindBy(xpath = "//button[@id='mul-confirm-delete-category']")
     WebElement deleteClick;
 
     public WebElement deleteClick() {
         return deleteClick;
     }
 
-    @FindBy(xpath = "//*[@class='cancel']")
+    @FindBy(xpath = "//button[@class='cancel']")
     WebElement cancelClick;
 
     public WebElement cancelClick() {
