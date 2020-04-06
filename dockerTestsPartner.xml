@@ -6,53 +6,19 @@
         <listener class-name="resources.Listeners"/>
     </listeners>
 
-    <!--    &lt;!&ndash;Routing tests for login to register and the other way around&ndash;&gt;-->
-    <!--    <test thread-count="4" name="navigation test from login and registration forms">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="navigation.FormNavigation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;        REGISTER TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" name="register mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.MulRegister"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="verify mul master test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.Verify"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;    CREATE DEPARTMENT TESTS&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Create Day Night Care Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Create Ambulant Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Create Stationary Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Create Fair House Offer Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.CreateFairHouseOffer"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <!--Routing tests for login to register and the other way around-->
+    <test thread-count="4" name="navigation test from login and registration forms">
+        <classes>
+            <class name="dockerTests.SetupDockerGrid"/>
+            <class name="navigation.FormNavigation"/>
+            <class name="user.MulRegister"/>
+            <class name="user.Verify"/>
+            <class name="departments.CreateDayNightCareOrganisation"/>
+            <class name="departments.CreateAmbulantOrganisation"/>
+            <class name="departments.CreateStationaryOrganisation"/>
+            <class name="departments.CreateFairHouseOffer"/>
+        </classes>
+    </test>
 
     <!--    &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
     <!--    <test thread-count="4" name="Click license from Homepage">-->
@@ -158,17 +124,17 @@
     <!--    </test>-->
 
     <!--    &lt;!&ndash;                CONTACT PERSON TESTS&ndash;&gt;-->
-    <test thread-count="4" name="Creating Some Contact Persons">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-            <class name="contactPerson.CreateSomeContactPersonForSearch"/>
-        </classes>
-    </test>
-    <test thread-count="4" name="Search Contact Person">
-        <classes>
-            <class name="contactPerson.SearchContactPerson"/>
-        </classes>
-    </test>
+    <!--    <test thread-count="4" name="Creating Some Contact Persons">-->
+    <!--        <classes>-->
+    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+    <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="Search Contact Person">-->
+    <!--        <classes>-->
+    <!--            <class name="contactPerson.SearchContactPerson"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
     <!--    <test thread-count="4" name="Delete all Contact Persons">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
