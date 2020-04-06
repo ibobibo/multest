@@ -18,6 +18,16 @@
             <class name="departments.CreateDayNightCareOrganisation"/>
         </classes>
     </test>
+    <test thread-count="4" name="register mul master test">
+        <classes>
+            <class name="user.Verify"/>
+        </classes>
+    </test>
+    <test thread-count="4" name="register mul master test">
+        <classes>
+            <class name="departments.CreateDayNightCareOrganisation"/>
+        </classes>
+    </test>
     <!--    <test thread-count="4" name="verify mul master test">-->
     <!--        <classes>-->
     <!--            <class name="user.Verify"/>-->
