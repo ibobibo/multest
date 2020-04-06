@@ -2,6 +2,7 @@ package marketplaceTests.user;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import resources.BaseClass;
 
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class VerifyMarketplaceUser extends BaseClass {
+
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
@@ -35,7 +37,7 @@ public class VerifyMarketplaceUser extends BaseClass {
 
             ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
             driver.switchTo().window(tabs.get(1));
-            driver.close();
+            driver.quit();
 
             driver.switchTo().window(tabs.get(0));
             TimeUnit.SECONDS.sleep(2);

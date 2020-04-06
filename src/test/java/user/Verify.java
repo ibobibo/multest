@@ -15,6 +15,7 @@ public class Verify extends BaseClass {
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
+        System.out.println("verzifizierung");
         loadProps();
 
         accessAllCookies(driver);
