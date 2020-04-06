@@ -23,33 +23,45 @@ public class BaseClass {
     public static Properties propFairHouseOffer = new Properties();
     public static Properties propDepartment = new Properties();
     public static Properties propNewPlacement = new Properties();
+    public static String hubAddress;
 
     public WebDriver initializeDriver() throws IOException, InterruptedException {
+        cleanUp();
         loadProps();
         String browserName = prop.getProperty("browser");
+        hubAddress = "172.19.0.2";
 
         //check for browser
-        //manual start to see browser
-//        System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
-//        driver = new FirefoxDriver();
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-            driver = new ChromeDriver();
-//            driver.manage().window().fullscreen();
-            TimeUnit.SECONDS.sleep(2);
-            accessAllCookies(driver);
+            DesiredCapabilities cap = DesiredCapabilities.chrome();
+            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            driver.get(prop.getProperty("urlFromHomeNetwork"));
+            TimeUnit.SECONDS.sleep(4);
+            try {
+                accessAllCookies(driver);
+            } catch (Exception e) {
+                System.out.println("cookies accepted");
+            }
         } else if (browserName.equals("firefox")) {
-            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
-            driver = new FirefoxDriver();
-//            driver.manage().window().fullscreen();
-            TimeUnit.SECONDS.sleep(2);
-            accessAllCookies(driver);
+            DesiredCapabilities cap = DesiredCapabilities.firefox();
+            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            driver.get(prop.getProperty("urlFromHomeNetwork"));
+            TimeUnit.SECONDS.sleep(4);
+            try {
+                accessAllCookies(driver);
+            } catch (Exception e) {
+                System.out.println("cookies accepted");
+            }
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
-            TimeUnit.SECONDS.sleep(2);
-            accessAllCookies(driver);
+            TimeUnit.SECONDS.sleep(4);
+            try {
+                accessAllCookies(driver);
+            } catch (Exception e) {
+                System.out.println("cookies accepted");
+            }
         }
         return driver;
     }
@@ -60,6 +72,7 @@ public class BaseClass {
             FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
         } catch (Exception e) {
             System.out.println("Null pointer Exception in take Screenshot Method");
+            System.out.println(e);
         }
     }
 
@@ -235,5 +248,13 @@ public class BaseClass {
 
         TimeUnit.SECONDS.sleep(1);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
+
+    public void cleanUp() {
+        if (driver != null) {
+            System.out.println("CleanUp");
+            driver.quit();
+            driver = null;
+        }
     }
 }

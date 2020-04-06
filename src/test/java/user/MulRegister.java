@@ -16,10 +16,11 @@ public class MulRegister extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
             RegisterPage registerPage = new RegisterPage(driver);
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(2);
 
+            registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
             accessAllCookies(driver);
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
@@ -33,12 +34,13 @@ public class MulRegister extends BaseClass {
             registerPage.city().sendKeys(prop.getProperty("city"));
 
             registerPage.umbrellaOrganisation().click();
+            registerPage.umbrellaOrganisationChosen().click();
 
             registerPage.contactSalutation().click();
             registerPage.contactSalutationMale().click();
 
-            registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName") + i);
-            registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName") + i);
+            registerPage.contactFirstName().sendKeys(prop.getProperty("contactFirstName"));
+            registerPage.contactLastName().sendKeys(prop.getProperty("contactLastName"));
             registerPage.contactEmail().sendKeys(prop.getProperty("contactEmail"));
             registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone"));
             registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword"));

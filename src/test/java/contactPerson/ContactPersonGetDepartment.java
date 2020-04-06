@@ -80,7 +80,7 @@ public class ContactPersonGetDepartment extends BaseClass {
 
     @AfterTest
     public void closeBrowser() {
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

@@ -1,7 +1,7 @@
 package dockerTests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
@@ -9,12 +9,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class DockerTest4 {
+    public static String hubAddress;
+
     @Test
     public void dockerTest() throws MalformedURLException, InterruptedException {
 
-        ChromeOptions cap = new ChromeOptions();
+        hubAddress = "172.19.0.2";
 
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+        DesiredCapabilities cap = DesiredCapabilities.firefox();
+
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
 
         driver.get("http://www.google.com");
 

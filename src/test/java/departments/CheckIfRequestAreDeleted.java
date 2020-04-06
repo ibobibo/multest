@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class CheckIfRequestAreDeleted extends BaseClass {
     @Test()
     public void checkIfRequestAreDeleted() throws InterruptedException, IOException {
+        cleanUp();
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
         accessAllCookies(driver);
@@ -39,7 +40,7 @@ public class CheckIfRequestAreDeleted extends BaseClass {
         logout();
         TimeUnit.SECONDS.sleep(1);
 
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }

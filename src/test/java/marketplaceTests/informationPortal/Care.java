@@ -184,7 +184,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs1 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs1.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs1.get(0));
 
@@ -192,7 +192,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs2 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs2.get(0));
 
@@ -201,7 +201,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs3 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs3.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs3.get(0));
 
@@ -210,7 +210,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs4 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs4.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs4.get(0));
         TimeUnit.SECONDS.sleep(2);
@@ -224,7 +224,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs5 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs5.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs5.get(0));
 
@@ -233,7 +233,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs6 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs6.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs6.get(0));
 
@@ -242,7 +242,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs7 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs7.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs7.get(0));
 
@@ -251,7 +251,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs8 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs8.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs8.get(0));
         TimeUnit.SECONDS.sleep(2);
@@ -313,7 +313,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs9 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs9.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs9.get(0));
 
@@ -321,7 +321,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs10 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs10.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs10.get(0));
 
@@ -329,7 +329,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs11 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs11.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs11.get(0));
 
@@ -337,7 +337,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs12 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs12.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs12.get(0));
 
@@ -345,7 +345,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs13 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs13.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs13.get(0));
 
@@ -353,7 +353,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs14 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs14.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs14.get(0));
 
@@ -361,7 +361,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs15 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs15.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs15.get(0));
 
@@ -369,7 +369,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs16 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs16.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs16.get(0));
 
@@ -377,7 +377,7 @@ public class Care extends BaseClass {
         TimeUnit.SECONDS.sleep(2);
         ArrayList<String> tabs17 = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs17.get(1));
-        driver.close();
+        driver.quit();
         TimeUnit.SECONDS.sleep(2);
         driver.switchTo().window(tabs17.get(0));
         TimeUnit.SECONDS.sleep(2);
@@ -387,7 +387,7 @@ public class Care extends BaseClass {
 
     @AfterTest
     public void closeBrowser() {
-        driver.close();
+        driver.quit();
         driver = null;
     }
 }
