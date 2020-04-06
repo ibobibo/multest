@@ -31,12 +31,11 @@
     <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-    <!--    <test thread-count="4" name="Create Ambulant Organisation">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test thread-count="4" name="Create Ambulant Organisation">
+        <classes>
+            <class name="departments.CreateAmbulantOrganisation"/>
+        </classes>
+    </test>
     <!--    <test thread-count="4" name="Create Stationary Organisation">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
