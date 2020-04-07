@@ -2,7 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -43,8 +42,9 @@ public class BaseClass {
                 System.out.println("cookies accepted");
             }
         } else if (browserName.equals("firefox")) {
-            DesiredCapabilities cap = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
+            driver = new FirefoxDriver();
+            TimeUnit.SECONDS.sleep(4);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(4);
             try {

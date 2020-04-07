@@ -28,7 +28,7 @@ public class DockerTest extends BaseClass {
         System.out.println("y: " + y);
         System.out.println("enterprise number");
 
-        driver.quit();
+        driver.close();
     }
 }
 

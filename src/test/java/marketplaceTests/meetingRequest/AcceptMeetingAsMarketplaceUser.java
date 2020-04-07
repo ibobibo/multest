@@ -38,7 +38,7 @@ public class AcceptMeetingAsMarketplaceUser extends BaseClass {
             acceptMeetingAsMarketplaceUserPage.accountMenu().click();
             acceptMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

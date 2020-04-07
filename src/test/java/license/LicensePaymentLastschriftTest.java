@@ -53,14 +53,14 @@ public class LicensePaymentLastschriftTest extends BaseClass {
             driver.switchTo().defaultContent();
             try {
                 if (driver.findElement(By.xpath("//span[contains(text(),'Kauf leider fehlgeschlagen!')]")).getText().equals("Kauf leider fehlgeschlagen!")) {
-                    driver.quit();
+                    driver.close();
                     Assert.fail("Paying failure during payment for license.");
                 }
             } catch (Exception e) {
 
             }
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

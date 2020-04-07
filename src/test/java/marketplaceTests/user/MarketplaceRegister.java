@@ -40,7 +40,7 @@ public class MarketplaceRegister extends BaseClass {
             registerOnMarketplacePage.registerSubmit().click();
             TimeUnit.SECONDS.sleep(1);
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

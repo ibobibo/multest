@@ -48,7 +48,7 @@ public class AcceptMeeting extends BaseClass {
         logout();
         TimeUnit.SECONDS.sleep(1);
 
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

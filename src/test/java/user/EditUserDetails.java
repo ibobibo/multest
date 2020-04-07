@@ -45,7 +45,7 @@ public class EditUserDetails extends BaseClass {
             editUserDetailsPage.phone().sendKeys(prop.getProperty("contactPhone"));
             editUserDetailsPage.submitButton().click();
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

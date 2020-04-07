@@ -277,7 +277,7 @@ public class CreateFairHouseOffer extends BaseClass {
             logout();
             TimeUnit.SECONDS.sleep(4);
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

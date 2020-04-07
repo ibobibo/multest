@@ -29,7 +29,7 @@ public class CheckIfRequestAreDeleted extends BaseClass {
                 String xpath = "//body/div[@id='root']/div/div[@class='app-container admin']/div/div[@id='app-view-container']/div[@class='view-routes']/div/div[@class='DepartmentRequests']/div/div[" + i + "]/div[1]/div[1]/span";
                 WebElement webElemForXpath = driver.findElement(By.xpath(xpath));
                 if (webElemForXpath.getText().contains("Deleted")) {
-                    driver.quit();
+                    driver.close();
                     Assert.fail("Deleted user found at index " + i);
                     System.out.println(i);
                 }
@@ -40,7 +40,7 @@ public class CheckIfRequestAreDeleted extends BaseClass {
         logout();
         TimeUnit.SECONDS.sleep(1);
 
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

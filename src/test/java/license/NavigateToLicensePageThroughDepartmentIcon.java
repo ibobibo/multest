@@ -25,14 +25,14 @@ public class NavigateToLicensePageThroughDepartmentIcon extends BaseClass {
             licensePageobject.navigateToLicensePageThroughDepartmentIcon().click();
 
             if (!licensePageobject.countElementsInBucket().getText().equals("1")) {
-                driver.quit();
+                driver.close();
                 Assert.fail(licensePageobject.countElementsInBucket().getText() + " isn't equal to 1");
             }
 
             logout();
         }
         TimeUnit.SECONDS.sleep(1);
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }
