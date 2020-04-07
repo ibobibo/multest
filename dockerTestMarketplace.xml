@@ -9,7 +9,7 @@
     <!--        DOCKER SETUP-->
     <test thread-count="4" name="setup docker">
         <classes>
-<!--            <class name="dockerTests.SetupDockerGrid"/>-->
+            <class name="dockerTests.SetupDockerGrid"/>
             <class name="marketplaceTests.user.MarketplaceRegister"/>
             <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
         </classes>
