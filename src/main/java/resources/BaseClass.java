@@ -43,7 +43,6 @@ public class BaseClass {
         } else if (browserName.equals("firefox")) {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
-            TimeUnit.SECONDS.sleep(4);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(4);
 
