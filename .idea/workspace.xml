@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerTestsParallel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsParallel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml">
+  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml">
     <configuration name="SearchContactPerson" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <extension name="coverage">
@@ -166,9 +163,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
-        <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="TestNG.SearchContactPerson" />
       </list>
@@ -252,7 +249,7 @@
       <workItem from="1583148985817" duration="79180000" />
       <workItem from="1585481421822" duration="5540000" />
       <workItem from="1586181155414" duration="640000" />
-      <workItem from="1586181802352" duration="7437000" />
+      <workItem from="1586181802352" duration="7657000" />
     </task>
     <servers />
   </component>
