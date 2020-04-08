@@ -36,8 +36,8 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <!--                        <suiteXmlFile>dockerTestsParallel.xml</suiteXmlFile>-->
-                        <suiteXmlFile>dockerTestMarketplace.xml</suiteXmlFile>
+                                                <suiteXmlFile>dockerTestsParallel.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>dockerTestMarketplace.xml</suiteXmlFile>-->
                         <!--                        <suiteXmlFile>dockerTestsPartner.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
