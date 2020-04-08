@@ -12,13 +12,13 @@ public class FormNavigation extends BaseClass {
     @Test
     public void formNavigation() throws IOException, InterruptedException {
         initializeBrowser();
-        System.out.println("bin hier");
-        TimeUnit.SECONDS.sleep(8);
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+            System.out.println("hallooo");
+
             FormNavigationPage formNavigationPage = new FormNavigationPage(driver);
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             accessAllCookies(driver);
 
             //navigate to signup form
