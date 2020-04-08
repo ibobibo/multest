@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerTestMarketplace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestMarketplace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerTestsParallel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsParallel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +255,7 @@
       <workItem from="1583148985817" duration="79180000" />
       <workItem from="1585481421822" duration="5540000" />
       <workItem from="1586181155414" duration="640000" />
-      <workItem from="1586181802352" duration="7657000" />
+      <workItem from="1586181802352" duration="8593000" />
     </task>
     <servers />
   </component>
