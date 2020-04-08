@@ -15,12 +15,14 @@ public class FormNavigation extends BaseClass {
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+
             FormNavigationPage formNavigationPage = new FormNavigationPage(driver);
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             accessAllCookies(driver);
 
             //navigate to signup form
             formNavigationPage.navToRegister().click();
+            System.out.println("have clicked on register");
             TimeUnit.SECONDS.sleep(2);
             if (!formNavigationPage.signupButton().getText().equals("Registrieren")) {
                 driver.close();

@@ -20,14 +20,14 @@ public class GetLicenseFromHomepage extends BaseClass {
             loginLoop(i);
             TimeUnit.SECONDS.sleep(2);
             if (!licensePageobject.checkIfTrial().getText().equals("Kostenlose Premiumversion")) {
-                driver.quit();
+                driver.close();
                 Assert.fail("'Kostenlose Premiumversion' isn't displayed");
             }
             TimeUnit.SECONDS.sleep(1);
             licensePageobject.navToLicensePage().click();
             TimeUnit.SECONDS.sleep(1);
             if (!licensePageobject.checkIfLicensePage().getText().equals("Premium-Lizenzen")) {
-                driver.quit();
+                driver.close();
                 Assert.fail("'Premium-Lizenzen' isn't displayed");
             }
             logout();

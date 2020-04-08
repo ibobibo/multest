@@ -10,13 +10,34 @@
     <test thread-count="4" name="navigation test from login and registration forms">
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
-            <class name="navigation.FormNavigation"/>
+
+            <!--            <class name="navigation.FormNavigation"/>-->
+
             <class name="user.MulRegister"/>
             <class name="user.Verify"/>
-            <class name="departments.CreateDayNightCareOrganisation"/>
-            <class name="departments.CreateAmbulantOrganisation"/>
-            <class name="departments.CreateStationaryOrganisation"/>
-            <class name="departments.CreateFairHouseOffer"/>
+
+            <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+            <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
+            <!--            <class name="departments.CreateStationaryOrganisation"/>-->
+            <!--            <class name="departments.CreateFairHouseOffer"/>-->
+
+            <!--            <class name="departments.ToggleOrganisation"/>-->
+            <!--            <class name="departments.EditOrganisation"/>-->
+            <!--            <class name="departments.CopyDepartment"/>-->
+            <!--            <class name="user.EditUserDetails"/>-->
+
+            <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
+            <!--            <class name="contactPerson.SearchContactPerson"/>-->
+            <!--            <class name="contactPerson.DeleteContactPerson"/>-->
+
+            <!--            <class name="user.PasswordChangeTest"/>-->
+            <!--            <class name="user.ResetPasswordTest"/>-->
+            <!--            <class name="user.VerifyNewPassword"/>-->
+
+            <!--            <class name="departments.DeleteOrganisation"/>-->
+            <!--            <class name="placements.DeletePlacement"/>-->
+            <!--            <class name="user.DeleteUser"/>-->
+
         </classes>
     </test>
 
@@ -45,7 +66,6 @@
     <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-
     <!--    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">-->
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
@@ -68,99 +88,6 @@
     <!--        <classes>-->
     <!--            <class name="dockerTests.SetupDockerGrid"/>-->
     <!--            <class name="license.LicensePaymentCreditCardTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;    MAKE DEPARTMENTS PUBLIC&ndash;&gt;-->
-    <!--    <test thread-count="4" name="make departments public">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.ToggleOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;    EDIT DEPARTMENTS&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Editing Departments">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.EditOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;                COPY DEPARTMENT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Copy department Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.CopyDepartment"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;    EDIT USER DETAILS TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Edit User details">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.EditUserDetails"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Password Change Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.PasswordChangeTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;    PASSWORD RESET AND VERIFY NEW PASSWORD&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Password Reset">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.ResetPasswordTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Verify new Password Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.VerifyNewPassword"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;                CONTACT PERSON TESTS&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Creating Some Contact Persons">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Search Contact Person">-->
-    <!--        <classes>-->
-    <!--            <class name="contactPerson.SearchContactPerson"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Delete all Contact Persons">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="contactPerson.DeleteContactPerson"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;       DELETE DEPARTMENT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Delete all Departments">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="departments.DeleteOrganisation"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-
-    <!--    &lt;!&ndash;        DELETE ACCOUNT&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Delete Account">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="placements.DeletePlacement"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Check if User is deleted.">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="user.DeleteUser"/>-->
     <!--        </classes>-->
     <!--    </test>-->
 </suite>
