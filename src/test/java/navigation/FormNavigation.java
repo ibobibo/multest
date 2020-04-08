@@ -12,6 +12,8 @@ public class FormNavigation extends BaseClass {
     @Test
     public void formNavigation() throws IOException, InterruptedException {
         initializeBrowser();
+        System.out.println("bin hier");
+        TimeUnit.SECONDS.sleep(8);
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
@@ -21,6 +23,7 @@ public class FormNavigation extends BaseClass {
 
             //navigate to signup form
             formNavigationPage.navToRegister().click();
+            System.out.println("have clicked on register");
             TimeUnit.SECONDS.sleep(2);
             if (!formNavigationPage.signupButton().getText().equals("Registrieren")) {
                 driver.close();
