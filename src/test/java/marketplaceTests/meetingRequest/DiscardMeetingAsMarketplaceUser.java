@@ -40,7 +40,7 @@ public class DiscardMeetingAsMarketplaceUser extends BaseClass {
             operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
             operationsOnMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

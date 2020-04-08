@@ -42,11 +42,11 @@ public class LicenseCancelPaymentCreditCardTest extends BaseClass {
 
             driver.switchTo().defaultContent();
             if (!licensePageobject.checkIfBucketIsEmpty().isDisplayed()) {
-                driver.quit();
+                driver.close();
                 Assert.fail("Canceling payment with Kredit- / Debitkarten couldn't work.");
             }
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

@@ -24,7 +24,7 @@ public class DeletePlacement extends BaseClass {
             deletePlacementPage.acceptDelete().click();
             TimeUnit.SECONDS.sleep(3);
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

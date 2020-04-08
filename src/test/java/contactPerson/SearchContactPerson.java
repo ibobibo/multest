@@ -36,7 +36,7 @@ public class SearchContactPerson extends BaseClass {
                     try {
                         searchContactPersonPage.resultFromSearchAlpha().getText().contains(prop.getProperty("contactFirstName1"));
                     } catch (Exception e) {
-                        driver.quit();
+                        driver.close();
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
                 } else if (loop == 2) {
@@ -47,7 +47,7 @@ public class SearchContactPerson extends BaseClass {
                     try {
                         searchContactPersonPage.resultFromSearchBeta().getText().contains(prop.getProperty("contactFirstName2"));
                     } catch (Exception e) {
-                        driver.quit();
+                        driver.close();
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
                 } else if (loop == 3) {
@@ -58,7 +58,7 @@ public class SearchContactPerson extends BaseClass {
                     try {
                         searchContactPersonPage.resultFromSearchGamma().getText().contains(prop.getProperty("contactFirstName3"));
                     } catch (Exception e) {
-                        driver.quit();
+                        driver.close();
                         Assert.fail("Suche ergab kein Ergebnis");
                     }
                 }
@@ -67,7 +67,7 @@ public class SearchContactPerson extends BaseClass {
         }
         logout();
         TimeUnit.SECONDS.sleep(2);
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

@@ -30,13 +30,13 @@ public class DeleteUser extends BaseClass {
             try {
                 deleteUserPage.deleteButton().click();
                 deleteUserPage.deleteAccess().click();
-                driver.quit();
+                driver.close();
                 Assert.fail("User isn't deleted.");
             } catch (Exception e) {
                 break;
             }
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

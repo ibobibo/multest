@@ -35,27 +35,27 @@ public class LicenseTest extends BaseClass {
             System.out.println(partsOfString[0]);
             System.out.println(partsOfString[1]);
             if (!shoppingCartFirstElem.equals(partsOfString[1])) {
-                driver.quit();
+                driver.close();
                 Assert.fail(partsOfString[1] + " isn't equal to " + shoppingCartFirstElem);
             }
 
             if (!secondPrice.equals(soppingCartSecondElem)) {
-                driver.quit();
+                driver.close();
                 Assert.fail(soppingCartSecondElem + " isn't equal to " + secondPrice);
             }
 
             if (!licensePageobject.priceOfBothElems().getText().equals("599,76 €")) {
-                driver.quit();
+                driver.close();
                 Assert.fail(licensePageobject.priceOfBothElems().getText() + " isn't equal to 599,76 €");
             }
 
             if (!licensePageobject.taxesOfUniqueElems().getText().equals("113,96 €")) {
-                driver.quit();
+                driver.close();
                 Assert.fail(licensePageobject.taxesOfUniqueElems().getText() + " isn't equal to 113,96 €");
             }
 
             if (!licensePageobject.wholePrice().getText().equals("713,72 €")) {
-                driver.quit();
+                driver.close();
                 Assert.fail(licensePageobject.wholePrice().getText() + " isn't equal to 713,72 €");
             }
 
@@ -66,7 +66,7 @@ public class LicenseTest extends BaseClass {
             logout();
         }
         TimeUnit.SECONDS.sleep(1);
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

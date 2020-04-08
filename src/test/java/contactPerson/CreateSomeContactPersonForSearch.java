@@ -73,7 +73,7 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                 TimeUnit.SECONDS.sleep(2);
             }
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

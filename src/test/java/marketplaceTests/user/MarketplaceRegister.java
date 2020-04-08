@@ -27,8 +27,8 @@ public class MarketplaceRegister extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
             accessAllCookies(driver);
 
-            registerOnMarketplacePage.accountLogin().sendKeys(prop.getProperty("marketPlaceName") + i);
-            registerOnMarketplacePage.accountEmail().sendKeys(prop.getProperty("marketPlaceEmail") + i);
+            registerOnMarketplacePage.accountLogin().sendKeys(prop.getProperty("marketPlaceName"));
+            registerOnMarketplacePage.accountEmail().sendKeys(prop.getProperty("marketPlaceEmail"));
             registerOnMarketplacePage.firstPassword().sendKeys(prop.getProperty("marketPlacePassword"));
             registerOnMarketplacePage.secondPassword().sendKeys(prop.getProperty("marketPlacePassword"));
             registerOnMarketplacePage.accountPhone().sendKeys(prop.getProperty("marketPlacePhone"));
@@ -40,7 +40,7 @@ public class MarketplaceRegister extends BaseClass {
             registerOnMarketplacePage.registerSubmit().click();
             TimeUnit.SECONDS.sleep(1);
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

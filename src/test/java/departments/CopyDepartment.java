@@ -39,7 +39,7 @@ public class CopyDepartment extends BaseClass {
         }
         logout();
         TimeUnit.SECONDS.sleep(2);
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

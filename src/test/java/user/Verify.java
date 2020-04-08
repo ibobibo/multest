@@ -15,7 +15,6 @@ public class Verify extends BaseClass {
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
-        System.out.println("verzifizierung");
         loadProps();
 
         accessAllCookies(driver);
@@ -42,7 +41,7 @@ public class Verify extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
-            driver.quit();
+            driver.close();
             driver = null;
         }
     }

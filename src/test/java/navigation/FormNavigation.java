@@ -23,19 +23,19 @@ public class FormNavigation extends BaseClass {
             formNavigationPage.navToRegister().click();
             TimeUnit.SECONDS.sleep(2);
             if (!formNavigationPage.signupButton().getText().equals("Registrieren")) {
-                driver.quit();
+                driver.close();
                 Assert.fail("not on signup page");
             }
 
             //navigate to login form
             formNavigationPage.navToLogin().click();
             if (!formNavigationPage.loginButton().getText().equals("Anmelden")) {
-                driver.quit();
+                driver.close();
                 Assert.fail("not on login page");
             }
 
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

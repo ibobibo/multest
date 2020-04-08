@@ -60,7 +60,7 @@ public class CreateContactPerson extends BaseClass {
 
     @AfterTest
     public void closeBrowser() {
-       driver.quit();
+       driver.close();
         driver = null;
     }
 }
