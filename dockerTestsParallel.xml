@@ -9,7 +9,7 @@
     <!--        DOCKER TEST-->
     <test thread-count="4" parallel="true" name="docker Tests">
         <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
+<!--            <class name="dockerTests.SetupDockerGrid"/>-->
             <class name="dockerTests.DockerTest"/>
             <class name="dockerTests.DockerTest2"/>
         </classes>
