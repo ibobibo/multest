@@ -9,21 +9,21 @@
     <!--        DOCKER SETUP-->
     <test thread-count="4" name="setup docker">
         <classes>
-<!--            <class name="dockerTests.SetupDockerGrid"/>-->
+            <class name="dockerTests.SetupDockerGrid"/>
             <class name="marketplaceTests.user.MarketplaceRegister"/>
             <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
         </classes>
     </test>
 
-<!--    &lt;!&ndash;        REGISTER AND VERIFY USER TEST&ndash;&gt;-->
-<!--    <test thread-count="4" name="Marketplace Registration">-->
-<!--        <classes>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test thread-count="4" name="user.Verify Marketplace User">-->
-<!--        <classes>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <!--    &lt;!&ndash;        REGISTER AND VERIFY USER TEST&ndash;&gt;-->
+    <!--    <test thread-count="4" name="Marketplace Registration">-->
+    <!--        <classes>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test thread-count="4" name="user.Verify Marketplace User">-->
+    <!--        <classes>-->
+    <!--        </classes>-->
+    <!--    </test>-->
 
     <!--    &lt;!&ndash;    SEARCH DEPARTMENT TEST&ndash;&gt;-->
     <!--    <test thread-count="4" name="Search Department after perimeter near Center">-->
