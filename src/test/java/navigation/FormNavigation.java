@@ -15,7 +15,6 @@ public class FormNavigation extends BaseClass {
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            System.out.println("hallooo");
 
             FormNavigationPage formNavigationPage = new FormNavigationPage(driver);
             TimeUnit.SECONDS.sleep(4);
