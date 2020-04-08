@@ -11,20 +11,20 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 
-            <!--            <class name="navigation.FormNavigation"/>-->
+            <class name="navigation.FormNavigation"/>
 
             <class name="user.MulRegister"/>
             <class name="user.Verify"/>
 
-            <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
-            <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-            <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-            <!--            <class name="departments.CreateFairHouseOffer"/>-->
+            <class name="departments.CreateDayNightCareOrganisation"/>
+            <class name="departments.CreateAmbulantOrganisation"/>
+            <class name="departments.CreateStationaryOrganisation"/>
+            <class name="departments.CreateFairHouseOffer"/>
 
-            <!--            <class name="departments.ToggleOrganisation"/>-->
-            <!--            <class name="departments.EditOrganisation"/>-->
-            <!--            <class name="departments.CopyDepartment"/>-->
-            <!--            <class name="user.EditUserDetails"/>-->
+            <class name="departments.ToggleOrganisation"/>
+            <class name="departments.EditOrganisation"/>
+            <class name="departments.CopyDepartment"/>
+            <class name="user.EditUserDetails"/>
 
             <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
             <!--            <class name="contactPerson.SearchContactPerson"/>-->
