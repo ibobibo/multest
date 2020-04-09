@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e3e682d4-393a-4f2a-9967-a178d558481f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/navigation/FormNavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/FormNavigation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/user/Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/Verify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/user/Verify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/Verify.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -257,7 +250,7 @@
       <workItem from="1585481421822" duration="5540000" />
       <workItem from="1586181155414" duration="640000" />
       <workItem from="1586181802352" duration="10918000" />
-      <workItem from="1586352728027" duration="1914000" />
+      <workItem from="1586352728027" duration="2260000" />
     </task>
     <servers />
   </component>
