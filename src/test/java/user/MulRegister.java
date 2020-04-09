@@ -18,11 +18,10 @@ public class MulRegister extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             System.out.println("4");
             RegisterPage registerPage = new RegisterPage(driver);
-            TimeUnit.SECONDS.sleep(4);
             System.out.println("5");
             registerPage.registerButtonHomepage().click();
             System.out.println("6");
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             System.out.println("7");
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
             accessAllCookies(driver);
