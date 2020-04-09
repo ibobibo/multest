@@ -60,7 +60,7 @@ public class AskForMeeting extends BaseClass {
             askForMeetingPage.accountMenu().click();
             askForMeetingPage.accountMenuLogout().click();
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

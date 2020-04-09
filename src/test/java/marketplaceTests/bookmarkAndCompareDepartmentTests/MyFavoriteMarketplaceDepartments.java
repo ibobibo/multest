@@ -49,7 +49,7 @@ public class MyFavoriteMarketplaceDepartments extends BaseClass {
                 }
             }
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

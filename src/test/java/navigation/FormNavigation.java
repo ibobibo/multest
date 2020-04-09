@@ -15,27 +15,29 @@ public class FormNavigation extends BaseClass {
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
+
             FormNavigationPage formNavigationPage = new FormNavigationPage(driver);
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             accessAllCookies(driver);
 
             //navigate to signup form
             formNavigationPage.navToRegister().click();
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             if (!formNavigationPage.signupButton().getText().equals("Registrieren")) {
-                driver.quit();
+                driver.close();
                 Assert.fail("not on signup page");
             }
 
             //navigate to login form
             formNavigationPage.navToLogin().click();
+            TimeUnit.SECONDS.sleep(4);
             if (!formNavigationPage.loginButton().getText().equals("Anmelden")) {
-                driver.quit();
+                driver.close();
                 Assert.fail("not on login page");
             }
 
         }
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

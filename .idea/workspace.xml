@@ -1,136 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/license/LicensePageobject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/navigation/FormNavigationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentCreditCard1585728547004_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/cancelPaymentSepa1585728479417_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/changePasswordTest1585729261644_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/checkIfValuesAreCorrectlyRepresented1585728400435_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/createAmbulantOrganisation1585727993721_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/createDayNightCareOrganisation1585727969402_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/createStationaryOrganisation1585728019731_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/editUserDetails1585729241409_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/payWithCreditCardForLicense1585728663925_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screenShots/payWithSepaLastschriftForLicense1585728606584_screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/CountDepartments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/GetLicenseFromHomepage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentCreditCardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentLastschriftTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/LicensePaymentCreditCardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/LicensePaymentLastschriftTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/LicenseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/license/NavigateToLicensePageThroughDepartmentIcon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/navigation/FormNavigation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginLogoutPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/contactPerson/SearchContactPersonPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/AcceptMeetingPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/departments/DeleteOrganisationPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/license/LicensePageobject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/placements/DeletePlacementPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/user/RegisterPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/user/ResetPasswordPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/resources/Listeners.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ExtentReportsTestNG.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/docker/docker Tests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/docker/docker Tests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-dockerTests.DockerTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/docker Tests.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/docker/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/EditContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/InviteContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/SearchContactPerson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/CheckIfRequestAreDeleted.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/CopyDepartment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentCreditCardTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/placements/DeletePlacement.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user/DeleteUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user/EditUserDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user/PasswordChangeTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user/ResetPasswordTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user/Verify.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/user/VerifyNewPassword.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0a0b73f9-42e8-4780-9887-666b9cc51a6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestMarketplace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestMarketplace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestsParallel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsParallel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/SearchContactPersonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/contactPerson/SearchContactPersonPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AcceptMeetingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/AcceptMeetingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DeleteOrganisationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DeleteOrganisationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/placements/DeletePlacementPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/user/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/user/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/user/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/user/ResetPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/driver/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/driver/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/ContactPersonGetDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateContactPerson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateSomeContactPersonForSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateSomeContactPersonForSearch.java" afterDir="false" />
@@ -148,9 +25,24 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteMeeting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/EditOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/LoginLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/LoginLogout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/ToggleOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/CountDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/CountDepartments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/GetLicenseFromHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/GetLicenseFromHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentCreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentCreditCardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentLastschriftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicenseCancelPaymentLastschriftTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicensePaymentCreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicensePaymentCreditCardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicensePaymentLastschriftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicensePaymentLastschriftTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/LicenseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/LicenseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/license/NavigateToLicensePageThroughDepartmentIcon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/license/NavigateToLicensePageThroughDepartmentIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/DigitalConsultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/DigitalConsultation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/informationPortal/Care.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/informationPortal/Care.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AskForMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/meetingRequest/AskForMeeting.java" afterDir="false" />
@@ -162,16 +54,63 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/DeleteMarketplaceUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/MarketplaceRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/VerifyMarketplaceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marketplaceTests/user/VerifyMarketplaceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/navigation/FormNavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/navigation/FormNavigation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/user/EditUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/EditUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/user/PasswordChangeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/PasswordChangeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/Verify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/Verify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceCheckIfDeletedUserRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmlFiles/dev-marktplatz/testngMarketPlaceCheckIfDeletedUserRequest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/user/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/user/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/ContactPersonGetDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/DeleteContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/SearchContactPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/SearchContactPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/AcceptMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CheckIfRequestAreDeleted.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CheckIfRequestAreDeleted.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CopyDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CopyDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/DeleteOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/EditOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/ToggleOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/SetupDockerGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentCreditCardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentCreditCardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseCancelPaymentLastschriftTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/license/LicenseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/AskForMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DeleteMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/meetingRequest/DiscardMeetingAsMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterNearCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPerimeterOutsideCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/searchDepartmentRequest/SearchDepartmentAfterPostalCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/DeleteMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/MarketplaceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/marketplaceTests/user/VerifyMarketplaceUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/placements/DeletePlacement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/placements/DeletePlacement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/DeleteUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/EditUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/EditUserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/PasswordChangeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/PasswordChangeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/ResetPasswordTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/ResetPasswordTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/Verify.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/Verify.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/VerifyNewPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/VerifyNewPassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
->>>>>>> 311930d8ef5e3f358eb1876686486af63ca33597
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,9 +130,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="MulTesting" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -217,7 +153,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31149426" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -261,23 +197,6 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml">
-    <configuration name="MarketplaceRegister" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MulTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="marketplaceTests.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="marketplaceTests.user" />
-      <option name="MAIN_CLASS_NAME" value="marketplaceTests.user.MarketplaceRegister" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SearchContactPerson" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <extension name="coverage">
@@ -325,9 +244,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
-      <item itemvalue="TestNG.MarketplaceRegister" />
       <item itemvalue="TestNG.SearchContactPerson" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml" />
@@ -337,17 +270,27 @@
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="TestNG.SearchContactPerson" />
-        <item itemvalue="TestNG.MarketplaceRegister" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="241733d0-5416-48ac-bc5c-76cdbad42f78" name="Default Changelist" comment="" />
+      <changelist id="e3e682d4-393a-4f2a-9967-a178d558481f" name="Default Changelist" comment="" />
       <created>1565872755679</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -409,6 +352,9 @@
       <workItem from="1582293272932" duration="38204000" />
       <workItem from="1583148985817" duration="79180000" />
       <workItem from="1585481421822" duration="5540000" />
+      <workItem from="1586181155414" duration="640000" />
+      <workItem from="1586181802352" duration="10918000" />
+      <workItem from="1586352728027" duration="2260000" />
     </task>
     <servers />
   </component>
@@ -430,8 +376,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MulTesting$_Users_ijawad_Documents_Arbeit_Automatisierung_MulTesting_testngMarketPlaceAskForMeeting_xml.ic" NAME="$PROJECT_DIR$/testngMarketPlaceAskForMeeting.xml Coverage Results" MODIFIED="1575380146417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

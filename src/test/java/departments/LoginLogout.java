@@ -29,7 +29,7 @@ public class LoginLogout extends BaseClass {
 
     @AfterTest
     public void closeBrowser() {
-        driver.quit();
+        driver.close();
         driver = null;
     }
 }

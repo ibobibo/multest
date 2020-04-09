@@ -26,7 +26,7 @@ public class DockerTest2 {
 
         Thread.sleep(5000);
 
-        driver.quit();
+        driver.close();
     }
 }
 

@@ -2,8 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -47,6 +45,12 @@ public class BaseClass {
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
             driver.get(prop.getProperty("urlFromHomeNetwork"));
             TimeUnit.SECONDS.sleep(4);
+
+//            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
+//            driver = new FirefoxDriver();
+//            TimeUnit.SECONDS.sleep(4);
+//            driver.get(prop.getProperty("urlFromHomeNetwork"));
+//            TimeUnit.SECONDS.sleep(4);
             try {
                 accessAllCookies(driver);
             } catch (Exception e) {

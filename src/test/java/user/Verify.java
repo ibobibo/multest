@@ -15,7 +15,8 @@ public class Verify extends BaseClass {
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
-        System.out.println("verzifizierung");
+        TimeUnit.SECONDS.sleep(4);
+
         loadProps();
 
         accessAllCookies(driver);
@@ -23,7 +24,7 @@ public class Verify extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search']"))).clear();
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search']"))).sendKeys(prop.getProperty("contactEmail").toLowerCase());
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
 
             String x = "//ul[@class='email-list']//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + "')]";
             WebElement findEmail = driver.findElement(By.xpath(x));
@@ -42,7 +43,7 @@ public class Verify extends BaseClass {
             TimeUnit.SECONDS.sleep(2);
             driver.switchTo().defaultContent();
             TimeUnit.SECONDS.sleep(2);
-            driver.quit();
+            driver.close();
             driver = null;
         }
     }
