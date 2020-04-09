@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
     @BeforeTest
     public void freeDriver() {
-        //cleanUp();
+        cleanUp();
     }
 
     @Test
