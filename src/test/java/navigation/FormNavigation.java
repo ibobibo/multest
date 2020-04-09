@@ -15,10 +15,8 @@ public class FormNavigation extends BaseClass {
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-
             FormNavigationPage formNavigationPage = new FormNavigationPage(driver);
             TimeUnit.SECONDS.sleep(4);
-            accessAllCookies(driver);
 
             //navigate to signup form
             formNavigationPage.navToRegister().click();
