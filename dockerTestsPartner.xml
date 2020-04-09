@@ -9,7 +9,7 @@
     <!--Routing tests for login to register and the other way around-->
     <test thread-count="4" name="navigation test from login and registration forms">
         <classes>
-            <!--            <class name="dockerTests.SetupDockerGrid"/>-->
+            <class name="dockerTests.SetupDockerGrid"/>
 
             <class name="navigation.FormNavigation"/>
 
