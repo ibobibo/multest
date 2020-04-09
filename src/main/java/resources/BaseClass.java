@@ -24,7 +24,6 @@ public class BaseClass {
     public static String hubAddress;
 
     public WebDriver initializeDriver() throws IOException, InterruptedException {
-        cleanUp();
         loadProps();
         String browserName = prop.getProperty("browser");
         hubAddress = "172.19.0.2";
