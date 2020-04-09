@@ -14,12 +14,12 @@
             <class name="navigation.FormNavigation"/>
 
             <class name="user.MulRegister"/>
-            <class name="user.Verify"/>
+            <!--            <class name="user.Verify"/>-->
 
-            <class name="departments.CreateDayNightCareOrganisation"/>
-            <class name="departments.CreateAmbulantOrganisation"/>
-            <class name="departments.CreateStationaryOrganisation"/>
-            <class name="departments.CreateFairHouseOffer"/>
+            <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+            <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
+            <!--            <class name="departments.CreateStationaryOrganisation"/>-->
+            <!--            <class name="departments.CreateFairHouseOffer"/>-->
 
             <!--            <class name="departments.ToggleOrganisation"/>-->
             <!--            <class name="departments.EditOrganisation"/>-->
