@@ -23,7 +23,8 @@ public class BaseClass {
     public static Properties propNewPlacement = new Properties();
     public static String hubAddress;
 
-    public WebDriver initializeDriver() throws IOException, InterruptedException {
+    public WebDriver initializeDriver() throws IOException {
+        cleanUp();
         loadProps();
         String browserName = prop.getProperty("browser");
         hubAddress = "172.19.0.2";
@@ -54,7 +55,10 @@ public class BaseClass {
 
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
+        System.out.println("hiiier");
         driver.get(prop.getProperty("urlFromHomeNetwork"));
+        System.out.println("hiiier");
+
         TimeUnit.SECONDS.sleep(4);
         try {
             accessAllCookies(driver);
