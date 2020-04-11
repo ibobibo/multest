@@ -60,11 +60,7 @@ public class BaseClass {
         System.out.println("hiiier");
 
         TimeUnit.SECONDS.sleep(4);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+
     }
 
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
