@@ -55,12 +55,14 @@ public class BaseClass {
 
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
-        System.out.println("hiiier");
         driver.get(prop.getProperty("urlFromHomeNetwork"));
-        System.out.println("hiiier");
 
         TimeUnit.SECONDS.sleep(4);
-
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
     }
 
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
