@@ -11,12 +11,12 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 
-            <!--            <class name="navigation.FormNavigation"/>-->
+<!--            <class name="navigation.FormNavigation"/>-->
 
             <class name="user.MulRegister"/>
-            <!--            <class name="user.Verify"/>-->
+<!--            <class name="user.Verify"/>-->
 
-            <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+<!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
             <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
             <!--            <class name="departments.CreateStationaryOrganisation"/>-->
             <!--            <class name="departments.CreateFairHouseOffer"/>-->
@@ -38,16 +38,6 @@
             <!--            <class name="placements.DeletePlacement"/>-->
             <!--            <class name="user.DeleteUser"/>-->
 
-        </classes>
-    </test>
-
-    <test thread-count="4" name="verify">
-        <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
-
-            <!--            <class name="navigation.FormNavigation"/>-->
-
-            <class name="user.Verify"/>
         </classes>
     </test>
 
