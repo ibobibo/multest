@@ -36,6 +36,5 @@ public class FormNavigation extends BaseClass {
 
         }
         driver.close();
-        driver = null;
     }
 }
