@@ -58,7 +58,6 @@ public class EditOrganisation extends BaseClass {
         }
         logout();
         TimeUnit.SECONDS.sleep(2);
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }
