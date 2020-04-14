@@ -238,7 +238,7 @@ public class BaseClass {
         if (driver != null) {
             System.out.println("CleanUp");
             driver.quit();
-            driver = null;
+            driver = null; //maybe here
         }
     }
 }
