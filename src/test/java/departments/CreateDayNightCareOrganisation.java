@@ -120,6 +120,5 @@ public class CreateDayNightCareOrganisation extends BaseClass {
 
         }
         driver.close();
-        driver = null;
     }
 }

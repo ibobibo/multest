@@ -61,5 +61,6 @@ public class MulRegister extends BaseClass {
             System.out.println("15");
             TimeUnit.SECONDS.sleep(4);
         }
+        driver.close();
     }
 }
