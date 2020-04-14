@@ -188,16 +188,17 @@ public class BaseClass {
 
     public void loginLoop(int i) throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(3);
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
+        TimeUnit.SECONDS.sleep(3);
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
+        TimeUnit.SECONDS.sleep(3);
         accessAllCookies(driver);
 
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(3);
         loginLogoutPage.anmelden().click();
 
-        TimeUnit.SECONDS.sleep(1);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        TimeUnit.SECONDS.sleep(3);
     }
 
     public void loginLoopMarketplace(int i) throws InterruptedException {
