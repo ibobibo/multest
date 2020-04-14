@@ -11,10 +11,10 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 
-            <class name="navigation.FormNavigation"/>
+<!--            <class name="navigation.FormNavigation"/>-->
 
 <!--            <class name="user.MulRegister"/>-->
-<!--            <class name="user.Verify"/>-->
+            <class name="user.Verify"/>
 
 <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
             <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
