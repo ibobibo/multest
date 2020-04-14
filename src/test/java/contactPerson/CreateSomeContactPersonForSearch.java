@@ -23,8 +23,9 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
         TimeUnit.SECONDS.sleep(1);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-
+            System.out.println("vorm login");
             loginLoop(i);
+            System.out.println("nachmlogin");
             loadPropsForDepartment();
 
             try {
@@ -73,7 +74,6 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                 TimeUnit.SECONDS.sleep(2);
             }
         }
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }
