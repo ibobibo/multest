@@ -235,7 +235,6 @@ public class BaseClass {
     }
 
     public void cleanUp() {
-        System.out.println("cleanup wird aufgerufen");
         if (driver != null) {
             System.out.println("CleanUp");
             driver.quit();
