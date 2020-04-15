@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a0b73f9-42e8-4780-9887-666b9cc51a6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/DeleteOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placements/DeletePlacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/PasswordChangeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/PasswordChangeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/ResetPasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/VerifyNewPassword.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
