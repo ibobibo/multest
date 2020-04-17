@@ -41,7 +41,6 @@ public class MarketplaceRegister extends BaseClass {
             registerOnMarketplacePage.registerSubmit().click();
             TimeUnit.SECONDS.sleep(1);
         }
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }
