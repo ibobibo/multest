@@ -7,7 +7,7 @@
     </listeners>
 
     <!--Routing tests for login to register and the other way around-->
-    <test thread-count="4" name="navigation test from login and registration forms">
+    <test thread-count="4" name="dev-partner test-cases">
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 

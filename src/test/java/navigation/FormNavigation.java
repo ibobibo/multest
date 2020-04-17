@@ -16,13 +16,12 @@ public class FormNavigation extends BaseClass {
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             FormNavigationPage formNavigationPage = new FormNavigationPage(driver);
-            TimeUnit.SECONDS.sleep(4);
 
             //navigate to signup form
             formNavigationPage.navToRegister().click();
             TimeUnit.SECONDS.sleep(4);
             if (!formNavigationPage.signupButton().getText().equals("Registrieren")) {
-                driver.close();
+                driver.quit();
                 Assert.fail("not on signup page");
             }
 
@@ -30,7 +29,7 @@ public class FormNavigation extends BaseClass {
             formNavigationPage.navToLogin().click();
             TimeUnit.SECONDS.sleep(4);
             if (!formNavigationPage.loginButton().getText().equals("Anmelden")) {
-                driver.close();
+                driver.quit();
                 Assert.fail("not on login page");
             }
 
