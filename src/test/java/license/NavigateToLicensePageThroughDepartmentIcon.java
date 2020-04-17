@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class NavigateToLicensePageThroughDepartmentIcon extends BaseClass {
     @Test()
-    public void checkIfValuesAreCorrectlyRepresented() throws InterruptedException, IOException {
+    public void navigateThroughIcon() throws InterruptedException, IOException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(2);
         accessAllCookies(driver);
@@ -23,16 +23,17 @@ public class NavigateToLicensePageThroughDepartmentIcon extends BaseClass {
             licensePageobject.showDepartments().click();
             TimeUnit.SECONDS.sleep(1);
             licensePageobject.navigateToLicensePageThroughDepartmentIcon().click();
+            TimeUnit.SECONDS.sleep(3);
+
 
             if (!licensePageobject.countElementsInBucket().getText().equals("1")) {
-                driver.close();
+                driver.quit();
                 Assert.fail(licensePageobject.countElementsInBucket().getText() + " isn't equal to 1");
             }
 
             logout();
         }
         TimeUnit.SECONDS.sleep(1);
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }

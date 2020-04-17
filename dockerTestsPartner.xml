@@ -21,6 +21,15 @@
             <class name="departments.CreateStationaryOrganisation"/>
             <class name="departments.CreateFairHouseOffer"/>
 
+            <!--            LICENSE TEST-->
+            <class name="license.GetLicenseFromHomepage"/>
+            <class name="license.CountDepartments"/>
+            <class name="license.LicenseTest"/>
+            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>
+
+            <!--            <class name="license.LicensePaymentLastschriftTest"/>-->
+            <!--            <class name="license.LicensePaymentCreditCardTest"/>-->
+
             <class name="departments.ToggleOrganisation"/>
             <class name="departments.EditOrganisation"/>
             <class name="departments.CopyDepartment"/>
@@ -41,53 +50,5 @@
         </classes>
     </test>
 
-    <!--    &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
-    <!--    <test thread-count="4" name="Click license from Homepage">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.GetLicenseFromHomepage"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Count Departments on Licensepage">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.CountDepartments"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Check License and Prices if correct">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.LicenseTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Navigate To License Page Through Department Icon">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Cancel Payment for Lastschrift License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.LicenseCancelPaymentLastschriftTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Cancel Payment for Credit Card License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.LicenseCancelPaymentCreditCardTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Payment for Lastschrift License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.LicensePaymentLastschriftTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
-    <!--    <test thread-count="4" name="Payment for Credit Card License Test">-->
-    <!--        <classes>-->
-    <!--            <class name="dockerTests.SetupDockerGrid"/>-->
-    <!--            <class name="license.LicensePaymentCreditCardTest"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+
 </suite>

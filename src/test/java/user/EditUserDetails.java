@@ -16,7 +16,6 @@ public class EditUserDetails extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
             EditUserDetailsPage editUserDetailsPage = new EditUserDetailsPage(driver);
-            TimeUnit.SECONDS.sleep(2);
             editUserDetailsPage.accountMenu().click();
             editUserDetailsPage.accountMenuSettings().click();
             editUserDetailsPage.firstName().clear();

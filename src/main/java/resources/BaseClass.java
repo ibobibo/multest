@@ -2,6 +2,8 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -31,9 +33,15 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            DesiredCapabilities cap = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+            driver = new ChromeDriver();
+
+//            DesiredCapabilities cap = DesiredCapabilities.chrome();
+//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
         } else if (browserName.equals("firefox")) {
+//            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
+//            driver = new FirefoxDriver();
+
             DesiredCapabilities cap = DesiredCapabilities.firefox();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
         } else if (browserName.equals("edge")) {
@@ -56,7 +64,7 @@ public class BaseClass {
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
-
+        driver.manage().window().maximize();
         TimeUnit.SECONDS.sleep(4);
         try {
             accessAllCookies(driver);
