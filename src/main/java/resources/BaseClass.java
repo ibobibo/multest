@@ -2,8 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -33,11 +31,11 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-            driver = new ChromeDriver();
+//            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+//            driver = new ChromeDriver();
 
-//            DesiredCapabilities cap = DesiredCapabilities.chrome();
-//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            DesiredCapabilities cap = DesiredCapabilities.chrome();
+            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
         } else if (browserName.equals("firefox")) {
 //            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
 //            driver = new FirefoxDriver();
@@ -76,6 +74,13 @@ public class BaseClass {
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
+        driver.manage().window().maximize();
+        TimeUnit.SECONDS.sleep(4);
+        try {
+            accessAllCookies(driver);
+        } catch (Exception e) {
+            System.out.println("cookies accepted");
+        }
     }
 
     public void initializeBrowserForInformationPortal() throws IOException, InterruptedException {
@@ -216,12 +221,15 @@ public class BaseClass {
         } catch (Exception e) {
             System.out.println("dont need it");
         }
-        TimeUnit.SECONDS.sleep(1);
-        loginLogoutPage.username().sendKeys(prop.getProperty("marketPlaceName") + i);
-        loginLogoutPage.password().sendKeys(prop.getProperty("marketPlacePassword"));
         TimeUnit.SECONDS.sleep(3);
+        loginLogoutPage.username().sendKeys(prop.getProperty("marketPlaceName"));
+        loginLogoutPage.password().sendKeys(prop.getProperty("marketPlacePassword"));
+
+        TimeUnit.SECONDS.sleep(3);
+        accessAllCookies(driver);
+
         loginLogoutPage.anmelden().click();
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(3);
     }
 
     public void loginAdmin() throws InterruptedException {

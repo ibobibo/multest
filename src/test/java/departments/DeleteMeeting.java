@@ -11,10 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 public class DeleteMeeting extends BaseClass {
     @Test()
-    public void deleteAllOrganisation() throws InterruptedException, IOException {
+    public void deleteMeeting() throws InterruptedException, IOException {
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
 
         DeleteMeetingPage deleteMeetingPage = new DeleteMeetingPage(driver);
         login(prop.getProperty("anfragenTestEmail"), prop.getProperty("anfragenTestPassword"));
@@ -35,7 +33,6 @@ public class DeleteMeeting extends BaseClass {
         }
         logout();
         TimeUnit.SECONDS.sleep(1);
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }

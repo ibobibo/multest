@@ -1,7 +1,5 @@
 package marketplaceTests.user;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjectsMarketplace.user.DeleteMarketplaceUserPage;
 import resources.BaseClass;
@@ -11,15 +9,10 @@ import java.util.concurrent.TimeUnit;
 
 public class DeleteMarketplaceUser extends BaseClass {
 
-    @BeforeTest
-    public void initialize() throws IOException, InterruptedException {
-        initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-    }
-
     @Test
     public void deleteMarketplaceUser() throws IOException, InterruptedException {
+        initializeBrowserForMarketplace();
+
         loadProps();
         DeleteMarketplaceUserPage deleteMarketplaceUserPage = new DeleteMarketplaceUserPage(driver);
 
@@ -27,18 +20,14 @@ public class DeleteMarketplaceUser extends BaseClass {
             loginLoopMarketplace(i);
             TimeUnit.SECONDS.sleep(2);
             deleteMarketplaceUserPage.accountMenu().click();
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(2);
             deleteMarketplaceUserPage.accountMenuSettings().click();
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(2);
             deleteMarketplaceUserPage.deleteButton().click();
+            TimeUnit.SECONDS.sleep(3);
             deleteMarketplaceUserPage.deleteAccept().click();
-            TimeUnit.SECONDS.sleep(6);
+            TimeUnit.SECONDS.sleep(3);
         }
-    }
-
-    @AfterTest
-    public void closeBrowser() {
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }

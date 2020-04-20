@@ -13,8 +13,6 @@ public class CompareMarketplaceDepartments extends BaseClass {
     @Test
     public void compareMarketplaceDepartments() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
 
         loadProps();
         CompareMarketplaceDepartmentsPage compareMarketplaceDepartments = new CompareMarketplaceDepartmentsPage(driver);
@@ -25,20 +23,24 @@ public class CompareMarketplaceDepartments extends BaseClass {
             compareMarketplaceDepartments.clickHeaderForSearch().click();
 
             for (int card = 1; card < 5; card++) {
-                WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
+                System.out.println(card);
+                WebElement cardElement = driver.findElement(By.xpath("//div[contains(@class,'departmentSearchHeader')]//li[" + card + "]//a[1]"));
                 cardElement.click();
+
                 compareMarketplaceDepartments.location().sendKeys("Berlin");
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(3);
                 compareMarketplaceDepartments.searchDepartment().click();
                 TimeUnit.SECONDS.sleep(2);
                 for (int c = 1; c < 5; c++) {
                     String xpathForCompareIcon = "//tr[" + c + "]" + "//section[@class='DepartmentCompareButton']//button[@class='compare ']";
                     WebElement compareButton = driver.findElement(By.xpath(xpathForCompareIcon));
                     compareButton.click();
+                    TimeUnit.SECONDS.sleep(2);
                 }
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.SECONDS.sleep(2);
                 compareMarketplaceDepartments.location().clear();
             }
+
             for (int searchButton = 0; searchButton < 4; searchButton++) {
                 compareMarketplaceDepartments.clickHeaderForCompare().click();
                 if (searchButton == 0) {
@@ -76,7 +78,6 @@ public class CompareMarketplaceDepartments extends BaseClass {
             }
             TimeUnit.SECONDS.sleep(2);
         }
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }

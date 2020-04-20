@@ -13,8 +13,6 @@ public class AskForMeeting extends BaseClass {
     @Test
     public void askForMeeting() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
 
         AskForMeetingPage askForMeetingPage = new AskForMeetingPage(driver);
         TimeUnit.SECONDS.sleep(2);
@@ -60,7 +58,6 @@ public class AskForMeeting extends BaseClass {
             askForMeetingPage.accountMenu().click();
             askForMeetingPage.accountMenuLogout().click();
         }
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }

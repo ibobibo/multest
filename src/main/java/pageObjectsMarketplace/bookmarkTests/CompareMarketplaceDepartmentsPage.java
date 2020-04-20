@@ -13,11 +13,11 @@ public class CompareMarketplaceDepartmentsPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//section[@id='app-header']//li[3]")
+    @FindBy(xpath = "//a[@class='nav-link search']")
     WebElement clickHeaderForSearch;
     @FindBy(xpath = "//div[contains(@class,'tab-pane active')]//div[contains(@class,'row')]//div[contains(@class,'col-12')]//section[contains(@class,'DepartmentSearchBase')]//div//input[@id='location']")
     WebElement location;
-    @FindBy(xpath = "//section[@id='app-header']//li[5]")
+    @FindBy(xpath = "//section[@id='app-header']//li[7]")
     WebElement clickHeaderForCompare;
     @FindBy(xpath = "//button[@id='publish-department']")
     WebElement searchDepartment;

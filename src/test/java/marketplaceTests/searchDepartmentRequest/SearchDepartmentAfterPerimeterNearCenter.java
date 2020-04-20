@@ -12,17 +12,9 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class SearchDepartmentAfterPerimeterNearCenter extends BaseClass {
-    @BeforeTest
-    public void freeDriver() {
-        cleanUp();
-    }
-
     @Test
     public void searchDepartmentAfterPerimeterNearCenter() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-
 
         SearchDepartmentPage searchDepartmentPage = new SearchDepartmentPage(driver);
         searchDepartmentPage.searchDepartmentTitle().click();

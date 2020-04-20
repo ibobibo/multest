@@ -11,7 +11,6 @@ public class MarketplaceRegister extends BaseClass {
     @Test
     public void registerOnMarketplace() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(4);
         loadProps();
         RegisterOnMarketplacePage registerOnMarketplacePage = new RegisterOnMarketplacePage(driver);
 

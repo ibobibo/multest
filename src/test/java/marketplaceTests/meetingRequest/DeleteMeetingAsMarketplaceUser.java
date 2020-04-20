@@ -12,10 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class DeleteMeetingAsMarketplaceUser extends BaseClass {
     @Test
     public void deleteMeetingAsMarketplaceUser() throws InterruptedException, IOException {
-        cleanUp();
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
 
         OperationsOnMeetingAsMarketplaceUserPage operationsOnMeetingAsMarketplaceUserPage = new OperationsOnMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);
@@ -41,7 +38,6 @@ public class DeleteMeetingAsMarketplaceUser extends BaseClass {
             operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
             operationsOnMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }

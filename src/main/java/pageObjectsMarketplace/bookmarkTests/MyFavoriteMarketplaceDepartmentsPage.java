@@ -13,7 +13,7 @@ public class MyFavoriteMarketplaceDepartmentsPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//span[contains(text(),'Vermittlung')]")
+    @FindBy(xpath = "//a[@class='nav-link search']")
     WebElement clickHeaderForSearch;
     @FindBy(xpath = "//div[contains(@class,'tab-pane active')]//div[contains(@class,'row')]//div[contains(@class,'col-12')]//section[contains(@class,'DepartmentSearchBase')]//div//input[@id='location']")
     WebElement location;

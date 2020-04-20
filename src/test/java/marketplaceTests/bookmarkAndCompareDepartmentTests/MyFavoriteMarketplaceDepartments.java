@@ -14,8 +14,7 @@ public class MyFavoriteMarketplaceDepartments extends BaseClass {
     @Test
     public void myFavoriteMarketplaceDepartments() throws IOException, InterruptedException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
+
         loadProps();
         MyFavoriteMarketplaceDepartmentsPage myFavoriteMarketplaceDepartmentsPage = new MyFavoriteMarketplaceDepartmentsPage(driver);
 
@@ -26,14 +25,14 @@ public class MyFavoriteMarketplaceDepartments extends BaseClass {
             myFavoriteMarketplaceDepartmentsPage.clickHeaderForSearch().click();
 
             for (int card = 1; card < 5; card++) {
-                WebElement cardElement = driver.findElement(By.xpath("//ul[@class='tab-bar nav nav-tabs']//li[" + card + "]"));
-                actions.moveToElement(cardElement).click().build().perform();
+                WebElement cardElement = driver.findElement(By.xpath("//div[contains(@class,'departmentSearchHeader')]//li[" + card + "]//a[1]"));
+                cardElement.click();
 
                 myFavoriteMarketplaceDepartmentsPage.location().clear();
                 myFavoriteMarketplaceDepartmentsPage.location().sendKeys("Berlin");
                 TimeUnit.SECONDS.sleep(2);
                 myFavoriteMarketplaceDepartmentsPage.searchDepartment().click();
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(4);
                 myFavoriteMarketplaceDepartmentsPage.theFirstElementIsMyFavorite().click();
                 TimeUnit.SECONDS.sleep(1);
             }
@@ -49,7 +48,6 @@ public class MyFavoriteMarketplaceDepartments extends BaseClass {
                 }
             }
         }
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }

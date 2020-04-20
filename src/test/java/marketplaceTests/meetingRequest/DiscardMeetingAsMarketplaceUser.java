@@ -13,8 +13,6 @@ public class DiscardMeetingAsMarketplaceUser extends BaseClass {
     @Test
     public void discardMeetingAsMarketplaceUser() throws InterruptedException, IOException {
         initializeBrowserForMarketplace();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
 
         OperationsOnMeetingAsMarketplaceUserPage operationsOnMeetingAsMarketplaceUserPage = new OperationsOnMeetingAsMarketplaceUserPage(driver);
         TimeUnit.SECONDS.sleep(2);
@@ -40,7 +38,6 @@ public class DiscardMeetingAsMarketplaceUser extends BaseClass {
             operationsOnMeetingAsMarketplaceUserPage.accountMenu().click();
             operationsOnMeetingAsMarketplaceUserPage.accountMenuLogout().click();
         }
-        driver.close();
-        driver = null;
+        driver.quit();
     }
 }
