@@ -63,7 +63,7 @@ public class BaseClass {
         initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
         driver.manage().window().maximize();
-        TimeUnit.SECONDS.sleep(4);
+        TimeUnit.SECONDS.sleep(1);
 
         accessAllCookies(driver);
     }
@@ -72,7 +72,7 @@ public class BaseClass {
         initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
         driver.manage().window().maximize();
-        TimeUnit.SECONDS.sleep(6);
+        TimeUnit.SECONDS.sleep(1);
 
         accessAllCookies(driver);
     }
