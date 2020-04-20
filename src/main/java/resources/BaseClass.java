@@ -38,11 +38,11 @@ public class BaseClass {
             DesiredCapabilities cap = DesiredCapabilities.chrome();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
         } else if (browserName.equals("firefox")) {
-            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
-            driver = new FirefoxDriver();
+//            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
+//            driver = new FirefoxDriver();
 
-//            DesiredCapabilities cap = DesiredCapabilities.firefox();
-//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            DesiredCapabilities cap = DesiredCapabilities.firefox();
+            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
