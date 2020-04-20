@@ -2,7 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -65,23 +64,17 @@ public class BaseClass {
         driver.get(prop.getProperty("urlFromHomeNetwork"));
         driver.manage().window().maximize();
         TimeUnit.SECONDS.sleep(4);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+
+        accessAllCookies(driver);
     }
 
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
         driver.manage().window().maximize();
-        TimeUnit.SECONDS.sleep(4);
-        try {
-            accessAllCookies(driver);
-        } catch (Exception e) {
-            System.out.println("cookies accepted");
-        }
+        TimeUnit.SECONDS.sleep(6);
+
+        accessAllCookies(driver);
     }
 
     public void initializeBrowserForInformationPortal() throws IOException, InterruptedException {
