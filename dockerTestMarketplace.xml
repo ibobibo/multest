@@ -11,26 +11,26 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 
-            <class name="marketplaceTests.user.MarketplaceRegister"/>
-            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>
+            <!--            <class name="marketplaceTests.user.MarketplaceRegister"/>-->
+            <!--            <class name="marketplaceTests.user.VerifyMarketplaceUser"/>-->
 
-            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterNearCenter"/>
-            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterOutsideCenter"/>
+            <!--            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterNearCenter"/>-->
+            <!--            <class name="marketplaceTests.searchDepartmentRequest.SearchDepartmentAfterPerimeterOutsideCenter"/>-->
 
-            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.MyFavoriteMarketplaceDepartments"/>
-            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.CompareMarketplaceDepartments"/>
+            <!--            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.MyFavoriteMarketplaceDepartments"/>-->
+            <!--            <class name="marketplaceTests.bookmarkAndCompareDepartmentTests.CompareMarketplaceDepartments"/>-->
 
-            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>
-            <class name="marketplaceTests.meetingRequest.AcceptMeetingAsMarketplaceUser"/>
-            <class name="marketplaceTests.meetingRequest.AnswerMeetingAsMarketplaceUser"/>
-            <class name="departments.AcceptMeeting"/>
-            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>
-            <class name="departments.AcceptMeeting"/>
-            <class name="marketplaceTests.meetingRequest.DiscardMeetingAsMarketplaceUser"/>
-            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>
-            <class name="departments.DeleteMeeting"/>
-            <class name="marketplaceTests.meetingRequest.DeleteMeetingAsMarketplaceUser"/>
-            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>
+            <!--            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>-->
+            <!--            <class name="marketplaceTests.meetingRequest.AcceptMeetingAsMarketplaceUser"/>-->
+            <!--            <class name="marketplaceTests.meetingRequest.AnswerMeetingAsMarketplaceUser"/>-->
+            <!--            <class name="departments.AcceptMeeting"/>-->
+            <!--            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>-->
+            <!--            <class name="departments.AcceptMeeting"/>-->
+            <!--            <class name="marketplaceTests.meetingRequest.DiscardMeetingAsMarketplaceUser"/>-->
+            <!--            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>-->
+            <!--            <class name="departments.DeleteMeeting"/>-->
+            <!--            <class name="marketplaceTests.meetingRequest.DeleteMeetingAsMarketplaceUser"/>-->
+            <!--            <class name="marketplaceTests.meetingRequest.AskForMeeting"/>-->
 
             <class name="marketplaceTests.user.DeleteMarketplaceUser"/>
         </classes>
