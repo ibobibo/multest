@@ -13,8 +13,7 @@ public class AskForMeetingPage {
         PageFactory.initElements(driver, this);
     }
 
-
-    @FindBy(xpath = "//section[@id='app-header']//li[3]")
+    @FindBy(xpath = "//section[@id='app-header']//li[4]")
     WebElement searchDepartmentTitle;
     @FindBy(xpath = "//section[@class='DepartmentSearchBase']//section[@class='Input  text     empty']//input[@id='location']")
     WebElement location;

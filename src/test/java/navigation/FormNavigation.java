@@ -32,7 +32,6 @@ public class FormNavigation extends BaseClass {
                 driver.quit();
                 Assert.fail("not on login page");
             }
-
         }
         driver.quit();
     }
