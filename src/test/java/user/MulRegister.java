@@ -15,7 +15,6 @@ public class MulRegister extends BaseClass {
     public void register() throws IOException, InterruptedException {
         initializeBrowser();
 //        driver.manage().window().fullscreen();
-        System.out.println(driver.manage().window().getSize());
         TimeUnit.SECONDS.sleep(4);
 
         loadProps();
@@ -31,7 +30,7 @@ public class MulRegister extends BaseClass {
 
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(4);
-            System.out.println("hier");
+
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
             accessAllCookies(driver);
 
