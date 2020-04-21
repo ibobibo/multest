@@ -61,7 +61,7 @@ public class BaseClass {
 
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
-        driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
         TimeUnit.SECONDS.sleep(6);
 
@@ -70,7 +70,7 @@ public class BaseClass {
 
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
         initializeDriver();
-        driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
         TimeUnit.SECONDS.sleep(6);
 
