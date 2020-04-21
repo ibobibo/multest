@@ -14,6 +14,8 @@ public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
         initializeBrowser();
+        driver.manage().window().fullscreen();
+        System.out.println(driver.manage().window().getSize());
         TimeUnit.SECONDS.sleep(4);
 
         loadProps();
