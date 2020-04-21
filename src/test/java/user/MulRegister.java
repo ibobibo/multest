@@ -20,7 +20,13 @@ public class MulRegister extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             RegisterPage registerPage = new RegisterPage(driver);
             TimeUnit.SECONDS.sleep(4);
-            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='navbar-toggler-icon']"))).click();
+
+            try {
+                new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='navbar-toggler-icon']"))).click();
+            } catch (Exception e) {
+                System.out.println("no toggler because window size is: " + driver.manage().window().getSize());
+            }
+
             registerPage.registerButtonHomepage().click();
             TimeUnit.SECONDS.sleep(4);
             System.out.println("hier");
