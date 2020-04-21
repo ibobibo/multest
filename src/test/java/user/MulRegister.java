@@ -17,13 +17,8 @@ public class MulRegister extends BaseClass {
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             RegisterPage registerPage = new RegisterPage(driver);
-            TimeUnit.SECONDS.sleep(4);
-            System.out.println(driver.manage().window().getSize() + " =window size!");
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='nav-register']"))).click();
-            TimeUnit.SECONDS.sleep(4);
-            System.out.println("hier");
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
-            accessAllCookies(driver);
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
 
