@@ -14,7 +14,7 @@ public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
         initializeBrowser();
-        driver.manage().window().fullscreen();
+//        driver.manage().window().fullscreen();
         System.out.println(driver.manage().window().getSize());
         TimeUnit.SECONDS.sleep(4);
 
@@ -24,7 +24,7 @@ public class MulRegister extends BaseClass {
             TimeUnit.SECONDS.sleep(4);
 
             try {
-                new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='navbar-toggler-icon']"))).click();
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='navbar-toggler-icon']"))).click();
             } catch (Exception e) {
                 System.out.println("no toggler because window size is: " + driver.manage().window().getSize());
             }
