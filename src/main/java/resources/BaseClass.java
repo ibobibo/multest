@@ -61,17 +61,17 @@ public class BaseClass {
 
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
+        driver.manage().window().maximize();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
-//        driver.manage().window().maximize();
-        TimeUnit.SECONDS.sleep(4);
+        TimeUnit.SECONDS.sleep(6);
 
         accessAllCookies(driver);
     }
 
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
         initializeDriver();
-        driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
         driver.manage().window().maximize();
+        driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
         TimeUnit.SECONDS.sleep(6);
 
         accessAllCookies(driver);
