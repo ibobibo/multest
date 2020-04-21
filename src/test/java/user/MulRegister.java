@@ -1,5 +1,8 @@
 package user;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageObjects.user.RegisterPage;
 import resources.BaseClass;
@@ -16,7 +19,7 @@ public class MulRegister extends BaseClass {
             RegisterPage registerPage = new RegisterPage(driver);
             TimeUnit.SECONDS.sleep(4);
             System.out.println(driver.manage().window().getSize() + " =window size!");
-            registerPage.registerButtonHomepage().click();
+            new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='nav-register']"))).click();
             TimeUnit.SECONDS.sleep(4);
             System.out.println("hier");
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
