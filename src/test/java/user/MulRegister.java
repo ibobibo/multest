@@ -1,5 +1,8 @@
 package user;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageObjects.user.RegisterPage;
 import resources.BaseClass;
@@ -11,6 +14,9 @@ public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
         initializeBrowser();
+        TimeUnit.SECONDS.sleep(4);
+        System.out.println( new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//body//h3//span[1]"))).getText());
+
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             RegisterPage registerPage = new RegisterPage(driver);
