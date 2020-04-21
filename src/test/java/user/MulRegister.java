@@ -15,7 +15,6 @@ public class MulRegister extends BaseClass {
     public void register() throws IOException, InterruptedException {
         initializeBrowser();
         TimeUnit.SECONDS.sleep(4);
-        System.out.println( new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//body//h3//span[1]"))).getText());
 
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
