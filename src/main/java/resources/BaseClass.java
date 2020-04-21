@@ -61,7 +61,7 @@ public class BaseClass {
 
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
-        driver.manage().window().fullscreen();
+
         driver.get(prop.getProperty("urlFromHomeNetwork"));
         TimeUnit.SECONDS.sleep(6);
 
