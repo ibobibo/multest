@@ -62,7 +62,7 @@ public class BaseClass {
     public void initializeBrowser() throws IOException, InterruptedException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
         TimeUnit.SECONDS.sleep(4);
 
         accessAllCookies(driver);
