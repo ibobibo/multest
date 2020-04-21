@@ -16,8 +16,8 @@
             <class name="user.MulRegister"/>
             <class name="user.Verify"/>
 
-            <class name="departments.CreateDayNightCareOrganisation"/>
-            <class name="departments.CreateAmbulantOrganisation"/>
+<!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
+<!--            <class name="departments.CreateAmbulantOrganisation"/>-->
 <!--            <class name="departments.CreateStationaryOrganisation"/>-->
 <!--            <class name="departments.CreateFairHouseOffer"/>-->
 
