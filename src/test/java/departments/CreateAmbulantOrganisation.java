@@ -3,6 +3,8 @@ package departments;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import resources.BaseClass;
@@ -15,47 +17,40 @@ public class CreateAmbulantOrganisation extends BaseClass {
     public void createAmbulantOrganisation() throws IOException, InterruptedException {
         initializeBrowser();
         loadProps();
-        accessAllCookies(driver);
+        loadPropsForDepartment();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
 
             Actions actions = new Actions(driver);
 
-            loadPropsForDepartment();
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try {
-                departmentPage.addDepartmentCard().click();
-                TimeUnit.SECONDS.sleep(2);
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartmentCard())).click();
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
 
             try {
-                departmentPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(2);
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartment())).click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                departmentPage.addFirstAmbulantDepartment().click();
-                TimeUnit.SECONDS.sleep(2);
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFirstAmbulantDepartment())).click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                departmentPage.addAmbulantDepartment().click();
-                TimeUnit.SECONDS.sleep(2);
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addAmbulantDepartment())).click();
             } catch (Exception e) {
                 System.out.println("n'th Department");
             }
 
             //allgemeine Angaben
-            TimeUnit.SECONDS.sleep(4);
-
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
@@ -112,12 +107,10 @@ public class CreateAmbulantOrganisation extends BaseClass {
             TimeUnit.SECONDS.sleep(3);
 
             //speichern
-            departmentPage.saveDepartment().click();
-
-            TimeUnit.SECONDS.sleep(6);
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
+            TimeUnit.SECONDS.sleep(2);
             logout();
             TimeUnit.SECONDS.sleep(2);
-
         }
         driver.quit();
     }

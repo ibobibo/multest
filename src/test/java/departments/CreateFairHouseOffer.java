@@ -3,6 +3,8 @@ package departments;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import resources.BaseClass;
@@ -27,68 +29,56 @@ public class CreateFairHouseOffer extends BaseClass {
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try {
-                departmentPage.addDepartmentCard().click();
-                TimeUnit.SECONDS.sleep(1);
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartmentCard())).click();
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
 
             try {
-                departmentPage.addDepartment().click();
-                TimeUnit.SECONDS.sleep(1);
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartment())).click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                departmentPage.addFirstFairHouseOfferDepartment().click();
-                TimeUnit.SECONDS.sleep(2);
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFirstFairHouseOfferDepartment())).click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                departmentPage.addFairHouseOfferDepartment().click();
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFairHouseOfferDepartment())).click();
             } catch (Exception e) {
                 System.out.println("n'th Department");
             }
 
             try {
-                departmentPage.accessibilityApartment().click();
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.accessibilityApartment())).click();
             } catch (Exception e) {
                 System.out.println("accessibilityApartment");
             }
 
             try {
-                departmentPage.accessibilityApartmentArea().click();
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.accessibilityApartmentArea())).click();
             } catch (Exception e) {
                 System.out.println("accessibilityApartmentArea");
             }
 
             try {
-                departmentPage.accessibility().click();
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.accessibility())).click();
             } catch (Exception e) {
                 System.out.println("accessibility");
             }
 
             try {
-                departmentPage.conformation().click();
+                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.conformation())).click();
             } catch (Exception e) {
                 System.out.println("conformation");
             }
 
-            TimeUnit.SECONDS.sleep(4);
-
-            try {
-                departmentPage.submitButton().click();
-                departmentPage.submitButton().click();
-                departmentPage.submitButton().click();
-            } catch (Exception e) {
-            }
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.submitButton())).click();
 
             //allgemeine Angaben
-            TimeUnit.SECONDS.sleep(4);
-
             WebElement findName = driver.findElement(By.id("name"));
             actions.moveToElement(findName).click().build().perform();
 
@@ -255,8 +245,7 @@ public class CreateFairHouseOffer extends BaseClass {
             }
 
             //save
-            departmentPage.saveDepartment().click();
-            TimeUnit.SECONDS.sleep(2);
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
 
             try {
                 WebElement apartmentProperty = driver.findElement(By.xpath("//select[@id='residentialProperty.type']"));
@@ -266,11 +255,10 @@ public class CreateFairHouseOffer extends BaseClass {
                 System.out.println("residentialProperty.type");
             }
 
-            departmentPage.saveDepartment().click();
-
-            TimeUnit.SECONDS.sleep(6);
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
+            TimeUnit.SECONDS.sleep(2);
             logout();
-            TimeUnit.SECONDS.sleep(4);
+            TimeUnit.SECONDS.sleep(2);
         }
         driver.quit();
     }
