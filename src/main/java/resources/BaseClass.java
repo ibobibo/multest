@@ -49,7 +49,7 @@ public class BaseClass {
         return driver;
     }
 
-    public void getScreenshot(String name) throws IOException {
+    public void getScreenshot(String name) {
         try {
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
@@ -59,11 +59,10 @@ public class BaseClass {
         }
     }
 
-    public void initializeBrowser() throws IOException, InterruptedException {
+    public void initializeBrowser() throws IOException {
         initializeDriver();
         driver.manage().window().fullscreen();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
-        TimeUnit.SECONDS.sleep(6);
 
         accessAllCookies(driver);
     }
@@ -77,12 +76,12 @@ public class BaseClass {
         accessAllCookies(driver);
     }
 
-    public void initializeBrowserForInformationPortal() throws IOException, InterruptedException {
+    public void initializeBrowserForInformationPortal() throws IOException {
         initializeDriver();
         driver.get(prop.getProperty("urlForInformationPortal"));
     }
 
-    public void initializeMailServer() throws IOException, InterruptedException {
+    public void initializeMailServer() throws IOException {
         initializeDriver();
         driver.get(prop.getProperty("urlFromMailServer"));
         accessAllCookies(driver);

@@ -22,11 +22,7 @@ public class Listeners implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        try {
-            baseClass.getScreenshot(iTestResult.getName() + iTestResult.getEndMillis());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        baseClass.getScreenshot(iTestResult.getName() + iTestResult.getEndMillis());
     }
 
     @Override
