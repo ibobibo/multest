@@ -195,7 +195,10 @@ public class BaseClass {
     }
 
     public void loginLoop(int i) {
+        accessAllCookies(driver);
+        System.out.println("hier");
         new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("username"))).sendKeys(prop.getProperty("contactEmail"));
+        System.out.println("hier");
         new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("password"))).sendKeys(prop.getProperty("contactPassword"));
         accessAllCookies(driver);
         new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("login-submit"))).click();
