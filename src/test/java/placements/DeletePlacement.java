@@ -14,12 +14,11 @@ public class DeletePlacement extends BaseClass {
     @Test
     public void deleteAccount() throws IOException, InterruptedException {
         initializeBrowser();
-        accessAllCookies(driver);
-
         loadProps();
         DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            loadProps();
+            System.out.println(new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//body//h3//span[1]"))).getText());
             loginLoop(i);
             TimeUnit.SECONDS.sleep(2);
             try {
