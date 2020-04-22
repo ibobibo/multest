@@ -26,7 +26,7 @@ public class MulRegister extends BaseClass {
                 System.out.println("no toggler because window size is: " + driver.manage().window().getSize());
             }
 
-            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[@class='Header']//a[@id='nav-register']"))).click();
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("nav-register"))).click();
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
             accessAllCookies(driver);
