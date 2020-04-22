@@ -17,11 +17,7 @@ public class CreateDayNightCareOrganisation extends BaseClass {
         loadProps();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            try {
-                loginLoop(i);
-            } catch (Exception e) {
-                System.out.println("logged in");
-            }
+            loginLoop(i);
 
             Actions actions = new Actions(driver);
             loadPropsForDepartment();

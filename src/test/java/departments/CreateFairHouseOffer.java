@@ -15,15 +15,10 @@ public class CreateFairHouseOffer extends BaseClass {
     public void createFairHouseOrganisation() throws IOException, InterruptedException {
         initializeBrowser();
         loadProps();
-        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            loadProps();
-            try {
-                loginLoop(i);
-            } catch (Exception e) {
-                System.out.println("logged in");
-            }
+            loginLoop(i);
+
             //because we have to move explicit to our select fields
             Actions actions = new Actions(driver);
 

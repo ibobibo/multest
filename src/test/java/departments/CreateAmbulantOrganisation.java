@@ -18,12 +18,7 @@ public class CreateAmbulantOrganisation extends BaseClass {
         accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            loadProps();
-            try {
-                loginLoop(i);
-            } catch (Exception e) {
-                System.out.println("logged in");
-            }
+            loginLoop(i);
 
             Actions actions = new Actions(driver);
 

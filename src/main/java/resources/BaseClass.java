@@ -4,6 +4,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageObjects.LoginLogoutPage;
 
@@ -192,19 +194,11 @@ public class BaseClass {
         TimeUnit.SECONDS.sleep(2);
     }
 
-    public void loginLoop(int i) throws InterruptedException {
-        LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        TimeUnit.SECONDS.sleep(3);
-        loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
-        TimeUnit.SECONDS.sleep(3);
-        loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
-        TimeUnit.SECONDS.sleep(3);
+    public void loginLoop(int i) {
+        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("username"))).sendKeys(prop.getProperty("contactEmail"));
+        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("password"))).sendKeys(prop.getProperty("contactPassword"));
         accessAllCookies(driver);
-
-        TimeUnit.SECONDS.sleep(3);
-        loginLogoutPage.anmelden().click();
-
-        TimeUnit.SECONDS.sleep(3);
+        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("login-submit"))).click();
     }
 
     public void loginLoopMarketplace(int i) throws InterruptedException {
