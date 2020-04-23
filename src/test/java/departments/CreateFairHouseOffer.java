@@ -175,6 +175,14 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("provider");
             }
+
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//select[@id='residentialProperty.type']"))).click();
+            try {
+                departmentPage.apartmentTypeChosen().click();
+            } catch (Exception e) {
+                System.out.println("apartmentTypeChosen");
+            }
+
             try {
                 departmentPage.operator().sendKeys(propFairHouseOffer.getProperty("operator"));
             } catch (Exception e) {
@@ -246,19 +254,8 @@ public class CreateFairHouseOffer extends BaseClass {
 
             //save
             new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
-
-            try {
-                WebElement apartmentProperty = driver.findElement(By.xpath("//select[@id='residentialProperty.type']"));
-                actions.moveToElement(apartmentProperty).click().build().perform();
-                departmentPage.apartmentTypeChosen().click();
-            } catch (Exception e) {
-                System.out.println("residentialProperty.type");
-            }
-
-            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(4);
             logout();
-            TimeUnit.SECONDS.sleep(2);
         }
         driver.quit();
     }

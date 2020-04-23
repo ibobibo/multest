@@ -2,8 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -65,7 +63,6 @@ public class BaseClass {
 
     public void initializeBrowser() throws IOException {
         initializeDriver();
-        driver.manage().window().fullscreen();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
 
         accessAllCookies(driver);
@@ -197,19 +194,17 @@ public class BaseClass {
     }
 
     public void loginLoop(int i) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(6);
-
-        accessAllCookies(driver);
-
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        TimeUnit.SECONDS.sleep(6);
+        driver.manage().window().fullscreen();
 
+
+        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//input[1]"))).click();
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
-        TimeUnit.SECONDS.sleep(6);
 
+        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[4]//div[1]//input[1]"))).click();
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
 
-        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='login-submit']"))).click();
+        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(loginLogoutPage.anmelden())).click();
 
         TimeUnit.SECONDS.sleep(3);
     }
