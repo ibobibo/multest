@@ -202,7 +202,11 @@ public class BaseClass {
         accessAllCookies(driver);
 
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
+        TimeUnit.SECONDS.sleep(6);
+
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
+        TimeUnit.SECONDS.sleep(6);
+
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
 
         new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='login-submit']"))).click();
