@@ -16,10 +16,10 @@
             <!--            <class name="user.MulRegister"/>-->
             <!--            <class name="user.Verify"/>-->
 
-            <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
-            <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-            <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-            <class name="departments.CreateFairHouseOffer"/>
+            <class name="departments.CreateDayNightCareOrganisation"/>
+            <class name="departments.CreateAmbulantOrganisation"/>
+            <class name="departments.CreateStationaryOrganisation"/>
+<!--            <class name="departments.CreateFairHouseOffer"/>-->
 
             <!--            &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
             <!--            <class name="license.GetLicenseFromHomepage"/>-->
