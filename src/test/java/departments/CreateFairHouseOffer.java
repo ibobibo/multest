@@ -20,7 +20,7 @@ public class CreateFairHouseOffer extends BaseClass {
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
-            System.out.println("fertig");
+
             //because we have to move explicit to our select fields
             Actions actions = new Actions(driver);
 
@@ -29,56 +29,54 @@ public class CreateFairHouseOffer extends BaseClass {
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartmentCard())).click();
+                departmentPage.addDepartmentCard().click();
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartment())).click();
+                departmentPage.addDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFirstFairHouseOfferDepartment())).click();
+                departmentPage.addFirstFairHouseOfferDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFairHouseOfferDepartment())).click();
+                departmentPage.addFairHouseOfferDepartment().click();
             } catch (Exception e) {
                 System.out.println("n'th Department");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.accessibilityApartment())).click();
+                departmentPage.accessibilityApartment().click();
             } catch (Exception e) {
                 System.out.println("accessibilityApartment");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.accessibilityApartmentArea())).click();
+                departmentPage.accessibilityApartmentArea().click();
             } catch (Exception e) {
                 System.out.println("accessibilityApartmentArea");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.accessibility())).click();
+                departmentPage.accessibility().click();
             } catch (Exception e) {
                 System.out.println("accessibility");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.conformation())).click();
+                departmentPage.conformation().click();
             } catch (Exception e) {
                 System.out.println("conformation");
             }
-            System.out.println("fertig2");
 
-            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.submitButton())).click();
-            System.out.println("fertig3");
+            departmentPage.submitButton().click();
 
             //allgemeine Angaben
             WebElement findName = driver.findElement(By.id("name"));
@@ -114,7 +112,6 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("departmentWebsite");
             }
-            System.out.println("fertig4");
 
             //angaben zur Person
             try {
@@ -137,7 +134,6 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("departmentContactPhone");
             }
-            System.out.println("fertig5");
 
             WebElement contactSalutation = driver.findElement(By.id("contact.salutation"));
             try {
@@ -150,7 +146,6 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("departmentContactSalutationChosen");
             }
-            System.out.println("fertig6");
 
             //sprechzeiten
             departmentPage.mondayHourBegin().sendKeys(propDepartment.getProperty("mondayHourBegin"));
@@ -167,7 +162,6 @@ public class CreateFairHouseOffer extends BaseClass {
             departmentPage.fridayMinuteBegin().sendKeys(propDepartment.getProperty("fridayMinuteBegin"));
             departmentPage.fridayHourEnd().sendKeys(propDepartment.getProperty("fridayHourEnd"));
             departmentPage.fridayMinuteEnd().sendKeys(propDepartment.getProperty("fridayMinuteEnd"));
-            System.out.println("fertig7");
 
             //Allgemeine Beschreibung des Wohnprojekts
             try {
@@ -209,10 +203,8 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("available");
             }
-            System.out.println("fertig8");
 
             departmentPage.toBuy().click();
-
             departmentPage.price().sendKeys(propFairHouseOffer.getProperty("price"));
             departmentPage.houseMoney().sendKeys(propFairHouseOffer.getProperty("houseMoney"));
             departmentPage.additionalCosts().sendKeys(propFairHouseOffer.getProperty("additionalCosts"));
@@ -234,7 +226,6 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("energyDemand");
             }
-            System.out.println("fertig9");
 
             //Beschreibungen örtliche Gegebenheiten
             try {
@@ -259,11 +250,9 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("youTubeVideo");
             }
-            System.out.println("fertig10");
 
             //save
-            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
-            TimeUnit.SECONDS.sleep(4);
+            departmentPage.saveDepartment().click();
             logout();
         }
         driver.quit();

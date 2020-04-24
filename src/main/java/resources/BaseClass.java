@@ -2,10 +2,9 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageObjects.LoginLogoutPage;
 
@@ -38,15 +37,24 @@ public class BaseClass {
 
             DesiredCapabilities cap = DesiredCapabilities.chrome();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
-        } else if (browserName.equals("firefox")) {
-//            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
-//            driver = new FirefoxDriver();
 
-            DesiredCapabilities cap = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            driver.manage().window().fullscreen();
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        } else if (browserName.equals("firefox")) {
+            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
+            driver = new FirefoxDriver();
+
+//            DesiredCapabilities cap = DesiredCapabilities.firefox();
+//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+
+            driver.manage().window().fullscreen();
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+
+            driver.manage().window().fullscreen();
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
         return driver;
     }
@@ -70,16 +78,14 @@ public class BaseClass {
 
     public void initializeBrowserForMarketplace() throws IOException, InterruptedException {
         initializeDriver();
-        driver.manage().window().fullscreen();
         driver.get(prop.getProperty("urlFromHomeNetworkMarketplace"));
-        TimeUnit.SECONDS.sleep(6);
-
         accessAllCookies(driver);
     }
 
     public void initializeBrowserForInformationPortal() throws IOException {
         initializeDriver();
         driver.get(prop.getProperty("urlForInformationPortal"));
+        accessAllCookies(driver);
     }
 
     public void initializeMailServer() throws IOException {
@@ -114,7 +120,6 @@ public class BaseClass {
 
     public int getCount() {
         try {
-            TimeUnit.SECONDS.sleep(2);
             WebElement x = driver.findElement(By.xpath("//td[@class='actions']"));
             int count = x.findElements(By.xpath("//td[@class='actions']")).size();
 
@@ -193,41 +198,11 @@ public class BaseClass {
         TimeUnit.SECONDS.sleep(2);
     }
 
-    public void loginLoop(int i) throws InterruptedException {
+    public void loginLoop(int i) {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
-        driver.manage().window().fullscreen();
-        TimeUnit.SECONDS.sleep(3);
-
-
-//        try {
-//            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//input[1]"))).click();
-//        } catch (Exception e) {
-//            System.out.println("contactEmail 1");
-//        }
-//
-//        try {
-//            loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
-//        } catch (Exception e) {
-//            System.out.println("contactEmail 2");
-//        }
-//
-//        try {
-//            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[4]//div[1]//input[1]"))).click();
-//        } catch (Exception e) {
-//            System.out.println("contactPassword 1");
-//        }
-//
-//        try {
-//            loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
-//        } catch (Exception e) {
-//            System.out.println("contactPassword 2");
-//        }
-
         loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
         loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
-        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(loginLogoutPage.anmelden())).click();
-
-        TimeUnit.SECONDS.sleep(3);
+        loginLogoutPage.anmelden().click();
     }
 
     public void loginLoopMarketplace(int i) throws InterruptedException {
@@ -262,9 +237,6 @@ public class BaseClass {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         loginLogoutPage.userOption().click();
         loginLogoutPage.logout().click();
-
-        TimeUnit.SECONDS.sleep(1);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     public void cleanUp() {
