@@ -8,11 +8,10 @@ import pageObjects.placements.DeletePlacementPage;
 import resources.BaseClass;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class DeletePlacement extends BaseClass {
     @Test
-    public void deleteAccount() throws IOException, InterruptedException {
+    public void deleteAccount() throws IOException {
         initializeBrowser();
         loadProps();
         DeletePlacementPage deletePlacementPage = new DeletePlacementPage(driver);
@@ -20,7 +19,6 @@ public class DeletePlacement extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             System.out.println(new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//body//h3//span[1]"))).getText());
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(2);
             try {
                 new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='navbar-toggler-icon']"))).click();
             } catch (Exception e) {
@@ -29,7 +27,6 @@ public class DeletePlacement extends BaseClass {
             deletePlacementPage.editPlacement().click();
             deletePlacementPage.deletePlacement().click();
             deletePlacementPage.acceptDelete().click();
-            TimeUnit.SECONDS.sleep(3);
         }
         driver.quit();
     }

@@ -14,21 +14,18 @@ import java.util.concurrent.TimeUnit;
 
 public class DeleteOrganisation extends BaseClass {
     @Test()
-    public void deleteAllOrganisation() throws InterruptedException, IOException {
+    public void deleteAllOrganisation() throws IOException {
         initializeBrowser();
         accessAllCookies(driver);
 
-        TimeUnit.SECONDS.sleep(2);
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             DeleteOrganisationPage deleteOrganisationPage = new DeleteOrganisationPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(4);
 
             try {
                 departmentPage.addDepartmentCard().click();
-                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
@@ -49,12 +46,10 @@ public class DeleteOrganisation extends BaseClass {
 
                 try {
                     departmentPage.addDepartmentCard().click();
-                    TimeUnit.SECONDS.sleep(2);
                 } catch (Exception e) {
                     System.out.println("Card will be clicked.");
                 }
             }
-            TimeUnit.SECONDS.sleep(2);
         }
         driver.quit();
     }

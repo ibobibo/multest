@@ -19,7 +19,7 @@
             <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
             <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
             <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-            <class name="departments.CreateFairHouseOffer"/>
+            <!--            <class name="departments.CreateFairHouseOffer"/>-->
 
             <!--            &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
             <!--            <class name="license.GetLicenseFromHomepage"/>-->
@@ -43,8 +43,8 @@
             <!--            <class name="user.ResetPasswordTest"/>-->
             <!--            <class name="user.VerifyNewPassword"/>-->
 
-            <!--            <class name="departments.DeleteOrganisation"/>-->
-            <!--            <class name="placements.DeletePlacement"/>-->
+            <class name="departments.DeleteOrganisation"/>
+            <class name="placements.DeletePlacement"/>
             <!--            <class name="user.DeleteUser"/>-->
 
         </classes>
