@@ -20,7 +20,7 @@ public class CreateFairHouseOffer extends BaseClass {
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
-            System.out.println("fertig");
+
             //because we have to move explicit to our select fields
             Actions actions = new Actions(driver);
 

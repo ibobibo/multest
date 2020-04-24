@@ -196,6 +196,8 @@ public class BaseClass {
     public void loginLoop(int i) throws InterruptedException {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         driver.manage().window().fullscreen();
+        TimeUnit.SECONDS.sleep(3);
+
 
 //        try {
 //            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//input[1]"))).click();
