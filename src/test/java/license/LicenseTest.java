@@ -12,19 +12,13 @@ public class LicenseTest extends BaseClass {
     @Test()
     public void checkIfValuesAreCorrectlyRepresented() throws InterruptedException, IOException {
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             LicensePageobject licensePageobject = new LicensePageobject(driver);
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(2);
             licensePageobject.licenseNavbar().click();
-            TimeUnit.SECONDS.sleep(1);
             licensePageobject.firstDepartmentAddLicense().click();
-            TimeUnit.SECONDS.sleep(1);
             licensePageobject.secondDepartmentAddLicense().click();
-            TimeUnit.SECONDS.sleep(1);
             String firstPrice = licensePageobject.priceTextOfFirstElem().getText();
             String shoppingCartFirstElem = licensePageobject.shoppingCartFirstElem().getText();
             String secondPrice = licensePageobject.priceTextOfSecondElem().getText();
@@ -59,12 +53,9 @@ public class LicenseTest extends BaseClass {
             }
 
             licensePageobject.firstDepartmentRemoveLicense().click();
-            TimeUnit.SECONDS.sleep(1);
             licensePageobject.secondDepartmentRemoveLicense().click();
-            TimeUnit.SECONDS.sleep(1);
             logout();
         }
-        TimeUnit.SECONDS.sleep(1);
         driver.quit();
     }
 }

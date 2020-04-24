@@ -16,48 +16,37 @@ public class EditOrganisation extends BaseClass {
     @Test()
     public void editAllOrganisation() throws InterruptedException, IOException {
         initializeBrowser();
-        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
-
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(2);
-            WebDriverWait wait = new WebDriverWait(driver, 20);
 
             try {
                 departmentPage.addDepartmentCard().click();
-                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
 
             int x = 0;
             while (getCount() != x) {
-                TimeUnit.SECONDS.sleep(2);
                 String xpath = "//a[@id='edit-button-" + x + "']";
-                WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+                WebElement findTr = driver.findElement(By.xpath(xpath));
                 findTr.click();
-                TimeUnit.SECONDS.sleep(2);
 
                 editOrganisationPage.changeName().clear();
                 editOrganisationPage.changeName().sendKeys(prop.getProperty("edit"));
-                WebElement findElem = wait.until(ExpectedConditions.elementToBeClickable(editOrganisationPage.saveClick()));
-                findElem.click();
-                TimeUnit.SECONDS.sleep(2);
+                editOrganisationPage.saveClick().click();
+
                 try {
                     departmentPage.addDepartmentCard().click();
-                    TimeUnit.SECONDS.sleep(2);
                 } catch (Exception e) {
                     System.out.println("Card will be clicked.");
                 }
                 x++;
             }
-            TimeUnit.SECONDS.sleep(2);
         }
         logout();
-        TimeUnit.SECONDS.sleep(2);
         driver.quit();
     }
 }

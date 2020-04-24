@@ -21,31 +21,26 @@ public class CreateAmbulantOrganisation extends BaseClass {
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
-
             Actions actions = new Actions(driver);
-
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartmentCard())).click();
+                departmentPage.addDepartmentCard().click();
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
-
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartment())).click();
+                departmentPage.addDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
-
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFirstAmbulantDepartment())).click();
+                departmentPage.addFirstAmbulantDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
-
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addAmbulantDepartment())).click();
+                departmentPage.addAmbulantDepartment().click();
             } catch (Exception e) {
                 System.out.println("n'th Department");
             }
@@ -104,13 +99,10 @@ public class CreateAmbulantOrganisation extends BaseClass {
 
             //youtube
             departmentPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
-            TimeUnit.SECONDS.sleep(3);
 
             //speichern
-            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
-            TimeUnit.SECONDS.sleep(2);
+            departmentPage.saveDepartment().click();
             logout();
-            TimeUnit.SECONDS.sleep(2);
         }
         driver.quit();
     }

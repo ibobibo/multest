@@ -15,31 +15,24 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
     @Test()
     public void addContactPerson() throws IOException, InterruptedException {
         initializeBrowser();
-        accessAllCookies(driver);
 
         ContactPersonPage contactPersonPage = new ContactPersonPage(driver);
         DepartmentPage departmentPage = new DepartmentPage(driver);
         Actions actions = new Actions(driver);
-        TimeUnit.SECONDS.sleep(1);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
-            System.out.println("vorm login");
             loginLoop(i);
-            System.out.println("nachmlogin");
             loadPropsForDepartment();
 
             try {
                 departmentPage.addContactPersonCard().click();
-                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
-            TimeUnit.SECONDS.sleep(1);
 
             for (int loop = 0; loop < 3; loop++) {
                 if (loop == 0) {
                     contactPersonPage.addContactPerson().click();
-                    TimeUnit.SECONDS.sleep(2);
                     WebElement availability = driver.findElement(By.id("salutation"));
                     actions.moveToElement(availability).click().build().perform();
                     contactPersonPage.contactSalutationChosen().click();
@@ -50,7 +43,6 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                     contactPersonPage.submit().click();
                 } else if (loop == 1) {
                     contactPersonPage.addContactPerson().click();
-                    TimeUnit.SECONDS.sleep(2);
                     WebElement availability = driver.findElement(By.id("salutation"));
                     actions.moveToElement(availability).click().build().perform();
                     contactPersonPage.contactSalutationChosen().click();
@@ -61,7 +53,6 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                     contactPersonPage.submit().click();
                 } else if (loop == 2) {
                     contactPersonPage.addContactPerson().click();
-                    TimeUnit.SECONDS.sleep(2);
                     WebElement availability = driver.findElement(By.id("salutation"));
                     actions.moveToElement(availability).click().build().perform();
                     contactPersonPage.contactSalutationChosen().click();
@@ -71,7 +62,6 @@ public class CreateSomeContactPersonForSearch extends BaseClass {
                     contactPersonPage.contactPhone().sendKeys("body");
                     contactPersonPage.submit().click();
                 }
-                TimeUnit.SECONDS.sleep(2);
             }
         }
         driver.quit();

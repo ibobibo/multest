@@ -11,24 +11,24 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 
-            <!--            <class name="navigation.FormNavigation"/>-->
+            <class name="navigation.FormNavigation"/>
 
-            <!--            <class name="user.MulRegister"/>-->
-            <!--            <class name="user.Verify"/>-->
+            <class name="user.MulRegister"/>
+            <class name="user.Verify"/>
 
-            <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
-            <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-            <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-            <!--            <class name="departments.CreateFairHouseOffer"/>-->
+            <class name="departments.CreateDayNightCareOrganisation"/>
+            <class name="departments.CreateAmbulantOrganisation"/>
+            <class name="departments.CreateStationaryOrganisation"/>
+            <!--            &lt;!&ndash;            <class name="departments.CreateFairHouseOffer"/>&ndash;&gt;-->
 
-            <!--            &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
+            <!--            &lt;!&ndash;            &lt;!&ndash;            LICENSE TEST&ndash;&gt;&ndash;&gt;-->
             <!--            <class name="license.GetLicenseFromHomepage"/>-->
             <!--            <class name="license.CountDepartments"/>-->
             <!--            <class name="license.LicenseTest"/>-->
             <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
 
-            <!--            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;-->
-            <!--            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;-->
+            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;&ndash;&gt;-->
+            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;&ndash;&gt;-->
 
             <!--            <class name="departments.ToggleOrganisation"/>-->
             <!--            <class name="departments.EditOrganisation"/>-->
@@ -43,8 +43,8 @@
             <!--            <class name="user.ResetPasswordTest"/>-->
             <!--            <class name="user.VerifyNewPassword"/>-->
 
-            <class name="departments.DeleteOrganisation"/>
-            <class name="placements.DeletePlacement"/>
+            <!--            <class name="departments.DeleteOrganisation"/>-->
+            <!--            <class name="placements.DeletePlacement"/>-->
             <!--            <class name="user.DeleteUser"/>-->
 
         </classes>

@@ -14,37 +14,24 @@ public class VerifyNewPassword extends BaseClass {
     @Test
     public void verifyRegisteredUser() throws IOException, InterruptedException {
         initializeMailServer();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
-
         VerifyPage verifyPage = new VerifyPage(driver);
         loadProps();
+
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             WebElement inputField = driver.findElement(By.xpath("//div[@class='search-container']//input[@placeholder='Search']"));
             String x = "//li[1]//span[contains(text(),'" + prop.getProperty("contactEmail").toLowerCase() + "')]";
             inputField.clear();
-            TimeUnit.SECONDS.sleep(1);
             inputField.sendKeys(prop.getProperty("contactEmail").toLowerCase());
-            TimeUnit.SECONDS.sleep(1);
-
             WebElement findEmail = driver.findElement(By.xpath(x));
             findEmail.click();
-            TimeUnit.SECONDS.sleep(2);
-
-
             driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='preview-iframe panel-html']")));
             driver.findElement(By.xpath("/html/body/p[3]/a")).click();
-            TimeUnit.SECONDS.sleep(2);
 
             ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
             driver.switchTo().window(tabs.get(1));
-            TimeUnit.SECONDS.sleep(4);
             accessAllCookies(driver);
-            TimeUnit.SECONDS.sleep(2);
-
             verifyPage.newPassword().sendKeys(prop.getProperty("contactPassword"));
             verifyPage.newPasswordRepeat().sendKeys(prop.getProperty("contactPassword"));
-            TimeUnit.SECONDS.sleep(2);
             verifyPage.submitPassword().click();
             TimeUnit.SECONDS.sleep(1);
 

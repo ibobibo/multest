@@ -19,7 +19,6 @@ public class FormNavigation extends BaseClass {
 
             //navigate to signup form
             formNavigationPage.navToRegister().click();
-            TimeUnit.SECONDS.sleep(4);
             if (!formNavigationPage.signupButton().getText().equals("Registrieren")) {
                 driver.quit();
                 Assert.fail("not on signup page");
@@ -27,7 +26,6 @@ public class FormNavigation extends BaseClass {
 
             //navigate to login form
             formNavigationPage.navToLogin().click();
-            TimeUnit.SECONDS.sleep(4);
             if (!formNavigationPage.loginButton().getText().equals("Anmelden")) {
                 driver.quit();
                 Assert.fail("not on login page");

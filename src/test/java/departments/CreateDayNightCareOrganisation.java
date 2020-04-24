@@ -3,14 +3,11 @@ package departments;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import resources.BaseClass;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class CreateDayNightCareOrganisation extends BaseClass {
     @Test
@@ -26,25 +23,25 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartmentCard())).click();
+                departmentPage.addDepartmentCard().click();
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartment())).click();
+                departmentPage.addDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFirstDayNightCareDepartment())).click();
+                departmentPage.addFirstDayNightCareDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDayNightCareDepartment())).click();
+                departmentPage.addDayNightCareDepartment().click();
             } catch (Exception e) {
                 System.out.println("n'th Department");
             }
@@ -105,10 +102,8 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             departmentPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
 
             //speichern
-            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
-            TimeUnit.SECONDS.sleep(2);
+            departmentPage.saveDepartment().click();
             logout();
-            TimeUnit.SECONDS.sleep(2);
         }
         driver.quit();
     }

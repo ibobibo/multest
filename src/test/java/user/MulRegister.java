@@ -14,7 +14,6 @@ public class MulRegister extends BaseClass {
     @Test
     public void register() throws IOException, InterruptedException {
         initializeBrowser();
-        driver.manage().window().fullscreen();
 
         loadProps();
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
@@ -54,9 +53,7 @@ public class MulRegister extends BaseClass {
             registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
 
             registerPage.accept().click();
-            TimeUnit.SECONDS.sleep(4);
             registerPage.registerSubmit().click();
-            TimeUnit.SECONDS.sleep(4);
         }
         driver.quit();
     }

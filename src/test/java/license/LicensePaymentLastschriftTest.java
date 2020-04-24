@@ -15,40 +15,22 @@ public class LicensePaymentLastschriftTest extends BaseClass {
     @Test()
     public void payWithSepaLastschriftForLicense() throws InterruptedException, IOException {
         initializeBrowser();
-        driver.manage().window().fullscreen();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             LicensePageobject licensePageobject = new LicensePageobject(driver);
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(2);
             licensePageobject.licenseNavbar().click();
-            TimeUnit.SECONDS.sleep(1);
             licensePageobject.firstDepartmentAddLicense().click();
-            TimeUnit.SECONDS.sleep(1);
             licensePageobject.checkboxForConfirmation().click();
-            TimeUnit.SECONDS.sleep(1);
             licensePageobject.continueToPayment().click();
-            TimeUnit.SECONDS.sleep(1);
+
             driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='checkout-frame']")));
-            TimeUnit.SECONDS.sleep(2);
-
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='payment_formula_checkout_page']/div/div[6]/div[1]/div[1]/div[2]/img"))).click();
-            TimeUnit.SECONDS.sleep(1);
-
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='account_holder']"))).clear();
-            TimeUnit.SECONDS.sleep(1);
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='account_holder']"))).sendKeys("Max Musterman");
-            TimeUnit.SECONDS.sleep(1);
-
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='iban']"))).sendKeys("DE24300209002411761956");
-            TimeUnit.SECONDS.sleep(1);
-
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/form[1]/div/div[6]/div[1]/div[2]/div[5]/div/input[2]"))).click();
-            TimeUnit.SECONDS.sleep(4);
-
             new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[2]/div[2]/div[7]/div/div/input[2]"))).click();
-            TimeUnit.SECONDS.sleep(4);
-
             driver.switchTo().defaultContent();
             try {
                 if (driver.findElement(By.xpath("//span[contains(text(),'Kauf leider fehlgeschlagen!')]")).getText().equals("Kauf leider fehlgeschlagen!")) {

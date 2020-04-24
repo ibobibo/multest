@@ -20,10 +20,8 @@ public class ToggleOrganisation extends BaseClass {
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             DepartmentPage departmentPage = new DepartmentPage(driver);
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(2);
             try {
                 departmentPage.addDepartmentCard().click();
-                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
@@ -32,7 +30,6 @@ public class ToggleOrganisation extends BaseClass {
             int x = 1;
             while (getCount() >= x) {
                 TimeUnit.SECONDS.sleep(5);
-
                 String xpath = "//tr[" + x + "]//td[1]//label[1]";
                 WebElement findTr = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
                 if (findTr.isDisplayed()) {
@@ -40,9 +37,7 @@ public class ToggleOrganisation extends BaseClass {
                 }
                 x++;
             }
-            TimeUnit.SECONDS.sleep(6);
             logout();
-            TimeUnit.SECONDS.sleep(2);
         }
         driver.quit();
     }

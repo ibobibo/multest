@@ -23,30 +23,26 @@ public class CreateStationaryOrganisation extends BaseClass {
 
             //because we have to move explicit to our select fields
             Actions actions = new Actions(driver);
-
             loadPropsForDepartment();
             DepartmentPage departmentPage = new DepartmentPage(driver);
 
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartmentCard())).click();
+                departmentPage.addDepartmentCard().click();
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
-
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addDepartment())).click();
+                departmentPage.addDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
-
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addFirstStationaryDepartment())).click();
+                departmentPage.addFirstStationaryDepartment().click();
             } catch (Exception e) {
                 System.out.println("first Department");
             }
-
             try {
-                new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.addStationaryDepartment())).click();
+                departmentPage.addStationaryDepartment().click();
             } catch (Exception e) {
                 System.out.println("n'th Department");
             }
@@ -107,10 +103,8 @@ public class CreateStationaryOrganisation extends BaseClass {
             departmentPage.youTubeVideo().sendKeys(propDepartment.getProperty("youTubeVideo"));
 
             //speichern
-            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(departmentPage.saveDepartment())).click();
-            TimeUnit.SECONDS.sleep(2);
+            departmentPage.saveDepartment().click();
             logout();
-            TimeUnit.SECONDS.sleep(2);
         }
         driver.quit();
     }

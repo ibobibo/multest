@@ -15,13 +15,10 @@ public class CountDepartments extends BaseClass {
     @Test()
     public void countDepartments() throws InterruptedException, IOException {
         initializeBrowser();
-        TimeUnit.SECONDS.sleep(2);
-        accessAllCookies(driver);
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             LicensePageobject licensePageobject = new LicensePageobject(driver);
             loginLoop(i);
-            TimeUnit.SECONDS.sleep(2);
             licensePageobject.showDepartments().click();
             int x = 1;
             while (true) {
@@ -35,7 +32,6 @@ public class CountDepartments extends BaseClass {
                 }
             }
             licensePageobject.licenseNavbar().click();
-            TimeUnit.SECONDS.sleep(1);
             String departmentCountLicensePage = licensePageobject.countDepartmentsInLicensePage().getText().split("( [A-Z])\\w+")[0];
             String departmentCountConvert = String.valueOf(departmentCount);
             if (!departmentCountLicensePage.equals(departmentCountConvert)) {
@@ -44,7 +40,6 @@ public class CountDepartments extends BaseClass {
             }
         }
         logout();
-        TimeUnit.SECONDS.sleep(1);
         driver.quit();
     }
 }

@@ -13,16 +13,12 @@ public class SearchContactPerson extends BaseClass {
     @Test()
     public void searchContactPerson() throws InterruptedException, IOException {
         initializeBrowser();
-        accessAllCookies(driver);
-
         SearchContactPersonPage searchContactPersonPage = new SearchContactPersonPage(driver);
-        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
 
+        for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {
             loginLoop(i);
-            WebDriverWait wait = new WebDriverWait(driver, 5);
             try {
                 searchContactPersonPage.addContactPersonCard().click();
-                TimeUnit.SECONDS.sleep(2);
             } catch (Exception e) {
                 System.out.println("Card will be clicked.");
             }
@@ -32,7 +28,6 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchField().clear();
                     searchContactPersonPage.searchField().sendKeys(prop.getProperty("contactFirstName1"));
                     searchContactPersonPage.searchButton().click();
-                    TimeUnit.SECONDS.sleep(2);
                     try {
                         searchContactPersonPage.resultFromSearchAlpha().getText().contains(prop.getProperty("contactFirstName1"));
                     } catch (Exception e) {
@@ -43,7 +38,6 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchField().clear();
                     searchContactPersonPage.searchField().sendKeys(prop.getProperty("contactFirstName2"));
                     searchContactPersonPage.searchButton().click();
-                    TimeUnit.SECONDS.sleep(2);
                     try {
                         searchContactPersonPage.resultFromSearchBeta().getText().contains(prop.getProperty("contactFirstName2"));
                     } catch (Exception e) {
@@ -54,7 +48,6 @@ public class SearchContactPerson extends BaseClass {
                     searchContactPersonPage.searchField().clear();
                     searchContactPersonPage.searchField().sendKeys(prop.getProperty("contactFirstName3"));
                     searchContactPersonPage.searchButton().click();
-                    TimeUnit.SECONDS.sleep(2);
                     try {
                         searchContactPersonPage.resultFromSearchGamma().getText().contains(prop.getProperty("contactFirstName3"));
                     } catch (Exception e) {
@@ -63,10 +56,8 @@ public class SearchContactPerson extends BaseClass {
                     }
                 }
             }
-            TimeUnit.SECONDS.sleep(2);
         }
         logout();
-        TimeUnit.SECONDS.sleep(2);
         driver.quit();
     }
 }
