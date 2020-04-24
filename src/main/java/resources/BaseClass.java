@@ -197,12 +197,29 @@ public class BaseClass {
         LoginLogoutPage loginLogoutPage = new LoginLogoutPage(driver);
         driver.manage().window().fullscreen();
 
+        try {
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//input[1]"))).click();
+        } catch (Exception e) {
+            System.out.println("contactEmail 1");
+        }
 
-        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//input[1]"))).click();
-        loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
+        try {
+            loginLogoutPage.username().sendKeys(prop.getProperty("contactEmail"));
+        } catch (Exception e) {
+            System.out.println("contactEmail 2");
+        }
 
-        new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[4]//div[1]//input[1]"))).click();
-        loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
+        try {
+            new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//section[4]//div[1]//input[1]"))).click();
+        } catch (Exception e) {
+            System.out.println("contactPassword 1");
+        }
+
+        try {
+            loginLogoutPage.password().sendKeys(prop.getProperty("contactPassword"));
+        } catch (Exception e) {
+            System.out.println("contactPassword 2");
+        }
 
         new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(loginLogoutPage.anmelden())).click();
 
