@@ -24,6 +24,7 @@ public class VerifyNewPassword extends BaseClass {
             inputField.sendKeys(prop.getProperty("contactEmail").toLowerCase());
             WebElement findEmail = driver.findElement(By.xpath(x));
             findEmail.click();
+            TimeUnit.SECONDS.sleep(4);
             driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='preview-iframe panel-html']")));
             driver.findElement(By.xpath("/html/body/p[3]/a")).click();
 

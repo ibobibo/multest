@@ -2,8 +2,6 @@ package departments;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import pageObjects.departments.EditOrganisationPage;
@@ -21,7 +19,6 @@ public class EditOrganisation extends BaseClass {
             EditOrganisationPage editOrganisationPage = new EditOrganisationPage(driver);
             DepartmentPage departmentPage = new DepartmentPage(driver);
             loginLoop(i);
-
             try {
                 departmentPage.addDepartmentCard().click();
             } catch (Exception e) {
@@ -30,14 +27,14 @@ public class EditOrganisation extends BaseClass {
 
             int x = 0;
             while (getCount() != x) {
+                System.out.println(getCount());
                 String xpath = "//a[@id='edit-button-" + x + "']";
                 WebElement findTr = driver.findElement(By.xpath(xpath));
                 findTr.click();
-
                 editOrganisationPage.changeName().clear();
                 editOrganisationPage.changeName().sendKeys(prop.getProperty("edit"));
                 editOrganisationPage.saveClick().click();
-
+                TimeUnit.SECONDS.sleep(4);
                 try {
                     departmentPage.addDepartmentCard().click();
                 } catch (Exception e) {

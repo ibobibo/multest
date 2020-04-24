@@ -19,33 +19,33 @@
             <class name="departments.CreateDayNightCareOrganisation"/>
             <class name="departments.CreateAmbulantOrganisation"/>
             <class name="departments.CreateStationaryOrganisation"/>
-            <!--            &lt;!&ndash;            <class name="departments.CreateFairHouseOffer"/>&ndash;&gt;-->
+            <class name="departments.CreateFairHouseOffer"/>
 
-            <!--            &lt;!&ndash;            &lt;!&ndash;            LICENSE TEST&ndash;&gt;&ndash;&gt;-->
-            <!--            <class name="license.GetLicenseFromHomepage"/>-->
-            <!--            <class name="license.CountDepartments"/>-->
-            <!--            <class name="license.LicenseTest"/>-->
-            <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
+            <!--            &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
+            <class name="license.GetLicenseFromHomepage"/>
+            <class name="license.CountDepartments"/>
+            <class name="license.LicenseTest"/>
+            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>
 
-            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;&ndash;&gt;-->
-            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;&ndash;&gt;-->
+            <!--            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;-->
+            <!--            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;-->
 
-            <!--            <class name="departments.ToggleOrganisation"/>-->
-            <!--            <class name="departments.EditOrganisation"/>-->
-            <!--            <class name="departments.CopyDepartment"/>-->
-            <!--            <class name="user.EditUserDetails"/>-->
+            <class name="departments.ToggleOrganisation"/>
+            <class name="departments.EditOrganisation"/>
+            <class name="departments.CopyDepartment"/>
+            <class name="user.EditUserDetails"/>
 
-            <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
-            <!--            <class name="contactPerson.SearchContactPerson"/>-->
-            <!--            <class name="contactPerson.DeleteContactPerson"/>-->
+            <class name="contactPerson.CreateSomeContactPersonForSearch"/>
+            <class name="contactPerson.SearchContactPerson"/>
+            <class name="contactPerson.DeleteContactPerson"/>
 
-            <!--            <class name="user.PasswordChangeTest"/>-->
-            <!--            <class name="user.ResetPasswordTest"/>-->
-            <!--            <class name="user.VerifyNewPassword"/>-->
+            <class name="user.PasswordChangeTest"/>
+            <class name="user.ResetPasswordTest"/>
+            <class name="user.VerifyNewPassword"/>
 
-            <!--            <class name="departments.DeleteOrganisation"/>-->
-            <!--            <class name="placements.DeletePlacement"/>-->
-            <!--            <class name="user.DeleteUser"/>-->
+            <class name="departments.DeleteOrganisation"/>
+            <class name="placements.DeletePlacement"/>
+            <class name="user.DeleteUser"/>
 
         </classes>
     </test>
