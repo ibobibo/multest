@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class MulRegister extends BaseClass {
     @Test
-    public void register() throws IOException, InterruptedException {
+    public void register() throws IOException {
         initializeBrowser();
 
         loadProps();
@@ -24,6 +24,7 @@ public class MulRegister extends BaseClass {
                 System.out.println("no toggler because window size is: " + driver.manage().window().getSize());
             }
 
+            System.out.println(new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//body//h3//span[1]"))).getText());
             registerPage.registerButtonHomepage().click();
             System.out.println("klick auf registrieren");
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));

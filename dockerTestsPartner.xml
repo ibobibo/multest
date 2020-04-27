@@ -14,7 +14,7 @@
             <!--            <class name="navigation.FormNavigation"/>-->
 
             <class name="user.MulRegister"/>
-            <class name="user.Verify"/>
+<!--            <class name="user.Verify"/>-->
 
             <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
             <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
@@ -45,7 +45,7 @@
 
             <!--            <class name="departments.DeleteOrganisation"/>-->
             <!--            <class name="placements.DeletePlacement"/>-->
-            <class name="user.DeleteUser"/>
+<!--            <class name="user.DeleteUser"/>-->
 
         </classes>
     </test>
