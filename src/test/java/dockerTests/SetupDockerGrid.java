@@ -1,7 +1,9 @@
 package dockerTests;
 
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import resources.BaseClass;
 
 import java.io.BufferedReader;
@@ -10,7 +12,7 @@ import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 
 public class SetupDockerGrid extends BaseClass {
-    @BeforeSuite
+    @BeforeTest
     void startDockerGrid() throws IOException, InterruptedException {
         Process proc = Runtime.getRuntime().exec("./start_dockerGrid.sh");
         BufferedReader stdInput = new BufferedReader(new
@@ -46,7 +48,7 @@ public class SetupDockerGrid extends BaseClass {
         Thread.sleep(15000);
     }
 
-    @AfterSuite
+    @AfterTest
     void stopDockerGrid() throws IOException, InterruptedException {
         Runtime.getRuntime().exec("./stop_dockerGrid.sh");
         System.out.println("Docker shutdown");
