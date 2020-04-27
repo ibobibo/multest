@@ -8,7 +8,6 @@ import pageObjects.user.RegisterPage;
 import resources.BaseClass;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class MulRegister extends BaseClass {
     @Test
@@ -29,7 +28,6 @@ public class MulRegister extends BaseClass {
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
             accessAllCookies(driver);
-            System.out.println("hallo");
 
             registerPage.siteCompany().sendKeys(prop.getProperty("registerSiteCompany"));
 
@@ -42,7 +40,6 @@ public class MulRegister extends BaseClass {
             registerPage.city().sendKeys(prop.getProperty("city"));
             registerPage.umbrellaOrganisation().click();
             registerPage.umbrellaOrganisationChosen().click();
-System.out.println("hier");
 
             registerPage.contactSalutation().click();
             registerPage.contactSalutationMale().click();
@@ -53,7 +50,6 @@ System.out.println("hier");
             registerPage.contactPhone().sendKeys(prop.getProperty("contactPhone"));
             registerPage.accountFirstPassword().sendKeys(prop.getProperty("contactPassword"));
             registerPage.accountSecondPassword().sendKeys(prop.getProperty("contactPassword"));
-System.out.println("hiiier");
             registerPage.accept().click();
             registerPage.registerSubmit().click();
         }
