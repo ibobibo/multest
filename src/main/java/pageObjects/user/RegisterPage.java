@@ -13,9 +13,8 @@ public class RegisterPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//section[@class='Header']//a[@id='nav-register']")
+    @FindBy(xpath = "//section[@id='app-header']//a[@id='nav-register']")
     WebElement registerButtonHomepage;
-
     @FindBy(xpath = "//input[@id='enterprise.name']")
     WebElement siteCompany;
     @FindBy(xpath = "//input[@id='enterprise.address.streetAddress']")
