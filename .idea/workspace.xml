@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a0b73f9-42e8-4780-9887-666b9cc51a6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/user/MulRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/contactPerson/CreateSomeContactPersonForSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/contactPerson/CreateSomeContactPersonForSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/user/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/user/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/contactPerson/CreateSomeContactPersonForSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/user/MulRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +72,11 @@
       <recent name="$PROJECT_DIR$/xmlFiles/dev-marktplatz" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="license" />
       <recent name="navigation" />
+      <recent name="pageObjects.navigation" />
+      <recent name="license" />
       <recent name="marketplaceTests.meetingRequest" />
       <recent name="user" />
-      <recent name="pageObjects.user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/xmlFiles" />
@@ -90,17 +98,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml">
-    <configuration name="SearchContactPerson" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CheckPflegesterne">
+    <configuration name="CheckPflegesterne" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="contactPerson.*" />
+          <option name="PATTERN" value="navigation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="contactPerson" />
-      <option name="MAIN_CLASS_NAME" value="contactPerson.SearchContactPerson" />
+      <option name="PACKAGE_NAME" value="navigation" />
+      <option name="MAIN_CLASS_NAME" value="navigation.CheckPflegesterne" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -155,17 +163,17 @@
     <list>
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
-      <item itemvalue="TestNG.SearchContactPerson" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml" />
+      <item itemvalue="TestNG.CheckPflegesterne" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckPflegesterne" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml" />
         <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="TestNG.SearchContactPerson" />
       </list>
     </recent_temporary>
   </component>

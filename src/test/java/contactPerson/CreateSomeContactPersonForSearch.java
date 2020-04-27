@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CreateSomeContactPersonForSearch extends BaseClass {
     @Test()
-    public void addContactPerson() throws IOException, InterruptedException {
+    public void addContactPerson() throws IOException {
         initializeBrowser();
 
         ContactPersonPage contactPersonPage = new ContactPersonPage(driver);

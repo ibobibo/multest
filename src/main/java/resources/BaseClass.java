@@ -2,7 +2,6 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -48,7 +47,7 @@ public class BaseClass {
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
 
             driver.manage().window().fullscreen();
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);

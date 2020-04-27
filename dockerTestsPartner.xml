@@ -11,41 +11,42 @@
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 
-            <!--            <class name="navigation.FormNavigation"/>-->
-
             <class name="user.MulRegister"/>
-<!--            <class name="user.Verify"/>-->
+            <class name="user.Verify"/>
 
-            <!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
-            <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-            <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-            <!--            <class name="departments.CreateFairHouseOffer"/>-->
+            <class name="navigation.FormNavigation"/>
+            <class name="navigation.CheckPflegesterne"/>
 
-            <!--            &lt;!&ndash;            &lt;!&ndash;            LICENSE TEST&ndash;&gt;&ndash;&gt;-->
-            <!--            <class name="license.GetLicenseFromHomepage"/>-->
-            <!--            <class name="license.CountDepartments"/>-->
-            <!--            <class name="license.LicenseTest"/>-->
-            <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
+            <class name="departments.CreateDayNightCareOrganisation"/>
+            <class name="departments.CreateAmbulantOrganisation"/>
+            <class name="departments.CreateStationaryOrganisation"/>
+            <class name="departments.CreateFairHouseOffer"/>
 
-            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;&ndash;&gt;-->
-            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;&ndash;&gt;-->
+            <!--            &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
+            <class name="license.GetLicenseFromHomepage"/>
+            <class name="license.CountDepartments"/>
+            <class name="license.LicenseTest"/>
+            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>
 
-            <!--            <class name="departments.ToggleOrganisation"/>-->
-            <!--            <class name="departments.EditOrganisation"/>-->
-            <!--            <class name="departments.CopyDepartment"/>-->
-            <!--            <class name="user.EditUserDetails"/>-->
+            <!--            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;-->
+            <!--            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;-->
 
-            <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
-            <!--            <class name="contactPerson.SearchContactPerson"/>-->
-            <!--            <class name="contactPerson.DeleteContactPerson"/>-->
+            <class name="departments.ToggleOrganisation"/>
+            <class name="departments.EditOrganisation"/>
+            <class name="departments.CopyDepartment"/>
+            <class name="user.EditUserDetails"/>
 
-            <!--            <class name="user.PasswordChangeTest"/>-->
-            <!--            <class name="user.ResetPasswordTest"/>-->
-            <!--            <class name="user.VerifyNewPassword"/>-->
+            <class name="contactPerson.CreateSomeContactPersonForSearch"/>
+            <class name="contactPerson.SearchContactPerson"/>
+            <class name="contactPerson.DeleteContactPerson"/>
 
-            <!--            <class name="departments.DeleteOrganisation"/>-->
-            <!--            <class name="placements.DeletePlacement"/>-->
-<!--            <class name="user.DeleteUser"/>-->
+            <class name="user.PasswordChangeTest"/>
+            <class name="user.ResetPasswordTest"/>
+            <class name="user.VerifyNewPassword"/>
+
+            <class name="departments.DeleteOrganisation"/>
+            <class name="placements.DeletePlacement"/>
+            <class name="user.DeleteUser"/>
 
         </classes>
     </test>
