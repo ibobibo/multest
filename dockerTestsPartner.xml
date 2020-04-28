@@ -28,25 +28,25 @@
             <class name="license.LicenseTest"/>
             <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>
 
-            <!--            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;-->
-            <!--            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;-->
+            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;&ndash;&gt;-->
+            <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;&ndash;&gt;-->
 
-            <class name="departments.ToggleOrganisation"/>
-            <class name="departments.EditOrganisation"/>
-            <class name="departments.CopyDepartment"/>
-            <class name="user.EditUserDetails"/>
+            <!--            <class name="departments.ToggleOrganisation"/>-->
+            <!--            <class name="departments.EditOrganisation"/>-->
+            <!--            <class name="departments.CopyDepartment"/>-->
+            <!--            <class name="user.EditUserDetails"/>-->
 
-            <class name="contactPerson.CreateSomeContactPersonForSearch"/>
-            <class name="contactPerson.SearchContactPerson"/>
-            <class name="contactPerson.DeleteContactPerson"/>
+            <!--            <class name="contactPerson.CreateSomeContactPersonForSearch"/>-->
+            <!--            <class name="contactPerson.SearchContactPerson"/>-->
+            <!--            <class name="contactPerson.DeleteContactPerson"/>-->
 
-            <class name="user.PasswordChangeTest"/>
-            <class name="user.ResetPasswordTest"/>
-            <class name="user.VerifyNewPassword"/>
+            <!--            <class name="user.PasswordChangeTest"/>-->
+            <!--            <class name="user.ResetPasswordTest"/>-->
+            <!--            <class name="user.VerifyNewPassword"/>-->
 
-            <class name="departments.DeleteOrganisation"/>
-            <class name="placements.DeletePlacement"/>
-            <class name="user.DeleteUser"/>
+            <!--            <class name="departments.DeleteOrganisation"/>-->
+            <!--            <class name="placements.DeletePlacement"/>-->
+            <!--            <class name="user.DeleteUser"/>-->
         </classes>
     </test>
 

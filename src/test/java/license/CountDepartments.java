@@ -13,7 +13,7 @@ public class CountDepartments extends BaseClass {
     int departmentCount = 0;
 
     @Test()
-    public void countDepartments() throws InterruptedException, IOException {
+    public void countDepartments() throws IOException {
         initializeBrowser();
 
         for (int i = 0; i < Integer.parseInt(prop.getProperty("counting")); i++) {

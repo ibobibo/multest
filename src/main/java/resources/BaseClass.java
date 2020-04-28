@@ -37,7 +37,7 @@ public class BaseClass {
             DesiredCapabilities cap = DesiredCapabilities.chrome();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
 
-            driver.manage().window().fullscreen();
+            driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         } else if (browserName.equals("firefox")) {
 //            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
@@ -46,13 +46,13 @@ public class BaseClass {
             DesiredCapabilities cap = DesiredCapabilities.firefox();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
 
-            driver.manage().window().fullscreen();
+            driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         } else if (browserName.equals("edge")) {
             DesiredCapabilities cap = DesiredCapabilities.edge();
             driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
 
-            driver.manage().window().fullscreen();
+            driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
         return driver;
