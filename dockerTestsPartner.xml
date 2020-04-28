@@ -7,7 +7,7 @@
     </listeners>
 
     <!--Routing tests for login to register and the other way around-->
-    <test thread-count="4" name="dev-partner test-cases">
+    <test name="dev-partner test-cases">
         <classes>
             <class name="dockerTests.SetupDockerGrid"/>
 
@@ -47,7 +47,6 @@
             <class name="departments.DeleteOrganisation"/>
             <class name="placements.DeletePlacement"/>
             <class name="user.DeleteUser"/>
-
         </classes>
     </test>
 

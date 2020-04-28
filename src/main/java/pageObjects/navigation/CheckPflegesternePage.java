@@ -15,8 +15,14 @@ public class CheckPflegesternePage {
 
     @FindBy(xpath = "//span[contains(text(),'Pflegesterne')]")
     WebElement checkPflegesterneNavigation;
+    @FindBy(xpath = "//a[contains(text(),'hier')]")
+    WebElement navigateToPage;
 
     public WebElement checkPflegesterneNavigation() {
         return checkPflegesterneNavigation;
+    }
+
+    public WebElement navigateToPage() {
+        return navigateToPage;
     }
 }

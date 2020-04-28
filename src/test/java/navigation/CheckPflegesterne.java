@@ -21,15 +21,13 @@ public class CheckPflegesterne extends BaseClass {
 
             //navigate to signup form
             checkPflegesternePage.checkPflegesterneNavigation().click();
+            checkPflegesternePage.navigateToPage().click();
+            TimeUnit.SECONDS.sleep(4);
             ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-
             driver.switchTo().window(tabs.get(1));
-            TimeUnit.SECONDS.sleep(2);
-
-            if(!driver.getCurrentUrl().contains("https://dev-pflegesterne.mitpflegeleben.de/login?user=")){
-                Assert.fail("not on the right site");
+            if (!driver.getCurrentUrl().contains("https://www.pflegesterne.de")) {
+                Assert.fail(driver.getCurrentUrl());
             }
-
         }
         driver.quit();
     }
