@@ -2,6 +2,8 @@ package resources;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -31,20 +33,20 @@ public class BaseClass {
 
         //check for browser
         if (browserName.equals("chrome")) {
-//            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
-//            driver = new ChromeDriver();
+            System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+            driver = new ChromeDriver();
 
-            DesiredCapabilities cap = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+//            DesiredCapabilities cap = DesiredCapabilities.chrome();
+//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
 
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         } else if (browserName.equals("firefox")) {
-//            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
-//            driver = new FirefoxDriver();
+            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
+            driver = new FirefoxDriver();
 
-            DesiredCapabilities cap = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+//            DesiredCapabilities cap = DesiredCapabilities.firefox();
+//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
 
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

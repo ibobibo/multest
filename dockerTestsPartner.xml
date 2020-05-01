@@ -9,30 +9,30 @@
     <!--Routing tests for login to register and the other way around-->
     <test name="dev-partner test-cases">
         <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
+            <!--                                    <class name="dockerTests.SetupDockerGrid"/>-->
 
-            <class name="user.MulRegister"/>
-            <class name="user.Verify"/>
+            <!--            <class name="user.MulRegister"/>-->
+            <!--            <class name="user.Verify"/>-->
 
-            <class name="navigation.FormNavigation"/>
-            <class name="navigation.CheckPflegesterne"/>
+            <!--            <class name="navigation.FormNavigation"/>-->
+            <!--            <class name="navigation.CheckPflegesterne"/>-->
 
             <class name="departments.CreateDayNightCareOrganisation"/>
             <class name="departments.CreateAmbulantOrganisation"/>
             <class name="departments.CreateStationaryOrganisation"/>
             <class name="departments.CreateFairHouseOffer"/>
 
-            <!--            &lt;!&ndash;            LICENSE TEST&ndash;&gt;-->
-            <class name="license.GetLicenseFromHomepage"/>
-            <class name="license.CountDepartments"/>
-            <class name="license.LicenseTest"/>
-            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>
+            <!--            &lt;!&ndash;            &lt;!&ndash;            LICENSE TEST&ndash;&gt;&ndash;&gt;-->
+            <!--            <class name="license.GetLicenseFromHomepage"/>-->
+            <!--            <class name="license.CountDepartments"/>-->
+            <!--            <class name="license.LicenseTest"/>-->
+            <!--            <class name="license.NavigateToLicensePageThroughDepartmentIcon"/>-->
 
             <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentLastschriftTest"/>&ndash;&gt;&ndash;&gt;-->
             <!--            &lt;!&ndash;            &lt;!&ndash;            <class name="license.LicensePaymentCreditCardTest"/>&ndash;&gt;&ndash;&gt;-->
 
             <!--            <class name="departments.ToggleOrganisation"/>-->
-            <!--            <class name="departments.EditOrganisation"/>-->
+            <!--                        <class name="departments.EditOrganisation"/>-->
             <!--            <class name="departments.CopyDepartment"/>-->
             <!--            <class name="user.EditUserDetails"/>-->
 

@@ -1199,11 +1199,21 @@ public class DepartmentPage {
     }
 
     // Einrichtung speichern
-    @FindBy(id = "publish-department")
+    @FindBy(xpath = "//button[@id='publish-department']")
     WebElement saveDepartment;
 
     //GETTER ambulante Einrichtung speichern
     public WebElement saveDepartment() {
         return saveDepartment;
     }
+
+    //image upload
+    @FindBy(xpath = "//div[@class='image-tile-row-inner']//input[@class='fileInput']")
+    WebElement uploadDepartmentImage;
+
+    public WebElement uploadDepartmentImage() {
+        return uploadDepartmentImage;
+    }
+
+
 }
