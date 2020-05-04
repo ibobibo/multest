@@ -50,6 +50,7 @@ public class CreateAmbulantOrganisation extends BaseClass {
             actions.moveToElement(findName).click().build().perform();
 
             departmentPage.departmentName().sendKeys(propDepartment.getProperty("ambulantDepartmentName"));
+            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();

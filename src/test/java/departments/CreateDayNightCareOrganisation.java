@@ -52,6 +52,8 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             actions.moveToElement(findName).click().build().perform();
 
             departmentPage.departmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
+            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
+            departmentPage.contactPhoto().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/ContactPhoto.jpg");
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
@@ -117,12 +119,15 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             };
             for (int y = 0; y < cars.length; y++) {
                 departmentPage.uploadDepartmentImage().sendKeys(cars[y]);
-                TimeUnit.SECONDS.sleep(10);
+                TimeUnit.SECONDS.sleep(20);
                 departmentPage.saveDepartment().click();
                 String xpath = "//a[@id='edit-button-0']";
                 WebElement findTr = driver.findElement(By.xpath(xpath));
                 findTr.click();
             }
+
+            departmentPage.infoMaterial().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
+            departmentPage.mdkReport().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
 
             //speichern
             departmentPage.saveDepartment().click();

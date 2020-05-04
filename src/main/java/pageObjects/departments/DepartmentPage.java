@@ -1208,12 +1208,37 @@ public class DepartmentPage {
     }
 
     //image upload
+    @FindBy(xpath = "//section[@id='DepartmentGeneralData']//input[@class='fileInput']")
+    WebElement uploadDepartmentCompanyImage;
     @FindBy(xpath = "//div[@class='image-tile-row-inner']//input[@class='fileInput']")
     WebElement uploadDepartmentImage;
+    @FindBy(xpath = "//div[@class='no-icon image-gallery-cta']//input[@class='fileInput']")
+    WebElement contactPhoto;
+    @FindBy(xpath = "//section[@id='DepartmentDocumentUpload']//input[@class='fileInput']")
+    WebElement infoMaterial;
+    @FindBy(xpath = "//section[@id='DepartmentMdkReport']//input[@class='fileInput']")
+    WebElement mdkReport;
+
+    public WebElement uploadDepartmentCompanyImage() {
+        return uploadDepartmentCompanyImage;
+    }
 
     public WebElement uploadDepartmentImage() {
         return uploadDepartmentImage;
     }
+
+    public WebElement contactPhoto() {
+        return contactPhoto;
+    }
+
+    public WebElement infoMaterial() {
+        return infoMaterial;
+    }
+
+    public WebElement mdkReport() {
+        return mdkReport;
+    }
+
 
 
 }

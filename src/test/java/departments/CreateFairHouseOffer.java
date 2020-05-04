@@ -88,6 +88,11 @@ public class CreateFairHouseOffer extends BaseClass {
                 System.out.println("departmentName");
             }
             try {
+                departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
+            } catch (Exception e) {
+                System.out.println("companyImage");
+            }
+            try {
                 departmentPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
             } catch (Exception e) {
                 System.out.println("departmentStreetAddress");
