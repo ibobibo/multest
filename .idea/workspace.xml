@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a0b73f9-42e8-4780-9887-666b9cc51a6c" name="Default Changelist" comment="" />
+    <list default="true" id="0a0b73f9-42e8-4780-9887-666b9cc51a6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginLogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/LoginLogoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginLogoutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +243,7 @@
       <workItem from="1588601458584" duration="1016000" />
       <workItem from="1588602840318" duration="8045000" />
       <workItem from="1588681399904" duration="2722000" />
-      <workItem from="1588687044139" duration="5581000" />
+      <workItem from="1588687044139" duration="10399000" />
     </task>
     <servers />
   </component>
@@ -264,28 +274,28 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="431" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1588683468687" />
-    <state width="1398" height="301" key="GridCell.Tab.0.bottom" timestamp="1588764184031">
+    <state width="1398" height="301" key="GridCell.Tab.0.bottom" timestamp="1588774539147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="301" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588764184031" />
+    <state width="1398" height="301" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588774539147" />
     <state width="1398" height="301" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1588758113529" />
     <state width="1398" height="301" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1588763520783" />
-    <state width="1398" height="301" key="GridCell.Tab.0.center" timestamp="1588764184029">
+    <state width="1398" height="301" key="GridCell.Tab.0.center" timestamp="1588774539145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="301" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588764184029" />
+    <state width="1398" height="301" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588774539145" />
     <state width="1398" height="301" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1588758113525" />
     <state width="1398" height="301" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1588763520782" />
-    <state width="1398" height="301" key="GridCell.Tab.0.left" timestamp="1588764184028">
+    <state width="1398" height="301" key="GridCell.Tab.0.left" timestamp="1588774539145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="301" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588764184028" />
+    <state width="1398" height="301" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588774539145" />
     <state width="1398" height="301" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1588758113525" />
     <state width="1398" height="301" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1588763520780" />
-    <state width="1398" height="301" key="GridCell.Tab.0.right" timestamp="1588764184030">
+    <state width="1398" height="301" key="GridCell.Tab.0.right" timestamp="1588774539146">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="301" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588764184030" />
+    <state width="1398" height="301" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588774539146" />
     <state width="1398" height="301" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1588758113526" />
     <state width="1398" height="301" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1588763520782" />
     <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1588686904467">
