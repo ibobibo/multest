@@ -3,8 +3,6 @@ package departments;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import resources.BaseClass;
@@ -52,7 +50,10 @@ public class CreateStationaryOrganisation extends BaseClass {
             actions.moveToElement(findName).click().build().perform();
 
             departmentPage.departmentName().sendKeys(propDepartment.getProperty("stationaryDepartmentName"));
-            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
+//            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
+//            TimeUnit.SECONDS.sleep(10);
+//            departmentPage.contactPhoto().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/ContactPhoto.jpg");
+//            TimeUnit.SECONDS.sleep(10);
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
@@ -107,14 +108,14 @@ public class CreateStationaryOrganisation extends BaseClass {
             String[] cars = {
                     "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild1.jpg",
                     "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild2.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild3.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild4.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild5.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild6.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild7.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild8.gif",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild9.gif",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild10.gif"
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild3.jpg",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild4.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild5.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild6.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild7.jpg",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild8.gif",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild9.gif",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild10.gif"
             };
             for (int y = 0; y < cars.length; y++) {
                 departmentPage.uploadDepartmentImage().sendKeys(cars[y]);
@@ -124,6 +125,11 @@ public class CreateStationaryOrganisation extends BaseClass {
                 WebElement findTr = driver.findElement(By.xpath(xpath));
                 findTr.click();
             }
+
+            departmentPage.infoMaterial().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
+            TimeUnit.SECONDS.sleep(10);
+            departmentPage.mdkReport().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
+            TimeUnit.SECONDS.sleep(10);
 
             //speichern
             departmentPage.saveDepartment().click();

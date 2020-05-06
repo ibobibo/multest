@@ -17,10 +17,10 @@
             <!--            <class name="navigation.FormNavigation"/>-->
             <!--            <class name="navigation.CheckPflegesterne"/>-->
 
-            <class name="departments.CreateDayNightCareOrganisation"/>
+<!--            <class name="departments.CreateDayNightCareOrganisation"/>-->
 <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
 <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-<!--            <class name="departments.CreateFairHouseOffer"/>-->
+            <class name="departments.CreateFairHouseOffer"/>
 
             <!--            &lt;!&ndash;            &lt;!&ndash;            LICENSE TEST&ndash;&gt;&ndash;&gt;-->
             <!--            <class name="license.GetLicenseFromHomepage"/>-->
@@ -49,6 +49,4 @@
             <!--            <class name="user.DeleteUser"/>-->
         </classes>
     </test>
-
-
 </suite>

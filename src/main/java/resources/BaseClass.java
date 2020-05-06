@@ -51,11 +51,11 @@ public class BaseClass {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         } else if (browserName.equals("edge")) {
-            DesiredCapabilities cap = DesiredCapabilities.edge();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
-
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//            DesiredCapabilities cap = DesiredCapabilities.edge();
+//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+//
+//            driver.manage().window().maximize();
+//            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
         return driver;
     }
@@ -71,6 +71,7 @@ public class BaseClass {
     }
 
     public void initializeBrowser() throws IOException {
+        System.out.println("init driver");
         initializeDriver();
         driver.get(prop.getProperty("urlFromHomeNetwork"));
         accessAllCookies(driver);

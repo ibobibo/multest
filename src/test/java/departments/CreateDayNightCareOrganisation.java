@@ -52,9 +52,10 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             actions.moveToElement(findName).click().build().perform();
 
             departmentPage.departmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
-            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
-            departmentPage.contactPhoto().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/ContactPhoto.jpg");
-
+//            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
+//            TimeUnit.SECONDS.sleep(10);
+//            departmentPage.contactPhoto().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/ContactPhoto.jpg");
+//            TimeUnit.SECONDS.sleep(10);
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
             departmentPage.departmentOrganisationTypeChosen().click();
@@ -108,18 +109,18 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             String[] cars = {
                     "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild1.jpg",
                     "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild2.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild3.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild4.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild5.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild6.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild7.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild8.gif",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild9.gif",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild10.gif"
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild3.jpg",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild4.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild5.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild6.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild7.jpg",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild8.gif",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild9.gif",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild10.gif"
             };
             for (int y = 0; y < cars.length; y++) {
                 departmentPage.uploadDepartmentImage().sendKeys(cars[y]);
-                TimeUnit.SECONDS.sleep(20);
+                TimeUnit.SECONDS.sleep(15);
                 departmentPage.saveDepartment().click();
                 String xpath = "//a[@id='edit-button-0']";
                 WebElement findTr = driver.findElement(By.xpath(xpath));
@@ -127,7 +128,9 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             }
 
             departmentPage.infoMaterial().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
+            TimeUnit.SECONDS.sleep(10);
             departmentPage.mdkReport().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
+            TimeUnit.SECONDS.sleep(10);
 
             //speichern
             departmentPage.saveDepartment().click();

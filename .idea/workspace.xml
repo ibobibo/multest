@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a0b73f9-42e8-4780-9887-666b9cc51a6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ijawad.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerTestsPartner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerTestsPartner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/aufgaben" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/departments/DepartmentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/browserData.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateAmbulantOrganisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateDayNightCareOrganisation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateFairHouseOffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/departments/CreateStationaryOrganisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dockerTests/DockerTest3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateAmbulantOrganisation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateDayNightCareOrganisation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateFairHouseOffer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/departments/CreateStationaryOrganisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dockerTests/DockerTest3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReportsTestNG.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,9 +39,6 @@
     <expand />
     <select />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="MulTesting" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -58,6 +54,10 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -65,7 +65,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/departmentPdfFiles" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31149426" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -96,18 +96,6 @@
       <recent name="$PROJECT_DIR$/xmlFiles/dev-partner" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml">
     <configuration name="CheckPflegesterne" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MulTesting" />
@@ -119,6 +107,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="navigation" />
       <option name="MAIN_CLASS_NAME" value="navigation.CheckPflegesterne" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MulRegister" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MulTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="user" />
+      <option name="MAIN_CLASS_NAME" value="user.MulRegister" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -156,53 +161,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="buildCliOptions" value="" />
-          <option name="command" value="" />
-          <option name="containerName" value="" />
-          <option name="entrypoint" value="" />
-          <option name="imageTag" value="" />
-          <option name="commandLineOptions" value="" />
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
       <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml" />
       <item itemvalue="TestNG.CheckPflegesterne" />
+      <item itemvalue="TestNG.MulRegister" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml" />
+        <item itemvalue="TestNG.MulRegister" />
         <item itemvalue="TestNG.CheckPflegesterne" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestMarketplace.xml" />
         <item itemvalue="TestNG./Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml" />
-        <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e3e682d4-393a-4f2a-9967-a178d558481f" name="Default Changelist" comment="" />
+      <changelist id="0a0b73f9-42e8-4780-9887-666b9cc51a6c" name="Default Changelist" comment="" />
       <created>1565872755679</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -267,11 +248,15 @@
       <workItem from="1586181155414" duration="640000" />
       <workItem from="1586181802352" duration="10918000" />
       <workItem from="1586352728027" duration="2260000" />
+      <workItem from="1588601458584" duration="1016000" />
+      <workItem from="1588602840318" duration="8045000" />
+      <workItem from="1588681399904" duration="2722000" />
+      <workItem from="1588687044139" duration="5324000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
@@ -281,12 +266,73 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="417" y="8" key="#Dockerfile" timestamp="1588687065453">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="417" y="8" key="#Dockerfile/0.0.1440.900@0.0.1440.900" timestamp="1588687065453" />
+    <state x="431" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588683468687">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="431" y="309" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1588683468687" />
+    <state width="1398" height="301" key="GridCell.Tab.0.bottom" timestamp="1588763685523">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="301" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588763685523" />
+    <state width="1398" height="301" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1588758113529" />
+    <state width="1398" height="301" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1588763520783" />
+    <state width="1398" height="301" key="GridCell.Tab.0.center" timestamp="1588763685521">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="301" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1588763685521" />
+    <state width="1398" height="301" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1588758113525" />
+    <state width="1398" height="301" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1588763520782" />
+    <state width="1398" height="301" key="GridCell.Tab.0.left" timestamp="1588763685521">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="301" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1588763685521" />
+    <state width="1398" height="301" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1588758113525" />
+    <state width="1398" height="301" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1588763520780" />
+    <state width="1398" height="301" key="GridCell.Tab.0.right" timestamp="1588763685522">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="301" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1588763685522" />
+    <state width="1398" height="301" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1588758113526" />
+    <state width="1398" height="301" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1588763520782" />
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom" timestamp="1588686904467">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1588684479957" />
+    <state width="1398" height="302" key="GridCell.Tab.1.bottom/0.23.1440.797@0.23.1440.797" timestamp="1588686904467" />
+    <state width="1398" height="302" key="GridCell.Tab.1.center" timestamp="1588686904466">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1588684479956" />
+    <state width="1398" height="302" key="GridCell.Tab.1.center/0.23.1440.797@0.23.1440.797" timestamp="1588686904466" />
+    <state width="1398" height="302" key="GridCell.Tab.1.left" timestamp="1588686904466">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1588684479955" />
+    <state width="1398" height="302" key="GridCell.Tab.1.left/0.23.1440.797@0.23.1440.797" timestamp="1588686904466" />
+    <state width="1398" height="302" key="GridCell.Tab.1.right" timestamp="1588686904467">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1588684479957" />
+    <state width="1398" height="302" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1588686904467" />
+    <state x="208" y="23" width="1024" height="797" key="SettingsEditor" timestamp="1588683811663">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="23" width="1024" height="797" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1588683811663" />
+    <state x="421" y="205" width="598" height="490" key="find.popup" timestamp="1588604068083">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="205" width="598" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1588604068083" />
   </component>
 </project>

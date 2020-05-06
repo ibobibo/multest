@@ -87,11 +87,10 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("departmentName");
             }
-            try {
-                departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
-            } catch (Exception e) {
-                System.out.println("companyImage");
-            }
+//            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
+//            TimeUnit.SECONDS.sleep(10);
+//            departmentPage.contactPhoto().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/ContactPhoto.jpg");
+//            TimeUnit.SECONDS.sleep(10);
             try {
                 departmentPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
             } catch (Exception e) {
@@ -260,23 +259,26 @@ public class CreateFairHouseOffer extends BaseClass {
             String[] cars = {
                     "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild1.jpg",
                     "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild2.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild3.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild4.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild5.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild6.png",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild7.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild8.gif",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild9.gif",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild10.gif"
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild3.jpg",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild4.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild5.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild6.png",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild7.jpg",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild8.gif",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild9.gif",
+//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild10.gif"
             };
             for (int y = 0; y < cars.length; y++) {
                 departmentPage.uploadDepartmentImage().sendKeys(cars[y]);
-                TimeUnit.SECONDS.sleep(10);
+                TimeUnit.SECONDS.sleep(15);
                 departmentPage.saveDepartment().click();
                 String xpath = "//a[@id='edit-button-3']";
                 WebElement findTr = driver.findElement(By.xpath(xpath));
                 findTr.click();
             }
+
+            departmentPage.infoMaterial().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
+            TimeUnit.SECONDS.sleep(10);
 
             //save
             departmentPage.saveDepartment().click();

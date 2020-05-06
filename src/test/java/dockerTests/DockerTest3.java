@@ -14,18 +14,18 @@ public class DockerTest3 {
     @Test
     public void dockerTest() throws MalformedURLException, InterruptedException {
         hubAddress = "172.19.0.2";
-
-        DesiredCapabilities cap = DesiredCapabilities.firefox();
-
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
-
-        driver.get("http://www.google.com");
-
-        driver.findElement(By.name("q")).sendKeys("Learn Automation");
-
-        Thread.sleep(5000);
-
-        driver.close();
+//
+//        DesiredCapabilities cap = DesiredCapabilities.firefox();
+//
+//        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+//
+//        driver.get("http://www.google.com");
+//
+//        driver.findElement(By.name("q")).sendKeys("Learn Automation");
+//
+//        Thread.sleep(5000);
+//
+//        driver.close();
     }
 }
 
