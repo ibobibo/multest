@@ -54,7 +54,7 @@ public class CreateDayNightCareOrganisation extends BaseClass {
 
             departmentPage.departmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
 
-            File companyPicture= new File("./src/main/java/departmentPictures/BildCompany.png");
+            File companyPicture= new File("src/main/java/departmentPictures/BildCompany.png");
             departmentPage.uploadDepartmentCompanyImage().sendKeys( companyPicture.getAbsolutePath());
             TimeUnit.SECONDS.sleep(10);
             File contactPhoto= new File("src/main/java/departmentPictures/ContactPhoto.jpg");
