@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import pageObjects.departments.DepartmentPage;
 import resources.BaseClass;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -87,10 +88,14 @@ public class CreateFairHouseOffer extends BaseClass {
             } catch (Exception e) {
                 System.out.println("departmentName");
             }
-//            departmentPage.uploadDepartmentCompanyImage().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/BildCompany.png");
+
+//            File companyPicture = new File("src/main/java/departmentPictures/BildCompany.png");
+//            departmentPage.uploadDepartmentCompanyImage().sendKeys(companyPicture.getAbsolutePath());
 //            TimeUnit.SECONDS.sleep(10);
-//            departmentPage.contactPhoto().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/ContactPhoto.jpg");
+//            File contactPhoto = new File("src/main/java/departmentPictures/ContactPhoto.jpg");
+//            departmentPage.contactPhoto().sendKeys(contactPhoto.getAbsolutePath());
 //            TimeUnit.SECONDS.sleep(10);
+
             try {
                 departmentPage.departmentStreetAddress().sendKeys(propDepartment.getProperty("streetAddress"));
             } catch (Exception e) {
@@ -256,20 +261,20 @@ public class CreateFairHouseOffer extends BaseClass {
             }
 
             //image
-            String[] cars = {
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild1.jpg",
-                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild2.jpg",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild3.jpg",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild4.png",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild5.png",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild6.png",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild7.jpg",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild8.gif",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild9.gif",
-//                    "/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPictures/Bild10.gif"
+            File[] files = {
+                    new File("src/main/java/departmentPictures/Bild1.jpg"),
+                    new File("src/main/java/departmentPictures/Bild2.jpg"),
+                    new File("src/main/java/departmentPictures/Bild3.jpg"),
+                    new File("src/main/java/departmentPictures/Bild4.png"),
+                    new File("src/main/java/departmentPictures/Bild5.png"),
+                    new File("src/main/java/departmentPictures/Bild6.png"),
+                    new File("src/main/java/departmentPictures/Bild7.jpg"),
+                    new File("src/main/java/departmentPictures/Bild8.gif"),
+                    new File("src/main/java/departmentPictures/Bild9.gif"),
+                    new File("src/main/java/departmentPictures/Bild10.gif")
             };
-            for (int y = 0; y < cars.length; y++) {
-                departmentPage.uploadDepartmentImage().sendKeys(cars[y]);
+            for (int y = 0; y < files.length; y++) {
+                departmentPage.uploadDepartmentImage().sendKeys(files[y].getAbsolutePath());
                 TimeUnit.SECONDS.sleep(15);
                 departmentPage.saveDepartment().click();
                 String xpath = "//a[@id='edit-button-3']";
@@ -277,7 +282,8 @@ public class CreateFairHouseOffer extends BaseClass {
                 findTr.click();
             }
 
-            departmentPage.infoMaterial().sendKeys("/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/departmentPdfFiles/small13kb.pdf");
+            File infoMaterial = new File("src/main/java/departmentPdfFiles/small13kb.pdf");
+            departmentPage.infoMaterial().sendKeys(infoMaterial.getAbsolutePath());
             TimeUnit.SECONDS.sleep(10);
 
             //save

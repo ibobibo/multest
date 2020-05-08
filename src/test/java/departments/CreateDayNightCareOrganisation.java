@@ -54,12 +54,12 @@ public class CreateDayNightCareOrganisation extends BaseClass {
 
             departmentPage.departmentName().sendKeys(propDepartment.getProperty("dayNightCareDepartmentName"));
 
-            File companyPicture= new File("src/main/java/departmentPictures/BildCompany.png");
-            departmentPage.uploadDepartmentCompanyImage().sendKeys( companyPicture.getAbsolutePath());
-            TimeUnit.SECONDS.sleep(10);
-            File contactPhoto= new File("src/main/java/departmentPictures/ContactPhoto.jpg");
-            departmentPage.uploadDepartmentCompanyImage().sendKeys( contactPhoto.getAbsolutePath());
-            TimeUnit.SECONDS.sleep(10);
+//            File companyPicture= new File("src/main/java/departmentPictures/BildCompany.png");
+//            departmentPage.uploadDepartmentCompanyImage().sendKeys( companyPicture.getAbsolutePath());
+//            TimeUnit.SECONDS.sleep(10);
+//            File contactPhoto= new File("src/main/java/departmentPictures/ContactPhoto.jpg");
+//            departmentPage.contactPhoto().sendKeys( contactPhoto.getAbsolutePath());
+//            TimeUnit.SECONDS.sleep(10);
 
             WebElement organisationType = driver.findElement(By.id("organisationType"));
             actions.moveToElement(organisationType).click().build().perform();
@@ -113,19 +113,19 @@ public class CreateDayNightCareOrganisation extends BaseClass {
             //image
             File[] files = {
                     new File("src/main/java/departmentPictures/Bild1.jpg"),
-                    new File("src/main/java/departmentPictures/Bild2.jpg"),
-                    new File("src/main/java/departmentPictures/Bild3.jpg"),
-                    new File("src/main/java/departmentPictures/Bild4.png"),
-                    new File("src/main/java/departmentPictures/Bild5.png"),
-                    new File("src/main/java/departmentPictures/Bild6.png"),
-                    new File("src/main/java/departmentPictures/Bild7.jpg"),
-                    new File("src/main/java/departmentPictures/Bild8.gif"),
-                    new File("src/main/java/departmentPictures/Bild9.gif"),
-                    new File("src/main/java/departmentPictures/Bild10.gif")
+//                    new File("src/main/java/departmentPictures/Bild2.jpg"),
+//                    new File("src/main/java/departmentPictures/Bild3.jpg"),
+//                    new File("src/main/java/departmentPictures/Bild4.png"),
+//                    new File("src/main/java/departmentPictures/Bild5.png"),
+//                    new File("src/main/java/departmentPictures/Bild6.png"),
+//                    new File("src/main/java/departmentPictures/Bild7.jpg"),
+//                    new File("src/main/java/departmentPictures/Bild8.gif"),
+//                    new File("src/main/java/departmentPictures/Bild9.gif"),
+//                    new File("src/main/java/departmentPictures/Bild10.gif")
             };
             for (int y = 0; y < files.length; y++) {
                 departmentPage.uploadDepartmentImage().sendKeys(files[y].getAbsolutePath());
-                TimeUnit.SECONDS.sleep(10);
+                TimeUnit.SECONDS.sleep(20);
                 departmentPage.saveDepartment().click();
                 String xpath = "//a[@id='edit-button-0']";
                 WebElement findTr = driver.findElement(By.xpath(xpath));

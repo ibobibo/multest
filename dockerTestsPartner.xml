@@ -9,18 +9,18 @@
     <!--Routing tests for login to register and the other way around-->
     <test name="dev-partner test-cases">
         <classes>
-            <class name="dockerTests.SetupDockerGrid"/>
+            <!--            <class name="dockerTests.SetupDockerGrid"/>-->
 
-            <!--            <class name="user.MulRegister"/>-->
-            <!--            <class name="user.Verify"/>-->
+<!--                        <class name="user.MulRegister"/>-->
+<!--                        <class name="user.Verify"/>-->
 
             <!--            <class name="navigation.FormNavigation"/>-->
             <!--            <class name="navigation.CheckPflegesterne"/>-->
 
             <class name="departments.CreateDayNightCareOrganisation"/>
-            <!--            <class name="departments.CreateAmbulantOrganisation"/>-->
-            <!--            <class name="departments.CreateStationaryOrganisation"/>-->
-            <!--            <class name="departments.CreateFairHouseOffer"/>-->
+<!--            <class name="departments.CreateAmbulantOrganisation"/>-->
+<!--            <class name="departments.CreateStationaryOrganisation"/>-->
+<!--            <class name="departments.CreateFairHouseOffer"/>-->
 
             <!--            &lt;!&ndash;            &lt;!&ndash;            LICENSE TEST&ndash;&gt;&ndash;&gt;-->
             <!--            <class name="license.GetLicenseFromHomepage"/>-->
