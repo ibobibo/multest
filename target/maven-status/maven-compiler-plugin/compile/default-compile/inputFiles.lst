@@ -1,3 +1,4 @@
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/navigation/CheckPflegesternePage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/departments/DeleteMeetingPage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/user/ResetPasswordPage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/contactPerson/SearchContactPersonPage.java
@@ -20,6 +21,7 @@
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/departments/EditOrganisationPage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/departments/AcceptMeetingPage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/contactPerson/EditContactPersonPage.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/navigation/FormNavigationPage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/user/DeleteUserPage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjectsMarketplace/user/EditUserDetailsPage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/main/java/pageObjects/contactPerson/ContactPersonGetDepartmentPage.java

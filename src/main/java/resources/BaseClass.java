@@ -3,7 +3,11 @@ package resources;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -34,7 +38,10 @@ public class BaseClass {
         //check for browser
         if (browserName.equals("chrome")) {
             System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverPath"));
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.setHeadless(true);
             driver = new ChromeDriver();
+
 
 //            DesiredCapabilities cap = DesiredCapabilities.chrome();
 //            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
@@ -42,13 +49,20 @@ public class BaseClass {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         } else if (browserName.equals("firefox")) {
-//            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
-//            driver = new FirefoxDriver();
+            System.setProperty(prop.getProperty("firefoxDriver"), prop.getProperty("firefoxDriverPath"));
+            // headless
 
-            DesiredCapabilities cap = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+            firefoxOptions.setHeadless(true);
+            firefoxOptions.setLogLevel(FirefoxDriverLogLevel.DEBUG);
+            driver = new FirefoxDriver(firefoxOptions);
 
-            driver.manage().window().maximize();
+            // driver = new FirefoxDriver()
+
+//            DesiredCapabilities cap = DesiredCapabilities.firefox();
+//            driver = new RemoteWebDriver(new URL("http://" + hubAddress + ":4444/wd/hub"), cap);
+
+            //driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         } else if (browserName.equals("edge")) {
 //            DesiredCapabilities cap = DesiredCapabilities.edge();
@@ -62,8 +76,8 @@ public class BaseClass {
 
     public void getScreenshot(String name) {
         try {
-            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
+//            File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//            FileUtils.copyFile(src, new File("src/main/java/screenShots/" + name + "_screenshot.png"));
         } catch (Exception e) {
             System.out.println("Null pointer Exception in take Screenshot Method");
             System.out.println(e);

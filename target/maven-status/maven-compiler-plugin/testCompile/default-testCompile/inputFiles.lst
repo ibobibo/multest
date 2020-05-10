@@ -3,6 +3,7 @@
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/marketplaceTests/user/MarketplaceRegister.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/departments/DeleteOrganisation.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/license/LicenseTest.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/license/LicensePaymentLastschriftTest.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/user/MulRegister.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/departments/DeleteMeeting.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/MyFavoriteMarketplaceDepartments.java
@@ -14,6 +15,8 @@
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/user/VerifyNewPassword.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/contactPerson/SearchContactPerson.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/placements/CreateNewPlacement.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/license/NavigateToLicensePageThroughDepartmentIcon.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/license/CountDepartments.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/marketplaceTests/DigitalConsultation.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/marketplaceTests/bookmarkAndCompareDepartmentTests/CompareMarketplaceDepartments.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/departments/LoginLogout.java
@@ -31,12 +34,15 @@
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/marketplaceTests/meetingRequest/AcceptMeetingAsMarketplaceUser.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/contactPerson/InviteContactPerson.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/dockerTests/DockerTest2.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/license/GetLicenseFromHomepage.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/placements/DeletePlacement.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/contactPerson/CreateContactPerson.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/contactPerson/ContactPersonGetDepartment.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/contactPerson/DeleteContactPerson.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/marketplaceTests/user/VerifyMarketplaceUser.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/user/ResetPasswordTest.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/license/LicensePaymentCreditCardTest.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/navigation/CheckPflegesterne.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/departments/ToggleOrganisation.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/dockerTests/DockerTest3.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/departments/EditOrganisation.java
@@ -46,4 +52,5 @@
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/marketplaceTests/meetingRequest/AnswerMeetingAsMarketplaceUser.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/user/PasswordChangeTest.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/dockerTests/DockerTest.java
+/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/navigation/FormNavigation.java
 /Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/src/test/java/dockerTests/SetupDockerGrid.java

@@ -2,26 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-25T14:25:29 MEZ" name="docker" finished-at="2020-02-25T14:26:09 MEZ" duration-ms="40651">
+  <suite started-at="2020-05-10T16:36:11 MESZ" name="docker" finished-at="2020-05-10T16:38:09 MESZ" duration-ms="118106">
     <groups>
     </groups>
-    <test started-at="2020-02-25T14:25:29 MEZ" name="docker Tests" finished-at="2020-02-25T14:26:09 MEZ" duration-ms="40651">
-      <class name="dockerTests.DockerTest">
-        <test-method signature="dockerTest()[pri:0, instance:dockerTests.DockerTest@6591f517]" started-at="2020-02-25T14:25:44 MEZ" name="dockerTest" finished-at="2020-02-25T14:25:54 MEZ" duration-ms="10569" status="PASS">
+    <test started-at="2020-05-10T16:36:11 MESZ" name="dev-partner test-cases" finished-at="2020-05-10T16:38:09 MESZ" duration-ms="118106">
+      <class name="departments.CreateDayNightCareOrganisation">
+        <test-method signature="createDayNightCareOrganisation()[pri:0, instance:departments.CreateDayNightCareOrganisation@971d0d8]" started-at="2020-05-10T16:36:11 MESZ" name="createDayNightCareOrganisation" finished-at="2020-05-10T16:38:09 MESZ" duration-ms="118074" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dockerTest -->
-      </class> <!-- dockerTests.DockerTest -->
-      <class name="dockerTests.SetupDockerGrid">
-        <test-method is-config="true" signature="startDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@5a4aa2f2]" started-at="2020-02-25T14:25:29 MEZ" name="startDockerGrid" finished-at="2020-02-25T14:25:44 MEZ" duration-ms="15026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDockerGrid -->
-        <test-method is-config="true" signature="stopDockerGrid()[pri:0, instance:dockerTests.SetupDockerGrid@5a4aa2f2]" started-at="2020-02-25T14:25:54 MEZ" name="stopDockerGrid" finished-at="2020-02-25T14:26:09 MEZ" duration-ms="15015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDockerGrid -->
-      </class> <!-- dockerTests.SetupDockerGrid -->
-    </test> <!-- docker Tests -->
+        </test-method> <!-- createDayNightCareOrganisation -->
+      </class> <!-- departments.CreateDayNightCareOrganisation -->
+    </test> <!-- dev-partner test-cases -->
   </suite> <!-- docker -->
 </testng-results>

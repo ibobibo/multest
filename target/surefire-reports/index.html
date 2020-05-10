@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-docker" class="navigator-link ">
-                    <span>dockerTestsParallel.xml</span>
+                    <span>dockerTestsPartner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-docker">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-docker" title="dockerTests.DockerTest" class="method navigator-link" hash-for-method="dockerTest">dockerTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-docker" title="departments.CreateDayNightCareOrganisation" class="method navigator-link" hash-for-method="createDayNightCareOrganisation">createDayNightCareOrganisation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-docker -->
@@ -120,14 +120,14 @@
           <div class="suite-docker-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">dockerTests.DockerTest</span>
+              <span class="class-name">departments.CreateDayNightCareOrganisation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="dockerTest">
-                  </a> <!-- dockerTest -->
-                  <span class="method-name">dockerTest</span>
+                  <a name="createDayNightCareOrganisation">
+                  </a> <!-- createDayNightCareOrganisation -->
+                  <span class="method-name">createDayNightCareOrganisation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel docker -->
         <div panel-name="test-xml-docker" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsParallel.xml</span>
+            <span class="header-content">/Users/ijawad/Documents/Arbeit/Automatisierung/MulTesting/dockerTestsPartner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,12 +146,11 @@
     &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
     &lt;listener class-name=&quot;resources.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;docker Tests&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;dev-partner test-cases&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;dockerTests.SetupDockerGrid&quot;/&gt;
-      &lt;class name=&quot;dockerTests.DockerTest&quot;/&gt;
+      &lt;class name=&quot;departments.CreateDayNightCareOrganisation&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- docker Tests --&gt;
+  &lt;/test&gt; &lt;!-- dev-partner test-cases --&gt;
 &lt;/suite&gt; &lt;!-- docker --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,7 +162,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">docker Tests (2 classes)</span>
+                <span class="test-name">dev-partner test-cases (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'dockerTest')
-data.setCell(0, 2, 'dockerTests.DockerTest')
-data.setCell(0, 3, 10569);
+data.setCell(0, 1, 'createDayNightCareOrganisation')
+data.setCell(0, 2, 'departments.CreateDayNightCareOrganisation')
+data.setCell(0, 3, 118074);
 window.suiteTableData['docker']= { tableData: data, tableDiv: 'times-div-docker'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-docker">
               </div> <!-- times-div-docker -->
             </div> <!-- times-div -->
@@ -224,25 +223,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">dockerTests.SetupDockerGrid</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">startDockerGrid</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">dockerTests.DockerTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">departments.CreateDayNightCareOrganisation</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">dockerTest</span>
-                <span class="method-start">15058 ms</span>
+                <span class="method-name">createDayNightCareOrganisation</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">dockerTests.SetupDockerGrid</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">stopDockerGrid</span>
-                <span class="method-start">25632 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
